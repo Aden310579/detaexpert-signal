@@ -3,18 +3,19 @@
  "kode": "/xausw",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 4070.2,
- "data_sampai_wib": "29 Okt 2026 03:00",
- "data_sampai_oslo": "28 Okt 2026 21:00",
+ "harga": 4018.7,
+ "data_sampai_wib": "29 Okt 2026 19:00",
+ "data_sampai_oslo": "29 Okt 2026 13:00",
  "dibuat_utc": "2026-10-28T01:10:00Z",
  "aktif_sampai_utc": "2026-10-29T20:00:00Z",
  "dibuat_wib": "28 Okt 2026 08:10",
  "dibuat_oslo": "28 Okt 2026 02:10",
  "aktif_sampai_wib": "30 Okt 2026 03:00",
  "aktif_sampai_oslo": "29 Okt 2026 21:00",
- "status": "MENUNGGU",
+ "status": "SELESAI",
  "teks": [
-  "Harga 4070.2 di zona Entry 1 (SELL). Stochastic H4 78, Heikin Ashi H4 biru. Tunggu sinyal di zona."
+  "Entry 1 SELL @4039.5 (masuk 29 Okt 11:00 WIB / 05:00 Oslo) kena Take Profit 2 4030 pukul 29 Okt 15:00 WIB / 09:00 Oslo.",
+  "Harga 4018.7, 6 poin dari Entry 2 (BUY). Stochastic H4 41, Heikin Ashi H4 merah. Tunggu sinyal di zona."
  ],
  "bias": "NETRAL",
  "bias_teks": "Heikin Ashi D1 biru · histogram MACD D1 -2.50",
@@ -42,7 +43,7 @@
     "Bollinger D1 tengah",
     "swing D1 sebelumnya"
    ],
-   "state": "tunggu",
+   "state": "selesai",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
@@ -93,6 +94,22 @@
    "jenis_entry": "Cadangan"
   }
  ],
- "posisi": [],
- "diperbarui_utc": "2026-10-28T23:59:00Z"
+ "posisi": [
+  {
+   "n": 1,
+   "side": -1,
+   "px": 4039.5,
+   "sl": 4085,
+   "tp1": 4048.5,
+   "tp2": 4030,
+   "t": "2026-10-29 11:00:00",
+   "masuk": "2026-10-29 15:00:00",
+   "tp1_kena": true,
+   "tp1_t": "2026-10-29 19:00:00",
+   "hasil": "TP2",
+   "selesai": "2026-10-29 19:00:00"
+  }
+ ],
+ "diperbarui_utc": "2026-10-29T13:33:00Z",
+ "status_lama": "MENUNGGU"
 }
