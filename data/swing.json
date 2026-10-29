@@ -1,0 +1,98 @@
+{
+ "jenis": "swing",
+ "kode": "/xausw",
+ "judul": "Swing H4",
+ "tf": "D1 / H4",
+ "harga": 4070.2,
+ "data_sampai_wib": "29 Okt 2026 03:00",
+ "data_sampai_oslo": "28 Okt 2026 21:00",
+ "dibuat_utc": "2026-10-28T01:10:00Z",
+ "aktif_sampai_utc": "2026-10-29T20:00:00Z",
+ "dibuat_wib": "28 Okt 2026 08:10",
+ "dibuat_oslo": "28 Okt 2026 02:10",
+ "aktif_sampai_wib": "30 Okt 2026 03:00",
+ "aktif_sampai_oslo": "29 Okt 2026 21:00",
+ "status": "MENUNGGU",
+ "teks": [
+  "Harga 4070.2 di zona Entry 1 (SELL). Stochastic H4 78, Heikin Ashi H4 biru. Tunggu sinyal di zona."
+ ],
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi D1 biru · histogram MACD D1 -2.50",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
+ "bollinger": null,
+ "fibonacci": [
+  4028.4,
+  4060.9
+ ],
+ "entries": [
+  {
+   "n": 1,
+   "side": "SELL",
+   "zona": [
+    4062,
+    4072
+   ],
+   "entry": 4067.0,
+   "sl": 4085,
+   "tp1": 4048.5,
+   "tp2": 4030,
+   "alasan": [
+    "Fibonacci D1 0.382 4060.9",
+    "Bollinger D1 tengah",
+    "swing D1 sebelumnya"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Utama"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    4020,
+    4030
+   ],
+   "entry": 4025.0,
+   "sl": 4004,
+   "tp1": 4064.5,
+   "tp2": 4104,
+   "alasan": [
+    "Fibonacci D1 0.236 4028.4",
+    "angka bulat 4025",
+    "swing D1 sebelumnya"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan"
+  },
+  {
+   "n": 3,
+   "side": "SELL",
+   "zona": [
+    4104,
+    4114
+   ],
+   "entry": 4109.0,
+   "sl": 4130,
+   "tp1": 4069.5,
+   "tp2": 4030,
+   "alasan": [
+    "swing D1 sebelumnya",
+    "angka bulat 4100",
+    "Bollinger D1"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Cadangan"
+  }
+ ],
+ "posisi": [],
+ "diperbarui_utc": "2026-10-28T23:59:00Z"
+}

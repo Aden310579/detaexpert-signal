@@ -1,0 +1,95 @@
+{
+ "jenis": "scalping",
+ "kode": "/xauscalping",
+ "judul": "Scalping M5",
+ "tf": "H1 / M5",
+ "harga": 4053.0,
+ "data_sampai_wib": "29 Okt 2026 05:50",
+ "data_sampai_oslo": "28 Okt 2026 23:50",
+ "dibuat_utc": "2026-10-28T22:50:00Z",
+ "aktif_sampai_utc": "2026-10-29T01:00:00Z",
+ "dibuat_wib": "29 Okt 2026 05:50",
+ "dibuat_oslo": "28 Okt 2026 23:50",
+ "aktif_sampai_wib": "29 Okt 2026 08:00",
+ "aktif_sampai_oslo": "29 Okt 2026 02:00",
+ "status": "MENUNGGU",
+ "teks": [
+  "Harga 4053.0, 6 poin dari Entry 1 (BUY). Stochastic M5 5, Heikin Ashi M5 merah. Tunggu sinyal di zona."
+ ],
+ "bias": "NAIK",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +0.79 (mengecil dari +1.20)",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
+ "bollinger": null,
+ "fibonacci": null,
+ "entries": [
+  {
+   "n": 1,
+   "side": "BUY",
+   "zona": [
+    4045,
+    4050
+   ],
+   "entry": 4047.5,
+   "sl": 4039,
+   "tp1": 4055,
+   "tp2": 4067,
+   "alasan": [
+    "Fibonacci H1",
+    "angka bulat 4050",
+    "swing H1 sebelumnya"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Scalping"
+  },
+  {
+   "n": 2,
+   "side": "SELL",
+   "zona": [
+    4067,
+    4072
+   ],
+   "entry": 4069.5,
+   "sl": 4078,
+   "tp1": 4062,
+   "tp2": 4050,
+   "alasan": [
+    "swing H1 tinggi",
+    "angka bulat 4075",
+    "Bollinger H1 atas"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan"
+  },
+  {
+   "n": 3,
+   "side": "BUY",
+   "zona": [
+    4025,
+    4030
+   ],
+   "entry": 4027.5,
+   "sl": 4019,
+   "tp1": 4035,
+   "tp2": 4045,
+   "alasan": [
+    "angka bulat 4025",
+    "Bollinger H1 bawah",
+    "swing H1 sebelumnya"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Cadangan"
+  }
+ ],
+ "posisi": [],
+ "diperbarui_utc": "2026-10-28T23:59:00Z"
+}

@@ -1,0 +1,115 @@
+{
+ "jenis": "intraday",
+ "kode": "/xauintraday",
+ "judul": "Intraday M15",
+ "tf": "H4 / M15",
+ "harga": 4055.3,
+ "data_sampai_wib": "29 Okt 2026 07:00",
+ "data_sampai_oslo": "29 Okt 2026 01:00",
+ "dibuat_utc": "2026-10-28T20:08:00Z",
+ "aktif_sampai_utc": "2026-10-29T04:00:00Z",
+ "dibuat_wib": "29 Okt 2026 03:08",
+ "dibuat_oslo": "28 Okt 2026 21:08",
+ "aktif_sampai_wib": "29 Okt 2026 11:00",
+ "aktif_sampai_oslo": "29 Okt 2026 05:00",
+ "status": "HOLD",
+ "teks": [
+  "Entry 1 BUY @4055.3 (masuk 29 Okt 07:00 WIB / 01:00 Oslo) masih berjalan. Stop Loss 4036, Take Profit 1 4068, Take Profit 2 4082."
+ ],
+ "bias": "NAIK",
+ "bias_teks": "Heikin Ashi H4 biru · histogram MACD H4 +7.56 (membesar dari +7.44)",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
+ "bollinger": [
+  4081.1,
+  4029.8,
+  3978.5
+ ],
+ "fibonacci": [
+  4060.1,
+  4046.5
+ ],
+ "entries": [
+  {
+   "n": 1,
+   "side": "BUY",
+   "zona": [
+    4047,
+    4060
+   ],
+   "entry": 4053.5,
+   "sl": 4036,
+   "tp1": 4068,
+   "tp2": 4082,
+   "alasan": [
+    "Fibonacci 0.236/0.382 (4060.1 / 4046.5)",
+    "angka bulat 4050",
+    "swing H4 sebelumnya"
+   ],
+   "state": "dipakai",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Utama"
+  },
+  {
+   "n": 2,
+   "side": "SELL",
+   "zona": [
+    4082,
+    4090
+   ],
+   "entry": 4086.0,
+   "sl": 4100,
+   "tp1": 4060,
+   "tp2": 4034,
+   "alasan": [
+    "PRZ Bearish AB=CD 4082–4096",
+    "Bollinger H4 atas 4081.1",
+    "swing H4 4082"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Cadangan PRZ"
+  },
+  {
+   "n": 3,
+   "side": "BUY",
+   "zona": [
+    4028,
+    4034
+   ],
+   "entry": 4031.0,
+   "sl": 4018,
+   "tp1": 4046,
+   "tp2": 4060,
+   "alasan": [
+    "Bollinger H4 tengah 4029.8",
+    "swing low M15",
+    "angka bulat 4025"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan"
+  }
+ ],
+ "posisi": [
+  {
+   "n": 1,
+   "side": 1,
+   "px": 4055.3,
+   "sl": 4036,
+   "tp1": 4068,
+   "tp2": 4082,
+   "t": "2026-10-29 10:45:00",
+   "masuk": "2026-10-29 11:00:00",
+   "tp1_kena": false,
+   "hasil": null
+  }
+ ],
+ "diperbarui_utc": "2026-10-29T00:02:00Z"
+}

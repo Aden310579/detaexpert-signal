@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Signal XAUUSD DetaExpert</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: header + jam WIB/Oslo, tab per jenis trading, isi tab = poster kiri, status & entry kanan */
+:root{
+  --bg:#ffffff; --surface:#f6f7f9; --surface2:#eef0f4; --line:#e2e5eb;
+  --fg:#141821; --sub:#4a5162; --mut:#8a909d;
+  --gold:#b8860b; --gold-bg:#fff8e6; --gold-line:#e9cf8a;
+  --buy:#16a34a; --buy-bg:#e5f4e4; --sell:#dc3c35; --sell-bg:#fde2e0; --blue:#2563eb; --blue-bg:#e7f1fb; --teal:#0e9aa7;
+  --f-display:"Outfit",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1016; --surface:#151a23; --surface2:#1b212c; --line:#262e3b;
+  --fg:#eef0f4; --sub:#b3bac7; --mut:#7d8596;
+  --gold:#e3b341; --gold-bg:#211b0d; --gold-line:#5a4615;
+  --buy:#2fbf71; --buy-bg:#13261b; --sell:#f0645c; --sell-bg:#3a1d1b; --blue:#5b8cff; --blue-bg:#16213a; --teal:#3fc1c9; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1016; --surface:#151a23; --surface2:#1b212c; --line:#262e3b;
+  --fg:#eef0f4; --sub:#b3bac7; --mut:#7d8596;
+  --gold:#e3b341; --gold-bg:#211b0d; --gold-line:#5a4615;
+  --buy:#2fbf71; --buy-bg:#13261b; --sell:#f0645c; --sell-bg:#3a1d1b; --blue:#5b8cff; --blue-bg:#16213a; --teal:#3fc1c9; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 40px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.label{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:600}
+header{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.brand img{display:block;height:54px;width:auto;max-width:100%;border-radius:12px}
+.brand .lg-dark{display:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .brand .lg-light{display:none}:root:not([data-theme="light"]) .brand .lg-dark{display:block}}
+:root[data-theme="dark"] .brand .lg-light{display:none}
+:root[data-theme="dark"] .brand .lg-dark{display:block}
+.clocks{display:flex;gap:10px;flex-wrap:wrap}
+.clock{background:var(--surface);border-radius:12px;padding:8px 14px;min-width:120px}
+.clock b{display:block;font-size:22px;font-weight:700}
+.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.hero h1{font-family:var(--f-display);font-size:clamp(26px,5vw,36px);margin:0;letter-spacing:.3px;text-wrap:balance}
+.hero h1 span{color:var(--gold)}
+.hero p{margin:4px 0 0;color:var(--sub);max-width:62ch}
+.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.tab{font:inherit;text-align:left;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);border-radius:14px;padding:12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:4px;min-width:0}
+.tab:hover{border-color:var(--gold-line)}
+.tab:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.tab[aria-selected="true"]{border-color:var(--gold);background:var(--gold-bg)}
+.tab .t{font-family:var(--f-display);font-size:17px;font-weight:600}
+.tab .s{font-size:12.5px;color:var(--sub)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:3px 9px;border-radius:999px;white-space:nowrap;width:fit-content}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.st-MENUNGGU{background:var(--surface2);color:var(--sub)} .st-HOLD{background:var(--blue-bg);color:var(--blue)}
+.st-SELESAI{background:var(--gold-bg);color:var(--gold)} .st-ARAH{background:var(--gold-bg);color:var(--gold)}
+.panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:20px;align-items:start}
+figure{margin:0;background:var(--surface);border-radius:16px;padding:10px}
+figure img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:#fff}
+figcaption{font-size:12px;color:var(--mut);padding:8px 4px 2px}
+.col{display:flex;flex-direction:column;gap:14px;min-width:0}
+.now{background:var(--gold-bg);border:1px solid var(--gold-line);border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start}
+.now .px{font-family:var(--f-mono);font-size:30px;font-weight:700;line-height:1.1}
+.now ul{margin:0;padding-left:18px;color:var(--sub);font-size:14px;display:flex;flex-direction:column;gap:4px}
+.bias{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13.5px;color:var(--sub)}
+.bias b{color:#fff;border-radius:7px;padding:3px 10px;font-size:12px;letter-spacing:.05em;background:var(--mut)}
+.bias b.NAIK{background:var(--blue)} .bias b.TURUN{background:var(--sell)}
+.ents{display:flex;flex-direction:column;gap:8px}
+.ent{border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;align-items:start;background:var(--bg)}
+.ent .n{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;font-family:var(--f-display);background:var(--c)}
+.ent .k{font-size:12px;font-weight:700;color:var(--c);letter-spacing:.04em;text-transform:uppercase}
+.ent .z{font-family:var(--f-mono);font-size:19px;font-weight:700}
+.ent .why{font-size:12.5px;color:var(--sub)}
+.ent .lv{display:grid;grid-template-columns:auto auto;gap:2px 10px;font-size:12.5px;color:var(--sub);text-align:right}
+.ent .lv b{font-family:var(--f-mono);color:var(--fg)}
+.ent.batal,.ent.dipakai{opacity:.6}
+.chip{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--surface2);color:var(--sub);margin-left:6px;text-transform:none;letter-spacing:0}
+.masa{background:var(--surface);border-radius:14px;padding:12px 16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.masa b{display:block;font-size:14.5px}
+.masa span{font-size:12.5px;color:var(--sub)}
+.sken{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sk{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}
+.sk h3{margin:0 0 4px;font-family:var(--f-display);font-size:16px}
+.sk.u h3{color:var(--buy)} .sk.a h3{color:var(--sell)}
+.sk p{margin:0;font-size:13px;color:var(--sub)}
+.sk ul{margin:6px 0 0;padding-left:18px;font-size:13px;color:var(--sub)}
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.rule{background:var(--surface);border-radius:14px;padding:14px 16px}
+.rule b{display:block;margin-bottom:4px}
+.rule p{margin:0;color:var(--sub);font-size:13.5px}
+footer{color:var(--mut);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+footer b{color:var(--gold)}
+.empty{color:var(--sub);background:var(--surface);border-radius:12px;padding:14px}
+@media (max-width:820px){.panel{grid-template-columns:1fr}.rules{grid-template-columns:1fr}}
+@media (max-width:560px){.tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.masa{grid-template-columns:1fr}.sken{grid-template-columns:1fr}.ent{grid-template-columns:30px minmax(0,1fr)}.ent .lv{grid-column:2;text-align:left}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><img class="lg-light" src="logo.png" alt="DETA Expert.com — Trading for Live"><img class="lg-dark" src="logo.jpg" alt="DETA Expert.com — Trading for Live"></div>
+    <div class="clocks">
+      <div class="clock"><div class="label">WIB</div><b class="num" id="cWib">--:--</b></div>
+      <div class="clock"><div class="label">Oslo</div><b class="num" id="cOslo">--:--</b></div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="label">XAUUSD · Gold</div>
+      <h1>Signal <span>XAUUSD</span> otomatis</h1>
+      <p>Analisa per jenis trading, diperbarui otomatis. Angka entry dikunci selama masa aktif. Yang berubah di tengah masa aktif hanya status.</p>
+    </div>
+  </section>
+
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+  <section id="panel" aria-live="polite"></section>
+
+  <section class="rules">
+    <div class="rule"><b>Zona minimal 3 alasan</b><p>Entry hanya di zona tempat Fibonacci 0.236/0.382, Bollinger 20, swing sebelumnya dan angka bulat kelipatan 25 bertemu.</p></div>
+    <div class="rule"><b>Tunggu sinyal di zona</b><p>Buy: Stochastic 14/3/3 naik dari bawah 25 + Heikin Ashi biru. Sell: turun dari atas 75 + Heikin Ashi merah.</p></div>
+    <div class="rule"><b>Satu posisi</b><p>Take Profit 1 kena: tutup setengah, Stop Loss pindah ke harga entry. Entry 2 lawan arah hanya saat histogram MACD mengecil.</p></div>
+  </section>
+
+  <footer><span>Analisa teknikal, bukan saran finansial. Gunakan manajemen risiko dan cek berita USD sebelum entry.</span><b>DetaExpert.com</b></footer>
+</div>
+
+<script>
+(function(){
+  const JENIS=[
+    {id:"scalping",t:"Scalping",tf:"H1 / M5",jadwal:"Update tiap 2 jam"},
+    {id:"intraday",t:"Intraday",tf:"H4 / M15",jadwal:"Analisa baru 03:00, 11:00, 19:00 WIB"},
+    {id:"swing",t:"Swing",tf:"D1 / H4",jadwal:"Cek tiap hari 03:00 WIB"},
+    {id:"arah",t:"Arah D1",tf:"D1 · tanpa entry",jadwal:"Cek tiap hari 03:00 WIB"}
+  ];
+  const DATA={};
+  const fmt=(d,tz)=>new Intl.DateTimeFormat("id-ID",{timeZone:tz,hour:"2-digit",minute:"2-digit",hour12:false}).format(d).replace(/\./g,":");
+  const tgl=(d,tz)=>new Intl.DateTimeFormat("id-ID",{timeZone:tz,day:"numeric",month:"short"}).format(d);
+  const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const n1=x=>x==null?"–":(Math.round(x*10)/10).toString();
+  let cur="intraday";
+  try{const h=location.hash.slice(1);if(JENIS.some(j=>j.id===h))cur=h;else{const s=localStorage.getItem("tab");if(JENIS.some(j=>j.id===s))cur=s;}}catch(e){}
+
+  function sisa(utc){const ms=new Date(utc)-new Date();if(ms<=0)return "selesai, menunggu update";const h=Math.floor(ms/36e5),m=Math.floor(ms%36e5/6e4);return "sisa "+h+" j "+m+" m";}
+
+  function tabs(){
+    document.getElementById("tabs").innerHTML=JENIS.map(j=>{const d=DATA[j.id];const st=d?(j.id==="arah"?"ARAH":d.status):"";
+      return '<button class="tab" role="tab" id="tab-'+j.id+'" aria-selected="'+(j.id===cur)+'" data-id="'+j.id+'"><span class="t">'+j.t+'</span><span class="s">'+j.tf+'</span>'+
+      (d?'<span class="pill st-'+st+'">'+(j.id==="arah"?esc(d.bias):st)+'</span>':'<span class="s">memuat…</span>')+'</button>';}).join("");
+    document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{cur=b.dataset.id;try{localStorage.setItem("tab",cur)}catch(e){};history.replaceState(null,"","#"+cur);tabs();panel();});
+  }
+
+  function masa(d,j){
+    return '<div class="masa">'+
+      '<div><div class="label">Dibuat</div><b class="num">'+esc(d.dibuat_wib)+' WIB</b><span>Oslo '+esc(d.dibuat_oslo)+'</span></div>'+
+      '<div><div class="label">Aktif sampai</div><b class="num">'+esc(d.aktif_sampai_wib)+' WIB</b><span>Oslo '+esc(d.aktif_sampai_oslo)+' · <span class="sisa" data-u="'+esc(d.aktif_sampai_utc)+'">'+sisa(d.aktif_sampai_utc)+'</span></span></div>'+
+      '<div><div class="label">Data terakhir</div><b class="num">'+esc(d.data_sampai_wib)+' WIB</b><span>'+esc(j.jadwal)+'</span></div></div>';
+  }
+
+  function panel(){
+    const j=JENIS.find(x=>x.id===cur),d=DATA[cur],el=document.getElementById("panel");
+    if(!d){el.innerHTML='<div class="empty">Analisa '+j.t+' sedang dimuat. Kalau tetap kosong, analisa pertama belum dibuat.</div>';return;}
+    const img='<figure><img src="img/'+cur+'.png?v='+encodeURIComponent(d.diperbarui_utc||"")+'" alt="Poster analisa '+j.t+' XAUUSD DetaExpert"><figcaption>Poster lengkap · tekan lama atau klik kanan untuk simpan</figcaption></figure>';
+    const now='<div class="now"><div><div class="label">Harga</div><div class="px">'+n1(d.harga)+'</div><span class="pill st-'+(cur==="arah"?"ARAH":d.status)+'">'+esc(cur==="arah"?"ARAH SAJA":d.status)+'</span></div><ul>'+(d.teks||[]).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div>';
+    const bias='<div class="bias"><b class="'+esc(String(d.bias).split(" ")[0])+'">BIAS '+(cur==="arah"?"D1":j.tf.split(" ")[0])+': '+esc(d.bias)+'</b><span>'+esc(d.bias_teks)+'</span></div>';
+    let body;
+    if(cur==="arah"){
+      const s=d.skenario||{},sk=(x,c,lbl)=>x?'<div class="sk '+c+'"><div class="label">'+lbl+'</div><h3>'+esc(x.judul)+'</h3><p>Target '+esc(x.target)+' · '+esc(x.konfirmasi)+'</p><ul>'+(x.poin||[]).map(p=>'<li>'+esc(p)+'</li>').join("")+'</ul></div>':"";
+      body='<div class="sken">'+sk(s.utama,"u","Skenario utama")+sk(s.alternatif,"a","Skenario alternatif")+'</div>'+
+        '<div class="empty">'+esc(d.catatan||"Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit.")+'</div>';
+    }else{
+      const col={1:"--buy",2:"--sell",3:"--teal"};
+      const lbl={tunggu:"menunggu",dipakai:"sudah dipakai",batal:"batal"};
+      body='<div><div class="label" style="margin-bottom:8px">Urutan entry</div><div class="ents">'+((d.entries||[]).length?(d.entries.map(e=>
+        '<div class="ent '+e.state+'" style="--c:var('+(e.side==="BUY"?"--buy":"--sell")+')"><div class="n">'+e.n+'</div><div style="min-width:0"><div class="k">Entry '+e.n+' · '+e.side+" · "+esc(e.jenis_entry||"")+'<span class="chip">'+(lbl[e.state]||e.state)+'</span></div>'+
+        '<div class="z">'+n1(e.zona[0])+' – '+n1(e.zona[1])+'</div><div class="why">'+(e.alasan||[]).map(esc).join(" · ")+(e.info?'<br>'+esc(e.info):'')+'</div></div>'+
+        '<div class="lv"><span>Stop Loss</span><b>'+n1(e.sl)+'</b><span>Take Profit 1</span><b>'+n1(e.tp1)+'</b><span>Take Profit 2</span><b>'+n1(e.tp2)+'</b></div></div>').join("")):'<div class="empty">Tidak ada zona dengan minimal 3 alasan di analisa ini. Tidak ada entry.</div>')+'</div></div>';
+    }
+    el.innerHTML='<div class="panel">'+img+'<div class="col">'+now+bias+body+masa(d,j)+'</div></div>';
+  }
+
+  function tick(){const n=new Date();document.getElementById("cWib").textContent=fmt(n,"Asia/Jakarta");document.getElementById("cOslo").textContent=fmt(n,"Europe/Oslo");
+    document.querySelectorAll(".sisa").forEach(s=>s.textContent=sisa(s.dataset.u));}
+  window.addEventListener("hashchange",()=>{const h=location.hash.slice(1);if(JENIS.some(j=>j.id===h)){cur=h;tabs();panel();}});
+  tabs();panel();tick();setInterval(tick,30000);
+  JENIS.forEach(j=>fetch("data/"+j.id+".json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(x=>{if(x){DATA[j.id]=x;tabs();if(j.id===cur)panel();}}).catch(()=>{}));
+})();
+</script>
+
+</body>
+</html>
