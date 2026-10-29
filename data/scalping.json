@@ -3,27 +3,27 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 4062.8,
- "data_sampai_wib": "29 Okt 2026 09:00",
- "data_sampai_oslo": "29 Okt 2026 03:00",
- "dibuat_utc": "2026-10-29T02:00:00Z",
- "aktif_sampai_utc": "2026-10-29T04:00:00Z",
- "dibuat_wib": "29 Okt 2026 09:00",
- "dibuat_oslo": "29 Okt 2026 03:00",
- "aktif_sampai_wib": "29 Okt 2026 11:00",
- "aktif_sampai_oslo": "29 Okt 2026 05:00",
+ "harga": 4037.4,
+ "data_sampai_wib": "29 Okt 2026 11:05",
+ "data_sampai_oslo": "29 Okt 2026 05:05",
+ "dibuat_utc": "2026-10-29T04:00:00Z",
+ "aktif_sampai_utc": "2026-10-29T06:00:00Z",
+ "dibuat_wib": "29 Okt 2026 11:00",
+ "dibuat_oslo": "29 Okt 2026 05:00",
+ "aktif_sampai_wib": "29 Okt 2026 13:00",
+ "aktif_sampai_oslo": "29 Okt 2026 07:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4062.8 di zona Entry 1 (SELL). Stochastic M5 68, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Harga 4037.4, 11 poin dari Entry 2 (BUY). Stochastic M5 23, Heikin Ashi M5 merah. Tunggu sinyal di zona."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -0.20 (mengecil dari -0.90)",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -1.50 (membesar dari -0.60)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  4071.0,
-  4049.9,
-  4028.9
+  4070.2,
+  4050.7,
+  4031.2
  ],
  "fibonacci": [
   4069.6,
@@ -43,7 +43,7 @@
    "tp2": 4029.6,
    "alasan": [
     "Fibonacci 0.236/0.382 (4069.6 / 4062.0)",
-    "Bollinger H1 atas 4071.0",
+    "Bollinger H1 atas 4070.2",
     "swing H1 sebelumnya 4065.5"
    ],
    "state": "tunggu",
@@ -65,7 +65,7 @@
    "tp2": 4062.0,
    "alasan": [
     "swing ekstrem 12 candle H1",
-    "Bollinger H1 bawah 4028.9",
+    "Bollinger H1 bawah 4031.2",
     "swing H1 sebelumnya 4028.0",
     "angka bulat 4025"
    ],
@@ -88,7 +88,7 @@
    "tp2": 4013.6,
    "alasan": [
     "Fibonacci 0.236/0.382 (4069.6 / 4062.0)",
-    "Bollinger H1 atas 4071.0",
+    "Bollinger H1 atas 4070.2",
     "swing H1 sebelumnya 4065.5"
    ],
    "state": "tunggu",
@@ -99,5 +99,5 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-10-29T02:04:00Z"
+ "diperbarui_utc": "2026-10-29T04:05:00Z"
 }
