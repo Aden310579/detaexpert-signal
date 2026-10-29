@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.11317,
- "data_sampai_wib": "29 Okt 2026 22:40",
- "data_sampai_oslo": "29 Okt 2026 16:40",
+ "harga": 1.11644,
+ "data_sampai_wib": "29 Okt 2026 23:25",
+ "data_sampai_oslo": "29 Okt 2026 17:25",
  "dibuat_utc": "2026-10-29T12:45:00Z",
  "aktif_sampai_utc": "2026-10-29T20:00:00Z",
  "dibuat_wib": "29 Okt 2026 19:45",
  "dibuat_oslo": "29 Okt 2026 13:45",
  "aktif_sampai_wib": "30 Okt 2026 03:00",
  "aktif_sampai_oslo": "29 Okt 2026 21:00",
- "diperbarui_utc": "2026-10-29T15:41:03Z",
- "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "HA H4 merah · histogram MACD H4 +2.3 (naik) · D1 tren turun, di BB bawah D1",
+ "diperbarui_utc": "2026-10-29T16:26:00Z",
+ "status": "SIAP ENTRY",
+ "bias": "NAIK",
+ "bias_teks": "HA H4 biru (berbalik) · histogram MACD H4 +3.6 naik · D1 masih turun",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "teks": [
-  "Belum ada posisi · zona belum tersentuh",
-  "Harga 1.1132: 18 pip di bawah Entry 1, 16 pip di atas Entry 2.",
-  "Tunggu sell 1.1150–57 atau buy 1.1110–16, dengan sinyal M15."
+  "Belum ada posisi · zona sell tersentuh, belum ada sinyal",
+  "Harga 1.1164 di antara Entry 1 dan Entry 3. Entry 2 terlewat tanpa sinyal.",
+  "Sell hanya setelah Stoch M15 >80 turun + HA M15 merah. H4 naik, jangan dipaksa."
  ],
  "entries": [
   {
@@ -43,7 +43,7 @@
     "angka bulat 1.1150"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1172",
    "jenis_entry": "Utama"
   },
@@ -63,8 +63,8 @@
     "low D1 14 Okt 1.1114",
     "BB bawah H4 1.1111"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "TERLEWAT",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1105",
    "jenis_entry": "Pantulan"
   },
@@ -85,7 +85,7 @@
     "angka bulat 1.1170"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1185",
    "jenis_entry": "Swing high"
   }
