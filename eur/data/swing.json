@@ -1,0 +1,92 @@
+{
+ "jenis": "swing",
+ "pasar": "EURUSD",
+ "judul": "Swing H4",
+ "tf": "D1 / H4",
+ "harga": 1.11317,
+ "data_sampai_wib": "29 Okt 2026 20:20",
+ "data_sampai_oslo": "29 Okt 2026 14:20",
+ "dibuat_utc": "2026-10-29T12:55:00Z",
+ "aktif_sampai_utc": "2026-10-31T00:00:00Z",
+ "dibuat_wib": "29 Okt 2026 19:55",
+ "dibuat_oslo": "29 Okt 2026 13:55",
+ "aktif_sampai_wib": "31 Okt 2026 07:00",
+ "aktif_sampai_oslo": "31 Okt 2026 01:00",
+ "diperbarui_utc": "2026-10-29T13:27:52Z",
+ "status": "MENUNGGU",
+ "bias": "NETRAL",
+ "bias_teks": "HA D1 merah · histogram MACD D1 +2.3 (mengecil) · harga di BB bawah D1 1.1138",
+ "bias_label": "D1",
+ "kondisi": "Netral",
+ "indikator_utama": "Stochastic",
+ "teks": [
+  "Belum ada posisi · tunggu harga naik ke Entry 1",
+  "D1 netral: tren turun, tapi di BB bawah D1 dan Stoch D1 18.",
+  "Sell swing di 1.1162–1.1175 setelah Stochastic H4 >75 lalu turun."
+ ],
+ "entries": [
+  {
+   "n": 1,
+   "side": "SELL",
+   "zona": [
+    1.1162,
+    1.1175
+   ],
+   "entry": 1.11685,
+   "sl": 1.1215,
+   "tp1": 1.111,
+   "tp2": 1.107,
+   "alasan": [
+    "Fib 0.382 D1 1.1173",
+    "swing high H4 1.1171",
+    "bekas support D1 1.1162"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1215",
+   "jenis_entry": "Utama"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    1.105,
+    1.107
+   ],
+   "entry": 1.106,
+   "sl": 1.1005,
+   "tp1": 1.113,
+   "tp2": 1.1195,
+   "alasan": [
+    "PRZ AB=CD H4 1.1050–60",
+    "low Mei 2025 1.1070",
+    "angka bulat 1.1050"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.1040",
+   "jenis_entry": "PRZ / support"
+  },
+  {
+   "n": 3,
+   "side": "SELL",
+   "zona": [
+    1.1195,
+    1.121
+   ],
+   "entry": 1.12025,
+   "sl": 1.1255,
+   "tp1": 1.1135,
+   "tp2": 1.107,
+   "alasan": [
+    "BB tengah D1 1.1198",
+    "angka bulat 1.1200",
+    "BB atas H4 1.1191"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1255",
+   "jenis_entry": "BB tengah D1"
+  }
+ ]
+}

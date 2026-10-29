@@ -1,0 +1,51 @@
+{
+ "jenis": "arah",
+ "pasar": "EURUSD",
+ "judul": "Arah D1",
+ "tf": "D1",
+ "harga": 1.11317,
+ "data_sampai_wib": "29 Okt 2026 20:20",
+ "data_sampai_oslo": "29 Okt 2026 14:20",
+ "dibuat_utc": "2026-10-29T12:55:00Z",
+ "aktif_sampai_utc": "2026-10-31T00:00:00Z",
+ "dibuat_wib": "29 Okt 2026 19:55",
+ "dibuat_oslo": "29 Okt 2026 13:55",
+ "aktif_sampai_wib": "31 Okt 2026 07:00",
+ "aktif_sampai_oslo": "31 Okt 2026 01:00",
+ "diperbarui_utc": "2026-10-29T13:27:52Z",
+ "status": "ARAH",
+ "bias": "NETRAL",
+ "bias_teks": "HA D1 merah · MACD D1 −47 tapi histogram +2.3 mengecil · RSI 34 · Stoch D1 18 (jenuh jual)",
+ "bias_label": "D1",
+ "kondisi": "Sideways",
+ "indikator_utama": "Harmonic + Fibo",
+ "teks": [
+  "Tren besar turun, harga di BB bawah D1",
+  "Tunggu close D1 (07:00 WIB · 01:00 CET) untuk konfirmasi arah."
+ ],
+ "skenario": {
+  "utama": {
+   "judul": "Turun · Konfirmasi: close D1 < 1.1110",
+   "target": "1.1004",
+   "konfirmasi": "close D1 < 1.1110",
+   "poin": [
+    "Low 28 Okt 1.1113 dan low 14 Okt 1.1114 jebol",
+    "Target 1: 1.1070 (low Mei 2025)",
+    "Target 2: 1.1000–1.1010 (PRZ AB=CD + angka bulat)",
+    "Gagal bila close D1 > 1.1175"
+   ]
+  },
+  "alternatif": {
+   "judul": "Pantulan · Konfirmasi: close D1 > 1.1175",
+   "target": "1.1200",
+   "konfirmasi": "close D1 > 1.1175",
+   "poin": [
+    "Di atas Fib 0.382 (1.1173) dan swing high H4 1.1171",
+    "Target 1: 1.1200 (BB tengah D1 1.1198)",
+    "Target 2: 1.1260 (BB atas D1 / high 16 Okt 1.1269)",
+    "Gagal bila close D1 < 1.1110"
+   ]
+  }
+ },
+ "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Area tengah 1.1110–1.1175 = range. Di dalam range, ikuti rencana Intraday dan Scalping."
+}

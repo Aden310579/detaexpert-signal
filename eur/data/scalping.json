@@ -1,0 +1,93 @@
+{
+ "jenis": "scalping",
+ "pasar": "EURUSD",
+ "judul": "Scalping M5",
+ "tf": "M15 / M5",
+ "harga": 1.11317,
+ "data_sampai_wib": "29 Okt 2026 20:20",
+ "data_sampai_oslo": "29 Okt 2026 14:20",
+ "dibuat_utc": "2026-10-29T12:55:00Z",
+ "aktif_sampai_utc": "2026-10-29T14:00:00Z",
+ "dibuat_wib": "29 Okt 2026 19:55",
+ "dibuat_oslo": "29 Okt 2026 13:55",
+ "aktif_sampai_wib": "29 Okt 2026 21:00",
+ "aktif_sampai_oslo": "29 Okt 2026 15:00",
+ "diperbarui_utc": "2026-10-29T13:27:52Z",
+ "status": "SIAP ENTRY",
+ "bias": "TURUN",
+ "bias_teks": "HA M15 merah · histogram MACD M15 −0.08 · H1 turun · filter H4 netral (buy boleh)",
+ "bias_label": "M15",
+ "kondisi": "Turun",
+ "indikator_utama": "Stochastic",
+ "teks": [
+  "Zona Entry 2 BUY tersentuh, tunggu sinyal",
+  "Low 1.1125 masuk zona 1.1125–30. Entry 1 terlewat tanpa sinyal sell.",
+  "Buy setelah Stochastic M5 <25 naik + Heikin Ashi M5 biru."
+ ],
+ "entries": [
+  {
+   "n": 1,
+   "side": "SELL",
+   "zona": [
+    1.1139,
+    1.1143
+   ],
+   "entry": 1.1141,
+   "sl": 1.1149,
+   "tp1": 1.1134,
+   "tp2": 1.11275,
+   "alasan": [
+    "BB tengah M15 1.1141",
+    "BB tengah M5 1.1143",
+    "Fib 0.382 M5 1.1141 / H1 1.1137"
+   ],
+   "state": "batal",
+   "status": "TERLEWAT",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1150",
+   "jenis_entry": "Pullback"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    1.1125,
+    1.113
+   ],
+   "entry": 1.11275,
+   "sl": 1.1119,
+   "tp1": 1.1138,
+   "tp2": 1.1148,
+   "alasan": [
+    "BB bawah M15 1.1128",
+    "low hari ini 1.1125",
+    "angka bulat 1.1125",
+    "BB bawah H1 1.1132"
+   ],
+   "state": "tunggu",
+   "status": "SIAP ENTRY",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1122",
+   "jenis_entry": "Pantulan"
+  },
+  {
+   "n": 3,
+   "side": "SELL",
+   "zona": [
+    1.1148,
+    1.1152
+   ],
+   "entry": 1.115,
+   "sl": 1.1158,
+   "tp1": 1.1141,
+   "tp2": 1.1131,
+   "alasan": [
+    "BB atas M5 1.1152 / M15 1.1153",
+    "pivot high M5 1.1153",
+    "angka bulat 1.1150"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1158",
+   "jenis_entry": "BB atas"
+  }
+ ]
+}

@@ -65,6 +65,7 @@ header{display:flex;justify-content:space-between;align-items:center;gap:14px;fl
 .pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
 .st-MENUNGGU{background:var(--surface2);color:var(--sub)} .st-HOLD{background:var(--blue-bg);color:var(--blue)}
 .st-SELESAI{background:var(--gold-bg);color:var(--gold)} .st-ARAH{background:var(--gold-bg);color:var(--gold)}
+.st-SIAP_ENTRY{background:var(--gold-bg);color:var(--gold)} .st-BERJALAN{background:var(--blue-bg);color:var(--blue)} .st-TP2_SELESAI{background:var(--buy-bg);color:var(--buy)} .st-STOP_LOSS{background:var(--sell-bg);color:var(--sell)} .st-KEDALUWARSA,.st-BATAL,.st-TERLEWAT,.st-IMPAS{background:var(--surface2);color:var(--mut)}
 .panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:20px;align-items:start}
 figure{margin:0;background:var(--surface);border-radius:16px;padding:10px}
 figure img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:#fff}
@@ -139,7 +140,7 @@ footer b{color:var(--gold)}
 
 <script>
 (function(){
-  // Pasar: XAUUSD memakai data/ dan img/ (jalur lama), BTCUSD memakai btc/data/ dan btc/img/
+  // Pasar: XAUUSD memakai data/ dan img/ (jalur lama), BTCUSD memakai btc/, EURUSD memakai eur/
   const PASAR={
     xau:{nama:"XAUUSD",label:"XAUUSD · Gold",dir:"",bulat:"kelipatan 25",berita:"USD",JENIS:[
       {id:"scalping",t:"Scalping",tf:"H1 / M5",jadwal:"Update tiap 2 jam"},
@@ -150,19 +151,25 @@ footer b{color:var(--gold)}
       {id:"scalping",t:"Scalping",tf:"M15 / M5",jadwal:"Update tiap 2 jam (jam genap WIB)"},
       {id:"intraday",t:"Intraday",tf:"H4 / M15",jadwal:"Update tiap close H4 (03:05, 07:05 … 23:05 WIB)"},
       {id:"swing",t:"Swing",tf:"D1 / H4",jadwal:"Update tiap hari 07:20 WIB"},
+      {id:"arah",t:"Arah D1",tf:"D1 · tanpa entry",jadwal:"Update tiap hari 07:20 WIB"}]},
+    eur:{nama:"EURUSD",label:"EURUSD · Euro",dir:"eur/",bulat:"kelipatan 25–100 pip",berita:"ECB dan Fed",JENIS:[
+      {id:"scalping",t:"Scalping",tf:"M15 / M5",jadwal:"Update tiap 2 jam (00:05, 02:05 … 22:05 WIB)"},
+      {id:"intraday",t:"Intraday",tf:"H4 / M15",jadwal:"Update tiap close H4 (03:05, 07:05 … 23:05 WIB)"},
+      {id:"swing",t:"Swing",tf:"D1 / H4",jadwal:"Update tiap hari 07:20 WIB"},
       {id:"arah",t:"Arah D1",tf:"D1 · tanpa entry",jadwal:"Update tiap hari 07:20 WIB"}]}
   };
   let ps="xau",JENIS=PASAR.xau.JENIS;
-  const DATA={xau:{},btc:{}};
+  const DATA={xau:{},btc:{},eur:{}};
+  const cls=s=>String(s||"").replace(/ /g,"_");
   const fmt=(d,tz)=>new Intl.DateTimeFormat("id-ID",{timeZone:tz,hour:"2-digit",minute:"2-digit",hour12:false}).format(d).replace(/\./g,":");
   const tgl=(d,tz)=>new Intl.DateTimeFormat("id-ID",{timeZone:tz,day:"numeric",month:"short"}).format(d);
   const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-  const n1=x=>x==null?"–":(Math.abs(x)>=10000?Math.round(x).toLocaleString("id-ID"):(Math.round(x*10)/10).toString());
+  const n1=x=>x==null?"–":Math.abs(x)<10?x.toFixed(4):(Math.abs(x)>=10000?Math.round(x).toLocaleString("id-ID"):(Math.round(x*10)/10).toString());
   let cur="intraday";
-  // hash: #intraday (XAUUSD) atau #btc-intraday (BTCUSD)
-  function baca(h){const m=/^(btc)-(\w+)$/.exec(h);const p=m?"btc":"xau",id=m?m[2]:h;if(PASAR[p].JENIS.some(j=>j.id===id)){ps=p;JENIS=PASAR[p].JENIS;cur=id;return true;}return false;}
+  // hash: #intraday (XAUUSD), #btc-intraday (BTCUSD), #eur-intraday (EURUSD)
+  function baca(h){const m=/^(btc|eur)-(\w+)$/.exec(h);const p=m?m[1]:"xau",id=m?m[2]:h;if(PASAR[p].JENIS.some(j=>j.id===id)){ps=p;JENIS=PASAR[p].JENIS;cur=id;return true;}return false;}
   try{if(!baca(location.hash.slice(1))){const s=localStorage.getItem("ps");if(PASAR[s]){ps=s;JENIS=PASAR[s].JENIS;}const t=localStorage.getItem("tab");if(JENIS.some(j=>j.id===t))cur=t;}}catch(e){}
-  const hashOf=()=>(ps==="btc"?"btc-":"")+cur;
+  const hashOf=()=>(ps==="xau"?"":ps+"-")+cur;
   function pasar(){const P=PASAR[ps];
     document.getElementById("pasar").innerHTML=Object.keys(PASAR).map(k=>'<button class="ps" aria-pressed="'+(k===ps)+'" data-p="'+k+'">'+PASAR[k].nama+'</button>').join("");
     document.querySelectorAll(".ps").forEach(b=>b.onclick=()=>{ps=b.dataset.p;JENIS=PASAR[ps].JENIS;try{localStorage.setItem("ps",ps)}catch(e){};history.replaceState(null,"","#"+hashOf());pasar();tabs();panel();});
@@ -175,7 +182,7 @@ footer b{color:var(--gold)}
   function tabs(){
     document.getElementById("tabs").innerHTML=JENIS.map(j=>{const d=DATA[ps][j.id];const st=d?(j.id==="arah"?"ARAH":d.status):"";
       return '<button class="tab" role="tab" id="tab-'+j.id+'" aria-selected="'+(j.id===cur)+'" data-id="'+j.id+'"><span class="t">'+j.t+'</span><span class="s">'+j.tf+'</span>'+
-      (d?'<span class="pill st-'+st+'">'+(j.id==="arah"?esc(d.bias):st)+'</span>':'<span class="s">memuat…</span>')+'</button>';}).join("");
+      (d?'<span class="pill st-'+cls(st)+'">'+(j.id==="arah"?esc(d.bias):st)+'</span>':'<span class="s">memuat…</span>')+'</button>';}).join("");
     document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{cur=b.dataset.id;try{localStorage.setItem("tab",cur)}catch(e){};history.replaceState(null,"","#"+hashOf());tabs();panel();});
   }
 
@@ -190,7 +197,7 @@ footer b{color:var(--gold)}
     const j=JENIS.find(x=>x.id===cur),d=DATA[ps][cur],P=PASAR[ps],el=document.getElementById("panel");
     if(!d){el.innerHTML='<div class="empty">Analisa '+j.t+' sedang dimuat. Kalau tetap kosong, analisa pertama belum dibuat.</div>';return;}
     const img='<figure><img src="'+P.dir+'img/'+cur+'.png?v='+encodeURIComponent(d.diperbarui_utc||"")+'" alt="Poster analisa '+j.t+' '+P.nama+' DetaExpert"><figcaption>Poster lengkap · tekan lama atau klik kanan untuk simpan</figcaption></figure>';
-    const now='<div class="now"><div><div class="label">Harga</div><div class="px">'+n1(d.harga)+'</div><span class="pill st-'+(cur==="arah"?"ARAH":d.status)+'">'+esc(cur==="arah"?"ARAH SAJA":d.status)+'</span></div><ul>'+(d.teks||[]).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div>';
+    const now='<div class="now"><div><div class="label">Harga</div><div class="px">'+(d.harga<10?d.harga.toFixed(5):n1(d.harga))+'</div><span class="pill st-'+cls(cur==="arah"?"ARAH":d.status)+'">'+esc(cur==="arah"?"ARAH SAJA":d.status)+'</span></div><ul>'+(d.teks||[]).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div>';
     const bias='<div class="bias"><b class="'+esc(String(d.bias).split(" ")[0])+'">BIAS '+esc(d.bias_label||(cur==="arah"?"D1":j.tf.split(" ")[0]))+': '+esc(d.bias)+'</b><span>'+esc(d.bias_teks)+'</span></div>';
     let body;
     if(cur==="arah"){
@@ -201,7 +208,7 @@ footer b{color:var(--gold)}
       const col={1:"--buy",2:"--sell",3:"--teal"};
       const lbl={tunggu:"menunggu",dipakai:"sudah dipakai",batal:"batal"};
       body='<div><div class="label" style="margin-bottom:8px">Urutan entry</div><div class="ents">'+((d.entries||[]).length?(d.entries.map(e=>
-        '<div class="ent '+e.state+'" style="--c:var('+(e.side==="BUY"?"--buy":"--sell")+')"><div class="n">'+e.n+'</div><div style="min-width:0"><div class="k">Entry '+e.n+' · '+e.side+" · "+esc(e.jenis_entry||"")+'<span class="chip">'+(lbl[e.state]||e.state)+'</span></div>'+
+        '<div class="ent '+e.state+'" style="--c:var('+(e.side==="BUY"?"--buy":"--sell")+')"><div class="n">'+e.n+'</div><div style="min-width:0"><div class="k">Entry '+e.n+' · '+e.side+" · "+esc(e.jenis_entry||"")+'<span class="chip">'+esc(e.status||lbl[e.state]||e.state)+'</span></div>'+
         '<div class="z">'+n1(e.zona[0])+' – '+n1(e.zona[1])+'</div><div class="why">'+(e.alasan||[]).map(esc).join(" · ")+(e.info?'<br>'+esc(e.info):'')+'</div></div>'+
         '<div class="lv"><span>Stop Loss</span><b>'+n1(e.sl)+'</b><span>Take Profit 1</span><b>'+n1(e.tp1)+'</b><span>Take Profit 2</span><b>'+n1(e.tp2)+'</b></div></div>').join("")):'<div class="empty">Tidak ada zona dengan minimal 3 alasan di analisa ini. Tidak ada entry.</div>')+'</div></div>';
     }
