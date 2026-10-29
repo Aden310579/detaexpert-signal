@@ -6,7 +6,7 @@
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
-<title>Signal XAUUSD DetaExpert</title>
+<title>Signal DetaExpert</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
 <style>
@@ -49,6 +49,11 @@ header{display:flex;justify-content:space-between;align-items:center;gap:14px;fl
 .hero h1{font-family:var(--f-display);font-size:clamp(26px,5vw,36px);margin:0;letter-spacing:.3px;text-wrap:balance}
 .hero h1 span{color:var(--gold)}
 .hero p{margin:4px 0 0;color:var(--sub);max-width:62ch}
+.pasar{display:flex;gap:8px;flex-wrap:wrap}
+.ps{font:inherit;font-weight:600;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);border-radius:999px;padding:8px 16px;cursor:pointer}
+.ps:hover{border-color:var(--gold-line)}
+.ps:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.ps[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-bg);color:var(--gold)}
 .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 .tab{font:inherit;text-align:left;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);border-radius:14px;padding:12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:4px;min-width:0}
 .tab:hover{border-color:var(--gold-line)}
@@ -113,47 +118,65 @@ footer b{color:var(--gold)}
 
   <section class="hero">
     <div>
-      <div class="label">XAUUSD · Gold</div>
-      <h1>Signal <span>XAUUSD</span> otomatis</h1>
+      <div class="label" id="pLabel">XAUUSD · Gold</div>
+      <h1>Signal <span id="pName">XAUUSD</span> otomatis</h1>
       <p>Analisa per jenis trading, diperbarui otomatis. Angka entry dikunci selama masa aktif. Yang berubah di tengah masa aktif hanya status.</p>
     </div>
+    <nav class="pasar" id="pasar" aria-label="Pilih pasar"></nav>
   </section>
 
   <nav class="tabs" role="tablist" id="tabs"></nav>
   <section id="panel" aria-live="polite"></section>
 
   <section class="rules">
-    <div class="rule"><b>Zona minimal 3 alasan</b><p>Entry hanya di zona tempat Fibonacci 0.236/0.382, Bollinger 20, swing sebelumnya dan angka bulat kelipatan 25 bertemu.</p></div>
+    <div class="rule"><b>Zona minimal 3 alasan</b><p>Entry hanya di zona tempat Fibonacci 0.236/0.382, Bollinger 20, swing sebelumnya dan angka bulat <span id="pBulat">kelipatan 25</span> bertemu.</p></div>
     <div class="rule"><b>Tunggu sinyal di zona</b><p>Buy: Stochastic 14/3/3 naik dari bawah 25 + Heikin Ashi biru. Sell: turun dari atas 75 + Heikin Ashi merah.</p></div>
     <div class="rule"><b>Satu posisi</b><p>Take Profit 1 kena: tutup setengah, Stop Loss pindah ke harga entry. Entry 2 lawan arah hanya saat histogram MACD mengecil.</p></div>
   </section>
 
-  <footer><span>Analisa teknikal, bukan saran finansial. Gunakan manajemen risiko dan cek berita USD sebelum entry.</span><b>DetaExpert.com</b></footer>
+  <footer><span>Analisa teknikal, bukan saran finansial. Gunakan manajemen risiko dan cek berita <span id="pBerita">USD</span> sebelum entry.</span><b>DetaExpert.com</b></footer>
 </div>
 
 <script>
 (function(){
-  const JENIS=[
-    {id:"scalping",t:"Scalping",tf:"H1 / M5",jadwal:"Update tiap 2 jam"},
-    {id:"intraday",t:"Intraday",tf:"H4 / M15",jadwal:"Analisa baru 03:00, 11:00, 19:00 WIB"},
-    {id:"swing",t:"Swing",tf:"D1 / H4",jadwal:"Cek tiap hari 03:00 WIB"},
-    {id:"arah",t:"Arah D1",tf:"D1 · tanpa entry",jadwal:"Cek tiap hari 03:00 WIB"}
-  ];
-  const DATA={};
+  // Pasar: XAUUSD memakai data/ dan img/ (jalur lama), BTCUSD memakai btc/data/ dan btc/img/
+  const PASAR={
+    xau:{nama:"XAUUSD",label:"XAUUSD · Gold",dir:"",bulat:"kelipatan 25",berita:"USD",JENIS:[
+      {id:"scalping",t:"Scalping",tf:"H1 / M5",jadwal:"Update tiap 2 jam"},
+      {id:"intraday",t:"Intraday",tf:"H4 / M15",jadwal:"Analisa baru 03:00, 11:00, 19:00 WIB"},
+      {id:"swing",t:"Swing",tf:"D1 / H4",jadwal:"Cek tiap hari 03:00 WIB"},
+      {id:"arah",t:"Arah D1",tf:"D1 · tanpa entry",jadwal:"Cek tiap hari 03:00 WIB"}]},
+    btc:{nama:"BTCUSD",label:"BTCUSD · Bitcoin",dir:"btc/",bulat:"kelipatan 250–1000",berita:"kripto dan USD",JENIS:[
+      {id:"scalping",t:"Scalping",tf:"M15 / M5",jadwal:"Update tiap 2 jam (jam genap WIB)"},
+      {id:"intraday",t:"Intraday",tf:"H4 / M15",jadwal:"Update tiap close H4 (03:05, 07:05 … 23:05 WIB)"},
+      {id:"swing",t:"Swing",tf:"D1 / H4",jadwal:"Update tiap hari 07:20 WIB"},
+      {id:"arah",t:"Arah D1",tf:"D1 · tanpa entry",jadwal:"Update tiap hari 07:20 WIB"}]}
+  };
+  let ps="xau",JENIS=PASAR.xau.JENIS;
+  const DATA={xau:{},btc:{}};
   const fmt=(d,tz)=>new Intl.DateTimeFormat("id-ID",{timeZone:tz,hour:"2-digit",minute:"2-digit",hour12:false}).format(d).replace(/\./g,":");
   const tgl=(d,tz)=>new Intl.DateTimeFormat("id-ID",{timeZone:tz,day:"numeric",month:"short"}).format(d);
   const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-  const n1=x=>x==null?"–":(Math.round(x*10)/10).toString();
+  const n1=x=>x==null?"–":(Math.abs(x)>=10000?Math.round(x).toLocaleString("id-ID"):(Math.round(x*10)/10).toString());
   let cur="intraday";
-  try{const h=location.hash.slice(1);if(JENIS.some(j=>j.id===h))cur=h;else{const s=localStorage.getItem("tab");if(JENIS.some(j=>j.id===s))cur=s;}}catch(e){}
+  // hash: #intraday (XAUUSD) atau #btc-intraday (BTCUSD)
+  function baca(h){const m=/^(btc)-(\w+)$/.exec(h);const p=m?"btc":"xau",id=m?m[2]:h;if(PASAR[p].JENIS.some(j=>j.id===id)){ps=p;JENIS=PASAR[p].JENIS;cur=id;return true;}return false;}
+  try{if(!baca(location.hash.slice(1))){const s=localStorage.getItem("ps");if(PASAR[s]){ps=s;JENIS=PASAR[s].JENIS;}const t=localStorage.getItem("tab");if(JENIS.some(j=>j.id===t))cur=t;}}catch(e){}
+  const hashOf=()=>(ps==="btc"?"btc-":"")+cur;
+  function pasar(){const P=PASAR[ps];
+    document.getElementById("pasar").innerHTML=Object.keys(PASAR).map(k=>'<button class="ps" aria-pressed="'+(k===ps)+'" data-p="'+k+'">'+PASAR[k].nama+'</button>').join("");
+    document.querySelectorAll(".ps").forEach(b=>b.onclick=()=>{ps=b.dataset.p;JENIS=PASAR[ps].JENIS;try{localStorage.setItem("ps",ps)}catch(e){};history.replaceState(null,"","#"+hashOf());pasar();tabs();panel();});
+    document.getElementById("pLabel").textContent=P.label;document.getElementById("pName").textContent=P.nama;
+    document.getElementById("pBulat").textContent=P.bulat;document.getElementById("pBerita").textContent=P.berita;
+    document.title="Signal "+P.nama+" DetaExpert";}
 
   function sisa(utc){const ms=new Date(utc)-new Date();if(ms<=0)return "selesai, menunggu update";const h=Math.floor(ms/36e5),m=Math.floor(ms%36e5/6e4);return "sisa "+h+" j "+m+" m";}
 
   function tabs(){
-    document.getElementById("tabs").innerHTML=JENIS.map(j=>{const d=DATA[j.id];const st=d?(j.id==="arah"?"ARAH":d.status):"";
+    document.getElementById("tabs").innerHTML=JENIS.map(j=>{const d=DATA[ps][j.id];const st=d?(j.id==="arah"?"ARAH":d.status):"";
       return '<button class="tab" role="tab" id="tab-'+j.id+'" aria-selected="'+(j.id===cur)+'" data-id="'+j.id+'"><span class="t">'+j.t+'</span><span class="s">'+j.tf+'</span>'+
       (d?'<span class="pill st-'+st+'">'+(j.id==="arah"?esc(d.bias):st)+'</span>':'<span class="s">memuat…</span>')+'</button>';}).join("");
-    document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{cur=b.dataset.id;try{localStorage.setItem("tab",cur)}catch(e){};history.replaceState(null,"","#"+cur);tabs();panel();});
+    document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{cur=b.dataset.id;try{localStorage.setItem("tab",cur)}catch(e){};history.replaceState(null,"","#"+hashOf());tabs();panel();});
   }
 
   function masa(d,j){
@@ -164,11 +187,11 @@ footer b{color:var(--gold)}
   }
 
   function panel(){
-    const j=JENIS.find(x=>x.id===cur),d=DATA[cur],el=document.getElementById("panel");
+    const j=JENIS.find(x=>x.id===cur),d=DATA[ps][cur],P=PASAR[ps],el=document.getElementById("panel");
     if(!d){el.innerHTML='<div class="empty">Analisa '+j.t+' sedang dimuat. Kalau tetap kosong, analisa pertama belum dibuat.</div>';return;}
-    const img='<figure><img src="img/'+cur+'.png?v='+encodeURIComponent(d.diperbarui_utc||"")+'" alt="Poster analisa '+j.t+' XAUUSD DetaExpert"><figcaption>Poster lengkap · tekan lama atau klik kanan untuk simpan</figcaption></figure>';
+    const img='<figure><img src="'+P.dir+'img/'+cur+'.png?v='+encodeURIComponent(d.diperbarui_utc||"")+'" alt="Poster analisa '+j.t+' '+P.nama+' DetaExpert"><figcaption>Poster lengkap · tekan lama atau klik kanan untuk simpan</figcaption></figure>';
     const now='<div class="now"><div><div class="label">Harga</div><div class="px">'+n1(d.harga)+'</div><span class="pill st-'+(cur==="arah"?"ARAH":d.status)+'">'+esc(cur==="arah"?"ARAH SAJA":d.status)+'</span></div><ul>'+(d.teks||[]).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div>';
-    const bias='<div class="bias"><b class="'+esc(String(d.bias).split(" ")[0])+'">BIAS '+(cur==="arah"?"D1":j.tf.split(" ")[0])+': '+esc(d.bias)+'</b><span>'+esc(d.bias_teks)+'</span></div>';
+    const bias='<div class="bias"><b class="'+esc(String(d.bias).split(" ")[0])+'">BIAS '+esc(d.bias_label||(cur==="arah"?"D1":j.tf.split(" ")[0]))+': '+esc(d.bias)+'</b><span>'+esc(d.bias_teks)+'</span></div>';
     let body;
     if(cur==="arah"){
       const s=d.skenario||{},sk=(x,c,lbl)=>x?'<div class="sk '+c+'"><div class="label">'+lbl+'</div><h3>'+esc(x.judul)+'</h3><p>Target '+esc(x.target)+' · '+esc(x.konfirmasi)+'</p><ul>'+(x.poin||[]).map(p=>'<li>'+esc(p)+'</li>').join("")+'</ul></div>':"";
@@ -187,9 +210,9 @@ footer b{color:var(--gold)}
 
   function tick(){const n=new Date();document.getElementById("cWib").textContent=fmt(n,"Asia/Jakarta");document.getElementById("cOslo").textContent=fmt(n,"Europe/Oslo");
     document.querySelectorAll(".sisa").forEach(s=>s.textContent=sisa(s.dataset.u));}
-  window.addEventListener("hashchange",()=>{const h=location.hash.slice(1);if(JENIS.some(j=>j.id===h)){cur=h;tabs();panel();}});
-  tabs();panel();tick();setInterval(tick,30000);
-  JENIS.forEach(j=>fetch("data/"+j.id+".json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(x=>{if(x){DATA[j.id]=x;tabs();if(j.id===cur)panel();}}).catch(()=>{}));
+  window.addEventListener("hashchange",()=>{if(baca(location.hash.slice(1))){pasar();tabs();panel();}});
+  pasar();tabs();panel();tick();setInterval(tick,30000);
+  Object.keys(PASAR).forEach(p=>PASAR[p].JENIS.forEach(j=>fetch(PASAR[p].dir+"data/"+j.id+".json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(x=>{if(x){DATA[p][j.id]=x;if(p===ps){tabs();if(j.id===cur)panel();}}}).catch(()=>{})));
 })();
 </script>
 

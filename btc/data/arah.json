@@ -1,0 +1,49 @@
+{
+ "jenis": "arah",
+ "pasar": "BTCUSD",
+ "judul": "Arah D1",
+ "tf": "D1",
+ "harga": 80044,
+ "data_sampai_wib": "29 Okt 2026 19:35",
+ "data_sampai_oslo": "29 Okt 2026 13:35",
+ "dibuat_utc": "2026-10-29T12:00:00Z",
+ "aktif_sampai_utc": "2026-10-30T00:00:00Z",
+ "dibuat_wib": "29 Okt 2026 19:00",
+ "dibuat_oslo": "29 Okt 2026 13:00",
+ "aktif_sampai_wib": "30 Okt 2026 07:00",
+ "aktif_sampai_oslo": "30 Okt 2026 01:00",
+ "status": "ARAH",
+ "bias": "TURUN",
+ "bias_teks": "HA D1 merah · histogram MACD D1 membesar (−228 → −247) · squeeze",
+ "bias_label": "D1",
+ "kondisi": "Squeeze",
+ "indikator_utama": "Harmonic + Fibo",
+ "diperbarui_utc": "2026-10-29T12:45:05Z",
+ "teks": [
+  "Turun ke PRZ 77.400–78.400",
+  "Tembus 81.389, naik ke ±81.804"
+ ],
+ "skenario": {
+  "utama": {
+   "judul": "Turun ke PRZ 77.400–78.400",
+   "target": "78.400",
+   "konfirmasi": "D1 close di bawah 79.221 + HA merah",
+   "poin": [
+    "Tertahan di Fibonacci 0.236 = 80.561.",
+    "Tembus swing low 79.221 membuka jalan ke titik D.",
+    "AB=CD: D = 77.478, ekstensi 1.27 BC = 78.423."
+   ]
+  },
+  "alternatif": {
+   "judul": "Tembus 81.389, naik ke ±81.804",
+   "target": "81.804",
+   "konfirmasi": "D1 close di atas 81.389 + HA biru",
+   "poin": [
+    "D1 close di atas Fibonacci 0.382 = 81.389.",
+    "Target Bollinger tengah D1 = 81.804.",
+    "Butuh histogram MACD D1 mulai mengecil."
+   ]
+  }
+ },
+ "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit."
+}
