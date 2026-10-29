@@ -3,51 +3,53 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 4022.1,
- "dibuat_utc": "2026-10-27T23:00:00Z",
- "aktif_sampai_utc": "2026-10-29T20:00:00Z",
- "dibuat_wib": "28 Okt 2026 06:00",
- "dibuat_oslo": "28 Okt 2026 00:00",
- "aktif_sampai_wib": "30 Okt 2026 03:00",
- "aktif_sampai_oslo": "29 Okt 2026 21:00",
- "data_sampai_wib": "29 Okt 2026 03:00",
- "data_sampai_oslo": "28 Okt 2026 21:00",
- "status": "GAGAL",
- "bias": "NAIK (pantulan)",
- "bias_teks": "Pantulan dari PRZ (zona berbalik) 3966–4016, Bullish AB=CD D1",
+ "harga": 4025.2,
+ "dibuat_utc": "2026-10-29T20:25:00Z",
+ "aktif_sampai_utc": "2026-10-31T20:00:00Z",
+ "dibuat_wib": "30 Okt 2026 03:25",
+ "dibuat_oslo": "29 Okt 2026 21:25",
+ "aktif_sampai_wib": "1 Nov 2026 03:00",
+ "aktif_sampai_oslo": "31 Okt 2026 21:00",
+ "data_sampai_wib": "30 Okt 2026 03:00",
+ "data_sampai_oslo": "29 Okt 2026 21:00",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "Heikin Ashi D1 merah, Stochastic D1 28, close di bawah Bollinger tengah 4099. Bearish AB=CD D1 dengan PRZ (zona berbalik) 4101–4135 belum tersentuh.",
  "teks": [
-  "D1 close 29 Okt 03:00 WIB (Oslo 28 Okt 21:00) di 4070.2, di atas 4068: konfirmasi skenario utama sudah terpenuhi.",
-  "Skenario alternatif batal selama D1 tidak close di bawah 4033."
+  "D1 close 30 Okt 03:00 WIB (Oslo 29 Okt 21:00) di 4022.1: analisa arah baru.",
+  "Konfirmasi skenario utama: D1 close di bawah 4006. Konfirmasi alternatif: D1 close di atas 4057."
  ],
  "skenario": {
   "utama": {
-   "judul": "Naik lanjut",
-   "target": "±4120",
-   "konfirmasi": "D1 close di atas 4068 (terpenuhi 29 Okt 03:00 WIB)",
+   "judul": "Turun ke Bollinger bawah",
+   "target": "±3971",
+   "konfirmasi": "D1 close di bawah 4006",
    "poin": [
-    "Pantulan dari PRZ 3966–4016 (Bullish AB=CD D1)",
-    "Heikin Ashi D1 biru"
+    "Heikin Ashi D1 berganti merah",
+    "Stochastic D1 28, masih turun",
+    "Close 4022 di bawah Fibonacci 0.382 (4041)"
    ]
   },
   "alternatif": {
-   "judul": "Turun lagi",
-   "target": "±4016",
-   "konfirmasi": "D1 close di bawah 4033",
+   "judul": "Naik ke PRZ (zona berbalik)",
+   "target": "±4101",
+   "konfirmasi": "D1 close di atas 4057",
    "poin": [
-    "Histogram MACD D1 −2.5 saat analisa",
-    "Harga di bawah Bollinger tengah D1 saat analisa"
+    "Histogram MACD D1 mengecil (−1.06 → −0.36)",
+    "Bearish AB=CD: titik D di PRZ 4101–4135",
+    "PRZ belum tersentuh (high 4082)"
    ]
   }
  },
  "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. PRZ = Potential Reversal Zone, zona tempat harga berpotensi berbalik arah (titik D pola harmonic).",
- "diperbarui_utc": "2026-10-29T20:05Z",
+ "diperbarui_utc": "2026-10-29T20:23Z",
  "level": {
-  "arah_utama": 1,
-  "konfirmasi_utama": 4068,
-  "target_utama": 4120,
-  "konfirmasi_alt": 4033,
-  "target_alt": 4016
+  "arah_utama": -1,
+  "konfirmasi_utama": 4006,
+  "target_utama": 3971,
+  "konfirmasi_alt": 4057,
+  "target_alt": 4101
  },
- "status_lama": "LAGI BERJALAN",
- "status_teks": "D1 close 4022.1 pukul 30 Okt 03:00 WIB di bawah 4033: skenario utama gagal, skenario alternatif berjalan."
+ "status_lama": "MENUNGGU",
+ "status_teks": "D1 belum close di bawah 4006 (konfirmasi skenario utama)."
 }
