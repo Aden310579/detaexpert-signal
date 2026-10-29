@@ -3,71 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 81488,
- "data_sampai_wib": "29 Okt 2026 22:30",
- "data_sampai_oslo": "29 Okt 2026 16:30",
- "dibuat_utc": "2026-10-29T15:30:00Z",
- "aktif_sampai_utc": "2026-10-29T17:00:00Z",
- "dibuat_wib": "29 Okt 2026 22:30",
- "dibuat_oslo": "29 Okt 2026 16:30",
- "aktif_sampai_wib": "30 Okt 2026 00:00",
- "aktif_sampai_oslo": "29 Okt 2026 18:00",
+ "harga": 81079,
+ "data_sampai_wib": "30 Okt 2026 00:10",
+ "data_sampai_oslo": "29 Okt 2026 18:10",
+ "dibuat_utc": "2026-10-29T17:10:00Z",
+ "aktif_sampai_utc": "2026-10-29T19:00:00Z",
+ "dibuat_wib": "30 Okt 2026 00:10",
+ "dibuat_oslo": "29 Okt 2026 18:10",
+ "aktif_sampai_wib": "30 Okt 2026 02:00",
+ "aktif_sampai_oslo": "29 Okt 2026 20:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "HA H4 biru · histogram MACD H4 positif (+49) · M15 trending naik (+159) · hanya buy",
+ "bias_teks": "H4 naik (HA biru, histogram +76) · M15 netral (HA merah, MACD ≈ 0) · hanya buy",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-10-29T15:27:34Z",
+ "diperbarui_utc": "2026-10-29T17:08:40Z",
  "teks": [
-  "Analisa 20:45 batal, arah berbalik naik",
-  "Zona sell tersentuh tanpa sinyal, M15 close 21:00 80.443 > SL.",
-  "Harga naik ke 81.644 (22:15 WIB). Bias H4 kini naik, angka baru buy."
+  "Entry 1 kena Stop Loss (−140 poin)",
+  "Masuk 81.220 setelah sinyal buy 23:40 WIB (Stoch M5 + HA biru).",
+  "Stop Loss 81.080 kena 00:05 WIB. Entry 2 tidak tersentuh."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    81180,
-    81250
+    80960,
+    81040
    ],
-   "entry": 81220,
-   "sl": 81080,
-   "tp1": 81360,
-   "tp2": 81600,
+   "entry": 81000,
+   "sl": 80860,
+   "tp1": 81150,
+   "tp2": 81340,
    "alasan": [
-    "Fibonacci 0.236 M15 81.236",
-    "angka bulat 81.250",
-    "swing M5 81.178"
+    "angka bulat 81.000",
+    "swing H4 81.034",
+    "BB bawah M5 81.048"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
    "jenis_entry": "Scalping"
-  },
-  {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    80960,
-    81020
-   ],
-   "entry": 80990,
-   "sl": 80860,
-   "tp1": 81130,
-   "tp2": 81220,
-   "alasan": [
-    "Fibonacci 0.382 M15 80.984",
-    "angka bulat 81.000",
-    "low M5 81.040"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Lanjutan"
   }
  ]
 }
