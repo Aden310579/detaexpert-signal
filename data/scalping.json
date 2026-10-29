@@ -3,48 +3,48 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 4030.3,
- "data_sampai_wib": "29 Okt 2026 15:05",
- "data_sampai_oslo": "29 Okt 2026 09:05",
- "dibuat_utc": "2026-10-29T08:00:00Z",
- "aktif_sampai_utc": "2026-10-29T10:00:00Z",
- "dibuat_wib": "29 Okt 2026 15:00",
- "dibuat_oslo": "29 Okt 2026 09:00",
- "aktif_sampai_wib": "29 Okt 2026 17:00",
- "aktif_sampai_oslo": "29 Okt 2026 11:00",
+ "harga": 4029.1,
+ "data_sampai_wib": "29 Okt 2026 17:00",
+ "data_sampai_oslo": "29 Okt 2026 11:00",
+ "dibuat_utc": "2026-10-29T10:00:00Z",
+ "aktif_sampai_utc": "2026-10-29T12:00:00Z",
+ "dibuat_wib": "29 Okt 2026 17:00",
+ "dibuat_oslo": "29 Okt 2026 11:00",
+ "aktif_sampai_wib": "29 Okt 2026 19:00",
+ "aktif_sampai_oslo": "29 Okt 2026 13:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4030.3, 10 poin dari Entry 2 (BUY). Stochastic M5 20, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Harga 4029.1 di zona Entry 1 (SELL). Stochastic M5 52, Heikin Ashi M5 biru. Tunggu sinyal di zona."
  ],
- "bias": "TURUN",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -3.70 (membesar dari -3.20)",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 -3.30 (mengecil dari -3.80)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
   4072.5,
-  4046.8,
-  4021.0
+  4044.4,
+  4016.3
  ],
  "fibonacci": [
-  4037.0,
-  4045.6
+  4028.6,
+  4036.5
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    4037.0,
-    4045.6
+    4028.6,
+    4036.5
    ],
-   "entry": 4041.3,
-   "sl": 4055.6,
-   "tp1": 4032.3,
-   "tp2": 4023.2,
+   "entry": 4032.6,
+   "sl": 4046.5,
+   "tp1": 4024.2,
+   "tp2": 4015.9,
    "alasan": [
-    "Fibonacci 0.236/0.382 (4037.0 / 4045.6)",
-    "Bollinger H1 tengah 4046.8",
-    "swing H1 sebelumnya 4043.2"
+    "Fibonacci 0.236/0.382 (4028.6 / 4036.5)",
+    "swing H1 sebelumnya 4028.0",
+    "angka bulat 4025"
    ],
    "state": "tunggu",
    "info": "",
@@ -53,43 +53,20 @@
    "jenis_entry": "Utama"
   },
   {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    4017.2,
-    4023.2
-   ],
-   "entry": 4020.2,
-   "sl": 4007.2,
-   "tp1": 4028.6,
-   "tp2": 4037.0,
-   "alasan": [
-    "swing ekstrem 12 candle H1",
-    "Bollinger H1 bawah 4021.0",
-    "swing H1 sebelumnya 4023.2",
-    "angka bulat 4025"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Lawan arah"
-  },
-  {
    "n": 3,
    "side": "SELL",
    "zona": [
-    4037.0,
-    4045.6
+    4028.6,
+    4036.5
    ],
-   "entry": 4041.3,
-   "sl": 4055.6,
-   "tp1": 4024.3,
-   "tp2": 4007.2,
+   "entry": 4032.6,
+   "sl": 4046.5,
+   "tp1": 4016.2,
+   "tp2": 3999.9,
    "alasan": [
-    "Fibonacci 0.236/0.382 (4037.0 / 4045.6)",
-    "Bollinger H1 tengah 4046.8",
-    "swing H1 sebelumnya 4043.2"
+    "Fibonacci 0.236/0.382 (4028.6 / 4036.5)",
+    "swing H1 sebelumnya 4028.0",
+    "angka bulat 4025"
    ],
    "state": "tunggu",
    "info": "",
@@ -99,5 +76,5 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-10-29T08:05:00Z"
+ "diperbarui_utc": "2026-10-29T10:04:00Z"
 }
