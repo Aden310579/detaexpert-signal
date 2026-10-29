@@ -3,26 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 80044,
- "data_sampai_wib": "29 Okt 2026 19:35",
- "data_sampai_oslo": "29 Okt 2026 13:35",
- "dibuat_utc": "2026-10-29T12:35:00Z",
- "aktif_sampai_utc": "2026-10-29T14:00:00Z",
- "dibuat_wib": "29 Okt 2026 19:35",
- "dibuat_oslo": "29 Okt 2026 13:35",
- "aktif_sampai_wib": "29 Okt 2026 21:00",
- "aktif_sampai_oslo": "29 Okt 2026 15:00",
+ "harga": 80058,
+ "data_sampai_wib": "29 Okt 2026 20:45",
+ "data_sampai_oslo": "29 Okt 2026 14:45",
+ "dibuat_utc": "2026-10-29T13:45:00Z",
+ "aktif_sampai_utc": "2026-10-29T15:00:00Z",
+ "dibuat_wib": "29 Okt 2026 20:45",
+ "dibuat_oslo": "29 Okt 2026 14:45",
+ "aktif_sampai_wib": "29 Okt 2026 22:00",
+ "aktif_sampai_oslo": "29 Okt 2026 16:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "Bias H4 turun · M15 netral (HA merah, MACD ≈ 0) · hanya sell",
+ "bias_teks": "Bias H4 turun (histogram −43 makin turun) · M15 netral (HA merah, MACD ≈ 0) · hanya sell",
  "bias_label": "H4",
  "kondisi": "Squeeze",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-10-29T13:08:56Z",
+ "diperbarui_utc": "2026-10-29T13:45:18Z",
  "teks": [
-  "Analisa 18:50 tidak tersentuh, angka baru",
-  "Zona sell lama 80.300–80.370 tidak kena (high 80.271).",
-  "Tunggu naik ke 80.100–80.160 lalu sinyal sell M5."
+  "Analisa 19:35 tanpa posisi, angka baru",
+  "Kedua zona sell tersentuh, Stoch M5 maks 73 (belum >75).",
+  "Tidak ada sinyal sell M5. Harga turun ke 79.916 (20:35 WIB)."
  ],
  "entries": [
   {
@@ -34,12 +34,12 @@
    ],
    "entry": 80130,
    "sl": 80260,
-   "tp1": 79990,
+   "tp1": 80000,
    "tp2": 79880,
    "alasan": [
-    "Fibonacci 0.236/0.382 M15",
-    "BB tengah M15 80.131",
-    "swing M15 80.116 / 80.147"
+    "Fibonacci 0.382 M15 80.091",
+    "swing M15 80.116 / 80.147",
+    "BB tengah M15 80.162"
    ],
    "state": "tunggu",
    "info": "",
@@ -52,16 +52,16 @@
    "side": "SELL",
    "zona": [
     80250,
-    80330
+    80310
    ],
-   "entry": 80290,
-   "sl": 80430,
+   "entry": 80280,
+   "sl": 80410,
    "tp1": 80150,
    "tp2": 80000,
    "alasan": [
     "angka bulat 80.250",
-    "swing M15 80.271",
-    "BB atas M15 80.325"
+    "swing M15 80.268 / 80.271",
+    "BB atas M15 80.291"
    ],
    "state": "tunggu",
    "info": "",
