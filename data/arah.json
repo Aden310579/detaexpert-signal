@@ -3,7 +3,7 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 4070.2,
+ "harga": 4024.9,
  "dibuat_utc": "2026-10-27T23:00:00Z",
  "aktif_sampai_utc": "2026-10-29T20:00:00Z",
  "dibuat_wib": "28 Okt 2026 06:00",
@@ -12,7 +12,7 @@
  "aktif_sampai_oslo": "29 Okt 2026 21:00",
  "data_sampai_wib": "29 Okt 2026 03:00",
  "data_sampai_oslo": "28 Okt 2026 21:00",
- "status": "ARAH",
+ "status": "LAGI BERJALAN",
  "bias": "NAIK (pantulan)",
  "bias_teks": "Pantulan dari PRZ (zona berbalik) 3966–4016, Bullish AB=CD D1",
  "teks": [
@@ -40,5 +40,14 @@
   }
  },
  "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. PRZ = Potential Reversal Zone, zona tempat harga berpotensi berbalik arah (titik D pola harmonic).",
- "diperbarui_utc": "2026-10-29T00:00:00Z"
+ "diperbarui_utc": "2026-10-29T13:33Z",
+ "level": {
+  "arah_utama": 1,
+  "konfirmasi_utama": 4068,
+  "target_utama": 4120,
+  "konfirmasi_alt": 4033,
+  "target_alt": 4016
+ },
+ "status_lama": "ARAH",
+ "status_teks": "D1 close 4070.2 pukul 29 Okt 03:00 WIB di atas 4068: skenario utama berjalan ke 4120."
 }

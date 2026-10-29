@@ -3,9 +3,9 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 4022.7,
- "data_sampai_wib": "29 Okt 2026 19:25",
- "data_sampai_oslo": "29 Okt 2026 13:25",
+ "harga": 4024.9,
+ "data_sampai_wib": "29 Okt 2026 20:30",
+ "data_sampai_oslo": "29 Okt 2026 14:30",
  "dibuat_utc": "2026-10-29T12:00:00Z",
  "aktif_sampai_utc": "2026-10-29T14:00:00Z",
  "dibuat_wib": "29 Okt 2026 19:00",
@@ -113,5 +113,6 @@
    "hasil": null
   }
  ],
- "diperbarui_utc": "2026-10-29T12:26:00Z"
+ "diperbarui_utc": "2026-10-29T13:33:00Z",
+ "status_lama": "HOLD"
 }
