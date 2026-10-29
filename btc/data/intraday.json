@@ -3,44 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 80044,
- "data_sampai_wib": "29 Okt 2026 19:35",
- "data_sampai_oslo": "29 Okt 2026 13:35",
- "dibuat_utc": "2026-10-29T11:50:00Z",
- "aktif_sampai_utc": "2026-10-29T16:00:00Z",
- "dibuat_wib": "29 Okt 2026 18:50",
- "dibuat_oslo": "29 Okt 2026 12:50",
- "aktif_sampai_wib": "29 Okt 2026 23:00",
- "aktif_sampai_oslo": "29 Okt 2026 17:00",
+ "harga": 81832,
+ "data_sampai_wib": "29 Okt 2026 23:10",
+ "data_sampai_oslo": "29 Okt 2026 17:10",
+ "dibuat_utc": "2026-10-29T16:10:00Z",
+ "aktif_sampai_utc": "2026-10-30T00:00:00Z",
+ "dibuat_wib": "29 Okt 2026 23:10",
+ "dibuat_oslo": "29 Okt 2026 17:10",
+ "aktif_sampai_wib": "30 Okt 2026 07:00",
+ "aktif_sampai_oslo": "30 Okt 2026 01:00",
  "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 makin turun (−44) · harga < BB tengah",
+ "bias": "NAIK",
+ "bias_teks": "Heikin Ashi H4 biru · histogram MACD H4 makin naik (+124) · harga > BB tengah",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-10-29T13:08:56Z",
+ "diperbarui_utc": "2026-10-29T16:11:47Z",
  "teks": [
-  "Belum ada posisi, zona Entry 1 belum tersentuh",
-  "Sejak 18:50 WIB high 80.271, belum sampai 80.440.",
-  "Histogram MACD H4 makin turun (−44). Angka tetap terkunci."
+  "Analisa 18:50 batal, bias H4 berbalik naik",
+  "Zona sell 80.440–80.560 tersentuh 21:00–21:30, Stoch M15 naik: tanpa sinyal.",
+  "H4 close 23:00 di 81.778 > SL 80.760. Zona buy 79.380–79.500 tidak tersentuh."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    80440,
-    80560
+    81000,
+    81100
    ],
-   "entry": 80500,
-   "sl": 80760,
-   "tp1": 80250,
-   "tp2": 79500,
+   "entry": 81050,
+   "sl": 80800,
+   "tp1": 81300,
+   "tp2": 81950,
    "alasan": [
-    "BB tengah H4 80.491",
-    "Fibonacci 0.382 80.517",
-    "angka bulat 80.500",
-    "swing H4 80.513"
+    "angka bulat 81.000",
+    "swing H4 81.034",
+    "Fibonacci 0.382 81.107"
    ],
    "state": "tunggu",
    "info": "",
@@ -52,23 +51,23 @@
    "n": 2,
    "side": "BUY",
    "zona": [
-    79380,
-    79500
+    80500,
+    80640
    ],
-   "entry": 79440,
-   "sl": 79180,
-   "tp1": 79700,
-   "tp2": 80440,
+   "entry": 80570,
+   "sl": 80300,
+   "tp1": 80800,
+   "tp2": 81000,
    "alasan": [
-    "BB bawah H4 79.358",
-    "angka bulat 79.500",
-    "swing H4 79.369 / 79.451 / 79.506"
+    "angka bulat 80.500",
+    "swing H4 80.513",
+    "BB tengah H4 80.649"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": true,
+   "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pantulan"
+   "jenis_entry": "Lanjutan"
   }
  ]
 }
