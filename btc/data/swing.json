@@ -1,0 +1,73 @@
+{
+ "jenis": "swing",
+ "pasar": "BTCUSD",
+ "judul": "Swing H4",
+ "tf": "D1 / H4",
+ "harga": 80044,
+ "data_sampai_wib": "29 Okt 2026 19:35",
+ "data_sampai_oslo": "29 Okt 2026 13:35",
+ "dibuat_utc": "2026-10-29T11:50:00Z",
+ "aktif_sampai_utc": "2026-10-31T00:00:00Z",
+ "dibuat_wib": "29 Okt 2026 18:50",
+ "dibuat_oslo": "29 Okt 2026 12:50",
+ "aktif_sampai_wib": "31 Okt 2026 07:00",
+ "aktif_sampai_oslo": "31 Okt 2026 01:00",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 makin turun (−247) · squeeze",
+ "bias_label": "D1",
+ "kondisi": "Squeeze",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-10-29T12:45:05Z",
+ "teks": [
+  "Belum ada posisi, harga dekat zona Entry 2",
+  "Harga 80.044, tepat di atas zona buy 79.600–80.000.",
+  "Buy belum boleh: MACD D1 makin turun (−247)."
+ ],
+ "entries": [
+  {
+   "n": 1,
+   "side": "SELL",
+   "zona": [
+    80600,
+    81000
+   ],
+   "entry": 80800,
+   "sl": 81550,
+   "tp1": 80300,
+   "tp2": 80000,
+   "alasan": [
+    "Fibonacci 0.236 D1 80.561",
+    "swing D1 80.684",
+    "angka bulat 81.000"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Utama"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    79600,
+    80000
+   ],
+   "entry": 79800,
+   "sl": 79050,
+   "tp1": 80300,
+   "tp2": 80600,
+   "alasan": [
+    "BB bawah D1 79.556",
+    "swing D1 79.800",
+    "angka bulat 80.000"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan"
+  }
+ ]
+}

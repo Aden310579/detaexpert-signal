@@ -1,0 +1,74 @@
+{
+ "jenis": "intraday",
+ "pasar": "BTCUSD",
+ "judul": "Intraday M15",
+ "tf": "H4 / M15",
+ "harga": 80044,
+ "data_sampai_wib": "29 Okt 2026 19:35",
+ "data_sampai_oslo": "29 Okt 2026 13:35",
+ "dibuat_utc": "2026-10-29T11:50:00Z",
+ "aktif_sampai_utc": "2026-10-29T16:00:00Z",
+ "dibuat_wib": "29 Okt 2026 18:50",
+ "dibuat_oslo": "29 Okt 2026 12:50",
+ "aktif_sampai_wib": "29 Okt 2026 23:00",
+ "aktif_sampai_oslo": "29 Okt 2026 17:00",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 makin turun (−44) · harga < BB tengah",
+ "bias_label": "H4",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
+ "diperbarui_utc": "2026-10-29T12:45:05Z",
+ "teks": [
+  "Belum ada posisi, zona Entry 1 belum tersentuh",
+  "Sejak 18:50 WIB high 80.271, belum sampai 80.440.",
+  "Histogram MACD H4 makin turun (−44). Angka tetap terkunci."
+ ],
+ "entries": [
+  {
+   "n": 1,
+   "side": "SELL",
+   "zona": [
+    80440,
+    80560
+   ],
+   "entry": 80500,
+   "sl": 80760,
+   "tp1": 80250,
+   "tp2": 79500,
+   "alasan": [
+    "BB tengah H4 80.491",
+    "Fibonacci 0.382 80.517",
+    "angka bulat 80.500",
+    "swing H4 80.513"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Utama"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    79380,
+    79500
+   ],
+   "entry": 79440,
+   "sl": 79180,
+   "tp1": 79700,
+   "tp2": 80440,
+   "alasan": [
+    "BB bawah H4 79.358",
+    "angka bulat 79.500",
+    "swing H4 79.369 / 79.451 / 79.506"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan"
+  }
+ ]
+}
