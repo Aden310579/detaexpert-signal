@@ -3,79 +3,34 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3898.4,
- "data_sampai_wib": "30 Okt 2026 23:00",
- "data_sampai_oslo": "30 Okt 2026 17:00",
- "dibuat_utc": "2026-10-30T16:00:00Z",
- "aktif_sampai_utc": "2026-10-30T18:00:00Z",
- "dibuat_wib": "30 Okt 2026 23:00",
- "dibuat_oslo": "30 Okt 2026 17:00",
- "aktif_sampai_wib": "31 Okt 2026 01:00",
- "aktif_sampai_oslo": "30 Okt 2026 19:00",
+ "harga": 3883.9,
+ "data_sampai_wib": "31 Okt 2026 01:00",
+ "data_sampai_oslo": "30 Okt 2026 19:00",
+ "dibuat_utc": "2026-10-30T18:00:00Z",
+ "aktif_sampai_utc": "2026-10-30T20:00:00Z",
+ "dibuat_wib": "31 Okt 2026 01:00",
+ "dibuat_oslo": "30 Okt 2026 19:00",
+ "aktif_sampai_wib": "31 Okt 2026 03:00",
+ "aktif_sampai_oslo": "30 Okt 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3898.4, 22 poin dari Entry 1 (SELL). Stochastic M5 7, Heikin Ashi M5 merah. Tunggu sinyal di zona."
+  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -8.60 (membesar dari -7.00)",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -9.60 (membesar dari -9.10)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  4051.7,
-  3982.8,
-  3913.9
+  4052.7,
+  3969.6,
+  3886.6
  ],
  "fibonacci": [
-  3920.8,
-  3937.7
+  3907.1,
+  3924.6
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "SELL",
-   "zona": [
-    3917.8,
-    3923.8
-   ],
-   "entry": 3920.8,
-   "sl": 3933.8,
-   "tp1": 3907.0,
-   "tp2": 3893.3,
-   "alasan": [
-    "Fibonacci 0.236/0.382 (3920.8 / 3937.7)",
-    "Bollinger H1 bawah 3913.9",
-    "angka bulat 3925"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Utama"
-  },
-  {
-   "n": 3,
-   "side": "SELL",
-   "zona": [
-    3917.8,
-    3923.8
-   ],
-   "entry": 3920.8,
-   "sl": 3933.8,
-   "tp1": 3899.0,
-   "tp2": 3877.3,
-   "alasan": [
-    "Fibonacci 0.236/0.382 (3920.8 / 3937.7)",
-    "Bollinger H1 bawah 3913.9",
-    "angka bulat 3925"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": true,
-   "jenis_entry": "Masuk lagi"
-  }
- ],
+ "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-10-30T16:04:00Z",
+ "diperbarui_utc": "2026-10-30T18:04:00Z",
  "status_lama": "MENUNGGU"
 }
