@@ -3,89 +3,89 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.11867,
- "data_sampai_wib": "30 Okt 2026 12:05",
- "data_sampai_oslo": "30 Okt 2026 06:05",
- "dibuat_utc": "2026-10-30T05:05:00Z",
- "aktif_sampai_utc": "2026-10-30T07:00:00Z",
- "dibuat_wib": "30 Okt 2026 12:05",
- "dibuat_oslo": "30 Okt 2026 06:05",
- "aktif_sampai_wib": "30 Okt 2026 14:00",
- "aktif_sampai_oslo": "30 Okt 2026 08:00",
- "diperbarui_utc": "2026-10-30T05:06:46Z",
+ "harga": 1.11805,
+ "data_sampai_wib": "30 Okt 2026 14:10",
+ "data_sampai_oslo": "30 Okt 2026 08:10",
+ "dibuat_utc": "2026-10-30T07:10:00Z",
+ "aktif_sampai_utc": "2026-10-30T09:00:00Z",
+ "dibuat_wib": "30 Okt 2026 14:10",
+ "dibuat_oslo": "30 Okt 2026 08:10",
+ "aktif_sampai_wib": "30 Okt 2026 16:00",
+ "aktif_sampai_oslo": "30 Okt 2026 10:00",
+ "diperbarui_utc": "2026-10-30T07:07:56Z",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "HA M15 merah · histogram M15 −2.1 · M15 sideways 1.1185–1.1202 · filter H4 naik",
+ "bias": "TURUN",
+ "bias_teks": "HA M15 merah · histogram M15 −1.5 · H1 turun · filter H4 masih naik (buy hanya di support kuat)",
  "bias_label": "M15",
- "kondisi": "Sideways",
+ "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana baru · Entry 1 lama selesai impas",
-  "Buy 1.1194 kena TP1 1.1201 lalu kembali ke entry (impas). Harga turun ke 1.1187.",
-  "Buy di 1.1179–82 setelah Stoch M5 <25 naik + HA M5 biru."
+  "Rencana baru · tunggu harga ke Entry 1",
+  "Rencana lama kedaluwarsa tanpa sinyal. Harga turun pelan ke 1.1180.",
+  "Buy di 1.1172–76 setelah Stoch M5 <25 naik + HA M5 biru."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    1.1179,
-    1.1182
+    1.1172,
+    1.1176
    ],
-   "entry": 1.11805,
-   "sl": 1.1172,
-   "tp1": 1.1188,
-   "tp2": 1.1193,
+   "entry": 1.1174,
+   "sl": 1.1166,
+   "tp1": 1.1182,
+   "tp2": 1.1188,
    "alasan": [
-    "pivot low M15 1.1180",
-    "BB bawah M15 1.1182",
-    "Fib 0.618 H1 1.1181"
+    "BB tengah H1 1.1175",
+    "Fib 0.382 H4 1.1174",
+    "BB bawah M15 1.1177"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1170",
-   "jenis_entry": "Bawah range"
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1165",
+   "jenis_entry": "Support H1"
   },
   {
    "n": 2,
    "side": "SELL",
    "zona": [
-    1.1193,
-    1.1196
+    1.1188,
+    1.1191
    ],
-   "entry": 1.11945,
-   "sl": 1.1203,
-   "tp1": 1.1186,
-   "tp2": 1.1176,
+   "entry": 1.11895,
+   "sl": 1.1198,
+   "tp1": 1.1181,
+   "tp2": 1.1164,
    "alasan": [
-    "BB tengah M15 1.1195",
-    "Fib 0.382 H1 1.1194",
-    "pivot high M5 1.1193"
+    "BB tengah M15 1.1189",
+    "pivot high M5 1.1190",
+    "BB atas H4 1.1190 / Fib 0.236 H4 1.1189"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1205",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1200",
    "jenis_entry": "BB tengah"
   },
   {
    "n": 3,
    "side": "BUY",
    "zona": [
-    1.1171,
-    1.1175
+    1.116,
+    1.1164
    ],
-   "entry": 1.1173,
-   "sl": 1.1165,
-   "tp1": 1.1182,
-   "tp2": 1.1192,
+   "entry": 1.1162,
+   "sl": 1.1154,
+   "tp1": 1.1172,
+   "tp2": 1.118,
    "alasan": [
-    "BB tengah H1 1.1171",
-    "Fib 0.382 H4 1.1174",
-    "bekas high H1 1.1171 jadi support"
+    "Fib 0.5 H4 1.1161",
+    "low 30 Okt 1.1160",
+    "pivot low M15 1.1161"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1163",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1152",
    "jenis_entry": "Pantulan"
   }
  ]
