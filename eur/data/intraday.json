@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.1196,
- "data_sampai_wib": "30 Okt 2026 18:10",
- "data_sampai_oslo": "30 Okt 2026 12:10",
+ "harga": 1.11906,
+ "data_sampai_wib": "30 Okt 2026 19:15",
+ "data_sampai_oslo": "30 Okt 2026 13:15",
  "dibuat_utc": "2026-10-30T08:05:00Z",
  "aktif_sampai_utc": "2026-10-30T16:00:00Z",
  "dibuat_wib": "30 Okt 2026 15:05",
  "dibuat_oslo": "30 Okt 2026 09:05",
  "aktif_sampai_wib": "30 Okt 2026 23:00",
  "aktif_sampai_oslo": "30 Okt 2026 17:00",
- "diperbarui_utc": "2026-10-30T11:08:49Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-10-30T12:13:52Z",
+ "status": "SIAP ENTRY",
  "bias": "NAIK",
- "bias_teks": "HA H4 biru · histogram MACD H4 +8.5 naik · harga di BB atas H4 1.1197 · Stoch H4 79",
+ "bias_teks": "HA H4 biru · histogram MACD H4 +7.9 (mengecil) · Stoch H4 78 · harga di bawah BB atas H4 1.1201",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "teks": [
-  "Rencana baru · tunggu pullback untuk buy",
-  "Rencana lama kedaluwarsa tanpa sinyal. Harga 1.1196, H4 naik.",
-  "Buy 1.1186–91 kalau Stoch M15 <20 naik + HA M15 biru."
+  "Harga di zona Entry 1 · tunggu sinyal buy",
+  "Harga 1.1191 di zona 1.1186–91. Stoch M15 34, belum di bawah 20.",
+  "Buy kalau Stoch M15 <20 naik + HA M15 biru. Batal jika H4 close < 1.1173."
  ],
  "entries": [
   {
@@ -43,7 +43,7 @@
     "BB tengah M15 1.1188"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1173",
    "jenis_entry": "Pullback"
   },
