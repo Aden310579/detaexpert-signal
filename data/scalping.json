@@ -3,48 +3,48 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3990.5,
- "data_sampai_wib": "30 Okt 2026 13:05",
- "data_sampai_oslo": "30 Okt 2026 07:05",
- "dibuat_utc": "2026-10-30T06:00:00Z",
- "aktif_sampai_utc": "2026-10-30T08:00:00Z",
- "dibuat_wib": "30 Okt 2026 13:00",
- "dibuat_oslo": "30 Okt 2026 07:00",
- "aktif_sampai_wib": "30 Okt 2026 15:00",
- "aktif_sampai_oslo": "30 Okt 2026 09:00",
+ "harga": 3983.7,
+ "data_sampai_wib": "30 Okt 2026 15:05",
+ "data_sampai_oslo": "30 Okt 2026 09:05",
+ "dibuat_utc": "2026-10-30T08:00:00Z",
+ "aktif_sampai_utc": "2026-10-30T10:00:00Z",
+ "dibuat_wib": "30 Okt 2026 15:00",
+ "dibuat_oslo": "30 Okt 2026 09:00",
+ "aktif_sampai_wib": "30 Okt 2026 17:00",
+ "aktif_sampai_oslo": "30 Okt 2026 11:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3990.5, 11 poin dari Entry 1 (SELL). Stochastic M5 20, Heikin Ashi M5 merah. Tunggu sinyal di zona."
+  "Harga 3983.7 di zona Entry 1 (SELL). Stochastic M5 39, Heikin Ashi M5 biru. Tunggu sinyal di zona."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -1.90 (membesar dari -1.80)",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -3.20 (membesar dari -2.50)",
+ "kondisi": "Trending",
+ "indikator_utama": "MACD",
  "bollinger": [
-  4036.7,
-  4013.8,
-  3990.9
+  4039.3,
+  4009.1,
+  3978.9
  ],
  "fibonacci": [
-  3998.2,
-  4004.4
+  3981.2,
+  3990.7
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    3998.2,
-    4004.4
+    3978.2,
+    3984.2
    ],
-   "entry": 4001.3,
-   "sl": 4014.4,
-   "tp1": 3994.7,
-   "tp2": 3988.1,
+   "entry": 3981.2,
+   "sl": 3994.2,
+   "tp1": 3973.6,
+   "tp2": 3965.9,
    "alasan": [
-    "Fibonacci 0.236/0.382 (3998.2 / 4004.4)",
-    "swing H1 sebelumnya 4006.2",
-    "angka bulat 4000"
+    "Fibonacci 0.236/0.382 (3981.2 / 3990.7)",
+    "Bollinger H1 bawah 3978.9",
+    "angka bulat 3975"
    ],
    "state": "tunggu",
    "info": "",
@@ -56,17 +56,17 @@
    "n": 3,
    "side": "SELL",
    "zona": [
-    3998.2,
-    4004.4
+    3978.2,
+    3984.2
    ],
-   "entry": 4001.3,
-   "sl": 4014.4,
-   "tp1": 3986.7,
-   "tp2": 3972.1,
+   "entry": 3981.2,
+   "sl": 3994.2,
+   "tp1": 3965.6,
+   "tp2": 3949.9,
    "alasan": [
-    "Fibonacci 0.236/0.382 (3998.2 / 4004.4)",
-    "swing H1 sebelumnya 4006.2",
-    "angka bulat 4000"
+    "Fibonacci 0.236/0.382 (3981.2 / 3990.7)",
+    "Bollinger H1 bawah 3978.9",
+    "angka bulat 3975"
    ],
    "state": "tunggu",
    "info": "",
@@ -76,6 +76,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-10-30T06:06:00Z",
+ "diperbarui_utc": "2026-10-30T08:05:00Z",
  "status_lama": "MENUNGGU"
 }
