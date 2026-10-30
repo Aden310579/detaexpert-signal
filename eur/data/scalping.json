@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.11889,
- "data_sampai_wib": "30 Okt 2026 16:05",
- "data_sampai_oslo": "30 Okt 2026 10:05",
+ "harga": 1.12015,
+ "data_sampai_wib": "30 Okt 2026 18:10",
+ "data_sampai_oslo": "30 Okt 2026 12:10",
  "dibuat_utc": "2026-10-30T09:05:00Z",
  "aktif_sampai_utc": "2026-10-30T11:00:00Z",
  "dibuat_wib": "30 Okt 2026 16:05",
  "dibuat_oslo": "30 Okt 2026 10:05",
  "aktif_sampai_wib": "30 Okt 2026 18:00",
  "aktif_sampai_oslo": "30 Okt 2026 12:00",
- "diperbarui_utc": "2026-10-30T09:07:00Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-10-30T11:08:49Z",
+ "status": "ENTRY 2 BERJALAN",
  "bias": "NETRAL",
- "bias_teks": "HA M15 merah · Stoch M15 turun dari 77 · M15 squeeze · filter H4 naik (utamakan buy di support)",
+ "bias_teks": "HA M15 merah · Stoch M15 turun dari 83 · M15 sideways · filter H4 naik",
  "bias_label": "M15",
  "kondisi": "Netral",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana baru · tunggu harga ke Entry 1",
-  "Rencana lama kedaluwarsa tanpa sinyal. Harga 1.1189, turun dari 1.1202.",
-  "Buy di 1.1182–86 setelah Stoch M5 <25 naik + HA M5 biru."
+  "Entry 2 SELL berjalan · −2.5 pip",
+  "Sell aktif di 1.1199 sejak 17:40 WIB. Harga 1.12015, SL 1.1207 aman.",
+  "Tahan. Di TP1 1.1191 tutup separuh dan geser SL ke entry."
  ],
  "entries": [
   {
@@ -42,8 +42,8 @@
     "BB tengah H1 1.1181",
     "Fib 0.236 H4 1.1189 di atasnya"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1175",
    "jenis_entry": "Pullback"
   },
@@ -64,8 +64,8 @@
     "BB atas M15 1.1198",
     "angka bulat 1.1200"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1208",
    "jenis_entry": "Resistance"
   },
@@ -86,8 +86,8 @@
     "low H1 1.1176",
     "angka bulat 1.1180"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1168",
    "jenis_entry": "Support"
   }
