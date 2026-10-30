@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.11906,
- "data_sampai_wib": "30 Okt 2026 22:20",
- "data_sampai_oslo": "30 Okt 2026 16:20",
+ "harga": 1.11695,
+ "data_sampai_wib": "30 Okt 2026 23:10",
+ "data_sampai_oslo": "30 Okt 2026 17:10",
  "dibuat_utc": "2026-10-30T08:05:00Z",
  "aktif_sampai_utc": "2026-10-30T16:00:00Z",
  "dibuat_wib": "30 Okt 2026 15:05",
  "dibuat_oslo": "30 Okt 2026 09:05",
  "aktif_sampai_wib": "30 Okt 2026 23:00",
  "aktif_sampai_oslo": "30 Okt 2026 17:00",
- "diperbarui_utc": "2026-10-30T15:17:57Z",
- "status": "SIAP ENTRY",
- "bias": "NAIK",
- "bias_teks": "HA H4 biru · histogram MACD H4 +7.9 (mengecil) · Stoch H4 78 · harga di bawah BB atas H4 1.1201",
+ "diperbarui_utc": "2026-10-30T16:09:26Z",
+ "status": "ENTRY 3 BERJALAN",
+ "bias": "NETRAL",
+ "bias_teks": "HA H4 merah · histogram MACD H4 +6.0 mengecil · Stoch H4 69 turun · di atas BB tengah 1.1153",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "teks": [
-  "Harga di zona Entry 1 · tunggu sinyal buy",
-  "Harga 1.1191 di zona 1.1186–91. Stoch M15 34, belum di bawah 20.",
-  "Buy kalau Stoch M15 <20 naik + HA M15 biru. Batal jika H4 close < 1.1173."
+  "Entry 3 BUY berjalan · +6.5 pip",
+  "Buy aktif di 1.1163 sejak 22:30 WIB. Harga 1.11695, SL 1.1149 aman.",
+  "Tahan. Di TP1 1.1180 tutup separuh dan geser SL ke entry."
  ],
  "entries": [
   {
@@ -42,8 +42,8 @@
     "Fib 0.382 M15 1.1191",
     "BB tengah M15 1.1188"
    ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
+   "state": "batal",
+   "status": "BATAL",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1173",
    "jenis_entry": "Pullback"
   },
@@ -64,8 +64,8 @@
     "Stoch H4 jenuh beli 79–81",
     "angka bulat 1.1215"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1230",
    "jenis_entry": "Double top"
   },
@@ -86,8 +86,8 @@
     "pivot low D1 1.1162",
     "BB tengah H4 1.1153 di bawahnya"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1148",
    "jenis_entry": "AB=CD"
   }
