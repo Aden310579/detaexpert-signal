@@ -3,18 +3,18 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 4022.1,
- "data_sampai_wib": "30 Okt 2026 03:00",
- "data_sampai_oslo": "29 Okt 2026 21:00",
+ "harga": 4007.7,
+ "data_sampai_wib": "30 Okt 2026 07:00",
+ "data_sampai_oslo": "30 Okt 2026 01:00",
  "dibuat_utc": "2026-10-29T20:00:00Z",
  "aktif_sampai_utc": "2026-10-30T04:00:00Z",
  "dibuat_wib": "30 Okt 2026 03:00",
  "dibuat_oslo": "29 Okt 2026 21:00",
  "aktif_sampai_wib": "30 Okt 2026 11:00",
  "aktif_sampai_oslo": "30 Okt 2026 05:00",
- "status": "MENUNGGU",
+ "status": "HOLD",
  "teks": [
-  "Harga 4022.1, 8 poin dari Entry 1 (SELL). Stochastic M15 71, Heikin Ashi M15 biru. Tunggu sinyal di zona."
+  "Entry 1 SELL @4023.6 (masuk 30 Okt 03:45 WIB / 21:45 Oslo): setengah sudah Take Profit 1 4017.9, Stop Loss sisa di 4023.6 (impas). Tahan ke Take Profit 2 4006.2."
  ],
  "bias": "TURUN",
  "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -1.10 (membesar dari -0.40)",
@@ -47,7 +47,7 @@
     "swing H4 sebelumnya 4034.7",
     "angka bulat 4025"
    ],
-   "state": "tunggu",
+   "state": "hold",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
@@ -77,7 +77,21 @@
    "jenis_entry": "Masuk lagi"
   }
  ],
- "posisi": [],
- "diperbarui_utc": "2026-10-29T20:04:00Z",
+ "posisi": [
+  {
+   "n": 1,
+   "side": -1,
+   "px": 4023.6,
+   "sl": 4045.1,
+   "tp1": 4017.9,
+   "tp2": 4006.2,
+   "t": "2026-10-30 07:30:00",
+   "masuk": "2026-10-30 07:45:00",
+   "tp1_kena": true,
+   "tp1_t": "2026-10-30 10:15:00",
+   "hasil": null
+  }
+ ],
+ "diperbarui_utc": "2026-10-30T00:03:00Z",
  "status_lama": "MENUNGGU"
 }

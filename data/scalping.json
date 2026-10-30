@@ -3,49 +3,49 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 4021.8,
- "data_sampai_wib": "30 Okt 2026 05:00",
- "data_sampai_oslo": "29 Okt 2026 23:00",
- "dibuat_utc": "2026-10-29T22:00:00Z",
- "aktif_sampai_utc": "2026-10-30T00:00:00Z",
- "dibuat_wib": "30 Okt 2026 05:00",
- "dibuat_oslo": "29 Okt 2026 23:00",
- "aktif_sampai_wib": "30 Okt 2026 07:00",
- "aktif_sampai_oslo": "30 Okt 2026 01:00",
+ "harga": 4007.7,
+ "data_sampai_wib": "30 Okt 2026 07:00",
+ "data_sampai_oslo": "30 Okt 2026 01:00",
+ "dibuat_utc": "2026-10-30T00:00:00Z",
+ "aktif_sampai_utc": "2026-10-30T02:00:00Z",
+ "dibuat_wib": "30 Okt 2026 07:00",
+ "dibuat_oslo": "30 Okt 2026 01:00",
+ "aktif_sampai_wib": "30 Okt 2026 09:00",
+ "aktif_sampai_oslo": "30 Okt 2026 03:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4021.8, 22 poin dari Entry 2 (SELL). Stochastic M5 48, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Harga 4007.7, 5 poin dari Entry 2 (BUY). Stochastic M5 3, Heikin Ashi M5 merah. Tunggu sinyal di zona."
  ],
- "bias": "NAIK",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +0.00 (mengecil dari -0.40)",
+ "bias": "TURUN",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -0.20 (mengecil dari +0.50)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  4044.3,
-  4025.6,
-  4007.0
+  4037.9,
+  4022.8,
+  4007.7
  ],
  "fibonacci": [
-  4014.3,
-  4019.3
+  4013.3,
+  4017.7
  ],
  "entries": [
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    4040.5,
-    4046.5
+    3999.3,
+    4005.3
    ],
-   "entry": 4043.5,
-   "sl": 4056.5,
-   "tp1": 4031.4,
-   "tp2": 4019.3,
+   "entry": 4002.3,
+   "sl": 3989.3,
+   "tp1": 4007.8,
+   "tp2": 4013.3,
    "alasan": [
     "swing ekstrem 12 candle H1",
-    "Bollinger H1 atas 4044.3",
-    "swing H1 sebelumnya 4040.5",
-    "angka bulat 4050"
+    "Bollinger H1 bawah 4007.7",
+    "swing H1 sebelumnya 4006.2",
+    "angka bulat 4000"
    ],
    "state": "tunggu",
    "info": "",
@@ -55,6 +55,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-10-29T22:04:00Z",
+ "diperbarui_utc": "2026-10-30T00:04:00Z",
  "status_lama": "MENUNGGU"
 }
