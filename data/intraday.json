@@ -3,101 +3,34 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 3973.2,
- "data_sampai_wib": "30 Okt 2026 15:00",
- "data_sampai_oslo": "30 Okt 2026 09:00",
- "dibuat_utc": "2026-10-30T04:00:00Z",
- "aktif_sampai_utc": "2026-10-30T12:00:00Z",
- "dibuat_wib": "30 Okt 2026 11:00",
- "dibuat_oslo": "30 Okt 2026 05:00",
- "aktif_sampai_wib": "30 Okt 2026 19:00",
- "aktif_sampai_oslo": "30 Okt 2026 13:00",
+ "harga": 3966.8,
+ "data_sampai_wib": "30 Okt 2026 19:00",
+ "data_sampai_oslo": "30 Okt 2026 13:00",
+ "dibuat_utc": "2026-10-30T12:00:00Z",
+ "aktif_sampai_utc": "2026-10-30T20:00:00Z",
+ "dibuat_wib": "30 Okt 2026 19:00",
+ "dibuat_oslo": "30 Okt 2026 13:00",
+ "aktif_sampai_wib": "31 Okt 2026 03:00",
+ "aktif_sampai_oslo": "30 Okt 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3973.2, 14 poin dari Entry 2 (BUY). Stochastic M15 14, Heikin Ashi M15 merah. Tunggu sinyal di zona."
+  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -3.90 (membesar dari -2.30)",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -7.30 (membesar dari -5.90)",
+ "kondisi": "Trending",
+ "indikator_utama": "MACD",
  "bollinger": [
-  4078.2,
-  4032.7,
-  3987.1
+  4086.7,
+  4028.5,
+  3970.3
  ],
  "fibonacci": [
-  4011.7,
-  4025.1
+  3992.7,
+  4009.7
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "SELL",
-   "zona": [
-    4011.7,
-    4025.1
-   ],
-   "entry": 4018.4,
-   "sl": 4035.1,
-   "tp1": 4004.2,
-   "tp2": 3990.0,
-   "alasan": [
-    "Fibonacci 0.236/0.382 (4011.7 / 4025.1)",
-    "swing H4 sebelumnya 4028.0",
-    "angka bulat 4025"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Utama"
-  },
-  {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    3984.0,
-    3990.0
-   ],
-   "entry": 3987.0,
-   "sl": 3974.0,
-   "tp1": 3999.4,
-   "tp2": 4011.7,
-   "alasan": [
-    "swing ekstrem 12 candle H4",
-    "Bollinger H4 bawah 3987.1",
-    "swing H4 sebelumnya 3987.7"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Lawan arah"
-  },
-  {
-   "n": 3,
-   "side": "SELL",
-   "zona": [
-    4011.7,
-    4025.1
-   ],
-   "entry": 4018.4,
-   "sl": 4035.1,
-   "tp1": 3996.2,
-   "tp2": 3974.0,
-   "alasan": [
-    "Fibonacci 0.236/0.382 (4011.7 / 4025.1)",
-    "swing H4 sebelumnya 4028.0",
-    "angka bulat 4025"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": true,
-   "jenis_entry": "Masuk lagi"
-  }
- ],
+ "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-10-30T08:03:00Z",
+ "diperbarui_utc": "2026-10-30T12:10:00Z",
  "status_lama": "MENUNGGU"
 }
