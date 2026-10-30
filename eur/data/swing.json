@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 1.11317,
- "data_sampai_wib": "30 Okt 2026 07:10",
- "data_sampai_oslo": "30 Okt 2026 01:10",
+ "harga": 1.11857,
+ "data_sampai_wib": "30 Okt 2026 07:20",
+ "data_sampai_oslo": "30 Okt 2026 01:20",
  "dibuat_utc": "2026-10-29T12:55:00Z",
  "aktif_sampai_utc": "2026-10-31T00:00:00Z",
  "dibuat_wib": "29 Okt 2026 19:55",
  "dibuat_oslo": "29 Okt 2026 13:55",
  "aktif_sampai_wib": "31 Okt 2026 07:00",
  "aktif_sampai_oslo": "31 Okt 2026 01:00",
- "diperbarui_utc": "2026-10-30T00:07:49Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-10-30T00:22:08Z",
+ "status": "ENTRY 1 BERJALAN",
  "bias": "NETRAL",
- "bias_teks": "HA D1 merah · histogram MACD D1 +2.3 (mengecil) · harga di BB bawah D1 1.1138",
+ "bias_teks": "HA D1 merah · histogram MACD D1 +4.8 naik · close D1 1.1182 di atas Fib 0.382 1.1169",
  "bias_label": "D1",
  "kondisi": "Netral",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · tunggu harga naik ke Entry 1",
-  "D1 netral: tren turun, tapi di BB bawah D1 dan Stoch D1 18.",
-  "Sell swing di 1.1162–1.1175 setelah Stochastic H4 >75 lalu turun."
+  "Entry 1 SELL berjalan dari 1.1169, minus 17 pip",
+  "Sinyal sell 30 Okt 01:00 WIB · 29 Okt 19:00 CET. Close D1 1.1182 melemahkan sell.",
+  "Tahan dengan Stop Loss 1.1215. Jangan tambah posisi. TP1 1.1110."
  ],
  "entries": [
   {
@@ -41,8 +41,8 @@
     "swing high H4 1.1171",
     "bekas support D1 1.1162"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1215",
    "jenis_entry": "Utama"
   },
