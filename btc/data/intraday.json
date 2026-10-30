@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 78005,
- "data_sampai_wib": "30 Okt 2026 07:10",
- "data_sampai_oslo": "30 Okt 2026 01:10",
+ "harga": 77986,
+ "data_sampai_wib": "30 Okt 2026 11:05",
+ "data_sampai_oslo": "30 Okt 2026 05:05",
  "dibuat_utc": "2026-10-30T00:10:00Z",
  "aktif_sampai_utc": "2026-10-30T08:00:00Z",
  "dibuat_wib": "30 Okt 2026 07:10",
@@ -14,15 +14,15 @@
  "aktif_sampai_oslo": "30 Okt 2026 09:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 makin turun (−237) · harga < BB bawah",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 makin turun (−285) · hanya sell",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-10-30T00:06:35Z",
+ "diperbarui_utc": "2026-10-30T04:06:52Z",
  "teks": [
-  "Analisa 23:10 selesai tanpa posisi, angka baru",
-  "H4 close 03:00 di 77.992, di bawah SL Entry 2 (80.300).",
-  "Harga turun ke 77.729 (07:00 WIB). Bias H4 kini turun, hanya sell."
+  "Analisa 07:10 masih aktif, angka tetap",
+  "Entry 1 (78.380–78.500) belum tersentuh, high 78.274.",
+  "H4 close 11:00 di 78.235. Stoch M15 94, HA M15 masih biru."
  ],
  "entries": [
   {
