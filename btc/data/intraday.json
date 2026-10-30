@@ -3,71 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 77986,
- "data_sampai_wib": "30 Okt 2026 11:05",
- "data_sampai_oslo": "30 Okt 2026 05:05",
- "dibuat_utc": "2026-10-30T00:10:00Z",
- "aktif_sampai_utc": "2026-10-30T08:00:00Z",
- "dibuat_wib": "30 Okt 2026 07:10",
- "dibuat_oslo": "30 Okt 2026 01:10",
- "aktif_sampai_wib": "30 Okt 2026 15:00",
- "aktif_sampai_oslo": "30 Okt 2026 09:00",
- "status": "MENUNGGU",
+ "harga": 78076,
+ "data_sampai_wib": "30 Okt 2026 15:05",
+ "data_sampai_oslo": "30 Okt 2026 09:05",
+ "dibuat_utc": "2026-10-30T08:05:00Z",
+ "aktif_sampai_utc": "2026-10-30T16:00:00Z",
+ "dibuat_wib": "30 Okt 2026 15:05",
+ "dibuat_oslo": "30 Okt 2026 09:05",
+ "aktif_sampai_wib": "30 Okt 2026 23:00",
+ "aktif_sampai_oslo": "30 Okt 2026 17:00",
+ "status": "HOLD",
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 makin turun (−285) · hanya sell",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 makin turun (−294) · hanya sell",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-10-30T04:06:52Z",
+ "diperbarui_utc": "2026-10-30T08:08:18Z",
  "teks": [
-  "Analisa 07:10 masih aktif, angka tetap",
-  "Entry 1 (78.380–78.500) belum tersentuh, high 78.274.",
-  "H4 close 11:00 di 78.235. Stoch M15 94, HA M15 masih biru."
+  "Sell 14:15 WIB di 78.401 · TP1 kena, sisa setengah",
+  "TP1 78.150 kena 14:30 WIB (+251). Stop Loss pindah ke 78.401.",
+  "Sisa setengah menuju TP2 77.750. Low 78.042."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    78380,
-    78500
+    78460,
+    78620
    ],
-   "entry": 78440,
-   "sl": 78700,
-   "tp1": 78150,
-   "tp2": 77750,
+   "entry": 78540,
+   "sl": 78820,
+   "tp1": 78300,
+   "tp2": 77850,
    "alasan": [
-    "BB bawah H4 78.380",
-    "angka bulat 78.500",
-    "support patah M15 78.367"
+    "Fibonacci 0.382 H4 78.590",
+    "swing M15 78.579 / 78.501",
+    "angka bulat 78.500"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Utama"
-  },
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    79350,
-    79500
-   ],
-   "entry": 79420,
-   "sl": 79700,
-   "tp1": 79150,
-   "tp2": 78500,
-   "alasan": [
-    "Fibonacci 0.382 79.349",
-    "swing H4 79.369 / 79.451",
-    "angka bulat 79.500"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Lanjutan"
+   "jenis_entry": "Berikutnya"
   }
  ]
 }
