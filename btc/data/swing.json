@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 80044,
- "data_sampai_wib": "29 Okt 2026 19:35",
- "data_sampai_oslo": "29 Okt 2026 13:35",
+ "harga": 77528,
+ "data_sampai_wib": "30 Okt 2026 07:20",
+ "data_sampai_oslo": "30 Okt 2026 01:20",
  "dibuat_utc": "2026-10-29T11:50:00Z",
  "aktif_sampai_utc": "2026-10-31T00:00:00Z",
  "dibuat_wib": "29 Okt 2026 18:50",
@@ -14,15 +14,15 @@
  "aktif_sampai_oslo": "31 Okt 2026 01:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 makin turun (−247) · squeeze",
+ "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 makin turun (−479) · harga di BB bawah",
  "bias_label": "D1",
- "kondisi": "Squeeze",
+ "kondisi": "Sideways",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-10-29T13:08:56Z",
+ "diperbarui_utc": "2026-10-30T00:21:58Z",
  "teks": [
-  "Belum ada posisi, harga dekat zona Entry 2",
-  "Harga 80.044, tepat di atas zona buy 79.600–80.000.",
-  "Buy belum boleh: MACD D1 makin turun (−247)."
+  "Belum ada posisi, harga jauh di bawah zona",
+  "Zona sell 80.600–81.000 dilewati 29 Okt, Stoch H4 maks 58: tanpa sinyal.",
+  "Buy Entry 2 dilarang (MACD D1 turun). Angka baru 31 Okt pagi."
  ],
  "entries": [
   {
