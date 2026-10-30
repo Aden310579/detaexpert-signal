@@ -3,21 +3,21 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 3883.6,
+ "harga": 3880.7,
  "dibuat_utc": "2026-10-29T20:25:00Z",
  "aktif_sampai_utc": "2026-10-31T20:00:00Z",
  "dibuat_wib": "30 Okt 2026 03:25",
  "dibuat_oslo": "29 Okt 2026 21:25",
  "aktif_sampai_wib": "1 Nov 2026 03:00",
  "aktif_sampai_oslo": "31 Okt 2026 21:00",
- "data_sampai_wib": "30 Okt 2026 03:00",
- "data_sampai_oslo": "29 Okt 2026 21:00",
+ "data_sampai_wib": "31 Okt 2026 03:00",
+ "data_sampai_oslo": "30 Okt 2026 21:00",
  "status": "SELESAI",
  "bias": "TURUN",
  "bias_teks": "Heikin Ashi D1 merah, Stochastic D1 28, close di bawah Bollinger tengah 4099. Bearish AB=CD D1 dengan PRZ (zona berbalik) 4101–4135 belum tersentuh.",
  "teks": [
-  "D1 close 30 Okt 03:00 WIB (Oslo 29 Okt 21:00) di 4022.1: analisa arah baru.",
-  "Konfirmasi skenario utama: D1 close di bawah 4006. Konfirmasi alternatif: D1 close di atas 4057."
+  "D1 close 31 Okt 03:00 WIB (Oslo 30 Okt 21:00) di 3883.6: di bawah konfirmasi utama 4006 dan di bawah target utama 3971.",
+  "Konfirmasi skenario utama terpenuhi, target utama ±3971 tercapai. Konfirmasi alternatif (D1 close di atas 4057) tidak terpenuhi."
  ],
  "skenario": {
   "utama": {
@@ -42,7 +42,7 @@
   }
  },
  "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. PRZ = Potential Reversal Zone, zona tempat harga berpotensi berbalik arah (titik D pola harmonic).",
- "diperbarui_utc": "2026-10-30T20:04Z",
+ "diperbarui_utc": "2026-10-30T20:22Z",
  "level": {
   "arah_utama": -1,
   "konfirmasi_utama": 4006,
