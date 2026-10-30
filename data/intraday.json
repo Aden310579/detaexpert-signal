@@ -3,34 +3,79 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 3898.4,
- "data_sampai_wib": "30 Okt 2026 23:00",
- "data_sampai_oslo": "30 Okt 2026 17:00",
- "dibuat_utc": "2026-10-30T12:00:00Z",
- "aktif_sampai_utc": "2026-10-30T20:00:00Z",
- "dibuat_wib": "30 Okt 2026 19:00",
- "dibuat_oslo": "30 Okt 2026 13:00",
- "aktif_sampai_wib": "31 Okt 2026 03:00",
- "aktif_sampai_oslo": "30 Okt 2026 21:00",
+ "harga": 3883.6,
+ "data_sampai_wib": "31 Okt 2026 03:00",
+ "data_sampai_oslo": "30 Okt 2026 21:00",
+ "dibuat_utc": "2026-10-30T20:00:00Z",
+ "aktif_sampai_utc": "2026-10-31T04:00:00Z",
+ "dibuat_wib": "31 Okt 2026 03:00",
+ "dibuat_oslo": "30 Okt 2026 21:00",
+ "aktif_sampai_wib": "31 Okt 2026 11:00",
+ "aktif_sampai_oslo": "31 Okt 2026 05:00",
  "status": "MENUNGGU",
  "teks": [
-  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
+  "Harga 3883.6, 37 poin dari Entry 1 (SELL). Stochastic M15 15, Heikin Ashi M15 biru. Tunggu sinyal di zona."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -7.30 (membesar dari -5.90)",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -15.30 (membesar dari -12.10)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  4086.7,
-  4028.5,
-  3970.3
+  4118.2,
+  4017.1,
+  3916.0
  ],
  "fibonacci": [
-  3992.7,
-  4009.7
+  3920.9,
+  3951.7
  ],
- "entries": [],
+ "entries": [
+  {
+   "n": 1,
+   "side": "SELL",
+   "zona": [
+    3917.9,
+    3923.9
+   ],
+   "entry": 3920.9,
+   "sl": 3933.9,
+   "tp1": 3896.1,
+   "tp2": 3871.2,
+   "alasan": [
+    "Fibonacci 0.236/0.382 (3920.9 / 3951.7)",
+    "Bollinger H4 bawah 3916.0",
+    "angka bulat 3925"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Utama"
+  },
+  {
+   "n": 3,
+   "side": "SELL",
+   "zona": [
+    3917.9,
+    3923.9
+   ],
+   "entry": 3920.9,
+   "sl": 3933.9,
+   "tp1": 3888.1,
+   "tp2": 3855.2,
+   "alasan": [
+    "Fibonacci 0.236/0.382 (3920.9 / 3951.7)",
+    "Bollinger H4 bawah 3916.0",
+    "angka bulat 3925"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": true,
+   "jenis_entry": "Masuk lagi"
+  }
+ ],
  "posisi": [],
- "diperbarui_utc": "2026-10-30T16:03:00Z",
+ "diperbarui_utc": "2026-10-30T20:04:00Z",
  "status_lama": "MENUNGGU"
 }
