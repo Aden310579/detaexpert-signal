@@ -3,93 +3,93 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.1141,
- "data_sampai_wib": "30 Okt 2026 23:10",
- "data_sampai_oslo": "30 Okt 2026 17:10",
- "dibuat_utc": "2026-10-30T15:20:00Z",
- "aktif_sampai_utc": "2026-10-30T17:00:00Z",
- "dibuat_wib": "30 Okt 2026 22:20",
- "dibuat_oslo": "30 Okt 2026 16:20",
- "aktif_sampai_wib": "31 Okt 2026 00:00",
- "aktif_sampai_oslo": "30 Okt 2026 18:00",
- "diperbarui_utc": "2026-10-30T16:09:26Z",
+ "harga": 1.11567,
+ "data_sampai_wib": "31 Okt 2026 00:10",
+ "data_sampai_oslo": "30 Okt 2026 18:10",
+ "dibuat_utc": "2026-10-30T17:10:00Z",
+ "aktif_sampai_utc": "2026-10-30T19:00:00Z",
+ "dibuat_wib": "31 Okt 2026 00:10",
+ "dibuat_oslo": "30 Okt 2026 18:10",
+ "aktif_sampai_wib": "31 Okt 2026 02:00",
+ "aktif_sampai_oslo": "30 Okt 2026 20:00",
+ "diperbarui_utc": "2026-10-30T17:07:44Z",
  "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "HA M15 merah · histogram H1 −6.8 · H1 & M15 turun · Stoch M15/H1 jenuh jual (hati-hati pantulan)",
+ "bias": "NETRAL",
+ "bias_teks": "HA M15 merah · Stoch M15 56 · H1 turun tapi histogram mengecil · H4 netral",
  "bias_label": "M15",
- "kondisi": "Turun",
- "indikator_utama": "MACD",
+ "kondisi": "Netral",
+ "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana lama kedaluwarsa · rencana baru",
-  "Harga jatuh ke 1.1137 tanpa sinyal di zona. Entry 2 batal (H1 close < 1.1155).",
-  "Sekarang 1.1141. Sell di pullback 1.1150–54 kalau Stoch M5 >75 turun."
+  "2 sell kena Stop Loss · rencana baru",
+  "Entry 1 & 3 SELL kena SL (−8 pip) saat harga pantul ke 1.1172.",
+  "Sekarang 1.1157. Buy di 1.1148–52 kalau Stoch M5 <25 naik + HA biru."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
-   "zona": [
-    1.115,
-    1.1154
-   ],
-   "entry": 1.1152,
-   "sl": 1.116,
-   "tp1": 1.1144,
-   "tp2": 1.1134,
-   "alasan": [
-    "Fib 0.236 H1 1.1153",
-    "Fib 0.382 M5 1.1153",
-    "BB bawah H1 1.1152",
-    "Fib 0.236 M15 1.1150"
-   ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1161",
-   "jenis_entry": "Pullback"
-  },
-  {
-   "n": 2,
    "side": "BUY",
    "zona": [
-    1.113,
-    1.1134
+    1.1148,
+    1.1152
    ],
-   "entry": 1.1132,
-   "sl": 1.1124,
-   "tp1": 1.1141,
-   "tp2": 1.1157,
+   "entry": 1.115,
+   "sl": 1.1142,
+   "tp1": 1.1158,
+   "tp2": 1.1163,
    "alasan": [
-    "BB bawah M15 1.1130",
-    "pivot low H1 29 Okt 1.1134",
-    "BB bawah D1 1.1136",
-    "Stoch H1 jenuh jual 12"
+    "BB bawah H1 1.1150",
+    "BB bawah M5 1.1151",
+    "Fib 0.236 H1 1.1153",
+    "low M5 1.1153"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1123",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1141",
    "jenis_entry": "Support"
   },
   {
-   "n": 3,
+   "n": 2,
    "side": "SELL",
    "zona": [
-    1.1157,
-    1.1161
+    1.1163,
+    1.1167
    ],
-   "entry": 1.1159,
-   "sl": 1.1167,
-   "tp1": 1.115,
-   "tp2": 1.1141,
+   "entry": 1.1165,
+   "sl": 1.1173,
+   "tp1": 1.1157,
+   "tp2": 1.1142,
    "alasan": [
-    "Fib 0.382 M15 1.1158",
-    "high M5 1.1161",
-    "BB atas M5 1.1160",
-    "Fib 0.382 H1 1.1163 di atasnya"
+    "Fib 0.382 H1 1.1163",
+    "Fib 0.382 D1 1.1165",
+    "Fib 0.236 M15 1.1165",
+    "high M5 1.1172 di atasnya"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1168",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1174",
    "jenis_entry": "Resistance"
+  },
+  {
+   "n": 3,
+   "side": "BUY",
+   "zona": [
+    1.1138,
+    1.1142
+   ],
+   "entry": 1.114,
+   "sl": 1.1132,
+   "tp1": 1.1148,
+   "tp2": 1.1157,
+   "alasan": [
+    "BB bawah M15 1.1138",
+    "BB bawah D1 1.1140",
+    "low hari ini 1.1137",
+    "low M5 1.1141"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1131",
+   "jenis_entry": "Support kuat"
   }
  ]
 }
