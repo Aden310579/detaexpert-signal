@@ -3,71 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 78809,
- "data_sampai_wib": "30 Okt 2026 06:10",
- "data_sampai_oslo": "30 Okt 2026 00:10",
- "dibuat_utc": "2026-10-29T23:10:00Z",
- "aktif_sampai_utc": "2026-10-30T01:00:00Z",
- "dibuat_wib": "30 Okt 2026 06:10",
- "dibuat_oslo": "30 Okt 2026 00:10",
- "aktif_sampai_wib": "30 Okt 2026 08:00",
- "aktif_sampai_oslo": "30 Okt 2026 02:00",
+ "harga": 77081,
+ "data_sampai_wib": "30 Okt 2026 08:10",
+ "data_sampai_oslo": "30 Okt 2026 02:10",
+ "dibuat_utc": "2026-10-30T01:10:00Z",
+ "aktif_sampai_utc": "2026-10-30T03:00:00Z",
+ "dibuat_wib": "30 Okt 2026 08:10",
+ "dibuat_oslo": "30 Okt 2026 02:10",
+ "aktif_sampai_wib": "30 Okt 2026 10:00",
+ "aktif_sampai_oslo": "30 Okt 2026 04:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "H4 turun (HA merah, histogram −75) · M15 turun (HA merah, histogram −80 mengecil) · hanya sell",
+ "bias_teks": "H4 turun (HA merah, histogram −296) · M15 turun (HA merah, histogram −146) · hanya sell",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-10-29T23:06:41Z",
+ "diperbarui_utc": "2026-10-30T01:06:42Z",
  "teks": [
-  "Analisa 04:10 tanpa posisi, angka baru",
-  "Zona sell tersentuh 04:15 WIB, Stoch M5 maks 56: tanpa sinyal.",
-  "M15 close 79.340 > SL Entry 1. Harga turun lagi ke 78.627."
+  "Analisa 06:10 tanpa posisi, angka baru",
+  "Zona sell 79.060–79.140 tidak tersentuh (high 78.934).",
+  "Harga turun ke 76.760 (07:30 WIB). Bias H4 dan M15 tetap turun."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    79060,
-    79140
+    77690,
+    77770
    ],
-   "entry": 79100,
-   "sl": 79240,
-   "tp1": 78960,
-   "tp2": 78660,
+   "entry": 77730,
+   "sl": 77870,
+   "tp1": 77600,
+   "tp2": 77250,
    "alasan": [
-    "Fibonacci 0.382 M15 79.128",
-    "BB tengah M5 79.073",
-    "high M5 79.105"
+    "Fibonacci 0.382 M15 77.720",
+    "BB tengah M5 77.730",
+    "angka bulat 77.750"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
    "jenis_entry": "Scalping"
-  },
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    79740,
-    79820
-   ],
-   "entry": 79780,
-   "sl": 79920,
-   "tp1": 79640,
-   "tp2": 79140,
-   "alasan": [
-    "angka bulat 79.750",
-    "BB tengah M15 79.786",
-    "swing M15 79.811"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Lanjutan"
   }
  ]
 }
