@@ -3,44 +3,44 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 77528,
- "data_sampai_wib": "30 Okt 2026 07:20",
- "data_sampai_oslo": "30 Okt 2026 01:20",
- "dibuat_utc": "2026-10-30T00:20:00Z",
- "aktif_sampai_utc": "2026-10-31T00:00:00Z",
- "dibuat_wib": "30 Okt 2026 07:20",
- "dibuat_oslo": "30 Okt 2026 01:20",
- "aktif_sampai_wib": "31 Okt 2026 07:00",
- "aktif_sampai_oslo": "31 Okt 2026 01:00",
+ "harga": 77403,
+ "data_sampai_wib": "31 Okt 2026 07:20",
+ "data_sampai_oslo": "31 Okt 2026 01:20",
+ "dibuat_utc": "2026-10-31T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-02T00:00:00Z",
+ "dibuat_wib": "31 Okt 2026 07:20",
+ "dibuat_oslo": "31 Okt 2026 01:20",
+ "aktif_sampai_wib": "2 Nov 2026 07:00",
+ "aktif_sampai_oslo": "2 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "HA D1 merah · histogram MACD D1 membesar (−378 → −479) · harga masuk PRZ",
+ "bias_teks": "HA D1 merah · histogram MACD D1 membesar (−489 → −528) · harga di PRZ",
  "bias_label": "D1",
- "kondisi": "Sideways",
+ "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-10-30T00:21:58Z",
+ "diperbarui_utc": "2026-10-31T00:22:39Z",
  "teks": [
-  "Tembus PRZ, turun ke 76.649",
-  "Pantul dari PRZ, naik ke 79.267"
+  "Tembus PRZ, turun ke 75.460",
+  "Pantul dari PRZ, naik ke 78.349"
  ],
  "skenario": {
   "utama": {
-   "judul": "Tembus PRZ, turun ke 76.649",
-   "target": "76.649",
-   "konfirmasi": "D1 close di bawah 77.400 + HA merah",
+   "judul": "Tembus PRZ, turun ke 75.460",
+   "target": "75.460",
+   "konfirmasi": "D1 close di bawah 76.300 + HA merah",
    "poin": [
-    "Harga sudah masuk PRZ 77.400–78.400 (low 77.528).",
-    "MACD D1 masih membesar: belum ada tanda balik.",
-    "Ekstensi 1.618 BC = 76.649."
+    "D1 30 Okt close 77.369, di bawah 77.400 (low 76.326).",
+    "MACD D1 makin turun: belum ada tanda balik.",
+    "Ekstensi 1.272 AB=CD = 75.460."
    ]
   },
   "alternatif": {
-   "judul": "Pantul dari PRZ, naik ke 79.267",
-   "target": "79.267",
-   "konfirmasi": "D1 close di atas 78.400 + HA biru",
+   "judul": "Pantul dari PRZ, naik ke 78.349",
+   "target": "78.349",
+   "konfirmasi": "D1 close di atas 77.500 + HA biru",
    "poin": [
-    "AB=CD selesai di D = 77.478.",
-    "Target Fibonacci 0.236 = 79.267.",
+    "Low 76.326 masih di dalam PRZ 76.300–77.500.",
+    "Target Fibonacci 0.236 = 78.349.",
     "Butuh histogram MACD D1 mulai mengecil."
    ]
   }
