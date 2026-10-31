@@ -3,26 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 77588,
- "data_sampai_wib": "31 Okt 2026 08:05",
- "data_sampai_oslo": "31 Okt 2026 02:05",
- "dibuat_utc": "2026-10-31T01:05:00Z",
- "aktif_sampai_utc": "2026-10-31T03:00:00Z",
- "dibuat_wib": "31 Okt 2026 08:05",
- "dibuat_oslo": "31 Okt 2026 02:05",
- "aktif_sampai_wib": "31 Okt 2026 10:00",
- "aktif_sampai_oslo": "31 Okt 2026 04:00",
- "status": "MENUNGGU",
+ "harga": 77402,
+ "data_sampai_wib": "31 Okt 2026 10:05",
+ "data_sampai_oslo": "31 Okt 2026 04:05",
+ "dibuat_utc": "2026-10-31T03:05:00Z",
+ "aktif_sampai_utc": "2026-10-31T05:00:00Z",
+ "dibuat_wib": "31 Okt 2026 10:05",
+ "dibuat_oslo": "31 Okt 2026 04:05",
+ "aktif_sampai_wib": "31 Okt 2026 12:00",
+ "aktif_sampai_oslo": "31 Okt 2026 06:00",
+ "status": "HOLD",
  "bias": "TURUN",
- "bias_teks": "H4 hist −276 mengecil, HA biru · M15 naik (HA biru, Stoch 97) · buy lawan H4",
+ "bias_teks": "H4 hist −288 mengecil · M15 melemah (HA merah, hist +2,6) · buy lawan H4",
  "bias_label": "H4",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-10-31T01:06:59Z",
+ "kondisi": "Squeeze",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-10-31T03:06:52Z",
  "teks": [
-  "Analisa 06:05 batal tanpa posisi, angka baru",
-  "Zona tersentuh 06:15 (low 77.016), hist M15 masih naik.",
-  "M15 close 77.184 jam 06:30 > 77.140: batal. High 77.648."
+  "HOLD buy 77.426 dari 09:15 WIB",
+  "Entry 1 sinyal 09:15 (Stoch M5 naik dari 7, HA biru). Floating −24.",
+  "SL 77.320 · TP1 77.540. Low 77.326, high 77.515: belum kena."
  ],
  "entries": [
   {
@@ -45,23 +45,23 @@
    "info": "",
    "lawan_arah": true,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback"
+   "jenis_entry": "Posisi aktif"
   },
   {
    "n": 2,
    "side": "BUY",
    "zona": [
-    77220,
-    77300
+    77230,
+    77310
    ],
-   "entry": 77260,
-   "sl": 77160,
-   "tp1": 77380,
+   "entry": 77270,
+   "sl": 77170,
+   "tp1": 77390,
    "tp2": 77500,
    "alasan": [
-    "angka bulat 77.250",
-    "Fibonacci 0.382 M15 77.299",
-    "swing M15 77.271"
+    "BB tengah M15 77.325",
+    "swing M15 77.271",
+    "angka bulat 77.250"
    ],
    "state": "tunggu",
    "info": "",
