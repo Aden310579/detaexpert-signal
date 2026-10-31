@@ -3,42 +3,42 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 77242,
- "data_sampai_wib": "31 Okt 2026 11:05",
- "data_sampai_oslo": "31 Okt 2026 05:05",
- "dibuat_utc": "2026-10-31T00:05:00Z",
- "aktif_sampai_utc": "2026-10-31T08:00:00Z",
- "dibuat_wib": "31 Okt 2026 07:05",
- "dibuat_oslo": "31 Okt 2026 01:05",
- "aktif_sampai_wib": "31 Okt 2026 15:00",
- "aktif_sampai_oslo": "31 Okt 2026 09:00",
- "status": "HOLD",
+ "harga": 77347,
+ "data_sampai_wib": "31 Okt 2026 15:05",
+ "data_sampai_oslo": "31 Okt 2026 09:05",
+ "dibuat_utc": "2026-10-31T08:05:00Z",
+ "aktif_sampai_utc": "2026-10-31T16:00:00Z",
+ "dibuat_wib": "31 Okt 2026 15:05",
+ "dibuat_oslo": "31 Okt 2026 09:05",
+ "aktif_sampai_wib": "31 Okt 2026 23:00",
+ "aktif_sampai_oslo": "31 Okt 2026 17:00",
+ "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "HA H4 merah · histogram MACD H4 −256 mengecil · M15 turun (hist −34)",
+ "bias_teks": "HA H4 merah · histogram MACD H4 −197 mengecil · buy hanya lawan arah",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-10-31T04:06:25Z",
+ "diperbarui_utc": "2026-10-31T08:07:09Z",
  "teks": [
-  "HOLD sell 77.464 dari 08:45 WIB, TP1 kena",
-  "TP1 77.250 kena 10:30 (+214), tutup separuh, SL ke 77.464.",
-  "Sisa ke TP2 77.000. Low 77.136, H4 close 11:00 di 77.171."
+  "Analisa 07:05 selesai: TP1 +214, sisa impas",
+  "Sell 77.464: TP1 77.250 kena 10:30, sisa kena SL di entry 13:45.",
+  "Entry 2 tidak tersentuh. H4 close 15:00 di 77.356."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    77380,
-    77540
+    77420,
+    77580
    ],
-   "entry": 77460,
-   "sl": 77660,
+   "entry": 77500,
+   "sl": 77700,
    "tp1": 77250,
    "tp2": 77000,
    "alasan": [
-    "BB atas M15 77.398",
-    "high 12 candle M15 77.420",
+    "BB atas M15 77.454",
+    "Fibonacci 0.236 M15 77.443",
     "angka bulat 77.500"
    ],
    "state": "tunggu",
@@ -51,17 +51,17 @@
    "n": 2,
    "side": "BUY",
    "zona": [
-    76460,
-    76620
+    77000,
+    77160
    ],
-   "entry": 76540,
-   "sl": 76340,
-   "tp1": 76800,
-   "tp2": 77000,
+   "entry": 77080,
+   "sl": 76880,
+   "tp1": 77300,
+   "tp2": 77500,
    "alasan": [
-    "BB bawah M15 76.543",
-    "swing H4 76.500",
-    "angka bulat 76.500"
+    "BB bawah M15 77.141",
+    "swing M15 77.114",
+    "angka bulat 77.000"
    ],
    "state": "tunggu",
    "info": "",
