@@ -3,42 +3,42 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 76986,
- "data_sampai_wib": "31 Okt 2026 03:05",
- "data_sampai_oslo": "30 Okt 2026 21:05",
- "dibuat_utc": "2026-10-30T16:05:00Z",
- "aktif_sampai_utc": "2026-10-31T00:00:00Z",
- "dibuat_wib": "30 Okt 2026 23:05",
- "dibuat_oslo": "30 Okt 2026 17:05",
- "aktif_sampai_wib": "31 Okt 2026 07:00",
- "aktif_sampai_oslo": "31 Okt 2026 01:00",
+ "harga": 77314,
+ "data_sampai_wib": "31 Okt 2026 07:05",
+ "data_sampai_oslo": "31 Okt 2026 01:05",
+ "dibuat_utc": "2026-10-31T00:05:00Z",
+ "aktif_sampai_utc": "2026-10-31T08:00:00Z",
+ "dibuat_wib": "31 Okt 2026 07:05",
+ "dibuat_oslo": "31 Okt 2026 01:05",
+ "aktif_sampai_wib": "31 Okt 2026 15:00",
+ "aktif_sampai_oslo": "31 Okt 2026 09:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 −359 · hanya sell",
+ "bias_teks": "HA H4 merah · histogram MACD H4 −335 mengecil · buy hanya lawan arah",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-10-30T20:06:49Z",
+ "diperbarui_utc": "2026-10-31T00:08:16Z",
  "teks": [
-  "Analisa 23:05 masih aktif, angka tetap",
-  "Entry 1 tersentuh 23:15 WIB (high 77.692), tanpa sinyal M15.",
-  "Low 76.326 (01:45 WIB). H4 close 03:00 di 76.943."
+  "Analisa 23:05 selesai tanpa posisi, angka baru",
+  "Entry 1 tersentuh 23:15 WIB tanpa sinyal, Entry 2 tidak tersentuh.",
+  "H4 close 07:00 di 77.369. High sejak 03:00: 77.420."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    77480,
-    77640
+    77380,
+    77540
    ],
-   "entry": 77560,
-   "sl": 77840,
-   "tp1": 77300,
+   "entry": 77460,
+   "sl": 77660,
+   "tp1": 77250,
    "tp2": 77000,
    "alasan": [
-    "Fibonacci 0.382 M15 77.545",
-    "swing M15 77.608",
+    "BB atas M15 77.398",
+    "high 12 candle M15 77.420",
     "angka bulat 77.500"
    ],
    "state": "tunggu",
@@ -49,25 +49,25 @@
   },
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    77760,
-    77920
+    76460,
+    76620
    ],
-   "entry": 77840,
-   "sl": 78120,
-   "tp1": 77600,
-   "tp2": 77300,
+   "entry": 76540,
+   "sl": 76340,
+   "tp1": 76800,
+   "tp2": 77000,
    "alasan": [
-    "Fibonacci 0.236 H4 77.791",
-    "swing M15 77.866",
-    "BB atas M15 77.900"
+    "BB bawah M15 76.543",
+    "swing H4 76.500",
+    "angka bulat 76.500"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": false,
+   "lawan_arah": true,
    "masuk_lagi": false,
-   "jenis_entry": "Lanjutan"
+   "jenis_entry": "Lawan arah"
   }
  ]
 }
