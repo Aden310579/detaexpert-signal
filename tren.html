@@ -1,0 +1,913 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Arah Gold per Time frame</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* Layout: trading cockpit. Header + 24h session timeline, then hero (price chart + gauge) beside a price ladder, then trend map, then per-TF detail grid. Dark-first with a light variant. */
+:root{
+  color-scheme:dark;
+  --bg:#0a0f1d; --bg2:#0e1527; --card:rgba(17,24,43,.92); --card-solid:#111a2e; --sub:rgba(120,150,230,.06);
+  --line:rgba(120,145,210,.16); --line2:rgba(120,145,210,.28); --fg:#eef2fc; --mute:#95a1bd; --dim:#64708c;
+  --gold:#3db8f5; --gold2:#4f7cff; --brand:#4f7cff; --cyan:#3db8f5;
+  --up:#2fd593; --down:#ff5c72; --neu:#f4b740;
+  --upbg:rgba(47,213,147,.12); --downbg:rgba(255,92,114,.12); --neubg:rgba(244,183,64,.12);
+  --glow:0 0 0 1px var(--line),0 20px 50px -20px rgba(0,0,0,.6);
+  --sans:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  color-scheme:light;
+  --bg:#eef1f8; --bg2:#e4e9f5; --card:rgba(255,255,255,.82); --card-solid:#ffffff; --sub:rgba(20,30,60,.035);
+  --line:rgba(40,60,110,.12); --line2:rgba(40,60,110,.22); --fg:#111a2e; --mute:#5b6680; --dim:#8a93a8;
+  --gold:#0b8fd6; --gold2:#2f5fe8; --brand:#2f5fe8; --cyan:#0b8fd6;
+  --up:#0f9d63; --down:#dc3550; --neu:#b9800a;
+  --upbg:rgba(15,157,99,.1); --downbg:rgba(220,53,80,.09); --neubg:rgba(185,128,10,.1);
+  --glow:0 0 0 1px var(--line),0 18px 40px -24px rgba(30,50,100,.35)}}
+:root[data-theme="light"]{
+  color-scheme:light;
+  --bg:#eef1f8; --bg2:#e4e9f5; --card:rgba(255,255,255,.82); --card-solid:#ffffff; --sub:rgba(20,30,60,.035);
+  --line:rgba(40,60,110,.12); --line2:rgba(40,60,110,.22); --fg:#111a2e; --mute:#5b6680; --dim:#8a93a8;
+  --gold:#0b8fd6; --gold2:#2f5fe8; --brand:#2f5fe8; --cyan:#0b8fd6;
+  --up:#0f9d63; --down:#dc3550; --neu:#b9800a;
+  --upbg:rgba(15,157,99,.1); --downbg:rgba(220,53,80,.09); --neubg:rgba(185,128,10,.1);
+  --glow:0 0 0 1px var(--line),0 18px 40px -24px rgba(30,50,100,.35)}
+
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--fg)}
+body{font-family:var(--sans);font-size:14.5px;line-height:1.5;
+  background:radial-gradient(900px 420px at 50% -12%,color-mix(in srgb,var(--brand) 14%,transparent),transparent 65%),var(--bg);
+  background-attachment:fixed}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:18px 44px;display:flex;flex-direction:column;gap:14px}
+.card{background:var(--card);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:18px;box-shadow:var(--glow);padding:18px;min-width:0;position:relative}
+.ch{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.ch h2{margin:0;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.ch .aux{font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+
+/* header */
+.top{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
+  background:conic-gradient(from 210deg,var(--gold),var(--gold2),var(--brand),var(--gold));box-shadow:0 8px 24px -8px color-mix(in srgb,var(--gold) 60%,transparent)}
+.logo svg{filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
+.brand b{display:block;font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.brand b em{font-style:normal;background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand small{font-size:10.5px;font-weight:700;letter-spacing:.28em;color:var(--mute)}
+.hright{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;background:var(--card);box-shadow:var(--glow);font-size:12px;color:var(--mute);white-space:nowrap}
+.badge b{color:var(--fg);font-weight:600}
+.badge .num{font-family:var(--mono);font-size:11px;color:var(--fg)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--dim);flex:0 0 auto}
+.dot.on{background:var(--up);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--up) 60%,transparent)}70%,100%{box-shadow:0 0 0 7px transparent}}
+.clock{display:flex;align-items:baseline;gap:8px;padding:8px 16px;border-radius:14px;background:var(--card);box-shadow:var(--glow)}
+.clock .t{font-family:var(--mono);font-size:22px;font-weight:700;letter-spacing:.02em}
+.clock .t s{text-decoration:none;color:var(--gold)}
+.clock .d{font-size:11.5px;color:var(--mute);font-weight:600}
+
+/* sessions timeline */
+.tl{display:grid;grid-template-columns:86px minmax(0,1fr) 116px;gap:8px 12px;align-items:center}
+.tl .nm{font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:7px}
+.track{position:relative;height:16px;border-radius:6px;background:var(--sub);box-shadow:inset 0 0 0 1px var(--line)}
+.seg{position:absolute;top:2px;bottom:2px;border-radius:4px;background:color-mix(in srgb,var(--mute) 30%,transparent)}
+.seg.on{background:linear-gradient(90deg,color-mix(in srgb,var(--up) 70%,transparent),var(--up));box-shadow:0 0 12px -2px color-mix(in srgb,var(--up) 70%,transparent)}
+.cd{font-family:var(--mono);font-size:10.5px;color:var(--mute);text-align:right;white-space:nowrap}
+.cd b{color:var(--fg);font-weight:500}
+.cd.on b{color:var(--up)}
+.axis{position:relative;height:16px;grid-column:2}
+.axis span{position:absolute;transform:translateX(-50%);font-family:var(--mono);font-size:10px;color:var(--dim)}
+.tlwrap{position:relative}
+.now{position:absolute;top:0;bottom:22px;width:2px;background:var(--gold);border-radius:2px;box-shadow:0 0 10px var(--gold);pointer-events:none}
+.now::before{content:"";position:absolute;top:-4px;left:-4px;width:10px;height:10px;border-radius:50%;background:var(--gold)}
+.ovl{position:absolute;top:0;bottom:22px;background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--gold) 12%,transparent) 0 6px,transparent 6px 12px);border-radius:6px;pointer-events:none}
+@media (max-width:560px){.tl{grid-template-columns:62px minmax(0,1fr)}.cd{grid-column:2;text-align:left;margin-top:-4px}.axis{grid-column:2}}
+
+/* hero */
+.row2{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:14px}
+@media (max-width:980px){.row2{grid-template-columns:minmax(0,1fr)}}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 168px;gap:16px}
+@media (max-width:560px){.hero{grid-template-columns:minmax(0,1fr)}}
+.sym{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
+.sym i{font-style:normal;padding:2px 7px;border-radius:6px;background:color-mix(in srgb,var(--gold) 18%,transparent);color:var(--gold);letter-spacing:.06em}
+.px{font-family:var(--mono);font-size:clamp(36px,6.5vw,52px);font-weight:700;letter-spacing:-.03em;line-height:1.05;margin-top:6px;
+  background:linear-gradient(180deg,var(--fg),color-mix(in srgb,var(--fg) 65%,var(--gold)));-webkit-background-clip:text;background-clip:text;color:transparent}
+.chg{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:13px;font-weight:700;padding:3px 9px;border-radius:8px;margin-top:6px}
+.chg.up{color:var(--up);background:var(--upbg)} .chg.down{color:var(--down);background:var(--downbg)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:14px}
+.stats div{padding:8px 10px;border-radius:10px;background:var(--sub);box-shadow:inset 0 0 0 1px var(--line)}
+.stats small{display:block;font-size:10.5px;color:var(--mute);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.stats b{font-family:var(--mono);font-size:13.5px;font-weight:500}
+@media (max-width:420px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.chart{margin-top:14px;position:relative}
+.chart svg{display:block;width:100%;height:150px}
+.chart .cap{position:absolute;top:2px;left:4px;font-size:10.5px;color:var(--dim);font-family:var(--mono)}
+.gauge{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:12px;border-radius:16px;background:var(--sub);box-shadow:inset 0 0 0 1px var(--line);text-align:center}
+.gauge svg{width:150px;height:92px}
+#needle{transform-origin:75px 80px;transition:transform 1.4s cubic-bezier(.2,.9,.2,1.1)}
+.gauge b{font-size:16px;font-weight:800}
+.gauge small{font-size:11.5px;color:var(--mute)}
+.votes{display:flex;gap:4px;margin-top:6px}
+.votes i{width:10px;height:10px;border-radius:3px}
+
+/* ladder */
+.ladder{position:relative;height:330px;margin:6px 0 4px}
+.ladder .rail{position:absolute;left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%);background:linear-gradient(var(--down),var(--neu),var(--up));opacity:.45;border-radius:2px}
+.lv{position:absolute;left:0;right:0;height:0}
+.lv .tick{position:absolute;left:calc(50% - 7px);width:14px;height:2px;top:-1px;border-radius:2px}
+.lv .lab{position:absolute;top:-13px;display:flex;flex-direction:column;line-height:1.15}
+.lv .lab b{font-family:var(--mono);font-size:14px;font-weight:700}
+.lv .lab small{font-size:10.5px;color:var(--mute)}
+.lv.l .lab{right:calc(50% + 16px);text-align:right;align-items:flex-end}
+.lv.r .lab{left:calc(50% + 16px)}
+.lv.px .tick{left:calc(50% - 11px);width:22px;height:3px;top:-1.5px;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.lv.px .lab b{color:var(--gold);font-size:15px}
+.lv.px .pin{position:absolute;left:calc(50% - 6px);top:-6px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px color-mix(in srgb,var(--gold) 25%,transparent)}
+.zone{position:absolute;left:calc(50% - 26px);width:52px;border-radius:6px}
+.emas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:10px}
+.emas div{padding:7px 4px;text-align:center;border-radius:10px;background:var(--sub);box-shadow:inset 0 0 0 1px var(--line)}
+.emas small{display:block;font-size:10px;color:var(--mute);font-weight:600;letter-spacing:.04em}
+.emas b{font-family:var(--mono);font-size:13px;font-weight:500}
+
+/* trend map */
+.tmap{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px}
+.tile{position:relative;overflow:hidden;border-radius:12px;padding:10px 4px 12px;display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--sub);box-shadow:inset 0 0 0 1px var(--line);
+  animation:rise .6s both;animation-delay:calc(var(--i)*60ms)}
+.tile .k{font-family:var(--mono);font-size:12.5px;font-weight:700}
+.tile svg{width:18px;height:18px}
+.tile .bars{display:flex;gap:2px}
+.tile .bars i{width:5px;height:5px;border-radius:1px;background:var(--line2)}
+.tile::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--c)}
+.t-up{--c:var(--up);background:linear-gradient(180deg,var(--upbg),transparent)} .t-up svg{color:var(--up)}
+.t-down{--c:var(--down);background:linear-gradient(180deg,var(--downbg),transparent)} .t-down svg{color:var(--down)}
+.t-neu{--c:var(--neu);background:linear-gradient(180deg,var(--neubg),transparent)} .t-neu svg{color:var(--neu)}
+@keyframes rise{from{transform:translateY(6px)}to{transform:none}}
+@media (max-width:620px){.tmap{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:12px;color:var(--mute)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:9px;height:9px;border-radius:3px}
+
+.quick{display:flex;gap:14px;align-items:flex-start}
+.quick .ic{flex:0 0 auto;width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:color-mix(in srgb,var(--brand) 18%,transparent);color:var(--brand)}
+.quick p{margin:0;font-size:15px;line-height:1.7;max-width:80ch}
+.quick p b{color:var(--gold)}
+
+/* detail */
+.dgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px}
+@media (max-width:860px){.dgrid{grid-template-columns:minmax(0,1fr)}}
+.grp{grid-column:1/-1;display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;letter-spacing:.2em;color:var(--mute);margin-top:6px}
+.grp::after{content:"";flex:1;height:1px;background:var(--line)}
+.tfr{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:8px 12px;align-items:center;padding:12px 14px;border-radius:14px;background:var(--sub);box-shadow:inset 0 0 0 1px var(--line);transition:box-shadow .2s, transform .2s}
+.tfr:hover{box-shadow:inset 0 0 0 1px var(--line2);transform:translateY(-1px)}
+.tfr .k{font-family:var(--mono);font-weight:700;font-size:15px}
+.tfr .k small{display:block;font-family:var(--sans);font-size:10px;color:var(--mute);font-weight:600}
+.tfr p{margin:0;font-size:13px;color:var(--mute);line-height:1.5}
+.tfr p b{color:var(--fg);font-weight:600}
+.chip{justify-self:end;font-size:10.5px;font-weight:800;letter-spacing:.08em;padding:5px 10px;border-radius:999px;white-space:nowrap;text-transform:uppercase}
+.c-up{background:var(--upbg);color:var(--up)} .c-down{background:var(--downbg);color:var(--down)} .c-neu{background:var(--neubg);color:var(--neu)}
+.meta{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) 120px 96px;gap:14px;align-items:center}
+.meta svg{display:block;width:100%;height:30px}
+.rsi{display:flex;flex-direction:column;gap:3px}
+.rsi .lb{display:flex;justify-content:space-between;font-size:10px;color:var(--mute);font-weight:600}
+.rsi .lb b{font-family:var(--mono);color:var(--fg);font-weight:500}
+.rsi .bar{position:relative;height:5px;border-radius:3px;background:linear-gradient(90deg,var(--up) 0 30%,var(--line2) 30% 70%,var(--down) 70%);opacity:.9}
+.rsi .bar i{position:absolute;top:-3px;width:3px;height:11px;border-radius:2px;background:var(--fg);transform:translateX(-50%);box-shadow:0 0 0 2px var(--card-solid)}
+.str{display:flex;flex-direction:column;gap:3px}
+.str .lb{font-size:10px;color:var(--mute);font-weight:600;display:flex;justify-content:space-between}
+.str .lb b{font-family:var(--mono);color:var(--fg);font-weight:500}
+.str .seg5{display:grid;grid-template-columns:repeat(10,1fr);gap:2px}
+.str .seg5 i{height:5px;border-radius:1px;background:var(--line2)}
+@media (max-width:440px){.tfr{grid-template-columns:40px minmax(0,1fr)}.chip{grid-column:2;justify-self:start}.meta{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.meta svg{grid-column:1/-1}}
+
+.note{color:var(--mute);font-size:12.5px;line-height:1.65;margin:0}
+footer{text-align:center;color:var(--dim);font-size:12px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+
+/* ===== Ukuran ringkas (berlaku semua layar) ===== */
+body{font-size:13px}
+.wrap{max-width:1080px;padding-block:12px 28px;gap:10px}
+.card{border-radius:14px;padding:12px 14px}
+.ch{margin-bottom:10px}
+.ch h2{font-size:10.5px;letter-spacing:.14em}
+.ch .aux{font-size:10px}
+.top{gap:10px}
+.brand{gap:9px}
+.logo{width:34px;height:34px;border-radius:10px}
+.logo svg{width:18px;height:18px}
+.brand b{font-size:16px}
+.brand small{font-size:8.5px;letter-spacing:.24em}
+.hright{gap:6px}
+.badge{padding:4px 9px;font-size:10.5px;gap:5px}
+.badge .num{font-size:10px}
+.dot{width:6px;height:6px}
+.clock{padding:5px 10px;border-radius:10px;gap:6px}
+.clock .t{font-size:15px}
+.clock .d{font-size:10px}
+.tl{grid-template-columns:70px minmax(0,1fr) 84px;gap:6px 10px}
+.tl .nm{font-size:11px;gap:5px}
+.track{height:11px;border-radius:4px}
+.seg{top:2px;bottom:2px;border-radius:3px}
+.cd{font-size:9.5px}
+.axis{height:13px}
+.axis span{font-size:8.5px}
+.now{bottom:17px}
+.ovl{bottom:17px}
+.now::before{top:-3px;left:-3px;width:8px;height:8px}
+.row2{gap:10px}
+.hero{grid-template-columns:minmax(0,1fr) 130px;gap:12px}
+.sym{font-size:10px}
+.px{font-size:clamp(26px,7vw,36px);margin-top:4px}
+.chg{font-size:11px;padding:2px 7px;margin-top:4px}
+.stats{gap:6px;margin-top:10px}
+.stats div{padding:5px 8px;border-radius:8px}
+.stats small{font-size:9px}
+.stats b{font-size:11.5px}
+.chart{margin-top:10px}
+.chart svg{height:100px}
+.chart .cap{font-size:9px}
+.gauge{padding:8px;border-radius:12px;gap:2px}
+.gauge svg{width:112px;height:69px}
+.gauge b{font-size:13px}
+.gauge small{font-size:10px}
+.votes{gap:3px;margin-top:4px}
+.votes i{width:8px;height:8px;border-radius:2px}
+.ladder{height:230px}
+.lv .lab{top:-11px}
+.lv .lab b{font-size:12px}
+.lv .lab small{font-size:9px}
+.lv.px .lab b{font-size:12.5px}
+.lv.px .pin{width:10px;height:10px;left:calc(50% - 5px);top:-5px}
+.emas{gap:5px;margin-top:8px}
+.emas div{padding:5px 2px;border-radius:8px}
+.emas small{font-size:8.5px}
+.emas b{font-size:11px}
+.tmap{gap:5px}
+.tile{border-radius:9px;padding:7px 2px 9px;gap:3px}
+.tile .k{font-size:10.5px}
+.tile svg{width:14px;height:14px}
+.tile .bars{gap:1.5px}
+.tile .bars i{width:4px;height:4px}
+.legend{font-size:10.5px;gap:4px 12px;margin-top:8px}
+.legend i{width:8px;height:8px}
+.quick{gap:10px}
+.quick .ic{width:28px;height:28px;border-radius:9px}
+.quick .ic svg{width:14px;height:14px}
+.quick p{font-size:12.5px;line-height:1.6}
+.dgrid{gap:7px 12px}
+.grp{font-size:9.5px;margin-top:4px}
+.tfr{grid-template-columns:40px minmax(0,1fr) auto;gap:6px 10px;padding:9px 11px;border-radius:11px}
+.tfr .k{font-size:12.5px}
+.tfr .k small{font-size:8.5px}
+.tfr p{font-size:11.5px;line-height:1.45}
+.chip{font-size:9px;padding:3px 8px}
+.meta{grid-template-columns:minmax(0,1fr) 92px 74px;gap:10px}
+.meta svg{height:22px}
+.rsi .lb,.str .lb{font-size:9px}
+.rsi .bar{height:4px}
+.rsi .bar i{height:9px;top:-2.5px}
+.str .seg5 i{height:4px}
+.note{font-size:11px}
+footer{font-size:10.5px}
+
+/* ===== Warna gaya DETAExpert.com ===== */
+.card{backdrop-filter:none;-webkit-backdrop-filter:none}
+.clock .t{color:var(--cyan)} .clock .t s{color:var(--cyan)}
+.px{background:none;color:var(--fg)}
+.sym i{background:linear-gradient(90deg,var(--brand),var(--cyan));color:#fff}
+.quick{background:linear-gradient(110deg,color-mix(in srgb,var(--brand) 20%,var(--card-solid)),var(--card-solid) 55%,color-mix(in srgb,var(--cyan) 14%,var(--card-solid)))}
+.quick p b{color:var(--cyan)}
+.badge.on{background:color-mix(in srgb,var(--up) 16%,var(--card-solid));color:color-mix(in srgb,var(--up) 75%,var(--fg))}
+.badge.on b{color:var(--up)}
+.chip{border:1px solid color-mix(in srgb,currentColor 25%,transparent)}
+.grp{color:var(--cyan)}
+
+/* ===== Logo DETA Expert.com ===== */
+:root{--lg1:#4f8cff;--lg2:#3fd0e0}
+.dlogo{width:34px;height:34px;flex:0 0 auto}
+.wm{display:flex;align-items:flex-start;gap:6px;line-height:1;white-space:nowrap}
+.wm b{font-size:22px;font-weight:800;letter-spacing:.05em;color:var(--fg);line-height:1}
+.wm-r{display:flex;flex-direction:column;gap:3px}
+.wm em{font-style:normal;font-size:22px;font-weight:500;letter-spacing:.01em;line-height:1;
+  background:linear-gradient(90deg,var(--lg1),#6aa0ff 55%,var(--lg2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wm em i{font-style:normal;font-weight:500}
+.wm small{font-size:8.5px;font-weight:700;letter-spacing:.22em;color:var(--mute)}
+
+/* ===== HP ===== */
+@media (max-width:600px){
+  .dlogo{width:28px;height:28px}
+  .wm b,.wm em{font-size:17px}
+  .wm{gap:4px}
+  .wm small{font-size:7px;letter-spacing:.18em}
+}
+@media (max-width:600px){
+  .wrap{padding-inline:10px;gap:8px}
+  .card{padding:10px 11px;border-radius:12px}
+  .top{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center}
+  .hright{display:contents}
+  .clock{grid-column:2;grid-row:1}
+  #goldBadge{grid-column:1/-1;justify-self:start}
+  .src{display:none}
+  .tl{grid-template-columns:60px minmax(0,1fr) 64px;gap:5px 6px}
+  .tl .nm{font-size:10px;white-space:nowrap}
+  .ch .aux{font-size:9px;text-align:right}
+  .quick p{font-size:12px}
+  .cd{grid-column:auto;text-align:right;margin-top:0;font-size:8.5px}
+  .axis{grid-column:2}
+  .hero{grid-template-columns:minmax(0,1fr) 104px;gap:8px}
+  .gauge{padding:6px 4px}
+  .gauge svg{width:92px;height:57px}
+  .gauge b{font-size:11.5px}
+  .gauge small{font-size:9px}
+  .votes i{width:6px;height:6px}
+  .stats{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+  .stats div{padding:4px 5px}
+  .stats small{font-size:7.5px;letter-spacing:.02em}
+  .stats b{font-size:10px}
+  .chart svg{height:84px}
+  .ladder{height:200px}
+  .tmap{grid-template-columns:repeat(9,minmax(0,1fr));gap:3px}
+  .tile{padding:6px 0 8px;border-radius:7px}
+  .tile .k{font-size:9px}
+  .tile svg{width:12px;height:12px}
+  .tile .bars i{width:3px;height:3px}
+  .quick .ic{display:none}
+  .tfr{grid-template-columns:34px minmax(0,1fr) auto;padding:8px 9px}
+  .tfr .k{font-size:11.5px}
+  .chip{grid-column:3;justify-self:end;font-size:8px;padding:3px 6px}
+  .meta{grid-template-columns:minmax(0,1fr) 70px 58px;gap:7px}
+  .meta svg{grid-column:auto;height:20px}
+}
+@media (max-width:360px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .gauge{flex-direction:row;justify-content:space-between}
+  .meta{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .meta svg{grid-column:1/-1}
+}
+</style>
+<style>
+.livebar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 12px;border-radius:12px;background:var(--card);box-shadow:var(--glow);font-size:11.5px;color:var(--mute)}
+.livebar .tag{display:inline-flex;align-items:center;gap:6px;font-weight:800;letter-spacing:.12em;font-size:10px;padding:3px 8px;border-radius:999px;background:var(--sub);color:var(--mute)}
+.livebar .tag.live{background:color-mix(in srgb,var(--up) 16%,transparent);color:var(--up)}
+.livebar .tag.part{background:color-mix(in srgb,var(--neu) 16%,transparent);color:var(--neu)}
+.livebar .tag i{width:6px;height:6px;border-radius:50%;background:currentColor}
+.livebar .tag.live i{animation:ping 2s infinite}
+.livebar b{color:var(--fg);font-weight:600}
+.livebar .num{font-family:var(--mono);color:var(--fg);font-size:11px}
+.livebar .msg{flex-basis:100%;color:var(--neu);font-size:11px}
+.livebar .msg[hidden]{display:none}
+.livebar .msg.err{color:var(--down)}
+.livebar .sp{flex:1}
+.btn{font:inherit;font-size:11px;font-weight:700;color:#fff;background:linear-gradient(90deg,var(--brand),var(--cyan));border:0;border-radius:8px;padding:5px 11px;cursor:pointer}
+.btn:disabled{opacity:.45;cursor:default}
+.btn.ghost{background:var(--sub);color:var(--fg);box-shadow:inset 0 0 0 1px var(--line2)}
+.lv .lead{position:absolute;left:calc(50% - 12px);width:1px;opacity:.6}
+.dist{font-size:9.5px;font-weight:500;color:var(--mute)}
+.snapchip{font-size:8.5px;font-weight:700;letter-spacing:.08em;color:var(--neu);margin-left:4px}
+@media (max-width:600px){.livebar{font-size:10.5px;padding:6px 10px}.livebar .sp{display:none}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <svg class="dlogo" viewBox="0 0 40 40" aria-hidden="true">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--lg1)"/><stop offset="1" stop-color="var(--lg2)"/></linearGradient></defs>
+        <rect x="2.5" y="2.5" width="35" height="35" rx="9" fill="none" stroke="url(#lg)" stroke-width="3"/>
+        <path d="M10 26l7-7 5 5 8-9" fill="none" stroke="var(--fg)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M23.5 15H30v6.5" fill="none" stroke="var(--fg)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="wm">
+        <b>DETA</b>
+        <span class="wm-r"><em>Expert<i>.com</i></em><small>TRADING FOR LIVE</small></span>
+      </div>
+    </div>
+    <div class="hright">
+      <span class="badge" id="goldBadge"><i class="dot"></i>Pasar emas</span>
+      <div class="clock"><span class="t" id="clock">--:--<s>:--</s></span><span class="d" id="cdate">WIB</span></div>
+    </div>
+  </header>
+
+  <div class="livebar" id="livebar">
+    <span class="tag" id="liveTag"><i></i><span id="liveTagTx">SNAPSHOT</span></span>
+    <span id="liveSrc">TradingView (OANDA) · 08:05 WIB</span>
+    <span class="sp"></span>
+    <span id="liveNext"></span>
+    <span class="msg" id="liveMsg" hidden></span>
+  </div>
+
+  <section class="card">
+    <div class="ch"><h2>Sesi pasar · 24 jam WIB</h2><span class="aux" id="sessAux">—</span></div>
+    <div class="tlwrap" id="tlwrap"><div class="tl" id="tl"></div></div>
+  </section>
+
+  <div class="row2">
+    <section class="card">
+      <div class="hero">
+        <div style="min-width:0">
+          <div class="sym">XAU / USD <i>Gold Spot</i></div>
+          <div class="px" id="px">—</div>
+          <span class="chg up" id="chg">—</span>
+          <div class="stats">
+            <div><small>Tutup kmrn</small><b id="sPrev">—</b></div>
+            <div><small>High</small><b id="sHigh">—</b></div>
+            <div><small>Low</small><b id="sLow">—</b></div>
+            <div><small>Range</small><b id="sRng">—</b></div>
+          </div>
+        </div>
+        <div class="gauge">
+          <svg viewBox="0 0 150 92" aria-hidden="true">
+            <defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="var(--down)"/><stop offset=".5" stop-color="var(--neu)"/><stop offset="1" stop-color="var(--up)"/></linearGradient></defs>
+            <path d="M12 80 A63 63 0 0 1 138 80" fill="none" stroke="var(--line2)" stroke-width="12" stroke-linecap="round"/>
+            <path d="M12 80 A63 63 0 0 1 138 80" fill="none" stroke="url(#gg)" stroke-width="12" stroke-linecap="round" opacity=".95"/>
+            <g id="needle"><line x1="75" y1="80" x2="75" y2="30" stroke="var(--fg)" stroke-width="4" stroke-linecap="round"/></g>
+            <circle cx="75" cy="80" r="8" fill="var(--fg)"/><circle cx="75" cy="80" r="3.5" fill="var(--card-solid)"/>
+          </svg>
+          <b id="gLabel">—</b>
+          <small id="gSub">—</small>
+          <div class="votes" id="votes"></div>
+        </div>
+      </div>
+      <div class="chart">
+        <span class="cap">M15 · 96 bar terakhir (±24 jam bursa)</span>
+        <svg id="pchart" viewBox="0 0 600 150" preserveAspectRatio="none" aria-label="Grafik harga M15"></svg>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="ch"><h2>Level kunci</h2><span class="aux">otomatis dari D1 &amp; H4</span></div>
+      <div class="ladder" id="ladder"></div>
+      <div class="emas" id="emas"></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="ch"><h2>Peta tren</h2><span class="aux">M1 → MN · skor −5 s/d +5</span></div>
+    <div class="tmap" id="tmap"></div>
+    <div class="legend">
+      <span><i style="background:var(--up)"></i>Bullish</span>
+      <span><i style="background:var(--down)"></i>Bearish</span>
+      <span><i style="background:var(--neu)"></i>Netral</span>
+      <span>Kotak kecil = kekuatan skor</span>
+    </div>
+  </section>
+
+  <section class="card quick">
+    <div class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+    <p id="quick">—</p>
+  </section>
+
+  <section class="card">
+    <div class="ch"><h2>Detail per time frame</h2><span class="aux">grafik 40 bar · RSI14 · skor tren</span></div>
+    <div class="dgrid" id="detail"></div>
+  </section>
+
+  <section class="card">
+    <p class="note">Data XAU/USD dari Twelve Data, diperbarui otomatis tiap jam selama pasar emas buka (Senin pagi sampai Sabtu dini hari WIB). Waktu pembaruan terakhir tertera di bar status atas. Jam, garis waktu sesi, dan hitung mundur sesi berjalan live di perangkat Anda. Skor tren menjumlahkan lima tanda: harga vs EMA21, EMA9 vs EMA21, EMA21 vs EMA50, kemiringan EMA21, dan zona RSI14. Ringkasan tren, bukan saran investasi.</p>
+  </section>
+  <footer>DETA Expert · XAUUSD · Twelve Data</footer>
+</div>
+
+<style id="modern-ui">
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
+/* ===== Terminal pro neon: selalu gelap, kaca buram, bingkai neon, cahaya aurora ===== */
+:root,
+:root[data-theme="light"]{
+  color-scheme:dark;
+  --bg:#04060d; --bg2:#070b17; --card:rgba(12,17,34,.74); --card-solid:#0b1020; --sub:rgba(120,160,255,.06);
+  --line:rgba(120,160,255,.14); --line2:rgba(120,160,255,.28); --fg:#eaf2ff; --mute:#8ea0c4; --dim:#5d6b8c;
+  --gold:#22e1ff; --gold2:#8b5cf6; --brand:#7c5cff; --cyan:#22e1ff;
+  --up:#00f5a0; --down:#ff3d71; --neu:#ffc94d;
+  --upbg:rgba(0,245,160,.12); --downbg:rgba(255,61,113,.13); --neubg:rgba(255,201,77,.12);
+  --glow:0 0 0 1px var(--line),0 30px 60px -30px rgba(0,0,0,.9);
+  --lg1:#7c5cff; --lg2:#22e1ff;
+  --tech:"Chakra Petch","JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  color-scheme:dark;
+  --bg:#04060d; --bg2:#070b17; --card:rgba(12,17,34,.74); --card-solid:#0b1020; --sub:rgba(120,160,255,.06);
+  --line:rgba(120,160,255,.14); --line2:rgba(120,160,255,.28); --fg:#eaf2ff; --mute:#8ea0c4; --dim:#5d6b8c;
+  --gold:#22e1ff; --gold2:#8b5cf6; --brand:#7c5cff; --cyan:#22e1ff;
+  --up:#00f5a0; --down:#ff3d71; --neu:#ffc94d;
+  --upbg:rgba(0,245,160,.12); --downbg:rgba(255,61,113,.13); --neubg:rgba(255,201,77,.12);
+  --glow:0 0 0 1px var(--line),0 30px 60px -30px rgba(0,0,0,.9);
+  --lg1:#7c5cff; --lg2:#22e1ff}}
+
+html,body{background:var(--bg)}
+body{position:relative;
+  background:
+    linear-gradient(rgba(120,160,255,.045) 1px,transparent 1px) 0 0/28px 28px,
+    linear-gradient(90deg,rgba(120,160,255,.045) 1px,transparent 1px) 0 0/28px 28px,
+    radial-gradient(1200px 700px at 50% -20%,#0d1533,transparent 70%),var(--bg)}
+body::after{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;
+  background:radial-gradient(40% 35% at 20% 15%,rgba(124,92,255,.28),transparent 70%),
+             radial-gradient(35% 30% at 85% 10%,rgba(34,225,255,.22),transparent 70%),
+             radial-gradient(40% 35% at 70% 90%,rgba(0,245,160,.10),transparent 70%);
+  filter:blur(20px);animation:aurora 22s ease-in-out infinite alternate}
+@keyframes aurora{to{transform:translate3d(-4%,3%,0) rotate(6deg) scale(1.08)}}
+.wrap{gap:14px;position:relative;z-index:0}
+
+/* kartu: kaca buram + bingkai neon + kilau atas */
+.card,.livebar,.clock,.badge{
+  border:1px solid transparent;
+  background:linear-gradient(180deg,rgba(18,25,50,.82),rgba(8,12,26,.86)) padding-box,
+             linear-gradient(135deg,rgba(124,92,255,.75),rgba(34,225,255,.35) 40%,rgba(120,160,255,.08) 70%,rgba(34,225,255,.35)) border-box;
+  backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);
+  box-shadow:0 0 0 1px rgba(0,0,0,.4),0 30px 70px -35px rgba(0,0,0,.95),0 0 40px -22px rgba(124,92,255,.6)}
+.card{border-radius:20px;padding:16px 18px;overflow:hidden}
+.card::before{content:"";position:absolute;left:18px;right:18px;top:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(34,225,255,.9),rgba(124,92,255,.9),transparent);opacity:.8}
+.ch h2{font-family:var(--tech);font-size:12px;font-weight:700;letter-spacing:.22em;
+  background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;display:flex;align-items:center;gap:8px}
+.ch h2::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 3px rgba(34,225,255,.15),0 0 12px var(--cyan);-webkit-text-fill-color:initial}
+.ch .aux{font-family:var(--tech);padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(34,225,255,.05);color:var(--mute)}
+
+/* header */
+.wm b,.wm em{font-family:var(--tech)}
+.clock{border-radius:14px}
+.clock .t{font-family:var(--tech);color:var(--cyan);text-shadow:0 0 12px rgba(34,225,255,.8),0 0 30px rgba(34,225,255,.4)}
+.clock .t s{color:var(--cyan)}
+.badge{border-radius:999px}
+.livebar{border-radius:14px}
+.livebar .tag{font-family:var(--tech)}
+.livebar .tag.live{color:var(--up);background:rgba(0,245,160,.1);box-shadow:0 0 0 1px rgba(0,245,160,.4),0 0 18px -2px rgba(0,245,160,.6)}
+
+/* sesi */
+.track{background:rgba(120,160,255,.06);box-shadow:inset 0 0 0 1px var(--line)}
+.seg{background:rgba(142,160,196,.25)}
+.seg.on{background:linear-gradient(90deg,rgba(0,245,160,.4),var(--up));box-shadow:0 0 16px rgba(0,245,160,.7)}
+.now{width:2px;background:linear-gradient(var(--cyan),var(--brand));box-shadow:0 0 14px var(--cyan),0 0 30px var(--brand)}
+.now::before{background:var(--cyan);box-shadow:0 0 0 5px rgba(34,225,255,.2),0 0 18px var(--cyan)}
+.cd.on b{text-shadow:0 0 10px var(--up)}
+
+/* harga */
+.sym{font-family:var(--tech)}
+.sym i{background:linear-gradient(90deg,var(--brand),var(--cyan));color:#fff;box-shadow:0 0 18px -2px rgba(124,92,255,.8)}
+.hero .px{font-family:var(--tech);font-weight:700;font-size:clamp(38px,8.5vw,58px);letter-spacing:-.01em;line-height:1;
+  background:linear-gradient(180deg,#ffffff 35%,#9fe9ff);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 18px rgba(34,225,255,.45))}
+.chg{font-family:var(--tech);border-radius:999px;padding:3px 12px}
+.chg.up{box-shadow:0 0 0 1px rgba(0,245,160,.4),0 0 16px -4px var(--up)} .chg.down{box-shadow:0 0 0 1px rgba(255,61,113,.4),0 0 16px -4px var(--down)}
+.stats div,.emas div{border-radius:12px;background:linear-gradient(180deg,rgba(124,92,255,.10),rgba(34,225,255,.02));box-shadow:inset 0 0 0 1px var(--line)}
+.stats small,.emas small{font-family:var(--tech);letter-spacing:.12em}
+.stats b,.emas b{font-family:var(--tech);font-size:1.08em}
+.gauge{border-radius:18px;background:radial-gradient(100% 80% at 50% 10%,rgba(124,92,255,.25),transparent 70%),rgba(8,12,26,.6);box-shadow:inset 0 0 0 1px var(--line),0 0 30px -12px rgba(124,92,255,.6)}
+.gauge svg{filter:drop-shadow(0 0 10px rgba(34,225,255,.35))}
+.gauge b{font-family:var(--tech);letter-spacing:.04em;text-shadow:0 0 14px currentColor}
+.votes i{box-shadow:0 0 8px currentColor}
+.chart{border-radius:14px;padding:8px 4px 2px;background:linear-gradient(180deg,rgba(34,225,255,.04),rgba(124,92,255,.08));box-shadow:inset 0 0 0 1px var(--line);position:relative;overflow:hidden}
+.chart::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(34,225,255,.12),transparent);transform:translateX(-100%);animation:scan 6s linear infinite;pointer-events:none}
+@keyframes scan{to{transform:translateX(100%)}}
+.chart svg{filter:drop-shadow(0 0 8px rgba(34,225,255,.6))}
+.chart .cap{font-family:var(--tech)}
+
+/* level kunci */
+.ladder .rail{width:3px;opacity:.9;box-shadow:0 0 16px rgba(34,225,255,.5)}
+.lv .lab b{font-family:var(--tech);font-size:1.12em}
+.lv.l .lab b{text-shadow:0 0 12px currentColor}
+.lv.px .tick{background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+.lv.px .lab b{color:var(--cyan);text-shadow:0 0 14px var(--cyan)}
+.lv.px .pin{background:var(--cyan);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(34,225,255,.25),0 0 16px var(--cyan)}50%{box-shadow:0 0 0 10px rgba(34,225,255,.05),0 0 28px var(--cyan)}}
+
+/* peta tren */
+.tmap{gap:8px}
+.tile{border-radius:14px;padding:12px 4px 14px;background:linear-gradient(180deg,color-mix(in srgb,var(--c) 18%,transparent),rgba(8,12,26,.4));
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 45%,transparent),0 12px 30px -16px var(--c);transition:transform .2s ease,box-shadow .2s ease}
+.tile:hover{transform:translateY(-3px);box-shadow:inset 0 0 0 1px var(--c),0 16px 36px -14px var(--c)}
+.tile .k{font-family:var(--tech);font-size:13px}
+.tile svg{filter:drop-shadow(0 0 8px currentColor)}
+.tile::after{height:3px;box-shadow:0 0 14px var(--c),0 0 4px var(--c)}
+.tile .bars i{border-radius:2px}
+.legend{font-family:var(--tech)}
+
+/* bacaan cepat */
+.quick{border:1px solid transparent;
+  background:linear-gradient(110deg,rgba(124,92,255,.25),rgba(11,16,32,.92) 50%,rgba(34,225,255,.18)) padding-box,
+             linear-gradient(90deg,var(--brand),var(--cyan),var(--brand)) border-box;
+  box-shadow:0 0 50px -20px rgba(124,92,255,.8)}
+.quick .ic{background:linear-gradient(135deg,var(--brand),var(--cyan));color:#fff;box-shadow:0 0 22px -4px var(--cyan)}
+.quick p b{color:var(--cyan);text-shadow:0 0 10px rgba(34,225,255,.6)}
+
+/* detail */
+.grp{font-family:var(--tech);color:var(--cyan);letter-spacing:.28em;text-shadow:0 0 10px rgba(34,225,255,.5)}
+.grp::after{background:linear-gradient(90deg,rgba(34,225,255,.6),transparent)}
+.tfr{border-radius:16px;background:linear-gradient(180deg,rgba(124,92,255,.08),rgba(8,12,26,.3));box-shadow:inset 0 0 0 1px var(--line)}
+.tfr:hover{box-shadow:inset 0 0 0 1px rgba(34,225,255,.45),0 0 30px -14px rgba(34,225,255,.6)}
+.tfr .k{font-family:var(--tech);font-size:1.15em;color:#fff;text-shadow:0 0 12px rgba(34,225,255,.6)}
+.tfr .k small{font-family:var(--sans);text-shadow:none;color:var(--mute)}
+.tfr p b{font-family:var(--tech);color:#fff}
+.chip{font-family:var(--tech);letter-spacing:.12em}
+.chip.c-up{box-shadow:0 0 16px -4px var(--up)} .chip.c-down{box-shadow:0 0 16px -4px var(--down)} .chip.c-neu{box-shadow:0 0 16px -4px var(--neu)}
+.meta svg{filter:drop-shadow(0 0 5px currentColor)}
+.rsi .lb b,.str .lb b{font-family:var(--tech)}
+.rsi .bar i{box-shadow:0 0 0 2px var(--card-solid),0 0 8px #fff}
+.str .seg5 i{border-radius:2px}
+.note{color:var(--mute)}
+footer{font-family:var(--tech);letter-spacing:.14em}
+
+@media (prefers-reduced-motion:reduce){body::after,.chart::after,.lv.px .pin{animation:none}.tile:hover{transform:none}}
+@media (max-width:600px){.card{border-radius:16px;padding:11px 12px}.card::before{left:12px;right:12px}}
+</style>
+
+
+<!--FEED--><script type="application/json" id="feed">{"asof":1793492340551,"quote":{"price":3875.44,"prev":3875.44,"hi":3875.53,"lo":3875.3},"series":{"M1":"datetime;open;high;low;close\n2026-11-01 11:13:00;3875.36;3875.53;3875.34;3875.34\n2026-11-01 11:12:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 11:11:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 11:10:00;3875.36;3875.44;3875.32;3875.44\n2026-11-01 11:09:00;3875.36;3875.48;3875.34;3875.34\n2026-11-01 11:08:00;3875.36;3875.42;3875.36;3875.42\n2026-11-01 11:07:00;3875.36;3875.42;3875.36;3875.4\n2026-11-01 11:06:00;3875.36;3875.45;3875.36;3875.43\n2026-11-01 11:05:00;3875.36;3875.41;3875.35;3875.41\n2026-11-01 11:04:00;3875.36;3875.51;3875.35;3875.35\n2026-11-01 11:03:00;3875.36;3875.43;3875.31;3875.43\n2026-11-01 11:02:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 11:01:00;3875.36;3875.45;3875.31;3875.45\n2026-11-01 11:00:00;3875.36;3875.51;3875.33;3875.33\n2026-11-01 10:59:00;3875.36;3875.44;3875.35;3875.44\n2026-11-01 10:58:00;3875.36;3875.46;3875.35;3875.35\n2026-11-01 10:57:00;3875.36;3875.41;3875.36;3875.41\n2026-11-01 10:56:00;3875.36;3875.39;3875.36;3875.39\n2026-11-01 10:55:00;3875.36;3875.48;3875.36;3875.44\n2026-11-01 10:54:00;3875.36;3875.42;3875.33;3875.42\n2026-11-01 10:53:00;3875.36;3875.53;3875.34;3875.34\n2026-11-01 10:52:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 10:51:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 10:50:00;3875.36;3875.44;3875.32;3875.44\n2026-11-01 10:49:00;3875.36;3875.49;3875.34;3875.34\n2026-11-01 10:48:00;3875.36;3875.43;3875.36;3875.43\n2026-11-01 10:47:00;3875.36;3875.43;3875.36;3875.41\n2026-11-01 10:46:00;3875.36;3875.44;3875.36;3875.43\n2026-11-01 10:45:00;3875.36;3875.4;3875.36;3875.4\n2026-11-01 10:44:00;3875.36;3875.5;3875.36;3875.36\n2026-11-01 10:43:00;3875.36;3875.43;3875.31;3875.43\n2026-11-01 10:42:00;3875.36;3875.53;3875.34;3875.34\n2026-11-01 10:41:00;3875.36;3875.45;3875.3;3875.45\n2026-11-01 10:40:00;3875.36;3875.52;3875.33;3875.33\n2026-11-01 10:39:00;3875.36;3875.44;3875.34;3875.44\n2026-11-01 10:38:00;3875.36;3875.47;3875.35;3875.35\n2026-11-01 10:37:00;3875.36;3875.41;3875.36;3875.41\n2026-11-01 10:36:00;3875.36;3875.4;3875.36;3875.39\n2026-11-01 10:35:00;3875.36;3875.47;3875.36;3875.44\n2026-11-01 10:34:00;3875.36;3875.42;3875.33;3875.42\n2026-11-01 10:33:00;3875.36;3875.52;3875.35;3875.35\n2026-11-01 10:32:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 10:31:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 10:30:00;3875.36;3875.45;3875.31;3875.45\n2026-11-01 10:29:00;3875.36;3875.5;3875.34;3875.34\n2026-11-01 10:28:00;3875.36;3875.43;3875.36;3875.43\n2026-11-01 10:27:00;3875.36;3875.44;3875.36;3875.41\n2026-11-01 10:26:00;3875.36;3875.43;3875.36;3875.42\n2026-11-01 10:25:00;3875.36;3875.4;3875.36;3875.4\n2026-11-01 10:24:00;3875.36;3875.5;3875.36;3875.45\n2026-11-01 10:23:00;3875.36;3875.43;3875.32;3875.43\n2026-11-01 10:22:00;3875.36;3875.53;3875.34;3875.34\n2026-11-01 10:21:00;3875.36;3875.45;3875.3;3875.45\n2026-11-01 10:20:00;3875.36;3875.52;3875.33;3875.33\n2026-11-01 10:19:00;3875.36;3875.44;3875.33;3875.44\n2026-11-01 10:18:00;3875.36;3875.48;3875.35;3875.35\n2026-11-01 10:17:00;3875.36;3875.42;3875.36;3875.42\n2026-11-01 10:16:00;3875.36;3875.41;3875.36;3875.4\n2026-11-01 10:15:00;3875.36;3875.46;3875.36;3875.43\n2026-11-01 10:14:00;3875.36;3875.41;3875.34;3875.41\n2026-11-01 10:13:00;3875.36;3875.52;3875.35;3875.35\n2026-11-01 10:12:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 10:11:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 10:10:00;3875.36;3875.45;3875.31;3875.45\n2026-11-01 10:09:00;3875.36;3875.51;3875.33;3875.33\n2026-11-01 10:08:00;3875.36;3875.43;3875.35;3875.43\n2026-11-01 10:07:00;3875.36;3875.45;3875.36;3875.36\n2026-11-01 10:06:00;3875.36;3875.42;3875.36;3875.42\n2026-11-01 10:05:00;3875.36;3875.39;3875.36;3875.39\n2026-11-01 10:04:00;3875.36;3875.49;3875.36;3875.45\n2026-11-01 10:03:00;3875.36;3875.42;3875.32;3875.42\n2026-11-01 10:02:00;3875.36;3875.53;3875.34;3875.34\n2026-11-01 10:01:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 10:00:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 09:59:00;3875.36;3875.44;3875.32;3875.44\n2026-11-01 09:58:00;3875.36;3875.48;3875.34;3875.34\n2026-11-01 09:57:00;3875.36;3875.42;3875.36;3875.42\n2026-11-01 09:56:00;3875.36;3875.42;3875.36;3875.4\n2026-11-01 09:55:00;3875.36;3875.45;3875.36;3875.43\n2026-11-01 09:54:00;3875.36;3875.4;3875.35;3875.4\n2026-11-01 09:53:00;3875.36;3875.51;3875.35;3875.35\n2026-11-01 09:52:00;3875.36;3875.43;3875.31;3875.43\n2026-11-01 09:51:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 09:50:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 09:49:00;3875.36;3875.51;3875.33;3875.33\n2026-11-01 09:48:00;3875.36;3875.43;3875.34;3875.43\n2026-11-01 09:47:00;3875.36;3875.46;3875.35;3875.35\n2026-11-01 09:46:00;3875.36;3875.41;3875.36;3875.41\n2026-11-01 09:45:00;3875.36;3875.38;3875.36;3875.38\n2026-11-01 09:44:00;3875.36;3875.48;3875.36;3875.44\n2026-11-01 09:43:00;3875.36;3875.42;3875.33;3875.42\n2026-11-01 09:42:00;3875.36;3875.52;3875.34;3875.34\n2026-11-01 09:41:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 09:40:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 09:39:00;3875.36;3875.44;3875.32;3875.44\n2026-11-01 09:38:00;3875.36;3875.49;3875.34;3875.34\n2026-11-01 09:37:00;3875.36;3875.42;3875.36;3875.42\n2026-11-01 09:36:00;3875.36;3875.43;3875.36;3875.4\n2026-11-01 09:35:00;3875.36;3875.44;3875.36;3875.42\n2026-11-01 09:34:00;3875.36;3875.4;3875.36;3875.4\n2026-11-01 09:33:00;3875.36;3875.5;3875.36;3875.36\n2026-11-01 09:32:00;3875.36;3875.43;3875.31;3875.43\n2026-11-01 09:31:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 09:30:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 09:29:00;3875.36;3875.52;3875.33;3875.33\n2026-11-01 09:28:00;3875.36;3875.44;3875.34;3875.44\n2026-11-01 09:27:00;3875.36;3875.46;3875.35;3875.35\n2026-11-01 09:26:00;3875.36;3875.41;3875.36;3875.41\n2026-11-01 09:25:00;3875.36;3875.39;3875.36;3875.39\n2026-11-01 09:24:00;3875.36;3875.47;3875.36;3875.44\n2026-11-01 09:23:00;3875.36;3875.41;3875.33;3875.41\n2026-11-01 09:22:00;3875.36;3875.52;3875.34;3875.34\n2026-11-01 09:21:00;3875.36;3875.44;3875.3;3875.44\n2026-11-01 09:20:00;3875.36;3875.53;3875.33;3875.33\n2026-11-01 09:19:00;3875.36;3875.44;3875.31;3875.44\n2026-11-01 09:18:00;3875.36;3875.5;3875.33;3875.33\n2026-11-01 09:17:00;3875.36;3875.43;3875.36;3875.43\n2026-11-01 09:16:00;3875.36;3875.44;3875.36;3875.41\n2026-11-01 09:15:00;3875.36;3875.43;3875.36;3875.42\n2026-11-01 09:14:00;3875.36;3875.39;3875.36;3875.39","M5":"datetime;open;high;low;close\n2026-11-01 11:10:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 11:05:00;3875.36;3875.48;3875.34;3875.34\n2026-11-01 11:00:00;3875.36;3875.53;3875.31;3875.35\n2026-11-01 10:55:00;3875.36;3875.48;3875.35;3875.44\n2026-11-01 10:50:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 10:45:00;3875.36;3875.49;3875.34;3875.34\n2026-11-01 10:40:00;3875.36;3875.53;3875.3;3875.36\n2026-11-01 10:35:00;3875.36;3875.47;3875.34;3875.44\n2026-11-01 10:30:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 10:25:00;3875.36;3875.5;3875.34;3875.34\n2026-11-01 10:20:00;3875.36;3875.53;3875.3;3875.45\n2026-11-01 10:15:00;3875.36;3875.48;3875.33;3875.44\n2026-11-01 10:10:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 10:05:00;3875.36;3875.51;3875.33;3875.33\n2026-11-01 10:00:00;3875.36;3875.53;3875.3;3875.45\n2026-11-01 09:55:00;3875.36;3875.48;3875.32;3875.44\n2026-11-01 09:50:00;3875.36;3875.53;3875.3;3875.4\n2026-11-01 09:45:00;3875.36;3875.51;3875.33;3875.33\n2026-11-01 09:40:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 09:35:00;3875.36;3875.49;3875.32;3875.44\n2026-11-01 09:30:00;3875.36;3875.53;3875.3;3875.4\n2026-11-01 09:25:00;3875.36;3875.52;3875.33;3875.33\n2026-11-01 09:20:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 09:15:00;3875.36;3875.5;3875.31;3875.44\n2026-11-01 09:10:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 09:05:00;3875.36;3875.52;3875.33;3875.33\n2026-11-01 09:00:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 08:55:00;3875.36;3875.51;3875.31;3875.44\n2026-11-01 08:50:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 08:45:00;3875.36;3875.53;3875.32;3875.33\n2026-11-01 08:40:00;3875.36;3875.53;3875.31;3875.43\n2026-11-01 08:35:00;3875.36;3875.51;3875.3;3875.44\n2026-11-01 08:30:00;3875.36;3875.52;3875.3;3875.38\n2026-11-01 08:25:00;3875.36;3875.53;3875.32;3875.33\n2026-11-01 08:20:00;3875.36;3875.53;3875.31;3875.42\n2026-11-01 08:15:00;3875.36;3875.52;3875.3;3875.44\n2026-11-01 08:10:00;3875.36;3875.52;3875.3;3875.39\n2026-11-01 08:05:00;3875.36;3875.53;3875.31;3875.33\n2026-11-01 08:00:00;3875.36;3875.53;3875.31;3875.42\n2026-11-01 07:55:00;3875.36;3875.52;3875.3;3875.44\n2026-11-01 07:50:00;3875.36;3875.52;3875.3;3875.39\n2026-11-01 07:45:00;3875.36;3875.53;3875.31;3875.33\n2026-11-01 07:40:00;3875.36;3875.53;3875.32;3875.41\n2026-11-01 07:35:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 07:30:00;3875.36;3875.51;3875.31;3875.4\n2026-11-01 07:25:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 07:20:00;3875.36;3875.52;3875.33;3875.41\n2026-11-01 07:15:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 07:10:00;3875.36;3875.5;3875.31;3875.4\n2026-11-01 07:05:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 07:00:00;3875.36;3875.52;3875.33;3875.41\n2026-11-01 06:55:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 06:50:00;3875.36;3875.5;3875.31;3875.41\n2026-11-01 06:45:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 06:40:00;3875.36;3875.52;3875.34;3875.42\n2026-11-01 06:35:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 06:30:00;3875.36;3875.49;3875.32;3875.36\n2026-11-01 06:25:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 06:20:00;3875.36;3875.51;3875.35;3875.42\n2026-11-01 06:15:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 06:10:00;3875.36;3875.48;3875.33;3875.35\n2026-11-01 06:05:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 06:00:00;3875.36;3875.5;3875.36;3875.42\n2026-11-01 05:55:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 05:50:00;3875.36;3875.47;3875.33;3875.35\n2026-11-01 05:45:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 05:40:00;3875.36;3875.5;3875.36;3875.43\n2026-11-01 05:35:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 05:30:00;3875.36;3875.47;3875.34;3875.34\n2026-11-01 05:25:00;3875.36;3875.53;3875.3;3875.35\n2026-11-01 05:20:00;3875.36;3875.49;3875.35;3875.43\n2026-11-01 05:15:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 05:10:00;3875.36;3875.48;3875.34;3875.34\n2026-11-01 05:05:00;3875.36;3875.53;3875.3;3875.35\n2026-11-01 05:00:00;3875.36;3875.48;3875.34;3875.43\n2026-11-01 04:55:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 04:50:00;3875.36;3875.49;3875.34;3875.34\n2026-11-01 04:45:00;3875.36;3875.53;3875.3;3875.36\n2026-11-01 04:40:00;3875.36;3875.47;3875.34;3875.44\n2026-11-01 04:35:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 04:30:00;3875.36;3875.5;3875.33;3875.33\n2026-11-01 04:25:00;3875.36;3875.53;3875.3;3875.45\n2026-11-01 04:20:00;3875.36;3875.47;3875.33;3875.44\n2026-11-01 04:15:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 04:10:00;3875.36;3875.51;3875.33;3875.33\n2026-11-01 04:05:00;3875.36;3875.53;3875.3;3875.45\n2026-11-01 04:00:00;3875.36;3875.48;3875.32;3875.44\n2026-11-01 03:55:00;3875.36;3875.53;3875.3;3875.4\n2026-11-01 03:50:00;3875.36;3875.51;3875.33;3875.33\n2026-11-01 03:45:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 03:40:00;3875.36;3875.49;3875.32;3875.44\n2026-11-01 03:35:00;3875.36;3875.53;3875.3;3875.4\n2026-11-01 03:30:00;3875.36;3875.52;3875.33;3875.33\n2026-11-01 03:25:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 03:20:00;3875.36;3875.5;3875.31;3875.44\n2026-11-01 03:15:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 03:10:00;3875.36;3875.52;3875.33;3875.33\n2026-11-01 03:05:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 03:00:00;3875.36;3875.51;3875.31;3875.44\n2026-11-01 02:55:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 02:50:00;3875.36;3875.53;3875.32;3875.33\n2026-11-01 02:45:00;3875.36;3875.53;3875.31;3875.43\n2026-11-01 02:40:00;3875.36;3875.51;3875.3;3875.44\n2026-11-01 02:35:00;3875.36;3875.52;3875.3;3875.38\n2026-11-01 02:30:00;3875.36;3875.53;3875.32;3875.33\n2026-11-01 02:25:00;3875.36;3875.53;3875.31;3875.42\n2026-11-01 02:20:00;3875.36;3875.52;3875.3;3875.44\n2026-11-01 02:15:00;3875.36;3875.52;3875.3;3875.39\n2026-11-01 02:10:00;3875.36;3875.53;3875.31;3875.33\n2026-11-01 02:05:00;3875.36;3875.53;3875.31;3875.42\n2026-11-01 02:00:00;3875.36;3875.52;3875.3;3875.44\n2026-11-01 01:55:00;3875.36;3875.52;3875.3;3875.39\n2026-11-01 01:50:00;3875.36;3875.53;3875.31;3875.33\n2026-11-01 01:45:00;3875.36;3875.53;3875.32;3875.41\n2026-11-01 01:40:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 01:35:00;3875.36;3875.51;3875.31;3875.4\n2026-11-01 01:30:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 01:25:00;3875.36;3875.52;3875.33;3875.41\n2026-11-01 01:20:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 01:15:00;3875.36;3875.5;3875.31;3875.4","M15":"datetime;open;high;low;close\n2026-11-01 11:00:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 10:45:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 10:30:00;3875.36;3875.53;3875.3;3875.36\n2026-11-01 10:15:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 10:00:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 09:45:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 09:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 09:15:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 09:00:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 08:45:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 08:30:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 08:15:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 08:00:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 07:45:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 07:30:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 07:15:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 07:00:00;3875.36;3875.53;3875.3;3875.4\n2026-11-01 06:45:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 06:30:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 06:15:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 06:00:00;3875.36;3875.53;3875.3;3875.35\n2026-11-01 05:45:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 05:30:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 05:15:00;3875.36;3875.53;3875.3;3875.35\n2026-11-01 05:00:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 04:45:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 04:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 04:15:00;3875.36;3875.53;3875.3;3875.45\n2026-11-01 04:00:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 03:45:00;3875.36;3875.53;3875.3;3875.4\n2026-11-01 03:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 03:15:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 03:00:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 02:45:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 02:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 02:15:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 02:00:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 01:45:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 01:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 01:15:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 01:00:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 00:45:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 00:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 00:15:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 00:00:00;3875.36;3875.53;3875.3;3875.34\n2026-10-31 23:45:00;3875.36;3875.53;3875.3;3875.35\n2026-10-31 23:30:00;3875.36;3875.53;3875.3;3875.43\n2026-10-31 23:15:00;3875.36;3875.53;3875.3;3875.43\n2026-10-31 23:00:00;3875.36;3875.53;3875.3;3875.35\n2026-10-31 22:45:00;3875.35;3875.53;3875.3;3875.34\n2026-10-31 22:30:00;3875.35;3875.53;3875.29;3875.41\n2026-10-31 22:15:00;3875.36;3875.53;3875.3;3875.43\n2026-10-31 22:00:00;3875.36;3875.54;3875.3;3875.45\n2026-10-31 21:45:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 21:30:00;3875.36;3875.53;3875.3;3875.4\n2026-10-31 21:15:00;3875.36;3875.53;3875.3;3875.44\n2026-10-31 21:00:00;3875.36;3875.53;3875.3;3875.43\n2026-10-31 20:45:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 20:30:00;3875.36;3875.53;3875.3;3875.38\n2026-10-31 20:15:00;3875.36;3875.53;3875.3;3875.44\n2026-10-31 20:00:00;3875.36;3875.53;3875.3;3875.42\n2026-10-31 19:45:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 19:30:00;3875.36;3875.54;3875.31;3875.4\n2026-10-31 19:15:00;3875.36;3875.54;3875.3;3875.45\n2026-10-31 19:00:00;3875.35;3875.54;3875.31;3875.41\n2026-10-31 18:45:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 18:30:00;3875.36;3875.53;3875.3;3875.36\n2026-10-31 18:15:00;3875.36;3875.53;3875.3;3875.43\n2026-10-31 18:00:00;3875.35;3875.53;3875.3;3875.42\n2026-10-31 17:45:00;3875.36;3875.53;3875.3;3875.34\n2026-10-31 17:30:00;3875.35;3875.53;3875.3;3875.34\n2026-10-31 17:15:00;3875.35;3875.53;3875.3;3875.42\n2026-10-31 17:00:00;3875.36;3875.52;3875.3;3875.43\n2026-10-31 16:45:00;3875.35;3875.53;3875.3;3875.36\n2026-10-31 16:30:00;3875.35;3875.53;3875.3;3875.33\n2026-10-31 16:15:00;3875.36;3875.53;3875.29;3875.41\n2026-10-31 16:00:00;3875.36;3875.53;3875.3;3875.44\n2026-10-31 15:45:00;3875.36;3875.53;3875.3;3875.44\n2026-10-31 15:30:00;3875.34;3875.52;3875.29;3875.33\n2026-10-31 15:15:00;3875.35;3875.52;3875.29;3875.38\n2026-10-31 15:00:00;3875.35;3875.52;3875.29;3875.44\n2026-10-31 14:45:00;3875.36;3875.53;3875.29;3875.42\n2026-10-31 14:30:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 14:15:00;3875.36;3875.53;3875.3;3875.39\n2026-10-31 14:00:00;3875.35;3875.53;3875.3;3875.44\n2026-10-31 13:45:00;3875.35;3875.52;3875.29;3875.4\n2026-10-31 13:30:00;3875.35;3875.53;3875.29;3875.32\n2026-10-31 13:15:00;3875.36;3875.53;3875.29;3875.39\n2026-10-31 13:00:00;3875.36;3875.53;3875.3;3875.44\n2026-10-31 12:45:00;3875.36;3875.53;3875.31;3875.42\n2026-10-31 12:30:00;3875.35;3875.53;3875.29;3875.34\n2026-10-31 12:15:00;3875.35;3875.52;3875.29;3875.34\n2026-10-31 12:00:00;3875.35;3875.52;3875.29;3875.42\n2026-10-31 11:45:00;3875.35;3875.52;3875.29;3875.42\n2026-10-31 11:30:00;3875.36;3875.53;3875.3;3875.34\n2026-10-31 11:15:00;3875.36;3875.54;3875.31;3875.34\n2026-10-31 11:00:00;3875.35;3875.53;3875.29;3875.42\n2026-10-31 10:45:00;3875.35;3875.53;3875.29;3875.43\n2026-10-31 10:30:00;3875.35;3875.53;3875.29;3875.44\n2026-10-31 10:15:00;3875.35;3875.52;3875.3;3875.32\n2026-10-31 10:00:00;3875.36;3875.53;3875.29;3875.4\n2026-10-31 09:45:00;3875.36;3875.53;3875.31;3875.44\n2026-10-31 09:30:00;3875.36;3875.53;3875.07;3875.44\n2026-10-31 09:15:00;3875.36;3875.53;3875.31;3875.33\n2026-10-31 09:00:00;3875.36;3875.53;3875.3;3875.39\n2026-10-31 08:45:00;3875.17;3875.53;3875.04;3875.45\n2026-10-31 08:30:00;3875.34;3875.72;3875.07;3875.11\n2026-10-31 08:15:00;3875.36;3875.53;3874.47;3875.31\n2026-10-31 08:00:00;3875.82;3875.82;3875.22;3875.4\n2026-10-31 07:45:00;3873.33;3877.62;3872.07;3875.51\n2026-10-31 07:30:00;3880.24;3880.24;3872.97;3873.09\n2026-10-31 07:15:00;3883.68;3883.68;3877.17;3880.41\n2026-10-31 07:00:00;3882.75;3887.27;3881.36;3883.25\n2026-10-31 06:45:00;3874.61;3884.7;3871.19;3883.59\n2026-10-31 06:30:00;3877.62;3879.9;3872.73;3873.52\n2026-10-31 06:15:00;3880.45;3880.93;3876.26;3876.74\n2026-10-31 06:00:00;3880.06;3880.83;3876.87;3880.69\n2026-10-31 05:45:00;3883.27;3883.65;3877.62;3880.17\n2026-10-31 05:30:00;3878.57;3883.89;3878.57;3883.65\n2026-10-31 05:15:00;3880.34;3881.99;3875.97;3878.33","M30":"datetime;open;high;low;close\n2026-11-01 11:00:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 10:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 10:00:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 09:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 09:00:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 08:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 08:00:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 07:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 07:00:00;3875.36;3875.53;3875.3;3875.33\n2026-11-01 06:30:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 06:00:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 05:30:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 05:00:00;3875.36;3875.53;3875.3;3875.35\n2026-11-01 04:30:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 04:00:00;3875.36;3875.53;3875.3;3875.45\n2026-11-01 03:30:00;3875.36;3875.53;3875.3;3875.4\n2026-11-01 03:00:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 02:30:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 02:00:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 01:30:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 01:00:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 00:30:00;3875.36;3875.53;3875.3;3875.41\n2026-11-01 00:00:00;3875.36;3875.53;3875.3;3875.42\n2026-10-31 23:30:00;3875.36;3875.53;3875.3;3875.35\n2026-10-31 23:00:00;3875.36;3875.53;3875.3;3875.43\n2026-10-31 22:30:00;3875.35;3875.53;3875.29;3875.34\n2026-10-31 22:00:00;3875.36;3875.54;3875.3;3875.43\n2026-10-31 21:30:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 21:00:00;3875.36;3875.53;3875.3;3875.44\n2026-10-31 20:30:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 20:00:00;3875.36;3875.53;3875.3;3875.44\n2026-10-31 19:30:00;3875.36;3875.54;3875.3;3875.33\n2026-10-31 19:00:00;3875.35;3875.54;3875.3;3875.45\n2026-10-31 18:30:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 18:00:00;3875.35;3875.53;3875.3;3875.43\n2026-10-31 17:30:00;3875.35;3875.53;3875.3;3875.34\n2026-10-31 17:00:00;3875.36;3875.53;3875.3;3875.42\n2026-10-31 16:30:00;3875.35;3875.53;3875.3;3875.36\n2026-10-31 16:00:00;3875.36;3875.53;3875.29;3875.41\n2026-10-31 15:30:00;3875.34;3875.53;3875.29;3875.44\n2026-10-31 15:00:00;3875.35;3875.52;3875.29;3875.38\n2026-10-31 14:30:00;3875.36;3875.53;3875.29;3875.42\n2026-10-31 14:00:00;3875.35;3875.53;3875.3;3875.39\n2026-10-31 13:30:00;3875.35;3875.53;3875.29;3875.4\n2026-10-31 13:00:00;3875.36;3875.53;3875.29;3875.39\n2026-10-31 12:30:00;3875.35;3875.53;3875.29;3875.42\n2026-10-31 12:00:00;3875.35;3875.52;3875.29;3875.34\n2026-10-31 11:30:00;3875.36;3875.53;3875.29;3875.42\n2026-10-31 11:00:00;3875.35;3875.54;3875.29;3875.34\n2026-10-31 10:30:00;3875.35;3875.53;3875.29;3875.43\n2026-10-31 10:00:00;3875.36;3875.53;3875.29;3875.32\n2026-10-31 09:30:00;3875.36;3875.53;3875.07;3875.44\n2026-10-31 09:00:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 08:30:00;3875.34;3875.72;3875.04;3875.45\n2026-10-31 08:00:00;3875.82;3875.82;3874.47;3875.31\n2026-10-31 07:30:00;3880.24;3880.24;3872.07;3875.51\n2026-10-31 07:00:00;3882.75;3887.27;3877.17;3880.41\n2026-10-31 06:30:00;3877.62;3884.7;3871.19;3883.59\n2026-10-31 06:00:00;3880.06;3880.93;3876.26;3876.74\n2026-10-31 05:30:00;3878.57;3883.89;3877.62;3880.17\n2026-10-31 05:00:00;3883.79;3884.17;3875.97;3878.33\n2026-10-31 04:30:00;3890.48;3890.48;3878.78;3883.9\n2026-10-31 04:00:00;3895.93;3896.93;3886.66;3890.93\n2026-10-31 03:30:00;3898.09;3902.11;3892.46;3896.35\n2026-10-31 03:00:00;3898.03;3902.44;3895.14;3898.53\n2026-10-31 02:30:00;3908.24;3908.24;3896.51;3898.39\n2026-10-31 02:00:00;3916.69;3923.41;3906.77;3907.28\n2026-10-31 01:30:00;3901.7;3917.57;3898.66;3917.34\n2026-10-31 01:00:00;3920.84;3924.18;3893.32;3904.81\n2026-10-31 00:30:00;3942.62;3948.43;3914.22;3922.68\n2026-10-31 00:00:00;3955.06;3955.06;3937.39;3941.75\n2026-10-30 23:30:00;3964.82;3969.83;3954.6;3955.22\n2026-10-30 23:00:00;3966.57;3968.24;3959.86;3965.07\n2026-10-30 22:30:00;3972.7;3979.3;3965.11;3966.75\n2026-10-30 22:00:00;3977.83;3981.84;3967.28;3973.66\n2026-10-30 21:30:00;3982.32;3982.79;3974.53;3978.36\n2026-10-30 21:00:00;3991.76;3992.87;3981.68;3981.9\n2026-10-30 20:30:00;3990.38;3993.45;3986.46;3991.95\n2026-10-30 20:00:00;3998.38;3998.38;3989.95;3990.54\n2026-10-30 19:30:00;3986.53;3998.74;3985.29;3998.61\n2026-10-30 19:00:00;3971.5;3989.47;3971.5;3986.19\n2026-10-30 18:30:00;3985.5;3985.63;3965.89;3973.15\n2026-10-30 18:00:00;3982.28;3987.4;3980.1;3985.61\n2026-10-30 17:30:00;3990.02;3994.54;3981.84;3981.99\n2026-10-30 17:00:00;3991.32;3992.39;3986.89;3991.37\n2026-10-30 16:30:00;4005.12;4009.62;3988.99;3991.57\n2026-10-30 16:00:00;3997.32;4005.67;3995.81;4005.54\n2026-10-30 15:30:00;3992.43;3997.64;3989.63;3996.99\n2026-10-30 15:00:00;3992.95;3995.21;3988.1;3992.55\n2026-10-30 14:30:00;4000.81;4002.6;3990;3994.01\n2026-10-30 14:00:00;3997.89;4001.44;3992.57;4000.55\n2026-10-30 13:30:00;4005.09;4005.31;3997.2;3997.67\n2026-10-30 13:00:00;4005.54;4013;4004.49;4004.74\n2026-10-30 12:30:00;4011.22;4011.22;3996.48;4007.82\n2026-10-30 12:00:00;4006.86;4012.04;3996.64;4011.75\n2026-10-30 11:30:00;4012.11;4019.75;4004.89;4008.33\n2026-10-30 11:00:00;4007.85;4012.68;4003.38;4012.5\n2026-10-30 10:30:00;4015.45;4016.77;4007.21;4007.69\n2026-10-30 10:00:00;4024.55;4026.06;4011.88;4015.44\n2026-10-30 09:30:00;4018.28;4026.25;4017.96;4024.18\n2026-10-30 09:00:00;4021.72;4026.26;4018.16;4018.21\n2026-10-30 08:30:00;4021.56;4022.06;4021.23;4021.83\n2026-10-30 08:00:00;4021.43;4021.88;4021.07;4021.61\n2026-10-30 07:30:00;4025.19;4028.68;4019.13;4021.63\n2026-10-30 07:00:00;4022.3;4030.8;4021.99;4024.94\n2026-10-30 06:30:00;4017.19;4023.33;4015.42;4022.12\n2026-10-30 06:00:00;4011.21;4017.68;4009.78;4017.52\n2026-10-30 05:30:00;4007.4;4012.2;4006.16;4011.24\n2026-10-30 05:00:00;4008.28;4012.43;4006.15;4007.5\n2026-10-30 04:30:00;4020.83;4021.99;4007.81;4007.99\n2026-10-30 04:00:00;4017.68;4025.28;4017.03;4021\n2026-10-30 03:30:00;4014.83;4018.32;4011.59;4018.15\n2026-10-30 03:00:00;4025.11;4025.11;4011.07;4014.18\n2026-10-30 02:30:00;4022.84;4026.25;4019.45;4025.67\n2026-10-30 02:00:00;4027.24;4027.66;4019.32;4023.17\n2026-10-30 01:30:00;4028.71;4036.49;4026.74;4027.13\n2026-10-30 01:00:00;4022.68;4030.15;4018.97;4029.63\n2026-10-30 00:30:00;4025.32;4036.26;4020.75;4022.75\n2026-10-30 00:00:00;4020.58;4029.17;4020.58;4025.84\n2026-10-29 23:30:00;4024.14;4032.58;4017.64;4020.25","H1":"datetime;open;high;low;close\n2026-11-01 11:00:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 10:00:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 09:00:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 08:00:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 07:00:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 06:00:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 05:00:00;3875.36;3875.53;3875.3;3875.43\n2026-11-01 04:00:00;3875.36;3875.53;3875.3;3875.42\n2026-11-01 03:00:00;3875.36;3875.53;3875.3;3875.4\n2026-11-01 02:00:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 01:00:00;3875.36;3875.53;3875.3;3875.39\n2026-11-01 00:00:00;3875.36;3875.53;3875.3;3875.41\n2026-10-31 23:00:00;3875.36;3875.53;3875.3;3875.35\n2026-10-31 22:00:00;3875.36;3875.54;3875.29;3875.34\n2026-10-31 21:00:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 20:00:00;3875.36;3875.53;3875.3;3875.33\n2026-10-31 19:00:00;3875.35;3875.54;3875.3;3875.33\n2026-10-31 18:00:00;3875.35;3875.53;3875.3;3875.33\n2026-10-31 17:00:00;3875.36;3875.53;3875.3;3875.34\n2026-10-31 16:00:00;3875.36;3875.53;3875.29;3875.36\n2026-10-31 15:00:00;3875.35;3875.53;3875.29;3875.44\n2026-10-31 14:00:00;3875.35;3875.53;3875.29;3875.42\n2026-10-31 13:00:00;3875.36;3875.53;3875.29;3875.4\n2026-10-31 12:00:00;3875.35;3875.53;3875.29;3875.42\n2026-10-31 11:00:00;3875.35;3875.54;3875.29;3875.42\n2026-10-31 10:00:00;3875.36;3875.53;3875.29;3875.43\n2026-10-31 09:00:00;3875.36;3875.53;3875.07;3875.44\n2026-10-31 08:00:00;3875.82;3875.82;3874.47;3875.45\n2026-10-31 07:00:00;3882.75;3887.27;3872.07;3875.51\n2026-10-31 06:00:00;3880.06;3884.7;3871.19;3883.59\n2026-10-31 05:00:00;3883.79;3884.17;3875.97;3880.17\n2026-10-31 04:00:00;3895.93;3896.93;3878.78;3883.9\n2026-10-31 03:00:00;3898.03;3902.44;3892.46;3896.35\n2026-10-31 02:00:00;3916.69;3923.41;3896.51;3898.39\n2026-10-31 01:00:00;3920.84;3924.18;3893.32;3917.34\n2026-10-31 00:00:00;3955.06;3955.06;3914.22;3922.68\n2026-10-30 23:00:00;3966.57;3969.83;3954.6;3955.22\n2026-10-30 22:00:00;3977.83;3981.84;3965.11;3966.75\n2026-10-30 21:00:00;3991.76;3992.87;3974.53;3978.36\n2026-10-30 20:00:00;3998.38;3998.38;3986.46;3991.95\n2026-10-30 19:00:00;3971.5;3998.74;3971.5;3998.61\n2026-10-30 18:00:00;3982.28;3987.4;3965.89;3973.15\n2026-10-30 17:00:00;3991.32;3994.54;3981.84;3981.99\n2026-10-30 16:00:00;3997.32;4009.62;3988.99;3991.57\n2026-10-30 15:00:00;3992.95;3997.64;3988.1;3996.99\n2026-10-30 14:00:00;3997.89;4002.6;3990;3994.01\n2026-10-30 13:00:00;4005.54;4013;3997.2;3997.67\n2026-10-30 12:00:00;4006.86;4012.04;3996.48;4007.82\n2026-10-30 11:00:00;4007.85;4019.75;4003.38;4008.33\n2026-10-30 10:00:00;4024.55;4026.06;4007.21;4007.69\n2026-10-30 09:00:00;4021.72;4026.26;4017.96;4024.18\n2026-10-30 08:00:00;4021.43;4022.06;4021.07;4021.83\n2026-10-30 07:00:00;4022.3;4030.8;4019.13;4021.63\n2026-10-30 06:00:00;4011.21;4023.33;4009.78;4022.12\n2026-10-30 05:00:00;4008.28;4012.43;4006.15;4011.24\n2026-10-30 04:00:00;4017.68;4025.28;4007.81;4007.99\n2026-10-30 03:00:00;4025.11;4025.11;4011.07;4018.15\n2026-10-30 02:00:00;4027.24;4027.66;4019.32;4025.67\n2026-10-30 01:00:00;4022.68;4036.49;4018.97;4027.13\n2026-10-30 00:00:00;4020.58;4036.26;4020.58;4022.75\n2026-10-29 23:00:00;4019.06;4032.58;4017.64;4020.25\n2026-10-29 22:00:00;4030.41;4040.54;4018.49;4018.69\n2026-10-29 21:00:00;4028.9;4033.72;4024.9;4030.34\n2026-10-29 20:00:00;4025.91;4038.61;4021.89;4029.11\n2026-10-29 19:00:00;4023.54;4036.07;4015.9;4025.33\n2026-10-29 18:00:00;4034.54;4037.3;4023.34;4023.43\n2026-10-29 17:00:00;4025.95;4034.87;4023.5;4034.81\n2026-10-29 16:00:00;4038.17;4046.45;4023.17;4025.15\n2026-10-29 15:00:00;4039.54;4042.11;4035.84;4038.03\n2026-10-29 14:00:00;4049.29;4049.29;4036.74;4039.49\n2026-10-29 13:00:00;4062.7;4065.35;4038.45;4049.49\n2026-10-29 12:00:00;4038.07;4069.51;4036.49;4062.83\n2026-10-29 11:00:00;4055.87;4056.06;4037.12;4037.5\n2026-10-29 10:00:00;4051.87;4057.78;4051.21;4055.28\n2026-10-29 09:00:00;4067.99;4069.89;4051.04;4051.97\n2026-10-29 08:00:00;4067.85;4068.23;4067.36;4068.02\n2026-10-29 07:00:00;4068.99;4081.97;4056.14;4067.54\n2026-10-29 06:00:00;4041.22;4070.81;4030.31;4070.21\n2026-10-29 05:00:00;4040.88;4070.29;4029.63;4041.47\n2026-10-29 04:00:00;4043.75;4043.75;4037.79;4041.01\n2026-10-29 03:00:00;4041.72;4047.76;4036.49;4044.24\n2026-10-29 02:00:00;4041.53;4047.19;4040.44;4041.85\n2026-10-29 01:00:00;4049.04;4049.89;4036.49;4041.8\n2026-10-29 00:00:00;4051.96;4056.96;4045.8;4048.69\n2026-10-28 23:00:00;4046.19;4059.92;4044.3;4052.58\n2026-10-28 22:00:00;4044.8;4049.85;4043.18;4046.47\n2026-10-28 21:00:00;4053.25;4055.81;4044.65;4044.69\n2026-10-28 20:00:00;4055.79;4055.83;4050.06;4054.51\n2026-10-28 19:00:00;4043.04;4057.68;4042.48;4054.1\n2026-10-28 18:00:00;4030.32;4044;4028.01;4043.59\n2026-10-28 17:00:00;4030.57;4034.37;4028.35;4030.53\n2026-10-28 16:00:00;4036.87;4037.65;4030.15;4030.28\n2026-10-28 15:00:00;4043.11;4043.25;4036.63;4036.69\n2026-10-28 14:00:00;4048.14;4049.07;4043.02;4043.05\n2026-10-28 13:00:00;4046.79;4051.48;4045.14;4048.22\n2026-10-28 12:00:00;4062.26;4062.73;4045.96;4046.56\n2026-10-28 11:00:00;4063.19;4070.17;4059.03;4062.03\n2026-10-28 10:00:00;4063.03;4064.28;4057.7;4062.92\n2026-10-28 09:00:00;4058.12;4064.93;4053.97;4062.88\n2026-10-28 08:00:00;4060.4;4060.86;4057.62;4057.81\n2026-10-28 07:00:00;4061.98;4062.56;4058.77;4060.32\n2026-10-28 06:00:00;4056.73;4064.38;4054.99;4062.29\n2026-10-28 05:00:00;4057.18;4059.1;4054.16;4056.83\n2026-10-28 04:00:00;4058.9;4065.54;4056.8;4056.95\n2026-10-28 03:00:00;4063.39;4064.38;4056.8;4058.8\n2026-10-28 02:00:00;4052.43;4064.21;4052.36;4063.56\n2026-10-28 01:00:00;4026.93;4053.67;4025.6;4052.58\n2026-10-28 00:00:00;4023.39;4032.42;4020.09;4028.25\n2026-10-27 23:00:00;4012.74;4029.18;4010.97;4023.59\n2026-10-27 22:00:00;4009.89;4014.13;4008.66;4012.6\n2026-10-27 21:00:00;3998.38;4017.68;3993.45;4010.35\n2026-10-27 20:00:00;3993.33;4002.62;3993.09;4001.25\n2026-10-27 19:00:00;3997.79;4001.44;3988.99;3993.51\n2026-10-27 18:00:00;4000.75;4007.21;3997.44;3997.6\n2026-10-27 17:00:00;4010.82;4010.82;3997.6;4000.88\n2026-10-27 16:00:00;4011.1;4011.39;3999.84;4010.88\n2026-10-27 15:00:00;4016.25;4024.79;4010.59;4011.19\n2026-10-27 14:00:00;4009.63;4021.31;4005.61;4016.64\n2026-10-27 13:00:00;4011.06;4018.32;4007.75;4009.84\n2026-10-27 12:00:00;4009.41;4018.49;4004.16;4011.34","H4":"datetime;open;high;low;close\n2026-11-01 11:00:00;3875.36;3875.53;3875.3;3875.34\n2026-11-01 07:00:00;3875.36;3875.53;3875.3;3875.44\n2026-11-01 03:00:00;3875.36;3875.53;3875.3;3875.44\n2026-10-31 23:00:00;3875.36;3875.53;3875.3;3875.39\n2026-10-31 19:00:00;3875.35;3875.54;3875.29;3875.34\n2026-10-31 15:00:00;3875.35;3875.53;3875.29;3875.33\n2026-10-31 11:00:00;3875.35;3875.54;3875.29;3875.42\n2026-10-31 07:00:00;3882.75;3887.27;3872.07;3875.43\n2026-10-31 03:00:00;3898.03;3902.44;3871.19;3883.59\n2026-10-30 23:00:00;3966.57;3969.83;3893.32;3898.39\n2026-10-30 19:00:00;3971.5;3998.74;3965.11;3966.75\n2026-10-30 15:00:00;3992.95;4009.62;3965.89;3973.15\n2026-10-30 11:00:00;4007.85;4019.75;3990;3994.01\n2026-10-30 07:00:00;4022.3;4030.8;4007.21;4007.69\n2026-10-30 03:00:00;4025.11;4025.28;4006.15;4022.12\n2026-10-29 23:00:00;4019.06;4036.49;4017.64;4025.67\n2026-10-29 19:00:00;4023.54;4040.54;4015.9;4018.69\n2026-10-29 15:00:00;4039.54;4046.45;4023.17;4023.43\n2026-10-29 11:00:00;4055.87;4069.51;4036.49;4039.49\n2026-10-29 07:00:00;4068.99;4081.97;4051.04;4055.28\n2026-10-29 03:00:00;4041.72;4070.81;4029.63;4070.21\n2026-10-28 23:00:00;4046.19;4059.92;4036.49;4041.85\n2026-10-28 19:00:00;4043.04;4057.68;4042.48;4046.47\n2026-10-28 15:00:00;4043.11;4044;4028.01;4043.59\n2026-10-28 11:00:00;4063.19;4070.17;4043.02;4043.05\n2026-10-28 07:00:00;4061.98;4064.93;4053.97;4062.92\n2026-10-28 03:00:00;4063.39;4065.54;4054.16;4062.29\n2026-10-27 23:00:00;4012.74;4064.21;4010.97;4063.56\n2026-10-27 19:00:00;3997.79;4017.68;3988.99;4012.6\n2026-10-27 15:00:00;4016.25;4024.79;3997.44;3997.6\n2026-10-27 11:00:00;4005.89;4021.31;4003.76;4016.64\n2026-10-27 07:00:00;4013.57;4018;4004.65;4006.13\n2026-10-27 03:00:00;4017.74;4029.98;4008.66;4013.44\n2026-10-26 23:00:00;4016.92;4026.58;3988.67;4018.1\n2026-10-26 19:00:00;4010.23;4022.2;4009.38;4016.51\n2026-10-26 15:00:00;4008.66;4019.33;4003.26;4010.06\n2026-10-26 11:00:00;3997.72;4016.87;3977.58;4008.51\n2026-10-26 07:00:00;3993.57;4003.86;3988.83;3997.97\n2026-10-26 03:00:00;3993.62;3993.93;3993.51;3993.81\n2026-10-25 23:00:00;3993.62;3993.8;3993.56;3993.68\n2026-10-25 19:00:00;3993.62;3993.8;3993.56;3993.66\n2026-10-25 15:00:00;3993.62;3993.8;3993.56;3993.59\n2026-10-25 11:00:00;3993.62;3993.8;3993.56;3993.61\n2026-10-25 07:00:00;3993.62;3993.8;3993.56;3993.67\n2026-10-25 03:00:00;3993.62;3993.79;3993.56;3993.7\n2026-10-24 23:00:00;3993.62;3993.79;3993.56;3993.68\n2026-10-24 19:00:00;3993.62;3993.8;3993.55;3993.67\n2026-10-24 15:00:00;3993.62;3993.8;3993.56;3993.59\n2026-10-24 11:00:00;3993.62;3993.8;3993.56;3993.61\n2026-10-24 07:00:00;4000.71;4000.71;3992.81;3993.68\n2026-10-24 03:00:00;4003.89;4006.89;3991.06;4000.88\n2026-10-23 23:00:00;4024.27;4034.68;3975.83;4003.57\n2026-10-23 19:00:00;4011.83;4033.17;4009.11;4024.52\n2026-10-23 15:00:00;4016.36;4028.68;4002.24;4011.56\n2026-10-23 11:00:00;4023.33;4032.26;3987.72;4016.07\n2026-10-23 07:00:00;4026.45;4032.26;4020.47;4023.79\n2026-10-23 03:00:00;4052.13;4052.19;4020.92;4026.14\n2026-10-22 23:00:00;4058.12;4091.89;4046.78;4051.73\n2026-10-22 19:00:00;4085.86;4093.66;4057.2;4057.55\n2026-10-22 15:00:00;4090.83;4101.89;4068.02;4086.44\n2026-10-22 11:00:00;4125.78;4125.86;4089.96;4090.32\n2026-10-22 07:00:00;4134.23;4142.67;4122.47;4125.61\n2026-10-22 03:00:00;4132.39;4141.13;4107.11;4134.54\n2026-10-21 23:00:00;4140.24;4142.03;4121.84;4132.3\n2026-10-21 19:00:00;4123.57;4141.13;4112.35;4140.38\n2026-10-21 15:00:00;4118.1;4129.5;4111.5;4123.74\n2026-10-21 11:00:00;4114.39;4125.92;4106.88;4117.87\n2026-10-21 07:00:00;4120.72;4131.55;4114.21;4114.3\n2026-10-21 03:00:00;4131.38;4131.89;4117.6;4120.8\n2026-10-20 23:00:00;4125.12;4155.9;4112.52;4131.63\n2026-10-20 19:00:00;4120.85;4127.48;4111.84;4125.21\n2026-10-20 15:00:00;4146.03;4147.14;4117.14;4122.63\n2026-10-20 11:00:00;4133.07;4146.85;4115.57;4146.37\n2026-10-20 07:00:00;4141.76;4144.39;4131.77;4133.29\n2026-10-20 03:00:00;4141.78;4149.57;4137;4141.53\n2026-10-19 23:00:00;4163.67;4170.32;4140.1;4141.93\n2026-10-19 19:00:00;4175.54;4179.03;4161.09;4163.35\n2026-10-19 15:00:00;4180.91;4190.13;4170.33;4174.67\n2026-10-19 11:00:00;4183.69;4188.1;4166.15;4180.9\n2026-10-19 07:00:00;4165.5;4186.06;4160.95;4184.1\n2026-10-19 03:00:00;4164.67;4165.7;4164.58;4165.48\n2026-10-18 23:00:00;4164.67;4164.86;4164.61;4164.64\n2026-10-18 19:00:00;4164.67;4164.86;4164.61;4164.66\n2026-10-18 15:00:00;4164.67;4164.86;4164.61;4164.73\n2026-10-18 11:00:00;4164.67;4164.86;4164.61;4164.76\n2026-10-18 07:00:00;4164.67;4164.86;4164.58;4164.74\n2026-10-18 03:00:00;4164.67;4164.86;4164.61;4164.72\n2026-10-17 23:00:00;4164.67;4164.86;4164.61;4164.64\n2026-10-17 19:00:00;4164.67;4164.86;4164.58;4164.66\n2026-10-17 15:00:00;4164.68;4164.87;4164.58;4164.72\n2026-10-17 11:00:00;4164.67;4164.87;4164.58;4164.77\n2026-10-17 07:00:00;4168.22;4169.45;4163.48;4164.75\n2026-10-17 03:00:00;4169.81;4171.88;4155.93;4168.17\n2026-10-16 23:00:00;4172.14;4198.87;4154.57;4168.94\n2026-10-16 19:00:00;4187.92;4191.47;4171.71;4171.87\n2026-10-16 15:00:00;4183.29;4189.71;4169.45;4188.04\n2026-10-16 11:00:00;4156.34;4184.63;4147.48;4183.4\n2026-10-16 07:00:00;4173.55;4177.81;4156.1;4156.2\n2026-10-16 03:00:00;4149.92;4175.77;4144.05;4175.13\n2026-10-15 23:00:00;4147.33;4168.92;4136.33;4149.69\n2026-10-15 19:00:00;4145.22;4160.36;4144.6;4148.07\n2026-10-15 15:00:00;4144.84;4147.97;4131.93;4145.53\n2026-10-15 11:00:00;4112.24;4164.02;4111.63;4144.83\n2026-10-15 07:00:00;4101.51;4113.03;4096.85;4112.33\n2026-10-15 03:00:00;4080.87;4106.61;4073.82;4101.66\n2026-10-14 23:00:00;4140.58;4172.83;4080.21;4080.52\n2026-10-14 19:00:00;4149.55;4157.61;4136.33;4141.29\n2026-10-14 15:00:00;4162.5;4167.36;4143.87;4149.75\n2026-10-14 11:00:00;4155.11;4169.97;4143.76;4162.77\n2026-10-14 07:00:00;4164.48;4164.73;4154.81;4154.92\n2026-10-14 03:00:00;4159.06;4166.75;4147.48;4164.44\n2026-10-13 23:00:00;4186.16;4191.29;4157.31;4159.18\n2026-10-13 19:00:00;4188.91;4194.09;4180;4186.32\n2026-10-13 15:00:00;4186.99;4200.45;4182.88;4188.83\n2026-10-13 11:00:00;4171.39;4188.5;4150.52;4188.01\n2026-10-13 07:00:00;4169.34;4175.19;4166.84;4171.44\n2026-10-13 03:00:00;4166.43;4172.75;4159.98;4169.42\n2026-10-12 23:00:00;4169.11;4176.63;4156.45;4165.75\n2026-10-12 19:00:00;4180.7;4181.49;4167.88;4168.83\n2026-10-12 15:00:00;4203.04;4203.69;4179.66;4180.88","D1":"datetime;open;high;low;close\n2026-11-01;3875.36;3875.53;3875.3;3875.34\n2026-10-31;3882.75;3887.27;3872.07;3875.44\n2026-10-30;4022.3;4030.8;3871.19;3883.59\n2026-10-29;4068.99;4081.97;4006.15;4022.12\n2026-10-28;4061.98;4070.81;4028.01;4070.21\n2026-10-27;4013.57;4065.54;3988.99;4062.29\n2026-10-26;3993.57;4029.98;3977.58;4013.44\n2026-10-25;3993.62;3993.93;3993.51;3993.81\n2026-10-24;4000.71;4000.71;3992.81;3993.7\n2026-10-23;4026.45;4034.68;3975.83;4000.88\n2026-10-22;4134.23;4142.67;4020.92;4026.14\n2026-10-21;4120.72;4142.03;4106.88;4134.54\n2026-10-20;4141.76;4155.9;4111.84;4120.8\n2026-10-19;4165.5;4190.13;4137;4141.53\n2026-10-18;4164.67;4165.7;4164.58;4165.48\n2026-10-17;4168.22;4169.45;4163.48;4164.72\n2026-10-16;4173.55;4198.87;4147.48;4168.17\n2026-10-15;4105.2;4177.59;4099.77;4156.11\n2026-10-14;4161;4170.48;4073.44;4105.7\n2026-10-13;4171.69;4200.64;4147.01;4157.95\n2026-10-12;4194.25;4217.47;4154.6;4171.69\n2026-10-09;4134.7;4207.69;4130.52;4194.46\n2026-10-08;4110.4;4146.3;4103.13;4134.93\n2026-10-07;4164.65;4170.12;4066.06;4111.05\n2026-10-06;4141.35;4184.46;4104.32;4164.35\n2026-10-05;4144.15;4170.51;4122.9;4139.89\n2026-10-02;4175.31;4225.62;4125.25;4142.96\n2026-10-01;4157.35;4193.03;4139.29;4178.86\n2026-09-30;4182.8;4219.46;4147.47;4157.34\n2026-09-29;4113.87;4185.42;4113.57;4182.8\n2026-09-28;4277.9;4280.56;4110.95;4115.27\n2026-09-25;4279.12;4316.81;4254.45;4287.25\n2026-09-24;4287.38;4304.95;4244.63;4278.52\n2026-09-23;4357.02;4371.45;4274.73;4287.51\n2026-09-22;4343.57;4378.25;4291.42;4355.48\n2026-09-21;4383.44;4387.51;4322.63;4343.56\n2026-09-18;4342.73;4399.77;4334.34;4378.17\n2026-09-17;4263.97;4382.63;4257.55;4341.3\n2026-09-16;4294.5;4368.04;4235.08;4263.5\n2026-09-15;4299.35;4318.08;4261.39;4294\n2026-09-14;4332.7;4355.65;4253.3;4298.8\n2026-09-11;4319.31;4402.7;4295.55;4348.72\n2026-09-10;4404.82;4433;4313.71;4317.3\n2026-09-09;4360.4;4434.18;4341.44;4401.55\n2026-09-08;4406.55;4443.1;4346.07;4355.65\n2026-09-07;4427.79;4436.03;4381.08;4405.07\n2026-09-04;4481.02;4492.5;4365.59;4430.25\n2026-09-03;4388.38;4511;4381.01;4474.06\n2026-09-02;4330.7;4397.53;4282.71;4387.4\n2026-09-01;4449.9;4465.55;4322.37;4329.5\n2026-08-31;4453.21;4472.1;4396.48;4448.92\n2026-08-28;4601.84;4630.25;4445.39;4455.15\n2026-08-27;4596.75;4643.35;4566.17;4601.25\n2026-08-26;4655.2;4674.2;4582.82;4593.68\n2026-08-25;4654.11;4697.66;4605.17;4658.59\n2026-08-24;4618.79;4681.4;4594.68;4651.87\n2026-08-21;4519.09;4632.61;4508.83;4603.56\n2026-08-20;4522.28;4541.49;4450.52;4519.08\n2026-08-19;4334.68;4524.7;4324.49;4522.8\n2026-08-18;4417.55;4436.39;4328.86;4334.52\n2026-08-17;4381.12;4429.26;4367.24;4416.82\n2026-08-14;4351.28;4397.25;4310.73;4376.6\n2026-08-13;4409.88;4450.23;4343.76;4351.34\n2026-08-12;4368.48;4441.26;4360.82;4408.7\n2026-08-11;4389.82;4435.47;4356.49;4368.46\n2026-08-10;4342.5;4396.71;4312.45;4388.96\n2026-08-07;4241.78;4372.17;4229.67;4343.74\n2026-08-06;4249.54;4306;4223.17;4240.42\n2026-08-05;4077.13;4267.97;4065.45;4247.02\n2026-08-04;4053.73;4106.46;4042.52;4077.65\n2026-08-03;4077.11;4083.29;4019.19;4053.45\n2026-07-31;4104.8;4116.3;4020.82;4042.67\n2026-07-30;4064.68;4120.43;4028.44;4103.58\n2026-07-29;4027.86;4116.68;3995.78;4066.16\n2026-07-28;4076.66;4089.92;4011.35;4028.75\n2026-07-27;4092.62;4116.29;4065.17;4076.65\n2026-07-24;4047.65;4082.45;4021.56;4053.17\n2026-07-23;4132.35;4146.12;4040.1;4048.78\n2026-07-22;4075.82;4166.42;4074.62;4130.54\n2026-07-21;4010.3;4087;3999.48;4077.92\n2026-07-20;4003.71;4040.56;3982.51;4006.31\n2026-07-17;3972.95;4024.22;3959.69;4017.6\n2026-07-16;4058.8;4070.06;3969.15;3972.94\n2026-07-15;4055.47;4080.83;4017.3;4062.06\n2026-07-14;4006;4100.75;3984.45;4055.53\n2026-07-13;4122.63;4122.63;3986.37;4001.84\n2026-07-10;4121.62;4136.23;4072.45;4121.08\n2026-07-09;4076.56;4138.38;4054.04;4121.62\n2026-07-08;4107.82;4134.39;4021.76;4077.95\n2026-07-07;4166.99;4183.27;4092.02;4107.32\n2026-07-06;4175.71;4202.67;4128.19;4165.17\n2026-07-03;4124;4195.54;4120.92;4175.7\n2026-07-02;4031.04;4144.22;4030.38;4123.98\n2026-07-01;4008.49;4115.55;3960.1;4031.04\n2026-06-30;4017.59;4064.81;3944.23;4008.48\n2026-06-29;4089.66;4093.68;4001.3;4017.57\n2026-06-26;4027.57;4097.94;3982.83;4089.26\n2026-06-25;4000.71;4044.59;3962.78;4027.56\n2026-06-24;4113.08;4115.26;3959.38;4000.69\n2026-06-23;4191.63;4202.55;4090.75;4110.26\n2026-06-22;4143.61;4220.82;4136.3;4191.62\n2026-06-19;4210.05;4213.66;4120.89;4160.26\n2026-06-18;4258.87;4330.39;4201.4;4210.09\n2026-06-17;4334.03;4382.85;4219.05;4258.86\n2026-06-16;4308.12;4355.35;4303.45;4331.31\n2026-06-15;4222.5;4372.86;4219.33;4309.34\n2026-06-12;4215.13;4246.53;4170.02;4219.32\n2026-06-11;4075.1;4220.25;4023.55;4215.12\n2026-06-10;4255.7;4258.29;4066.86;4075.08\n2026-06-09;4331.26;4363.5;4236.61;4264.15\n2026-06-08;4332.21;4353.62;4268.99;4329.85\n2026-06-05;4476.24;4482.02;4311.41;4329.33\n2026-06-04;4442.83;4515.55;4423.79;4475.43\n2026-06-03;4489.18;4500.71;4426.1;4434.42\n2026-06-02;4487.3;4541.82;4462.78;4488.09\n2026-06-01;4521.91;4546.44;4447.12;4485.15\n2026-05-29;4494.94;4595.31;4488.68;4539.27\n2026-05-28;4456.22;4516.99;4366.41;4494.93\n2026-05-27;4507.52;4538.55;4401.45;4458.21\n2026-05-26;4573.4;4581.35;4482.64;4507.51","W1":"datetime;open;high;low;close\n2026-10-26;3993.57;4081.97;3871.19;3875.42\n2026-10-19;4165.5;4190.13;3975.83;3993.81\n2026-10-12;4194.25;4217.47;4073.44;4165.48\n2026-10-05;4144.15;4207.69;4066.06;4194.46\n2026-09-28;4277.9;4280.56;4110.95;4142.96\n2026-09-21;4383.44;4387.51;4244.63;4287.25\n2026-09-14;4332.7;4399.77;4235.08;4378.17\n2026-09-07;4427.79;4443.1;4295.55;4348.72\n2026-08-31;4453.21;4511;4282.71;4430.25\n2026-08-24;4618.79;4697.66;4445.39;4455.15\n2026-08-17;4381.12;4632.61;4324.49;4603.56\n2026-08-10;4342.5;4450.23;4310.73;4376.6\n2026-08-03;4077.11;4372.17;4019.19;4343.74\n2026-07-27;4092.62;4120.43;3995.78;4042.67\n2026-07-20;4003.71;4166.42;3982.51;4053.17\n2026-07-13;4122.63;4122.63;3959.69;4017.6\n2026-07-06;4175.71;4202.67;4021.76;4121.08\n2026-06-29;4089.66;4195.54;3944.23;4175.7\n2026-06-22;4143.61;4220.82;3959.38;4089.26\n2026-06-15;4222.5;4382.85;4120.89;4160.26\n2026-06-08;4332.21;4363.5;4023.55;4219.32\n2026-06-01;4521.91;4546.44;4311.41;4329.33\n2026-05-25;4542;4595.31;4366.41;4539.27\n2026-05-18;4531.42;4589.76;4453.12;4509.38\n2026-05-11;4683.79;4773.83;4511.62;4540.07\n2026-05-04;4623.02;4765.17;4500.85;4714.89\n2026-04-27;4699.05;4730.18;4509.96;4614.95\n2026-04-20;4792.93;4833.34;4657.64;4709.25\n2026-04-13;4686.91;4889.7;4644.2;4830.43\n2026-04-06;4653.83;4856.3;4601.08;4748.18\n2026-03-30;4493;4801;4419.81;4676.42\n2026-03-23;4491.66;4602.64;4098.87;4492.99\n2026-03-16;5019.26;5044.84;4477.82;4491.15\n2026-03-09;5180.45;5238.7;5009.51;5019.25\n2026-03-02;5301.75;5419.25;4996.19;5171.12\n2026-02-23;5102.84;5279.56;5094.5;5277.9\n2026-02-16;5040.75;5105.45;4842.5;5104.34\n2026-02-09;4960.97;5119.24;4879.05;5043.11\n2026-02-02;4799.72;5092.68;4404.12;4961.15\n2026-01-26;5007.11;5595.46;4681.94;4865.35\n2026-01-19;4630.8;4989.93;4629.8;4982.91\n2026-01-12;4519.45;4643.06;4513.57;4595.1\n2026-01-05;4356.12;4517.4;4345.88;4510.45\n2025-12-29;4540.7;4550.1;4274.51;4330.5\n2025-12-22;4338.98;4550.11;4337.9;4532.63\n2025-12-15;4299;4374.69;4271.34;4338.55\n2025-12-08;4197.19;4353.72;4170;4302.43\n2025-12-01;4223.93;4264.74;4163.01;4197.13\n2025-11-24;4066.47;4231.51;4040.03;4230.63\n2025-11-17;4082.02;4133.04;3997.99;4065.9\n2025-11-10;3999.94;4245.2;3997.87;4079.58\n2025-11-03;4002.28;4030.7;3928.66;3999.72\n2025-10-27;4065.35;4109.33;3886.49;4002.28\n2025-10-20;4251.82;4381.6;4004.69;4112.1\n2025-10-13;4018.79;4379.44;4008.8;4249.98\n2025-10-06;3888.45;4059.34;3883.93;4018.3\n2025-09-29;3758.59;3897.2;3757.62;3886.83\n2025-09-22;3686.8;3791.11;3683.62;3760.24\n2025-09-15;3644.4;3707.7;3626.6;3684.98\n2025-09-08;3586.82;3674.75;3579.67;3643.13\n2025-09-01;3448;3600.33;3436.8;3586.81\n2025-08-25;3371.23;3454.08;3351.26;3448\n2025-08-18;3338;3379.01;3311.46;3372.11\n2025-08-11;3398.5;3405.1;3329.85;3335.39\n2025-08-04;3365.1;3408.83;3345;3398.78\n2025-07-28;3335;3363.55;3268.15;3362.88\n2025-07-21;3348.62;3439.09;3325.05;3337.18\n2025-07-14;3355.91;3377.5;3309.9;3350.4\n2025-07-07;3335.95;3368.89;3282.8;3355.91\n2025-06-30;3272.65;3365.81;3247.86;3336.64\n2025-06-23;3367.17;3399.25;3255.72;3274.25\n2025-06-16;3431.54;3451.62;3340.38;3368.23\n2025-06-09;3311.51;3447.02;3293.7;3432.64\n2025-06-02;3289.8;3403.55;3289.41;3310.17\n2025-05-26;3354.3;3357.03;3245.55;3289.4\n2025-05-19;3214.6;3366.39;3204.4;3357.42\n2025-05-12;3324.98;3325.42;3120.52;3202.77\n2025-05-05;3240;3438.59;3237.81;3324.63\n2025-04-28;3328.4;3353.33;3202.09;3240.88\n2025-04-21;3334.41;3500.33;3260.5;3319.45\n2025-04-14;3237.35;3358;3193.41;3327.54\n2025-04-07;3038.02;3245.69;2956.6;3236.21\n2025-03-31;3086.54;3168.04;3015.64;3037.36\n2025-03-24;3023.03;3086.93;3002.34;3084.03\n2025-03-17;2985.8;3057.51;2982.13;3023.63\n2025-03-10;2912.17;3005.08;2880.3;2984.42\n2025-03-03;2856.71;2930.56;2855.63;2910.79\n2025-02-24;2936.41;2956.37;2832.63;2858.6\n2025-02-17;2883.55;2954.97;2883.55;2936.03\n2025-02-10;2864.08;2943.25;2854.69;2883.18\n2025-02-03;2801.4;2886.96;2771.69;2860.39\n2025-01-27;2770.7;2817.57;2729.8;2801\n2025-01-20;2702.51;2786.04;2689.32;2771.3\n2025-01-13;2689.35;2724.86;2656.73;2701.55\n2025-01-06;2641;2698.57;2614.6;2690.01\n2024-12-30;2620.3;2665.47;2595.9;2639.5\n2024-12-23;2622.24;2639.4;2607.97;2620\n2024-12-16;2649.1;2664.83;2583.49;2620.77\n2024-12-09;2635.52;2726.31;2627.47;2648.39\n2024-12-02;2653.82;2657.36;2613.57;2632.91\n2024-11-25;2715.1;2721.43;2605.29;2653.55\n2024-11-18;2561.59;2712.91;2561.59;2712.55\n2024-11-11;2684.81;2686.51;2536.91;2561.24\n2024-11-04;2734.1;2750.06;2643.5;2683.77\n2024-10-28;2734.84;2790.41;2724.72;2735.16\n2024-10-21;2721.71;2758.53;2708.79;2747.69\n2024-10-14;2657.21;2722.87;2638.31;2720.25\n2024-10-07;2651.2;2661.55;2604.15;2656\n2024-09-30;2658.3;2673.2;2624.78;2652.25\n2024-09-23;2621.81;2685.96;2613.6;2657.97\n2024-09-16;2578.06;2625.79;2546.98;2621.96\n2024-09-09;2497.32;2586.18;2485.6;2576.5\n2024-09-02;2502.74;2529.3;2471.95;2497.03\n2024-08-26;2511.43;2529.15;2493.66;2503.03\n2024-08-19;2508.4;2532.05;2470.86;2512.07\n2024-08-12;2431.21;2509.89;2423.84;2507.28\n2024-08-05;2443.27;2458.8;2364.4;2430.93\n2024-07-29;2387.2;2477.72;2369.77;2443.29\n2024-07-22;2400.41;2432.05;2353.19;2385.57\n2024-07-15;2409.5;2483.78;2393.92;2400.79","MN":"datetime;open;high;low;close\n2026-11-01;3875.36;3875.53;3875.3;3875.42\n2026-10-01;4157.35;4225.62;3871.19;3875.44\n2026-09-01;4449.9;4511;4110.95;4157.34\n2026-08-01;4077.11;4697.66;4019.19;4448.92\n2026-07-01;4008.49;4202.67;3959.69;4042.67\n2026-06-01;4521.91;4546.44;3944.23;4008.48\n2026-05-01;4626.45;4773.83;4366.41;4539.27\n2026-04-01;4672.02;4889.7;4509.96;4622.59\n2026-03-01;5301.75;5419.25;4098.87;4672.01\n2026-02-01;4799.72;5279.56;4404.12;5277.9\n2026-01-01;4329.42;5595.46;4310.01;4865.35\n2025-12-01;4223.93;4550.11;4163.01;4315.09\n2025-11-01;4002.28;4245.2;3928.66;4230.63\n2025-10-01;3858.84;4381.6;3819.51;4002.28\n2025-09-01;3448;3871.87;3436.8;3858.51\n2025-08-01;3290.83;3454.08;3281.55;3448\n2025-07-01;3302.87;3439.09;3268.15;3290.32\n2025-06-01;3289.8;3451.62;3247.86;3303.69\n2025-05-01;3288.55;3438.59;3120.52;3289.4\n2025-04-01;3123.36;3500.33;2956.6;3288.59\n2025-03-01;2856.71;3128.29;2855.63;3123.05\n2025-02-01;2801.4;2956.37;2771.69;2858.6\n2025-01-01;2626.61;2817.57;2614.6;2801\n2024-12-01;2653.82;2726.31;2583.49;2623.81\n2024-11-01;2742.5;2762.29;2536.91;2653.55\n2024-10-01;2635.41;2790.41;2604.15;2743.8\n2024-09-01;2502.74;2685.96;2471.95;2634.49\n2024-08-01;2448.1;2532.05;2364.4;2503.03\n2024-07-01;2326.46;2483.78;2318.55;2448.1\n2024-06-01;2329.61;2387.85;2286.77;2325.71\n2024-05-01;2285.91;2450.13;2277.47;2326.97\n2024-04-01;2239.59;2431.53;2228.54;2285.57\n2024-03-01;2043.44;2235.9;2038.55;2232.38\n2024-02-01;2037.59;2065.42;1984.3;2043.24\n2024-01-01;2064.24;2079.02;2001.91;2037.19\n2023-12-01;2034.49;2135.9;1973.09;2062.59\n2023-11-01;1983.01;2052.09;1931.73;2035.75\n2023-10-01;1848.13;2009.48;1810.1;1982.7\n2023-09-01;1940.19;1953.44;1846.34;1848.31\n2023-08-01;1965.1;1966.24;1884.5;1939.74\n2023-07-01;1919.4;1987.59;1902.68;1964.19\n2023-06-01;1962.8;1983.52;1893.01;1919.57\n2023-05-01;1991.34;2073.29;1932.08;1962.3\n2023-04-01;1970.84;2048.84;1949.82;1989.65\n2023-03-01;1827.24;2010.19;1809.4;1967.9\n2023-02-01;1927.92;1959.77;1804.65;1827.15\n2023-01-01;1823.85;1949.27;1823.69;1927.88\n2022-12-01;1768.54;1833.39;1765.32;1824.4\n2022-11-01;1633.4;1786.68;1616.18;1768.45\n2022-10-01;1661.3;1729.73;1617.21;1633.12\n2022-09-01;1711.09;1735.37;1614.35;1659.67\n2022-08-01;1765.05;1807.9;1709.1;1710.7\n2022-07-01;1807.31;1814.36;1680.78;1765.22\n2022-06-01;1837.37;1877.38;1802.2;1806.89\n2022-05-01;1896.09;1910.03;1786.95;1837.09\n2022-04-01;1937.51;1998.6;1872.19;1896.4\n2022-03-01;1908.19;2070.29;1890.03;1937.23\n2022-02-01;1796.72;1974.48;1788.39;1907.9\n2022-01-01;1830.14;1853.98;1779.88;1796.47\n2021-12-01;1774.15;1830.58;1753.84;1828.39\n2021-11-01;1783.24;1877.4;1758.45;1773.78\n2021-10-01;1756.91;1814.22;1745.45;1782.81\n2021-09-01;1813.57;1834.55;1721.07;1756.66\n2021-08-01;1814.34;1832.1;1684.77;1813.43\n2021-07-01;1770.06;1833.99;1765.47;1813.58\n2021-06-01;1907.53;1916.84;1750.11;1769.8\n2021-05-01;1768.49;1913.15;1765.91;1906.36\n2021-04-01;1708.09;1798.29;1705.42;1768.59\n2021-03-01;1733.4;1760.02;1676.7;1707.01\n2021-02-01;1863.05;1871.84;1717.26;1733.49\n2021-01-01;1897.69;1959.6;1810.46;1846.09\n2020-12-01;1777.4;1906.93;1775.52;1896.49\n2020-11-01;1878.59;1965.92;1764.69;1777.02\n2020-10-01;1885.8;1933.45;1859.67;1877.95\n2020-09-01;1967.58;1992.26;1848.45;1885.44\n2020-08-01;1980.43;2072.9;1863.92;1970.15\n2020-07-01;1780.91;1981.14;1757.85;1975.89\n2020-06-01;1736.42;1786.46;1670.75;1781.66\n2020-05-01;1685.24;1764.81;1669.82;1728.3\n2020-04-01;1569.45;1748.5;1568.91;1685.05\n2020-03-01;1590.99;1703.16;1451.68;1571.31\n2020-02-01;1589.85;1688.96;1547.2;1585.12\n2020-01-01;1517.26;1611;1517.09;1590.2\n2019-12-01;1466.73;1525.59;1453.7;1517.39\n2019-11-01;1513.53;1515.81;1445.43;1464.8\n2019-10-01;1472.3;1518.75;1458.9;1513.36\n2019-09-01;1520.05;1557.25;1464.24;1472.25\n2019-08-01;1411.21;1554.91;1400.56;1520.25\n2019-07-01;1392.83;1452.98;1381.76;1413.8\n2019-06-01;1307.55;1439.03;1306.7;1409.5\n2019-05-01;1283.46;1307.04;1266.1;1305.65\n2019-04-01;1291.33;1310.75;1266.15;1283.6\n2019-03-01;1312.81;1324.43;1280.95;1292.15\n2019-02-01;1320.95;1346.81;1302.17;1313.05\n2019-01-01;1283.13;1326.68;1276.49;1320.94\n2018-12-01;1223.12;1284.18;1221.09;1282.82\n2018-11-01;1215.2;1237.83;1196.29;1221.97\n2018-10-01;1192.55;1243.73;1183.49;1214.54\n2018-09-01;1200.59;1213.39;1180.74;1192.09\n2018-08-01;1224;1225.36;1160.56;1201.09\n2018-07-01;1253.5;1266.26;1211.48;1223.83\n2018-06-01;1298.98;1309.69;1245.71;1253\n2018-05-01;1315.58;1326.49;1282.15;1298.32\n2018-04-01;1326.2;1365.61;1310.51;1315.36\n2018-03-01;1318.53;1357.06;1302.99;1325\n2018-02-01;1345.4;1361.84;1306.9;1318.05\n2018-01-01;1303.43;1366.47;1302.43;1345.1\n2017-12-01;1274.29;1307.69;1236.31;1302.55\n2017-11-01;1270.88;1299.2;1265.55;1274.76\n2017-10-01;1279.5;1306.8;1260.89;1271.58\n2017-09-01;1321.8;1357.94;1277.64;1279.45\n2017-08-01;1268.8;1326.14;1251.41;1322.07\n2017-07-01;1241.46;1271.48;1204.85;1269.55\n2017-06-01;1268.89;1296.47;1236.96;1241.6\n2017-05-01;1268.6;1274.24;1214.21;1268.59\n2017-04-01;1248.4;1295.92;1243.85;1268.15\n2017-03-01;1248.57;1261.53;1194.62;1249.13\n2017-02-01;1210.89;1263.88;1198.12;1248.59\n2017-01-01;1150.55;1219.66;1145.77;1210.63\n2016-12-01;1173.29;1187.79;1122.44;1151.85"}}</script><!--/FEED-->
+<script>
+/* ================= Snapshot awal (TradingView OANDA, 08:05 WIB) ================= */
+const SNAP = {
+  price:4212.17, prev:4194.65, hi:4215.79, lo:4184.85, h4lo:4066.53, h4hi:4215.77,
+  m15:[4143.69,4148.08,4143.21,4155.62,4161.44,4169.3,4175.21,4170.71,4171.12,4175.76,4178.15,4175.46,4177.94,4175.17,4177.68,4179.49,4182.34,4181.78,4181.86,4187.07,4192.27,4201.76,4193.38,4192.13,4190.73,4193.23,4196.35,4193.9,4194.56,4191.88,4194.53,4198.06,4198.4,4191.4,4187.75,4185.81,4186.89,4184.94,4186.06,4185.6,4184.06,4181.09,4179.4,4179.15,4184.36,4182.45,4183.07,4183.32,4183.95,4181.35,4175.59,4181.35,4188.77,4185.06,4190.32,4188.4,4184.23,4184.6,4182.67,4185.17,4188.81,4189.92,4188.55,4192.94,4188.49,4190.89,4190.95,4191.7,4191.02,4192.84,4195.32,4198.07,4195.74,4196.81,4198.74,4197.4,4194.71,4196.3,4195.38,4195.23,4196.42,4195.65,4194.65,4189.19,4188.44,4187.18,4186.58,4190.61,4196.19,4196.98,4190.61,4205.97,4205.45,4208.61,4209.1,4212.79],
+  tf:{
+    M1:{c:4212.5,e9:4208.57,e21:4207.64,e50:4205.41,rsi:67.4,sl:0.017,hi20:4215.77,lo20:4204.92,sp:[4209.95,4209.08,4207.56,4207.76,4206.04,4205.45,4204.16,4206.25,4205.6,4207.32,4206.7,4206.47,4204.45,4203.53,4205.52,4206.18,4209.23,4208.82,4209.81,4209.81,4208.61,4208.58,4206.28,4207.15,4207,4206.51,4206.64,4206.38,4205.08,4205.35,4208.11,4207.48,4208.3,4207.3,4207.28,4209.1,4212.33,4212.85,4210.82,4211.98]},
+    M5:{c:4210.99,e9:4207.07,e21:4202.54,e50:4197.95,rsi:66.9,sl:0.055,hi20:4215.77,lo20:4187.44,sp:[4195.37,4194.6,4194.65,4188.74,4191.33,4189.19,4187.06,4185.52,4188.44,4188.91,4187.43,4187.18,4187.68,4186.18,4186.58,4186.55,4186.88,4190.61,4193.34,4195.23,4196.19,4198.71,4197.06,4196.98,4192.77,4192.52,4190.61,4191.58,4197.57,4205.97,4203.4,4209.95,4205.45,4206.7,4206.18,4208.61,4206.51,4208.11,4209.1,4212.34]},
+    M15:{c:4212.02,e9:4203.53,e21:4198.53,e50:4192.63,rsi:69.4,sl:0.091,hi20:4215.77,lo20:4184.85,sp:null},
+    M30:{c:4212,e9:4200.56,e21:4194.95,e50:4182.36,rsi:67.5,sl:0.111,hi20:4215.79,lo20:4180.91,sp:[4181.86,4192.27,4193.38,4190.73,4196.35,4194.56,4194.53,4198.4,4187.75,4186.89,4186.06,4184.06,4179.4,4184.36,4183.07,4183.95,4175.59,4188.77,4190.32,4184.23,4182.67,4188.81,4188.55,4188.49,4190.95,4191.02,4195.32,4195.74,4198.74,4194.71,4195.38,4196.42,4194.65,4188.44,4186.58,4196.19,4190.61,4205.45,4209.1,4212]},
+    H1:{c:4210.66,e9:4197.48,e21:4186.86,e50:4167.64,rsi:68.2,sl:0.136,hi20:4215.77,lo20:4168.57,sp:[4126.43,4123.61,4122.06,4124.66,4118.85,4129.99,4124.44,4112.09,4123.85,4132.81,4126.93,4133.35,4133.69,4138.3,4144.86,4143.21,4175.21,4178.15,4177.68,4181.86,4193.38,4196.35,4194.53,4187.75,4186.06,4179.4,4183.07,4175.59,4190.32,4182.67,4188.55,4190.95,4195.32,4198.74,4195.38,4194.65,4186.58,4190.61,4209.1,4212.41]},
+    H4:{c:4210.82,e9:4183.5,e21:4164.38,e50:4170.4,rsi:63.8,sl:0.327,hi20:4215.77,lo20:4066.53,sp:[4162.4,4177.39,4153.56,4184.99,4184.34,4217.74,4138.93,4140.52,4156.48,4131.47,4166.76,4156.65,4130.56,4140.52,4150.94,4121.59,4155.44,4170.1,4156.86,4163.85,4156.23,4135.26,4123.83,4087.59,4109.53,4111.33,4116.99,4133.55,4126.43,4118.85,4123.85,4133.69,4143.21,4181.86,4187.75,4175.59,4190.95,4194.65,4209.1,4212.22]},
+    D1:{c:4210.29,e9:4178.93,e21:4225,e50:4273.62,rsi:47.1,sl:-0.336,hi20:4399.67,lo20:4066.53,sp:[4334.57,4523.05,4518.95,4602.99,4651.24,4659.06,4594.73,4602.15,4454.99,4449.24,4328.4,4388.22,4472.97,4429.82,4406.06,4355.7,4402.11,4317.02,4349.42,4299.52,4293.89,4263.85,4341.84,4378.39,4343.55,4358.54,4287.41,4273.8,4284.97,4114.98,4181.98,4157.14,4177.39,4140.52,4140.52,4163.85,4111.33,4133.69,4194.65,4212.93]},
+    W1:{c:4210.53,e9:4267.85,e21:4318.97,e50:4254.4,rsi:45.1,sl:-1.023,hi20:4697.1,lo20:3942.1,sp:[4596.32,4987.55,4895.44,4964.62,5042.74,5108.26,5278.51,5171.5,5020.6,4497.48,4493.69,4676.74,4749.69,4831.61,4709.75,4613.84,4715.72,4540.65,4509.69,4540.53,4327.89,4218.56,4155.4,4088.39,4175.69,4120.67,4017.32,4052.84,4045.16,4341.94,4376.82,4602.99,4454.99,4429.82,4349.42,4378.39,4284.97,4140.52,4194.65,4213.31]},
+    MN:{c:4210.56,e9:4264.16,e21:3946.29,e50:3217.99,rsi:58.5,sl:2.746,hi20:5602.23,lo20:2859,sp:[1965.62,1939.86,1848.82,1983.9,2036.16,2062.97,2039.15,2044.29,2233.12,2286.21,2327.2,2326.72,2447.57,2503.4,2634.69,2743.95,2650.35,2624.26,2797.94,2858.14,3123.72,3288.16,3289.7,3303.15,3290.12,3447.43,3858.45,4002.81,4215.82,4322.61,4895.44,5278.51,4667.88,4622.06,4540.53,4007.53,4045.16,4449.24,4157.14,4212.17]},
+  }
+};
+SNAP.tf.M15.sp = SNAP.m15.slice(-40);
+
+const ORDER=["M1","M5","M15","M30","H1","H4","D1","W1","MN"];
+const META={M1:["SCALPING","1 menit"],M5:["SCALPING","5 menit"],M15:["SCALPING","15 menit"],M30:["INTRADAY","30 menit"],H1:["INTRADAY","1 jam"],H4:["SWING","4 jam"],D1:["SWING","harian"],W1:["POSISI","mingguan"],MN:["POSISI","bulanan"]};
+const BIG=new Set(["D1","W1","MN"]);
+
+/* ================= Format ================= */
+const fmt=(n,d=2)=>Number(n).toLocaleString('id-ID',{minimumFractionDigits:d,maximumFractionDigits:d});
+const f1=n=>fmt(n,1), f0=n=>fmt(n,0);
+const pad=x=>String(x).padStart(2,'0');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ================= Indikator ================= */
+function ema(a,n){const k=2/(n+1);let e=a[0];const o=[e];for(let i=1;i<a.length;i++){e=a[i]*k+e*(1-k);o.push(e);}return o;}
+function rsi(a,n=14){if(a.length<n+2)return 50;let g=0,l=0;for(let i=1;i<=n;i++){const d=a[i]-a[i-1];g+=Math.max(d,0);l+=Math.max(-d,0);}g/=n;l/=n;for(let i=n+1;i<a.length;i++){const d=a[i]-a[i-1];g=(g*(n-1)+Math.max(d,0))/n;l=(l*(n-1)+Math.max(-d,0))/n;}return l===0?100:100-100/(1+g/l);}
+function analyze(bars){
+  const C=bars.map(b=>b.c),H=bars.map(b=>b.h),L=bars.map(b=>b.l),N=C.length-1;
+  const e9=ema(C,9),e21=ema(C,21),e50=ema(C,50);
+  return {n:C.length,c:C[N],e9:e9[N],e21:e21[N],e50:e50[N],rsi:rsi(C),
+    sl:N>=3?(e21[N]-e21[N-3])/e21[N-3]*100:0,
+    hi20:Math.max(...H.slice(-20)),lo20:Math.min(...L.slice(-20)),sp:C.slice(-40)};
+}
+function rate(tf,r){
+  const s=(r.c>r.e21?1:-1)+(r.e9>r.e21?1:-1)+(r.e21>r.e50?1:-1)+(r.sl>0.01?1:r.sl<-0.01?-1:0)+(r.rsi>55?1:r.rsi<45?-1:0);
+  let dir=s>=2?"up":s<=-2?"down":"neu";
+  let label=s>=4?"Bullish kuat":s>=2?"Bullish":s<=-4?"Bearish kuat":s<=-2?"Bearish":"Netral";
+  let note="";
+  if(dir==="up"&&r.c<r.e9&&BIG.has(tf)){label="Bullish, koreksi";note="Tren besar naik, tapi harga di bawah EMA9.";}
+  if(dir==="down"&&r.c>r.e9&&BIG.has(tf)){label="Bearish, pantulan";note="Tren turun, tapi harga sedang memantul di atas EMA9.";}
+  return {...r,tf,s,dir,label,note};
+}
+function describe(r){
+  const f=BIG.has(r.tf)?f0:f1;
+  let a;
+  if(r.e9>r.e21&&r.e21>r.e50)a=`EMA9 <b>${f(r.e9)}</b> &gt; EMA21 <b>${f(r.e21)}</b> &gt; EMA50 <b>${f(r.e50)}</b>.`;
+  else if(r.e9<r.e21&&r.e21<r.e50)a=`EMA9 <b>${f(r.e9)}</b> &lt; EMA21 <b>${f(r.e21)}</b> &lt; EMA50 <b>${f(r.e50)}</b>.`;
+  else a=`Harga ${r.c>r.e21?'di atas':'di bawah'} EMA21 <b>${f(r.e21)}</b> dan ${r.c>r.e50?'di atas':'di bawah'} EMA50 <b>${f(r.e50)}</b>.`;
+  const R=f1(r.rsi);
+  const b=r.rsi>=70?`RSI ${R}, jenuh beli.`:r.rsi<=30?`RSI ${R}, jenuh jual.`:r.rsi>=65?`RSI ${R}, mendekati jenuh beli.`:r.rsi<=35?`RSI ${R}, mendekati jenuh jual.`:`RSI ${R}.`;
+  return `${a} ${b} ${r.note?r.note+' ':''}Range 20 bar ${f(r.lo20)}–${f(r.hi20)}.`;
+}
+
+/* ================= Data (ditanam di halaman, diperbarui tugas terjadwal) ================= */
+let FEED=null;
+try{FEED=JSON.parse(document.getElementById('feed').textContent);}catch(e){FEED=null;}
+const RAW={};
+
+function parseBars(s){
+  if(!s||typeof s!=="string")return [];
+  const lines=s.trim().split(/\r?\n/);
+  const head=lines[0].split(";").map(x=>x.trim().toLowerCase());
+  const it=head.indexOf("datetime"),ih=head.indexOf("high"),il=head.indexOf("low"),ic=head.indexOf("close"),io=head.indexOf("open");
+  if(it<0||ic<0)return [];
+  const out=[];
+  for(let i=1;i<lines.length;i++){const p=lines[i].split(";");const c=+p[ic];if(!isFinite(c))continue;out.push({t:p[it],o:io>=0?+p[io]:c,h:ih>=0?+p[ih]:c,l:il>=0?+p[il]:c,c});}
+  out.sort((a,b)=>a.t<b.t?-1:a.t>b.t?1:0);
+  const ded=[];for(const b of out){if(ded.length&&ded[ded.length-1].t===b.t)ded[ded.length-1]=b;else ded.push(b);}
+  return ded;
+}
+function dropFlat(bars,thr,minRun){
+  const keep=new Array(bars.length).fill(true);let i=0;
+  while(i<bars.length){if(bars[i].h-bars[i].l<thr){let j=i;while(j<bars.length&&bars[j].h-bars[j].l<thr)j++;if(j-i>=minRun)for(let k=i;k<j;k++)keep[k]=false;i=j;}else i++;}
+  const r=bars.filter((_,k)=>keep[k]);
+  return r.length>=30?r:bars;
+}
+if(FEED&&FEED.series)for(const k of ORDER){const b=parseBars(FEED.series[k]);if(b.length>=5)RAW[k]=b;}
+
+const FLAT={M1:[0.35,15],M5:[0.5,12],M15:[0.8,8],M30:[1,6],H1:[1,4],H4:[1,3],D1:[1,1]};
+function build(){
+  const res={}, src={};
+  ORDER.forEach(tf=>{
+    let bars=RAW[tf];
+    if(bars&&FLAT[tf])bars=dropFlat(bars,...FLAT[tf]);
+    if(bars&&bars.length>=20){res[tf]=rate(tf,analyze(bars));src[tf]="live";}
+    else{res[tf]=rate(tf,{...SNAP.tf[tf]});src[tf]="snap";}
+  });
+  const q=(FEED&&FEED.quote)||{};
+  let price=q.price||SNAP.price,prev=q.prev||SNAP.prev,hi=q.hi||SNAP.hi,lo=q.lo||SNAP.lo;
+  if(!q.price&&RAW.M1&&RAW.M1.length)price=RAW.M1[RAW.M1.length-1].c;
+  hi=Math.max(hi,price);lo=Math.min(lo,price);
+  let m15=SNAP.m15;
+  if(RAW.M15){const a=dropFlat(RAW.M15,...FLAT.M15).map(b=>b.c);if(a.length>=20)m15=a.slice(-96);}
+  let h4lo=SNAP.h4lo,h4hi=SNAP.h4hi;
+  if(src.H4==="live"){h4lo=res.H4.lo20;h4hi=res.H4.hi20;}
+  const nLive=ORDER.filter(t=>src[t]==="live").length;
+  return {res,src,price,prev,hi,lo,m15,h4lo,h4hi,nLive};
+}
+
+/* ================= Render ================= */
+const col=r=>r==="up"?"var(--up)":r==="down"?"var(--down)":"var(--neu)";
+const arrow=r=>r==="up"?'<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg>'
+ :r==="down"?'<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg>'
+ :'<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 8h10"/></svg>';
+function spark(a,c){
+  const W=300,H=30,p=3,mn=Math.min(...a),mx=Math.max(...a),r=(mx-mn)||1;
+  const pts=a.map((v,i)=>[p+i*(W-2*p)/Math.max(1,a.length-1),H-p-(v-mn)/r*(H-2*p)]);
+  const d=pts.map((q,i)=>(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)).join(' '),l=pts[pts.length-1];
+  const id='g'+Math.random().toString(36).slice(2,8);
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="${id}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${c}" stop-opacity=".3"/><stop offset="1" stop-color="${c}" stop-opacity="0"/></linearGradient></defs><path d="${d} L${l[0]} ${H} L${p} ${H} Z" fill="url(#${id})"/><path d="${d}" fill="none" stroke="${c}" stroke-width="1.6" vector-effect="non-scaling-stroke"/><circle cx="${l[0]}" cy="${l[1]}" r="2.5" fill="${c}"/></svg>`;
+}
+function runs(list){
+  const idx=list.map(t=>ORDER.indexOf(t)).sort((a,b)=>a-b),out=[];let s=0;
+  for(let i=1;i<=idx.length;i++){if(i===idx.length||idx[i]!==idx[i-1]+1){const seg=idx.slice(s,i).map(k=>ORDER[k]);out.push(seg.length>=3?`${seg[0]} sampai ${seg[seg.length-1]}`:seg.join(" dan "));s=i;}}
+  return out.join(", ");
+}
+
+let lastNeedle=-88, LADDER=null;
+/* Tangga level: tick di posisi harga sebenarnya, label digeser agar tidak bertumpuk */
+function drawLadder(){
+  if(!LADDER)return;
+  const {L,P,above,below}=LADDER,box=document.getElementById('ladder'),H=box.clientHeight||230,GAP=30,EDGE=14;
+  const vals=[...L.map(l=>l.v),P],mn=Math.min(...vals),mx=Math.max(...vals),pd=Math.max(4,(mx-mn)*0.06);
+  const y=v=>EDGE+(mx+pd-v)/(mx-mn+2*pd)*(H-2*EDGE);
+  const spread=ys=>{ /* ys: array posisi asli (urut atas→bawah), hasil: posisi label tanpa tumpukan */
+    const o=ys.slice();for(let i=1;i<o.length;i++)if(o[i]-o[i-1]<GAP)o[i]=o[i-1]+GAP;
+    const over=o.length?o[o.length-1]-(H-EDGE):0;if(over>0)for(let i=o.length-1;i>=0;i--){o[i]-=over;if(i>0&&o[i]-o[i-1]>=GAP)break;}
+    for(let i=o.length-2;i>=0;i--)if(o[i+1]-o[i]<GAP)o[i]=o[i+1]-GAP;
+    return o;};
+  const Ls=L.map(l=>({...l,y:y(l.v)})).sort((a,b)=>a.y-b.y),adj=spread(Ls.map(l=>l.y));
+  const d=v=>{const x=v-P;return (x>=0?'+':'−')+f1(Math.abs(x));};
+  let h='<div class="rail"></div>';
+  if(above.length===2)h+=`<div class="zone" style="top:${y(above[1].v)}px;height:${y(above[0].v)-y(above[1].v)}px;background:linear-gradient(var(--downbg),transparent)"></div>`;
+  if(below.length===2)h+=`<div class="zone" style="top:${y(below[0].v)}px;height:${y(below[1].v)-y(below[0].v)}px;background:linear-gradient(transparent,var(--upbg))"></div>`;
+  Ls.forEach((l,i)=>{const off=adj[i]-l.y;
+    h+=`<div class="lv l" style="top:${l.y}px"><span class="tick" style="background:${l.color}"></span>${Math.abs(off)>3?`<span class="lead" style="top:${Math.min(0,off)}px;height:${Math.abs(off)}px;background:${l.color}"></span>`:''}<span class="lab" style="top:${off-13}px"><b style="color:${l.color}">${f1(l.v)} <span class="dist">${d(l.v)}</span></b><small>${l.name} · ${l.k}</small></span></div>`;});
+  h+=`<div class="lv r px" style="top:${y(P)}px"><span class="tick"></span><span class="pin"></span><span class="lab"><b>${fmt(P)}</b><small>Harga sekarang</small></span></div>`;
+  box.innerHTML=h;
+}
+addEventListener('resize',()=>drawLadder());
+function render(){
+  const B=build(),{res,src}=B,TF=ORDER.map(t=>res[t]);
+  /* harga */
+  const chg=B.price-B.prev,pct=chg/B.prev*100;
+  document.getElementById('px').textContent=fmt(B.price);
+  const ce=document.getElementById('chg');ce.className='chg '+(chg>=0?'up':'down');
+  ce.textContent=(chg>=0?'▲ +':'▼ ')+fmt(chg)+'  ('+(chg>=0?'+':'')+fmt(pct)+'%)';
+  document.getElementById('sPrev').textContent=fmt(B.prev);
+  document.getElementById('sHigh').textContent=fmt(B.hi);
+  document.getElementById('sLow').textContent=fmt(B.lo);
+  document.getElementById('sRng').textContent=fmt(B.hi-B.lo);
+
+  /* grafik M15 */
+  {const W=600,H=150,p=6,a=B.m15,mn=Math.min(...a,B.lo)-3,mx=Math.max(...a,B.hi)+3;
+   const x=i=>p+i*(W-2*p)/(a.length-1),y=v=>H-p-(v-mn)/(mx-mn)*(H-2*p);
+   const d=a.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' '),lx=x(a.length-1),ly=y(a[a.length-1]);
+   let g='';for(let k=1;k<4;k++){const yy=(p+k*(H-2*p)/4).toFixed(1);g+=`<line x1="0" x2="${W}" y1="${yy}" y2="${yy}" stroke="var(--line)" stroke-width="1" vector-effect="non-scaling-stroke"/>`;}
+   const hl=(v,c)=>`<line x1="0" x2="${W}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="${c}" stroke-width="1" stroke-dasharray="4 4" vector-effect="non-scaling-stroke" opacity=".8"/>`;
+   document.getElementById('pchart').innerHTML=`<defs><linearGradient id="pf" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--gold)" stop-opacity=".35"/><stop offset="1" stop-color="var(--gold)" stop-opacity="0"/></linearGradient></defs>${g}${hl(B.hi,'var(--down)')}${hl(B.lo,'var(--up)')}<path d="${d} L${lx} ${H} L${p} ${H} Z" fill="url(#pf)"/><path d="${d}" fill="none" stroke="var(--gold)" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/><circle cx="${lx}" cy="${ly}" r="4" fill="var(--gold)"/>`;}
+
+  /* gauge */
+  const ups=TF.filter(t=>t.dir==="up").map(t=>t.tf),dns=TF.filter(t=>t.dir==="down").map(t=>t.tf),nNe=TF.length-ups.length-dns.length;
+  const bal=(ups.length-dns.length)/TF.length;
+  const gl=document.getElementById('gLabel');
+  gl.textContent=bal>.5?"Kuat naik":bal>.1?"Condong naik":bal<-.5?"Kuat turun":bal<-.1?"Condong turun":"Seimbang";
+  gl.style.color=bal>.1?"var(--up)":bal<-.1?"var(--down)":"var(--neu)";
+  document.getElementById('gSub').textContent=`${ups.length} naik · ${dns.length} turun`+(nNe?` · ${nNe} netral`:'');
+  document.getElementById('votes').innerHTML=TF.map(t=>`<i title="${t.tf}" style="background:${col(t.dir)}"></i>`).join('');
+  const ndl=document.getElementById('needle'),ang=(bal*85).toFixed(1);
+  if(lastNeedle===-88){ndl.style.transform='rotate(-88deg)';requestAnimationFrame(()=>requestAnimationFrame(()=>{ndl.style.transform=`rotate(${ang}deg)`;}));}
+  else ndl.style.transform=`rotate(${ang}deg)`;
+  lastNeedle=ang;
+
+  /* level kunci */
+  const D=res.D1;
+  {const P=B.price,cand=[
+      {v:D.e50,k:"EMA50 D1"},{v:D.e21,k:"EMA21 D1"},{v:D.e9,k:"EMA9 D1"},
+      {v:B.hi,k:"High hari ini"},{v:B.lo,k:"Low hari ini"},{v:B.h4hi,k:"High swing H4"},{v:B.h4lo,k:"Low swing H4"}];
+   const uniq=[];cand.sort((a,b)=>b.v-a.v).forEach(c=>{if(!uniq.some(u=>Math.abs(u.v-c.v)<2))uniq.push(c);});
+   const above=uniq.filter(c=>c.v>P+0.5).sort((a,b)=>a.v-b.v).slice(0,2);
+   const below=uniq.filter(c=>c.v<P-0.5).sort((a,b)=>b.v-a.v).slice(0,2);
+   const L=[...above.map((c,i)=>({...c,name:"Resistance "+(i+1),color:"var(--down)"})),...below.map((c,i)=>({...c,name:"Support "+(i+1),color:"var(--up)"}))];
+   LADDER={L,P,above,below};drawLadder();
+   document.getElementById('emas').innerHTML=`<div><small>EMA9 D1</small><b>${f0(D.e9)}</b></div><div><small>EMA21 D1</small><b>${f0(D.e21)}</b></div><div><small>EMA50 D1</small><b>${f0(D.e50)}</b></div><div><small>RSI14 D1</small><b>${f1(D.rsi)}</b></div>`;}
+
+  /* peta tren */
+  document.getElementById('tmap').innerHTML=TF.map((t,i)=>{
+    const bars=Array.from({length:5},(_,k)=>`<i style="${k<Math.abs(t.s)?'background:'+col(t.dir):''}"></i>`).join('');
+    return `<div class="tile t-${t.dir}" style="--i:${i}" title="${t.tf}: ${t.label}${src[t.tf]==='snap'?' (snapshot)':''}"><span class="k">${t.tf}</span>${arrow(t.dir)}<span class="bars">${bars}</span></div>`;}).join('');
+
+  /* bacaan cepat */
+  {let s=[];
+   const one=l=>!runs(l).includes(',');
+   if(ups.length)s.push(`${runs(ups)} ${ups.length>=3&&one(ups)?'kompak ':''}bullish`);
+   if(dns.length)s.push(`${runs(dns)} bearish`);
+   const ne=TF.filter(t=>t.dir==="neu").map(t=>t.tf);if(ne.length)s.push(`${runs(ne)} netral`);
+   let txt=`<b>Bacaan cepat.</b> ${s.join('; ')}.`;
+   const P=B.price;
+   const intraUp=["M5","M15","M30","H1"].filter(t=>res[t].dir==="up").length>=3;
+   if(P<D.e21&&intraUp)txt+=` Harga masih di bawah EMA21 D1 di ${f0(D.e21)}${P<D.e50?` dan EMA50 D1 di ${f0(D.e50)}`:''}. Selama belum ada penutupan harian di atas ${f0(D.e21)}, kenaikan masih dibaca sebagai pantulan.`;
+   else if(P<D.e21)txt+=` Harga di bawah EMA21 D1 (${f0(D.e21)})${P<D.e50?` dan EMA50 D1 (${f0(D.e50)})`:''}, jadi tekanan turun masih dominan. Area ${f0(D.e21)} menjadi resistance terdekat di harian.`;
+   else if(P<D.e50)txt+=` Harga sudah di atas EMA21 D1 (${f0(D.e21)}); rintangan berikutnya EMA50 D1 di ${f0(D.e50)}.`;
+   else txt+=` Harga di atas EMA21 (${f0(D.e21)}) dan EMA50 D1 (${f0(D.e50)}), tren harian mulai pulih.`;
+   const intr=["M5","M15","M30","H1"].map(t=>res[t]);
+   const hot=intr.slice().sort((a,b)=>b.rsi-a.rsi)[0],cold=intr.slice().sort((a,b)=>a.rsi-b.rsi)[0];
+   if(hot.rsi>=68)txt+=` RSI ${hot.tf} sudah ${f0(hot.rsi)}, rawan pullback jangka pendek.`;
+   else if(cold.rsi<=32)txt+=` RSI ${cold.tf} sudah ${f0(cold.rsi)}, rawan pantulan jangka pendek.`;
+   document.getElementById('quick').innerHTML=txt;}
+
+  /* detail */
+  let g='',html='';
+  TF.forEach(t=>{
+    const [grp,nm]=META[t.tf];
+    if(grp!==g){g=grp;html+=`<div class="grp">${g}</div>`;}
+    const c=col(t.dir),segs=Array.from({length:10},(_,k)=>{const v=k-5;const on=t.s>0?(v>=0&&v<t.s):(v<0&&v>=t.s);return `<i style="${on?'background:'+c:''}"></i>`;}).join('');
+    html+=`<div class="tfr"><span class="k">${t.tf}<small>${nm}${src[t.tf]==='snap'?'<span class="snapchip">SNAP</span>':''}</small></span><p>${describe(t)}</p><span class="chip c-${t.dir}">${t.label}</span>
+      <div class="meta">${spark(t.sp,c)}<div class="rsi"><span class="lb">RSI14 <b>${f1(t.rsi)}</b></span><span class="bar"><i style="left:${Math.max(0,Math.min(100,t.rsi))}%"></i></span></div><div class="str"><span class="lb">Skor <b>${t.s>0?'+':''}${t.s}</b></span><span class="seg5">${segs}</span></div></div></div>`;
+  });
+  document.getElementById('detail').innerHTML=html;
+
+  renderLive(B);
+}
+
+/* ================= Status pembaruan ================= */
+function wibTime(ms){const p=parts("Asia/Jakarta",new Date(ms));return `${pad(p.h)}:${pad(p.m)}`;}
+function wibDate(ms){return new Intl.DateTimeFormat('id-ID',{timeZone:'Asia/Jakarta',weekday:'short',day:'numeric',month:'short'}).format(new Date(ms));}
+function renderLive(B){
+  const tag=document.getElementById('liveTag'),tx=document.getElementById('liveTagTx'),srcEl=document.getElementById('liveSrc'),msg=document.getElementById('liveMsg');
+  const at=FEED&&FEED.asof;
+  if(!at){tag.className='tag';tx.textContent='SNAPSHOT';srcEl.innerHTML='TradingView (OANDA) · 08:05 WIB';msg.hidden=true;return;}
+  const age=(Date.now()-at)/60000, open=goldOpen(new Date());
+  const stale=open&&age>150;
+  tag.className='tag '+(stale?'part':'live');tx.textContent=stale?'TERTUNDA':'OTOMATIS';
+  srcEl.innerHTML=`<b>Twelve Data</b> · diperbarui <span class="num">${wibDate(at)} ${wibTime(at)}</span> WIB`;
+  const miss=ORDER.filter(t=>B&&B.src[t]==="snap");
+  if(stale){msg.hidden=false;msg.className='msg';msg.textContent=`Pembaruan terakhir sudah ${Math.round(age/60)} jam lalu. Angka di bawah mungkin tidak lagi sesuai harga terkini.`;}
+  else if(miss.length){msg.hidden=false;msg.className='msg';msg.textContent=`Data ${miss.join(', ')} tidak termuat di pembaruan terakhir; memakai snapshot (ditandai SNAP).`;}
+  else msg.hidden=true;
+}
+
+/* ================= Jam & sesi ================= */
+const SESS=[{n:"Sydney",tz:"Australia/Sydney",o:7,c:16},{n:"Tokyo",tz:"Asia/Tokyo",o:9,c:18},{n:"London",tz:"Europe/London",o:8,c:17},{n:"New York",tz:"America/New_York",o:8,c:17}];
+const WD=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],HARI=["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
+function parts(tz,d){const o={};new Intl.DateTimeFormat('en-US',{timeZone:tz,hour12:false,weekday:'short',hour:'2-digit',minute:'2-digit',second:'2-digit'}).formatToParts(d).forEach(p=>o[p.type]=p.value);return{wd:WD.indexOf(o.weekday),h:+o.hour%24,m:+o.minute,s:+o.second};}
+function offMin(tz,d){const o={};new Intl.DateTimeFormat('en-US',{timeZone:tz,hour12:false,year:'numeric',month:'numeric',day:'numeric',hour:'numeric',minute:'numeric'}).formatToParts(d).forEach(p=>o[p.type]=p.value);return Math.round((Date.UTC(+o.year,+o.month-1,+o.day,+o.hour%24,+o.minute)-d.getTime())/60000);}
+const wibMin=(h,tz,d)=>(((h*60-offMin(tz,d)+420)%1440)+1440)%1440;
+function goldOpen(d){const p=parts("America/New_York",d),t=p.h+p.m/60;if(p.wd===6)return false;if(p.wd===5&&t>=17)return false;if(p.wd===0&&t<18)return false;return !(t>=17&&t<18);}
+const dur=x=>{x=Math.max(0,Math.round(x));const hh=Math.floor(x/3600),mm=Math.floor(x%3600/60),ss=x%60;return hh?`${hh}j ${pad(mm)}m`:`${mm}m ${pad(ss)}d`;};
+(function buildTL(){
+  let h='';
+  SESS.forEach((s,i)=>{h+=`<span class="nm"><i class="dot" id="sd${i}"></i>${s.n}</span><div class="track" id="tr${i}"></div><span class="cd" id="cd${i}">—</span>`;});
+  h+=`<span></span><div class="axis">${[0,3,6,9,12,15,18,21,24].map(v=>`<span style="left:${v/24*100}%">${pad(v)}</span>`).join('')}</div><span></span>`;
+  document.getElementById('tl').innerHTML=h;
+})();
+const segHTML=(a,b,on)=>{const f=(x,y)=>`<span class="seg ${on?'on':''}" style="left:${x/1440*100}%;width:${(y-x)/1440*100}%"></span>`;return b>a?f(a,b):f(a,1440)+f(0,b);};
+function tick(){
+  const d=new Date(),j=parts("Asia/Jakarta",d);
+  document.getElementById('clock').innerHTML=`${pad(j.h)}:${pad(j.m)}<s>:${pad(j.s)}</s>`;
+  document.getElementById('cdate').textContent=HARI[j.wd]+' · WIB';
+  const go=goldOpen(d),ny=parts("America/New_York",d),nt=ny.h*3600+ny.m*60+ny.s;
+  let gt;
+  if(go)gt=`buka · sisa <span class="num">${dur(nt<17*3600?17*3600-nt:86400-nt+17*3600)}</span>`;
+  else{let u;if(ny.wd===5||ny.wd===6||(ny.wd===0&&nt<18*3600)){const dd=ny.wd===5?2:ny.wd===6?1:0;u=dd*86400+18*3600-nt;}else u=18*3600-nt;gt=`tutup · buka <span class="num">${dur(u)}</span>`;}
+  const gb=document.getElementById('goldBadge');gb.className='badge'+(go?' on':'');gb.innerHTML=`<i class="dot ${go?'on':''}"></i><b>Pasar emas</b> ${gt}`;
+  const nowM=j.h*60+j.m+j.s/60,open=[],spans=[];
+  SESS.forEach((s,i)=>{
+    const p=parts(s.tz,d),t=p.h*3600+p.m*60+p.s,wk=p.wd>=1&&p.wd<=5,on=go&&wk&&t>=s.o*3600&&t<s.c*3600;
+    const a=wibMin(s.o,s.tz,d),b=wibMin(s.c,s.tz,d);spans.push([a,b]);if(on)open.push(s.n);
+    document.getElementById('tr'+i).innerHTML=segHTML(a,b,on);
+    document.getElementById('sd'+i).className='dot'+(on?' on':'');
+    const el=document.getElementById('cd'+i);
+    if(on){el.className='cd on';el.innerHTML=`sisa <b>${dur(s.c*3600-t)}</b>`;}
+    else{let u;if(wk&&t<s.o*3600)u=s.o*3600-t;else{let nd=p.wd,dd=0;do{nd=(nd+1)%7;dd++;}while(nd===0||nd===6);u=dd*86400-t+s.o*3600;}el.className='cd';el.innerHTML=`buka <b>${dur(u)}</b>`;}
+  });
+  const wrap=document.getElementById('tlwrap'),tr=document.getElementById('tr0');
+  if(tr){const wr=wrap.getBoundingClientRect(),r=tr.getBoundingClientRect(),toPx=m=>r.left-wr.left+m/1440*r.width;
+    let nl=document.getElementById('nowl');if(!nl){nl=document.createElement('div');nl.id='nowl';nl.className='now';wrap.appendChild(nl);}
+    nl.style.left=(toPx(nowM)-1)+'px';
+    let ov=document.getElementById('ovl');if(!ov){ov=document.createElement('div');ov.id='ovl';ov.className='ovl';ov.title='Overlap London–New York';wrap.appendChild(ov);}
+    const [la,lb]=spans[2],[na]=spans[3],a=Math.max(la,na),b=lb>a?lb:null;
+    if(b){ov.hidden=false;ov.style.left=toPx(a)+'px';ov.style.width=(toPx(b)-toPx(a))+'px';}else ov.hidden=true;}
+  const ovNow=open.includes("London")&&open.includes("New York");
+  document.getElementById('sessAux').textContent=!go?"Pasar emas tutup":open.length?"Aktif: "+open.join(" + ")+(ovNow?" · overlap":""):"Di antara sesi utama";
+  /* hitung mundur update */
+  const nx=document.getElementById('liveNext');
+  if(FEED&&FEED.asof){if(goldOpen(d)){const mm=59-j.m,ss=59-j.s;nx.innerHTML=`berikutnya ±<span class="num">${mm+8}:${pad(ss)}</span>`;}else nx.textContent='pasar tutup';}
+  else nx.textContent='';
+  if(j.s===0)renderLive(build());
+}
+
+render();
+tick();setInterval(tick,1000);addEventListener('resize',tick);
+</script>
+
+</body></html>

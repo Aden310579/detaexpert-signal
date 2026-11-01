@@ -1,11 +1,4 @@
-<!doctype html>
-<html lang="id">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-</head>
-<body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Signal DetaExpert</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
@@ -54,7 +47,7 @@ header{display:flex;justify-content:space-between;align-items:center;gap:14px;fl
 .ps:hover{border-color:var(--gold-line)}
 .ps:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .ps[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-bg);color:var(--gold)}
-.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.tabs{display:grid;grid-template-columns:repeat(var(--nt,4),minmax(0,1fr));gap:8px}
 .tab{font:inherit;text-align:left;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);border-radius:14px;padding:12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:4px;min-width:0}
 .tab:hover{border-color:var(--gold-line)}
 .tab:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
@@ -65,6 +58,7 @@ header{display:flex;justify-content:space-between;align-items:center;gap:14px;fl
 .pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
 .st-MENUNGGU{background:var(--surface2);color:var(--sub)} .st-HOLD{background:var(--blue-bg);color:var(--blue)}
 .st-SELESAI{background:var(--gold-bg);color:var(--gold)} .st-ARAH{background:var(--gold-bg);color:var(--gold)}
+.st-LAGI_BERJALAN{background:#2563eb;color:#fff} .st-GAGAL{background:#dc3c35;color:#fff}
 .st-SIAP_ENTRY{background:var(--gold-bg);color:var(--gold)} .st-BERJALAN{background:var(--blue-bg);color:var(--blue)} .st-TP2_SELESAI{background:var(--buy-bg);color:var(--buy)} .st-STOP_LOSS{background:var(--sell-bg);color:var(--sell)} .st-KEDALUWARSA,.st-BATAL,.st-TERLEWAT,.st-IMPAS{background:var(--surface2);color:var(--mut)}
 .panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:20px;align-items:start}
 figure{margin:0;background:var(--surface);border-radius:16px;padding:10px}
@@ -85,7 +79,7 @@ figcaption{font-size:12px;color:var(--mut);padding:8px 4px 2px}
 .ent .why{font-size:12.5px;color:var(--sub)}
 .ent .lv{display:grid;grid-template-columns:auto auto;gap:2px 10px;font-size:12.5px;color:var(--sub);text-align:right}
 .ent .lv b{font-family:var(--f-mono);color:var(--fg)}
-.ent.batal,.ent.dipakai{opacity:.6}
+.ent.batal,.ent.dipakai,.ent.gagal,.ent.selesai{opacity:.6}
 .chip{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--surface2);color:var(--sub);margin-left:6px;text-transform:none;letter-spacing:0}
 .masa{background:var(--surface);border-radius:14px;padding:12px 16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .masa b{display:block;font-size:14.5px}
@@ -103,8 +97,23 @@ figcaption{font-size:12px;color:var(--mut);padding:8px 4px 2px}
 footer{color:var(--mut);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 footer b{color:var(--gold)}
 .empty{color:var(--sub);background:var(--surface);border-radius:12px;padding:14px}
-@media (max-width:820px){.panel{grid-template-columns:1fr}.rules{grid-template-columns:1fr}}
-@media (max-width:560px){.tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.masa{grid-template-columns:1fr}.sken{grid-template-columns:1fr}.ent{grid-template-columns:30px minmax(0,1fr)}.ent .lv{grid-column:2;text-align:left}}
+.tmap{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:6px}
+.tile{border-radius:12px;padding:10px 4px;display:flex;flex-direction:column;align-items:center;gap:3px;background:var(--surface);border-bottom:3px solid var(--c)}
+.tile .k{font-family:var(--f-mono);font-weight:700;font-size:13px}
+.tile .a{font-size:18px;line-height:1;color:var(--c)}
+.tile .sc{font-family:var(--f-mono);font-size:11.5px;color:var(--sub)}
+.t-up{--c:var(--buy)} .t-down{--c:var(--sell)} .t-neu{--c:var(--gold)}
+.trows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tr{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--bg);display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:10px;align-items:start}
+.tr .k{font-family:var(--f-mono);font-weight:700;font-size:14px}
+.tr p{margin:0;font-size:12.5px;color:var(--sub)}
+.tr .lb{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;white-space:nowrap;color:var(--c);background:var(--surface)}
+.grp{grid-column:1/-1;font-size:11px;letter-spacing:.14em;font-weight:700;color:var(--gold);margin-top:4px}
+.trenwrap{display:flex;flex-direction:column;gap:14px}
+.trenf{display:block;width:100%;min-height:900px;border:0;border-radius:16px;background:var(--surface)}
+@media (max-width:820px){.panel{grid-template-columns:1fr}.rules{grid-template-columns:1fr}.trows{grid-template-columns:1fr}}
+@media (max-width:620px){.tmap{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media (max-width:560px){.tabs{grid-template-columns:repeat(2,minmax(0,1fr))!important}.masa{grid-template-columns:1fr}.sken{grid-template-columns:1fr}.ent{grid-template-columns:30px minmax(0,1fr)}.ent .lv{grid-column:2;text-align:left}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -146,7 +155,8 @@ footer b{color:var(--gold)}
       {id:"scalping",t:"Scalping",tf:"H1 / M5",jadwal:"Update tiap 2 jam"},
       {id:"intraday",t:"Intraday",tf:"H4 / M15",jadwal:"Analisa baru 03:00, 11:00, 19:00 WIB"},
       {id:"swing",t:"Swing",tf:"D1 / H4",jadwal:"Cek tiap hari 03:00 WIB"},
-      {id:"arah",t:"Arah D1",tf:"D1 · tanpa entry",jadwal:"Cek tiap hari 03:00 WIB"}]},
+      {id:"arah",t:"Arah D1",tf:"D1 · tanpa entry",jadwal:"Cek tiap hari 03:00 WIB"},
+      {id:"tren",t:"Arah Gold per Time frame",tf:"M1 → MN · tanpa entry",jadwal:"Update tiap jam (menit 05 WIB, Senin–Sabtu)"}]},
     btc:{nama:"BTCUSD",label:"BTCUSD · Bitcoin",dir:"btc/",bulat:"kelipatan 250–1000",berita:"kripto dan USD",JENIS:[
       {id:"scalping",t:"Scalping",tf:"M15 / M5",jadwal:"Update tiap 2 jam (jam genap WIB)"},
       {id:"intraday",t:"Intraday",tf:"H4 / M15",jadwal:"Update tiap close H4 (03:05, 07:05 … 23:05 WIB)"},
@@ -161,6 +171,8 @@ footer b{color:var(--gold)}
   let ps="xau",JENIS=PASAR.xau.JENIS;
   const DATA={xau:{},btc:{},eur:{}};
   const cls=s=>String(s||"").replace(/ /g,"_");
+  // status poster XAUUSD: MENUNGGU, LAGI BERJALAN, HOLD, GAGAL, SELESAI. Arah tanpa status (ARAH) tampil sebagai bias.
+  const stOf=(d,id)=>((id==="arah"||id==="tren")&&(!d.status||d.status==="ARAH"))?"ARAH":d.status;
   const fmt=(d,tz)=>new Intl.DateTimeFormat("id-ID",{timeZone:tz,hour:"2-digit",minute:"2-digit",hour12:false}).format(d).replace(/\./g,":");
   const tgl=(d,tz)=>new Intl.DateTimeFormat("id-ID",{timeZone:tz,day:"numeric",month:"short"}).format(d);
   const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -180,9 +192,10 @@ footer b{color:var(--gold)}
   function sisa(utc){const ms=new Date(utc)-new Date();if(ms<=0)return "selesai, menunggu update";const h=Math.floor(ms/36e5),m=Math.floor(ms%36e5/6e4);return "sisa "+h+" j "+m+" m";}
 
   function tabs(){
-    document.getElementById("tabs").innerHTML=JENIS.map(j=>{const d=DATA[ps][j.id];const st=d?(j.id==="arah"?"ARAH":d.status):"";
+    document.getElementById("tabs").style.setProperty("--nt",JENIS.length);
+    document.getElementById("tabs").innerHTML=JENIS.map(j=>{const d=DATA[ps][j.id];const st=d?stOf(d,j.id):"";
       return '<button class="tab" role="tab" id="tab-'+j.id+'" aria-selected="'+(j.id===cur)+'" data-id="'+j.id+'"><span class="t">'+j.t+'</span><span class="s">'+j.tf+'</span>'+
-      (d?'<span class="pill st-'+cls(st)+'">'+(j.id==="arah"?esc(d.bias):st)+'</span>':'<span class="s">memuat…</span>')+'</button>';}).join("");
+      (d?'<span class="pill st-'+cls(st)+'">'+(st==="ARAH"?esc(d.bias):esc(st))+'</span>':'<span class="s">memuat…</span>')+'</button>';}).join("");
     document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{cur=b.dataset.id;try{localStorage.setItem("tab",cur)}catch(e){};history.replaceState(null,"","#"+hashOf());tabs();panel();});
   }
 
@@ -193,11 +206,60 @@ footer b{color:var(--gold)}
       '<div><div class="label">Data terakhir</div><b class="num">'+esc(d.data_sampai_wib)+' WIB</b><span>'+esc(j.jadwal)+'</span></div></div>';
   }
 
+  // Arah Tren: skor −5..+5 per time frame dari data panel DETA Expert XAUUSD (diperbarui tiap jam)
+  const TFS=["M1","M5","M15","M30","H1","H4","D1","W1","MN"],BIG=new Set(["H4","D1","W1","MN"]);
+  const ema=(a,n)=>{const k=2/(n+1);let e=a[0];const o=[e];for(let i=1;i<a.length;i++){e=a[i]*k+e*(1-k);o.push(e);}return o;};
+  const rsi=(a,n=14)=>{if(a.length<n+2)return 50;let g=0,l=0;for(let i=1;i<=n;i++){const d=a[i]-a[i-1];g+=Math.max(d,0);l+=Math.max(-d,0);}g/=n;l/=n;for(let i=n+1;i<a.length;i++){const d=a[i]-a[i-1];g=(g*(n-1)+Math.max(d,0))/n;l=(l*(n-1)+Math.max(-d,0))/n;}return l===0?100:100-100/(1+g/l);};
+  function trenOf(f){
+    const rows=[];
+    TFS.forEach(tf=>{const s=(f.series||{})[tf];if(!s)return;
+      const L=s.trim().split("\n").slice(1).map(x=>x.split(";")).filter(x=>x.length>=5).reverse();
+      const C=L.map(x=>+x[4]),H=L.map(x=>+x[2]),Lo=L.map(x=>+x[3]);if(C.length<25)return;
+      const N=C.length-1,e9=ema(C,9),e21=ema(C,21),e50=ema(C,50),r=rsi(C),sl=N>=3?(e21[N]-e21[N-3])/e21[N-3]*100:0,c=C[N];
+      const sc=(c>e21[N]?1:-1)+(e9[N]>e21[N]?1:-1)+(e21[N]>e50[N]?1:-1)+(sl>0.01?1:sl<-0.01?-1:0)+(r>55?1:r<45?-1:0);
+      const dir=sc>=2?"up":sc<=-2?"down":"neu";
+      let lab=sc>=4?"Bullish kuat":sc>=2?"Bullish":sc<=-4?"Bearish kuat":sc<=-2?"Bearish":"Netral",note="";
+      if(dir==="up"&&c<e9[N]&&BIG.has(tf)){lab="Bullish, koreksi";note="Tren naik, harga sedang di bawah EMA9.";}
+      if(dir==="down"&&c>e9[N]&&BIG.has(tf)){lab="Bearish, pantulan";note="Tren turun, harga sedang memantul di atas EMA9.";}
+      const lo20=Math.min(...Lo.slice(-20)),hi20=Math.max(...H.slice(-20));
+      rows.push({tf,sc,dir,lab,note,c,e9:e9[N],e21:e21[N],e50:e50[N],rsi:r,lo20,hi20,t:L[N][0]});});
+    const grp=a=>rows.filter(x=>a.includes(x.tf)).reduce((s,x)=>s+x.sc,0);
+    const besar=grp(["H4","D1","W1","MN"]),kecil=grp(["M1","M5","M15","M30","H1"]);
+    const arah=v=>v>=4?"NAIK":v<=-4?"TURUN":"NETRAL";
+    const up=rows.filter(x=>x.dir==="up").length,dn=rows.filter(x=>x.dir==="down").length;
+    const q=f.quote||{},px=q.price||(rows[0]?rows[0].c:null),a=new Date(f.asof||Date.now());
+    const wib=x=>tgl(x,"Asia/Jakarta")+" "+fmt(x,"Asia/Jakarta"),oslo=x=>tgl(x,"Europe/Oslo")+" "+fmt(x,"Europe/Oslo");
+    const nx=new Date(a.getTime()+36e5);
+    return {jenis:"tren",status:"ARAH",harga:px,rows,bias:arah(besar),bias_label:"H4–MN",
+      bias_teks:"Skor gabungan H4, D1, W1, MN "+(besar>0?"+":"")+besar+" · M1–H1 "+(kecil>0?"+":"")+kecil+" ("+arah(kecil).toLowerCase()+")",
+      teks:[up+" time frame bullish, "+dn+" bearish, "+(rows.length-up-dn)+" netral.",
+        q.hi&&q.lo?"Range hari ini "+n1(q.lo)+" – "+n1(q.hi)+(q.prev?" · tutup kemarin "+n1(q.prev):"")+".":""].filter(Boolean),
+      dibuat_wib:wib(a),dibuat_oslo:oslo(a),aktif_sampai_wib:wib(nx),aktif_sampai_oslo:oslo(nx),aktif_sampai_utc:nx.toISOString(),
+      data_sampai_wib:wib(a),diperbarui_utc:a.toISOString()};
+  }
+  function trenPanel(d,j){
+    const ar={up:"▲",down:"▼",neu:"◆"},f=x=>n1(x);
+    const tiles='<div class="tmap">'+d.rows.map(r=>'<div class="tile t-'+r.dir+'"><span class="k">'+r.tf+'</span><span class="a">'+ar[r.dir]+'</span><span class="sc">'+(r.sc>0?"+":"")+r.sc+'</span></div>').join("")+'</div>';
+    const row=r=>{const R=(Math.round(r.rsi*10)/10).toString();
+      const rs=r.rsi>=70?"jenuh beli":r.rsi<=30?"jenuh jual":r.rsi>=65?"mendekati jenuh beli":r.rsi<=35?"mendekati jenuh jual":"";
+      const e=r.e9>r.e21&&r.e21>r.e50?"EMA9 "+f(r.e9)+" > EMA21 "+f(r.e21)+" > EMA50 "+f(r.e50):r.e9<r.e21&&r.e21<r.e50?"EMA9 "+f(r.e9)+" < EMA21 "+f(r.e21)+" < EMA50 "+f(r.e50):"Harga "+(r.c>r.e21?"di atas":"di bawah")+" EMA21 "+f(r.e21)+", "+(r.c>r.e50?"di atas":"di bawah")+" EMA50 "+f(r.e50);
+      return '<div class="tr t-'+r.dir+'"><span class="k">'+r.tf+'</span><p>'+esc(e)+'. RSI '+R+(rs?", "+rs:"")+'. '+(r.note?esc(r.note)+' ':'')+'Range 20 bar '+f(r.lo20)+'–'+f(r.hi20)+'.</p><span class="lb">'+esc(r.lab)+' '+(r.sc>0?"+":"")+r.sc+'</span></div>';};
+    const g=(n,a)=>'<div class="grp">'+n+'</div>'+d.rows.filter(r=>a.includes(r.tf)).map(row).join("");
+    const now='<div class="now"><div><div class="label">Harga</div><div class="px">'+n1(d.harga)+'</div><span class="pill st-ARAH">ARAH SAJA</span></div><ul>'+d.teks.map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div>';
+    const bias='<div class="bias"><b class="'+esc(d.bias)+'">BIAS '+esc(d.bias_label)+': '+esc(d.bias)+'</b><span>'+esc(d.bias_teks)+'</span></div>';
+    return '<div class="trenwrap">'+now+bias+'<div><div class="label" style="margin-bottom:8px">Peta tren · skor −5 s/d +5</div>'+tiles+'</div>'+
+      '<div class="trows">'+g("SCALPING · M1–M30",["M1","M5","M15","M30"])+g("INTRADAY · H1–H4",["H1","H4"])+g("SWING · D1–MN",["D1","W1","MN"])+'</div>'+
+      '<div class="empty">Skor menjumlahkan lima tanda: harga vs EMA21, EMA9 vs EMA21, EMA21 vs EMA50, kemiringan EMA21, dan zona RSI14. Ini ringkasan arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit.</div>'+masa(d,j)+'</div>';
+  }
+
   function panel(){
     const j=JENIS.find(x=>x.id===cur),d=DATA[ps][cur],P=PASAR[ps],el=document.getElementById("panel");
     if(!d){el.innerHTML='<div class="empty">Analisa '+j.t+' sedang dimuat. Kalau tetap kosong, analisa pertama belum dibuat.</div>';return;}
+    if(cur==="tren"){el.innerHTML='<iframe id="trenF" class="trenf" title="Arah Gold per Time frame" src="tren.html?v='+encodeURIComponent(d.diperbarui_utc||"")+'"></iframe>';
+      const fr=document.getElementById("trenF"),fit=()=>{try{const b=fr.contentDocument.documentElement;fr.style.height=Math.max(b.scrollHeight,fr.contentDocument.body.scrollHeight)+"px";}catch(e){}};
+      fr.onload=()=>{fit();setTimeout(fit,800);setTimeout(fit,2500);try{new ResizeObserver(fit).observe(fr.contentDocument.body);}catch(e){}};return;}
     const img='<figure><img src="'+P.dir+'img/'+cur+'.png?v='+encodeURIComponent(d.diperbarui_utc||"")+'" alt="Poster analisa '+j.t+' '+P.nama+' DetaExpert"><figcaption>Poster lengkap · tekan lama atau klik kanan untuk simpan</figcaption></figure>';
-    const now='<div class="now"><div><div class="label">Harga</div><div class="px">'+(d.harga<10?d.harga.toFixed(5):n1(d.harga))+'</div><span class="pill st-'+cls(cur==="arah"?"ARAH":d.status)+'">'+esc(cur==="arah"?"ARAH SAJA":d.status)+'</span></div><ul>'+(d.teks||[]).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div>';
+    const now='<div class="now"><div><div class="label">Harga</div><div class="px">'+(d.harga<10?d.harga.toFixed(5):n1(d.harga))+'</div><span class="pill st-'+cls(stOf(d,cur))+'">'+esc(stOf(d,cur)==="ARAH"?"ARAH SAJA":stOf(d,cur))+'</span></div><ul>'+(d.status_teks?[d.status_teks]:[]).concat(d.teks||[]).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div>';
     const bias='<div class="bias"><b class="'+esc(String(d.bias).split(" ")[0])+'">BIAS '+esc(d.bias_label||(cur==="arah"?"D1":j.tf.split(" ")[0]))+': '+esc(d.bias)+'</b><span>'+esc(d.bias_teks)+'</span></div>';
     let body;
     if(cur==="arah"){
@@ -206,7 +268,7 @@ footer b{color:var(--gold)}
         '<div class="empty">'+esc(d.catatan||"Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit.")+'</div>';
     }else{
       const col={1:"--buy",2:"--sell",3:"--teal"};
-      const lbl={tunggu:"menunggu",dipakai:"sudah dipakai",batal:"batal"};
+      const lbl={tunggu:"menunggu",dipakai:"sudah dipakai",batal:"gagal · batal",jalan:"lagi berjalan",hold:"hold",gagal:"gagal",selesai:"selesai"};
       body='<div><div class="label" style="margin-bottom:8px">Urutan entry</div><div class="ents">'+((d.entries||[]).length?(d.entries.map(e=>
         '<div class="ent '+e.state+'" style="--c:var('+(e.side==="BUY"?"--buy":"--sell")+')"><div class="n">'+e.n+'</div><div style="min-width:0"><div class="k">Entry '+e.n+' · '+e.side+" · "+esc(e.jenis_entry||"")+'<span class="chip">'+esc(e.status||lbl[e.state]||e.state)+'</span></div>'+
         '<div class="z">'+n1(e.zona[0])+' – '+n1(e.zona[1])+'</div><div class="why">'+(e.alasan||[]).map(esc).join(" · ")+(e.info?'<br>'+esc(e.info):'')+'</div></div>'+
@@ -219,9 +281,8 @@ footer b{color:var(--gold)}
     document.querySelectorAll(".sisa").forEach(s=>s.textContent=sisa(s.dataset.u));}
   window.addEventListener("hashchange",()=>{if(baca(location.hash.slice(1))){pasar();tabs();panel();}});
   pasar();tabs();panel();tick();setInterval(tick,30000);
-  Object.keys(PASAR).forEach(p=>PASAR[p].JENIS.forEach(j=>fetch(PASAR[p].dir+"data/"+j.id+".json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(x=>{if(x){DATA[p][j.id]=x;if(p===ps){tabs();if(j.id===cur)panel();}}}).catch(()=>{})));
+  Object.keys(PASAR).forEach(p=>PASAR[p].JENIS.forEach(j=>fetch(PASAR[p].dir+"data/"+j.id+".json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(x=>{if(x&&j.id==="tren")x=x.series?trenOf(x):null;if(x){DATA[p][j.id]=x;if(p===ps){tabs();if(j.id===cur)panel();}}}).catch(()=>{})));
 })();
 </script>
 
-</body>
-</html>
+</body></html>
