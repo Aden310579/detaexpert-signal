@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 77544,
- "data_sampai_wib": "1 Nov 2026 07:05",
- "data_sampai_oslo": "1 Nov 2026 01:05",
+ "harga": 77768,
+ "data_sampai_wib": "1 Nov 2026 11:05",
+ "data_sampai_oslo": "1 Nov 2026 05:05",
  "dibuat_utc": "2026-11-01T00:05:00Z",
  "aktif_sampai_utc": "2026-11-01T08:00:00Z",
  "dibuat_wib": "1 Nov 2026 07:05",
@@ -13,16 +13,16 @@
  "aktif_sampai_wib": "1 Nov 2026 15:00",
  "aktif_sampai_oslo": "1 Nov 2026 09:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "H4 close 07:00 HA biru, hist −29 mengecil · candle baru HA merah, hist +2",
+ "bias": "NAIK",
+ "bias_teks": "H4 close 11:00 HA biru, hist +19 · candle baru hist +54 membesar",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-01T00:07:07Z",
+ "diperbarui_utc": "2026-11-01T04:07:21Z",
  "teks": [
-  "Analisa 23:05 selesai: tidak ada entry",
-  "Buy tersentuh 04:00 (low 77.450). Sinyal M15 04:45 di 77.549, di atas zona,",
-  "tidak dipakai. Sell 77.920–78.080 tidak tersentuh (high 77.764)."
+  "Status 11:05: belum ada posisi",
+  "Buy 77.380–77.540 tidak tersentuh lagi (low 77.517 di 07:00, Stoch 31).",
+  "Sell tersentuh sejak 07:45, Stoch turun 09:15 tapi HA biru, sinyal belum valid."
  ],
  "entries": [
   {
@@ -65,7 +65,7 @@
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": false,
+   "lawan_arah": true,
    "masuk_lagi": false,
    "jenis_entry": "Pantulan atas"
   }
