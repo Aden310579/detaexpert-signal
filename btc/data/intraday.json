@@ -3,26 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 78017,
- "data_sampai_wib": "1 Nov 2026 23:05",
- "data_sampai_oslo": "1 Nov 2026 17:05",
+ "harga": 77820,
+ "data_sampai_wib": "2 Nov 2026 03:05",
+ "data_sampai_oslo": "1 Nov 2026 21:05",
  "dibuat_utc": "2026-11-01T16:05:00Z",
  "aktif_sampai_utc": "2026-11-02T00:00:00Z",
  "dibuat_wib": "1 Nov 2026 23:05",
  "dibuat_oslo": "1 Nov 2026 17:05",
  "aktif_sampai_wib": "2 Nov 2026 07:00",
  "aktif_sampai_oslo": "2 Nov 2026 01:00",
- "status": "HOLD",
- "bias": "NAIK",
- "bias_teks": "H4 close 23:00 HA biru, hist +124 membesar · candle baru +140",
+ "status": "MENUNGGU",
+ "bias": "NETRAL",
+ "bias_teks": "H4 close 03:00 HA merah (close 77.799), hist +126 · arah belum searah",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-01T16:09:00Z",
+ "diperbarui_utc": "2026-11-01T20:08:36Z",
  "teks": [
-  "HOLD: BUY 77.890 · TP1 78.100 kena (+210)",
-  "Sinyal 20:00: Stoch M15 naik dari 20,5 + HA biru, close 77.890. TP1 kena 21:15,",
-  "separuh ditutup, SL ke 77.890. Sisa jalan ke TP2 78.250, sekarang +127."
+  "BUY 77.890 selesai: TP1 +210, sisa impas",
+  "High 78.173 (TP2 78.250 tidak kena), sisa kena SL 77.890 jam 01:50.",
+  "Entry 2 tersentuh, HA M15 tetap merah, tidak ada sinyal. Low 77.623."
  ],
  "entries": [
   {
@@ -41,11 +41,11 @@
     "swing M15 77.850",
     "swing M15 77.900"
    ],
-   "state": "hold",
-   "info": "TP1 kena 21:15 WIB, SL di 77.890",
+   "state": "selesai",
+   "info": "TP1 +210, sisa impas",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "HOLD"
+   "jenis_entry": "Selesai"
   },
   {
    "n": 2,
@@ -70,7 +70,7 @@
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback berikut"
+   "jenis_entry": "Pullback"
   }
  ]
 }
