@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 77998,
- "data_sampai_wib": "1 Nov 2026 15:05",
- "data_sampai_oslo": "1 Nov 2026 09:05",
+ "harga": 78000,
+ "data_sampai_wib": "1 Nov 2026 19:05",
+ "data_sampai_oslo": "1 Nov 2026 13:05",
  "dibuat_utc": "2026-11-01T08:05:00Z",
  "aktif_sampai_utc": "2026-11-01T16:00:00Z",
  "dibuat_wib": "1 Nov 2026 15:05",
@@ -14,15 +14,15 @@
  "aktif_sampai_oslo": "1 Nov 2026 17:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "H4 close 15:00 HA biru, hist +68 · candle baru hist +103 membesar",
+ "bias_teks": "H4 close 19:00 HA biru, hist +100 · candle baru hist +124 membesar",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-01T08:06:34Z",
+ "diperbarui_utc": "2026-11-01T12:08:35Z",
  "teks": [
-  "Analisa 07:05 selesai: tidak ada entry",
-  "Buy 77.380–77.540 tidak tersentuh (low 77.517). Sell batal: high 78.068,",
-  "H4 close 15:00 di 77.991 > 77.940. Tidak ada sinyal sell yang valid."
+  "Status 19:05: belum ada posisi",
+  "Harga naik dulu ke 78.285 tanpa entry. Entry 1 tersentuh 18:30 (low 77.914),",
+  "Stoch M15 15,8. Candle sinyal belum close di dalam zona (close 77.962)."
  ],
  "entries": [
   {
