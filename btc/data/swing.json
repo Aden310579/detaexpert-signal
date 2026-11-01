@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 77403,
- "data_sampai_wib": "31 Okt 2026 07:20",
- "data_sampai_oslo": "31 Okt 2026 01:20",
+ "harga": 77526,
+ "data_sampai_wib": "1 Nov 2026 07:20",
+ "data_sampai_oslo": "1 Nov 2026 01:20",
  "dibuat_utc": "2026-10-31T00:20:00Z",
  "aktif_sampai_utc": "2026-11-02T00:00:00Z",
  "dibuat_wib": "31 Okt 2026 07:20",
@@ -14,15 +14,15 @@
  "aktif_sampai_oslo": "2 Nov 2026 01:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 makin turun (−528) · buy dilarang",
+ "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 −516 (makin turun) · buy dilarang",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-10-31T00:22:39Z",
+ "diperbarui_utc": "2026-11-01T00:21:46Z",
  "teks": [
-  "Analisa 30 Okt selesai tanpa posisi, angka baru",
-  "Zona 80.600–81.000 dan 79.600–80.000 tidak tersentuh lagi.",
-  "D1 30 Okt: low 76.326, close 77.369. Harga 97 poin di bawah zona sell."
+  "Analisa 31 Okt masih aktif: belum ada entry",
+  "Zona sell 77.500–77.900 tersentuh (high H4 77.796), Stoch H4 22: tanpa sinyal.",
+  "D1 31 Okt: high 77.796, low 77.114, close 77.582. Tidak ada posisi."
  ],
  "entries": [
   {
