@@ -3,65 +3,65 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 78031,
- "data_sampai_wib": "1 Nov 2026 18:05",
- "data_sampai_oslo": "1 Nov 2026 12:05",
- "dibuat_utc": "2026-11-01T11:05:00Z",
- "aktif_sampai_utc": "2026-11-01T13:00:00Z",
- "dibuat_wib": "1 Nov 2026 18:05",
- "dibuat_oslo": "1 Nov 2026 12:05",
- "aktif_sampai_wib": "1 Nov 2026 20:00",
- "aktif_sampai_oslo": "1 Nov 2026 14:00",
- "status": "HOLD",
+ "harga": 78002,
+ "data_sampai_wib": "1 Nov 2026 20:05",
+ "data_sampai_oslo": "1 Nov 2026 14:05",
+ "dibuat_utc": "2026-11-01T13:05:00Z",
+ "aktif_sampai_utc": "2026-11-01T15:00:00Z",
+ "dibuat_wib": "1 Nov 2026 20:05",
+ "dibuat_oslo": "1 Nov 2026 14:05",
+ "aktif_sampai_wib": "1 Nov 2026 22:00",
+ "aktif_sampai_oslo": "1 Nov 2026 16:00",
+ "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "H4 HA biru, hist +105 · M15 turun (HA merah, hist −18 membesar)",
+ "bias_teks": "H4 HA biru, hist +125 · M15 netral (HA biru, hist −23 mengecil), trending",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-01T11:07:08Z",
+ "diperbarui_utc": "2026-11-01T13:09:33Z",
  "teks": [
-  "Posisi BUY aktif di 78.067, floating −36",
-  "Entry 1 lama batal (M15 close 78.035 < 78.120). Sinyal Entry 2 jam 16:40 di",
-  "78.067. High 78.166, TP1 78.200 belum. Low 78.004, SL 77.980 belum."
+  "BUY 78.067 kena SL 77.980 jam 18:05 (−87)",
+  "Entry 2 tersentuh 18:35, sinyal 18:55 close 77.963 (2 poin di atas zona),",
+  "tidak dipakai. Batal 19:15 (M15 close 77.788). Low 77.749, sekarang 78.002."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    78040,
-    78120
+    77835,
+    77915
    ],
-   "entry": 78067,
-   "sl": 77980,
-   "tp1": 78200,
-   "tp2": 78280,
+   "entry": 77875,
+   "sl": 77775,
+   "tp1": 78000,
+   "tp2": 78160,
    "alasan": [
-    "Fib 0.382 78.119",
-    "BB tengah M5 78.046",
-    "swing M5 78.013"
+    "Fib 0.236 77.846",
+    "swing M5 77.862",
+    "Fib 0.382 77.907"
    ],
-   "state": "dipakai",
-   "info": "Posisi aktif sejak 16:40 WIB di 78.067",
+   "state": "tunggu",
+   "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Posisi aktif"
+   "jenis_entry": "Pullback"
   },
   {
    "n": 2,
    "side": "BUY",
    "zona": [
-    77880,
-    77960
+    77730,
+    77810
    ],
-   "entry": 77920,
-   "sl": 77820,
-   "tp1": 78040,
-   "tp2": 78120,
+   "entry": 77770,
+   "sl": 77670,
+   "tp1": 77900,
+   "tp2": 78000,
    "alasan": [
-    "swing M5 77.968",
-    "swing M15 77.931",
-    "swing M15 77.918"
+    "angka bulat 77.750",
+    "swing M5 77.749",
+    "swing M15 77.789"
    ],
    "state": "tunggu",
    "info": "",
