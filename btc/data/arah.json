@@ -3,45 +3,45 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 77526,
- "data_sampai_wib": "1 Nov 2026 07:20",
- "data_sampai_oslo": "1 Nov 2026 01:20",
- "dibuat_utc": "2026-11-01T00:20:00Z",
- "aktif_sampai_utc": "2026-11-02T00:00:00Z",
- "dibuat_wib": "1 Nov 2026 07:20",
- "dibuat_oslo": "1 Nov 2026 01:20",
- "aktif_sampai_wib": "2 Nov 2026 07:00",
- "aktif_sampai_oslo": "2 Nov 2026 01:00",
+ "harga": 78055,
+ "data_sampai_wib": "2 Nov 2026 07:20",
+ "data_sampai_oslo": "2 Nov 2026 01:20",
+ "dibuat_utc": "2026-11-02T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-03T00:00:00Z",
+ "dibuat_wib": "2 Nov 2026 07:20",
+ "dibuat_oslo": "2 Nov 2026 01:20",
+ "aktif_sampai_wib": "3 Nov 2026 07:00",
+ "aktif_sampai_oslo": "3 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "HA D1 merah · histogram MACD D1 membesar (−489 → −516) · harga di PRZ",
+ "bias_teks": "HA D1 merah · histogram MACD D1 mengecil (−516 → −452) · pantul dari PRZ",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-01T00:21:46Z",
+ "diperbarui_utc": "2026-11-02T00:22:28Z",
  "teks": [
-  "Tembus PRZ, turun ke 75.460",
-  "Pantul dari PRZ, naik ke 78.349"
+  "Pantul dari PRZ, naik ke 79.600",
+  "Gagal bertahan, turun lagi ke 76.300"
  ],
  "skenario": {
   "utama": {
-   "judul": "Tembus PRZ, turun ke 75.460",
-   "target": "75.460",
-   "konfirmasi": "D1 close di bawah 76.300 + HA merah",
+   "judul": "Pantul dari PRZ, naik ke 79.600",
+   "target": "79.600",
+   "konfirmasi": "D1 close di atas 78.349 + HA biru",
    "poin": [
-    "D1 31 Okt close 77.582 (low 77.114), HA masih merah.",
-    "MACD D1 −516, masih membesar.",
-    "Ekstensi 1.272 AB=CD = 75.460."
+    "D1 1 Nov close 78.354, di atas Fib 0.236 78.349.",
+    "MACD D1 mengecil 2 hari (−516 → −452).",
+    "Target Fibonacci 0.382 = 79.600."
    ]
   },
   "alternatif": {
-   "judul": "Pantul dari PRZ, naik ke 78.349",
-   "target": "78.349",
-   "konfirmasi": "D1 close di atas 77.500 + HA biru",
+   "judul": "Gagal bertahan, turun lagi ke 76.300",
+   "target": "76.300",
+   "konfirmasi": "D1 close di bawah 77.500 + HA merah",
    "poin": [
-    "D1 31 Okt close 77.582, sudah di atas 77.500.",
-    "Tapi HA D1 masih merah: belum lengkap.",
-    "Target Fibonacci 0.236 = 78.349."
+    "HA D1 1 Nov masih merah.",
+    "Pagi ini harga turun lagi ke 78.044.",
+    "Target batas bawah PRZ = 76.300."
    ]
   }
  },
