@@ -4,16 +4,16 @@
  "judul": "Scalping M5",
  "tf": "M15 / M5",
  "harga": 1.12291,
- "data_sampai_wib": "2 Nov 2026 20:50",
- "data_sampai_oslo": "2 Nov 2026 14:50",
+ "data_sampai_wib": "2 Nov 2026 23:20",
+ "data_sampai_oslo": "2 Nov 2026 17:20",
  "dibuat_utc": "2026-11-02T13:50:00Z",
  "aktif_sampai_utc": "2026-11-02T15:00:00Z",
  "dibuat_wib": "2 Nov 2026 20:50",
  "dibuat_oslo": "2 Nov 2026 14:50",
  "aktif_sampai_wib": "2 Nov 2026 22:00",
  "aktif_sampai_oslo": "2 Nov 2026 16:00",
- "diperbarui_utc": "2026-11-02T13:47:25Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-02T16:18:02Z",
+ "status": "KEDALUWARSA",
  "bias": "NAIK",
  "bias_teks": "HA M15 & H1 biru · MACD H1 +4.9 · H4 & D1 naik · Stoch M5 92 jenuh beli",
  "bias_label": "M15",
@@ -42,8 +42,8 @@
     "pivot M5 1.1221",
     "Fib 0.382 M15 1.1220"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "BATAL",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1211",
    "jenis_entry": "Pullback"
   },
@@ -64,8 +64,8 @@
     "BB atas H1 1.1231 terlewati",
     "Stoch M5 92 jenuh beli"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1249",
    "jenis_entry": "Double top"
   },
@@ -86,8 +86,8 @@
     "BB bawah M5 1.1207",
     "pivot 1.1213"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "BATAL",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1201",
    "jenis_entry": "Support kuat"
   }
