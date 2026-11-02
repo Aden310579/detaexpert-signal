@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.11689,
+ "harga": 1.11597,
  "data_sampai_wib": "2 Nov 2026 06:05",
  "data_sampai_oslo": "2 Nov 2026 00:05",
  "dibuat_utc": "2026-10-30T08:05:00Z",
@@ -12,17 +12,17 @@
  "dibuat_oslo": "30 Okt 2026 09:05",
  "aktif_sampai_wib": "30 Okt 2026 23:00",
  "aktif_sampai_oslo": "30 Okt 2026 17:00",
- "diperbarui_utc": "2026-11-01T23:07:54Z",
+ "diperbarui_utc": "2026-11-02T00:09:03Z",
  "status": "ENTRY 3 BERJALAN",
  "bias": "NETRAL",
- "bias_teks": "HA H4 merah · histogram MACD H4 +3.8 mengecil · Stoch H4 55 turun · di atas BB tengah 1.1155",
+ "bias_teks": "HA H4 merah · histogram MACD H4 +3.3 mengecil · Stoch H4 52 turun · di atas BB tengah 1.1155",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "teks": [
-  "Entry 3 BUY berjalan · +6 pip · pasar tutup 04:00 WIB",
-  "Buy aktif di 1.1163. Harga 1.11689, SL 1.1149 aman, TP1 1.1180 belum.",
-  "Tutup sebelum 03:45 WIB (+6 pip), atau tahan ke Senin dengan SL 1.1149."
+  "Entry 3 BUY berjalan · −3 pip · pasar buka lagi",
+  "Buy aktif di 1.1163. Harga 1.11597, SL 1.1149 aman, TP1 1.1180 belum.",
+  "Tahan dengan SL 1.1149. Di TP1 tutup separuh dan geser SL ke entry."
  ],
  "entries": [
   {
