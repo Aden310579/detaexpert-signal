@@ -3,58 +3,34 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3901.6,
- "data_sampai_wib": "2 Nov 2026 19:00",
- "data_sampai_oslo": "2 Nov 2026 13:00",
- "dibuat_utc": "2026-11-02T12:00:00Z",
- "aktif_sampai_utc": "2026-11-02T14:00:00Z",
- "dibuat_wib": "2 Nov 2026 19:00",
- "dibuat_oslo": "2 Nov 2026 13:00",
- "aktif_sampai_wib": "2 Nov 2026 21:00",
- "aktif_sampai_oslo": "2 Nov 2026 15:00",
+ "harga": 3944.7,
+ "data_sampai_wib": "2 Nov 2026 21:15",
+ "data_sampai_oslo": "2 Nov 2026 15:15",
+ "dibuat_utc": "2026-11-02T14:00:00Z",
+ "aktif_sampai_utc": "2026-11-02T16:00:00Z",
+ "dibuat_wib": "2 Nov 2026 21:00",
+ "dibuat_oslo": "2 Nov 2026 15:00",
+ "aktif_sampai_wib": "2 Nov 2026 23:00",
+ "aktif_sampai_oslo": "2 Nov 2026 17:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3901.6, 20 poin dari Entry 2 (SELL). Stochastic M5 67, Heikin Ashi M5 merah. Tunggu sinyal di zona."
+  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
  "bias": "NAIK",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +1.50 (mengecil dari +1.80)",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +3.80 (membesar dari +1.20)",
+ "kondisi": "Trending",
+ "indikator_utama": "MACD",
  "bollinger": [
-  3919.5,
-  3892.8,
-  3866.1
+  3930.5,
+  3897.6,
+  3864.8
  ],
  "fibonacci": [
-  3897.3,
-  3901.4
+  3938.1,
+  3929.0
  ],
- "entries": [
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    3918.7,
-    3924.7
-   ],
-   "entry": 3921.7,
-   "sl": 3934.7,
-   "tp1": 3911.5,
-   "tp2": 3901.4,
-   "alasan": [
-    "swing ekstrem 12 candle H1",
-    "Bollinger H1 atas 3919.5",
-    "swing H1 sebelumnya 3915.0",
-    "angka bulat 3925"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Lawan arah"
-  }
- ],
+ "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-02T12:04:00Z",
+ "diperbarui_utc": "2026-11-02T14:19:00Z",
  "status_lama": "MENUNGGU"
 }
