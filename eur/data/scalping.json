@@ -12,7 +12,7 @@
  "dibuat_oslo": "2 Nov 2026 08:05",
  "aktif_sampai_wib": "2 Nov 2026 16:00",
  "aktif_sampai_oslo": "2 Nov 2026 10:00",
- "diperbarui_utc": "2026-11-02T07:07:52Z",
+ "diperbarui_utc": "2026-11-02T07:08:09Z",
  "status": "MENUNGGU",
  "bias": "NAIK",
  "bias_teks": "HA M15 & H1 biru · MACD M15 +0.9 · H4 & D1 naik · Stoch H1 96 jenuh beli",
@@ -22,7 +22,7 @@
  "teks": [
   "Rencana baru · harga naik tanpa pullback",
   "Rencana lama kedaluwarsa tanpa entry. Harga naik ke 1.1189 tanpa koreksi.",
-  "Buy di 1.1180–84 kalau Stoch M5 <25 naik + HA M5 biru. Sell hanya di 1.1198–1.1202."
+  "Buy 1.1180–84 kalau Stoch M5 <25 naik + HA biru. Sell hanya di 1.1198–1.1202."
  ],
  "entries": [
   {
