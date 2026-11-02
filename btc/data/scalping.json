@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 77899,
- "data_sampai_wib": "2 Nov 2026 22:45",
- "data_sampai_oslo": "2 Nov 2026 16:45",
- "dibuat_utc": "2026-11-02T15:50:00Z",
- "aktif_sampai_utc": "2026-11-02T17:00:00Z",
- "dibuat_wib": "2 Nov 2026 22:50",
- "dibuat_oslo": "2 Nov 2026 16:50",
- "aktif_sampai_wib": "3 Nov 2026 00:00",
- "aktif_sampai_oslo": "2 Nov 2026 18:00",
+ "harga": 77194,
+ "data_sampai_wib": "3 Nov 2026 00:25",
+ "data_sampai_oslo": "2 Nov 2026 18:25",
+ "dibuat_utc": "2026-11-02T17:30:00Z",
+ "aktif_sampai_utc": "2026-11-02T19:00:00Z",
+ "dibuat_wib": "3 Nov 2026 00:30",
+ "dibuat_oslo": "2 Nov 2026 18:30",
+ "aktif_sampai_wib": "3 Nov 2026 02:00",
+ "aktif_sampai_oslo": "2 Nov 2026 20:00",
  "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist +24,0 → +19,9 mengecil · H4 NETRAL (HA merah, hist +159 → +138)",
+ "bias": "TURUN",
+ "bias_teks": "M15 HA merah, hist −35,6 → −47,5 membesar · H4 NETRAL (HA merah, hist +159 → +114)",
  "bias_label": "M15",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-02T15:50:32Z",
+ "kondisi": "Trending",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-11-02T17:30:57Z",
  "teks": [
-  "Tidak ada posisi · analisa 20:35 batal 20:45 WIB",
-  "Lonjakan 20:35 ke 78.254 melewati kedua zona SELL tanpa sinyal.",
-  "M15 close 78.164 jam 20:45 > batas 77.900 dan 78.120: E1 dan E2 batal."
+  "Tidak ada posisi · analisa 22:50 selesai tanpa entry",
+  "E1 BUY tersentuh 22:50 (low 77.700) tanpa sinyal, batal 23:00 (M15 77.519).",
+  "E2 SELL tersentuh 22:45 (high 78.072), Stoch M5 hanya 45: tidak ada sinyal."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    77690,
-    77770
+    77212,
+    77292
    ],
-   "entry": 77730,
-   "sl": 77590,
-   "tp1": 77850,
-   "tp2": 77990,
+   "entry": 77252,
+   "sl": 77390,
+   "tp1": 77120,
+   "tp2": 77000,
    "alasan": [
-    "swing M15 77.702",
-    "BB bawah M15 77.702",
-    "angka bulat 77.750"
+    "BB bawah M15 77.221",
+    "angka bulat 77.250",
+    "swing M15 77.283"
    ],
    "state": "tunggu",
    "info": "",
@@ -51,23 +51,23 @@
    "n": 2,
    "side": "SELL",
    "zona": [
-    78070,
-    78150
+    77690,
+    77770
    ],
-   "entry": 78110,
-   "sl": 78250,
-   "tp1": 77990,
-   "tp2": 77870,
+   "entry": 77730,
+   "sl": 77870,
+   "tp1": 77600,
+   "tp2": 77470,
    "alasan": [
-    "swing M15 78.065 / 78.106",
-    "Fib 0.236 78.100",
-    "BB atas M15 78.111"
+    "swing M15 77.702",
+    "BB tengah M15 77.727",
+    "angka bulat 77.750"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": true,
+   "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Lawan arah"
+   "jenis_entry": "Pullback atas"
   }
  ]
 }
