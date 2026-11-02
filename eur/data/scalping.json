@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.12008,
- "data_sampai_wib": "2 Nov 2026 23:30",
- "data_sampai_oslo": "2 Nov 2026 17:30",
+ "harga": 1.1206,
+ "data_sampai_wib": "3 Nov 2026 00:35",
+ "data_sampai_oslo": "2 Nov 2026 18:35",
  "dibuat_utc": "2026-11-02T16:30:00Z",
  "aktif_sampai_utc": "2026-11-02T18:00:00Z",
  "dibuat_wib": "2 Nov 2026 23:30",
  "dibuat_oslo": "2 Nov 2026 17:30",
  "aktif_sampai_wib": "3 Nov 2026 01:00",
  "aktif_sampai_oslo": "2 Nov 2026 19:00",
- "diperbarui_utc": "2026-11-02T16:27:40Z",
- "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "HA M15 merah · MACD M15 −3.1 · H1 netral · H4 & D1 masih naik · M5 mulai pantul",
+ "diperbarui_utc": "2026-11-02T17:32:34Z",
+ "status": "ENTRY 2 BERJALAN",
+ "bias": "NETRAL",
+ "bias_teks": "HA M5 merah · Stoch M5 80 turun · M15 netral · H1, H4 & D1 masih naik",
  "bias_label": "M15",
- "kondisi": "Turun (koreksi)",
+ "kondisi": "Netral",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana baru · koreksi ke 1.1191 lalu pantul",
-  "Rencana lama tanpa entry: kedua zona buy batal karena harga tembus turun.",
-  "Buy 1.1190–94 kalau Stoch M5 <25 naik + HA biru. Sell 1.1208–12 kalau ditolak."
+  "Entry 2 SELL berjalan · +4 pip",
+  "Sell aktif di 1.1210. Harga 1.12060, SL 1.1218 aman, TP1 1.1200 tinggal 6 pip.",
+  "Di TP1 tutup separuh dan geser SL ke entry. Keluar jika H1 close > 1.1219."
  ],
  "entries": [
   {
@@ -42,8 +42,8 @@
     "BB bawah M5 1.1191",
     "Fib 0.236 M5 1.1195"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "TERLEWAT",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1183",
    "jenis_entry": "Support"
   },
@@ -64,8 +64,8 @@
     "Fib 0.382 M15 1.1206",
     "BB atas M5 1.1215"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1219",
    "jenis_entry": "Resistance"
   },
