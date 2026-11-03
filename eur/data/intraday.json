@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.11914,
- "data_sampai_wib": "3 Nov 2026 14:10",
- "data_sampai_oslo": "3 Nov 2026 08:10",
+ "harga": 1.12006,
+ "data_sampai_wib": "3 Nov 2026 15:05",
+ "data_sampai_oslo": "3 Nov 2026 09:05",
  "dibuat_utc": "2026-11-02T16:15:00Z",
  "aktif_sampai_utc": "2026-11-03T00:00:00Z",
  "dibuat_wib": "2 Nov 2026 23:15",
  "dibuat_oslo": "2 Nov 2026 17:15",
  "aktif_sampai_wib": "3 Nov 2026 07:00",
  "aktif_sampai_oslo": "3 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-03T07:08:25Z",
- "status": "ENTRY 1 BERJALAN",
- "bias": "NETRAL",
- "bias_teks": "HA H4 merah · harga di atas BB tengah H4 1.1178 · M15 HA biru, MACD M15 +1.0",
+ "diperbarui_utc": "2026-11-03T08:06:35Z",
+ "status": "ENTRY 1 HOLD",
+ "bias": "NAIK",
+ "bias_teks": "HA H4 biru · close H4 di atas BB tengah 1.1181 · MACD H4 +3.0 · M15 trending naik",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Entry 1 BUY berjalan · +6 pip",
-  "Buy aktif di 1.1185. Sempat turun ke 1.1177, SL 1.1170 tetap aman.",
-  "Tahan. Di TP1 1.1200 tutup separuh dan geser SL ke entry 1.1185."
+  "Entry 1 BUY hold · TP1 +15 pip",
+  "TP1 1.1200 kena: separuh ditutup +15 pip. Sisa jalan +16 pip.",
+  "SL sisa sudah di entry 1.1185 (aman). Tahan ke TP2 1.1210."
  ],
  "entries": [
   {
@@ -43,7 +43,7 @@
     "Stoch M15 jenuh jual"
    ],
    "state": "dipakai",
-   "status": "BERJALAN",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1169",
    "jenis_entry": "Fib 0.5"
   },
