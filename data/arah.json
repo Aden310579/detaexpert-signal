@@ -10,13 +10,13 @@
  "dibuat_oslo": "2 Nov 2026 21:21",
  "aktif_sampai_wib": "5 Nov 2026 03:00",
  "aktif_sampai_oslo": "4 Nov 2026 21:00",
- "data_sampai_wib": "3 Nov 2026 03:00",
- "data_sampai_oslo": "2 Nov 2026 21:00",
+ "data_sampai_wib": "4 Nov 2026 03:00",
+ "data_sampai_oslo": "3 Nov 2026 21:00",
  "status": "MENUNGGU",
  "bias": "NAIK (pantulan)",
  "bias_teks": "Heikin Ashi D1 berganti biru, histogram MACD D1 mengecil (−11.45 → −8.76), Stochastic D1 16. Bullish AB=CD D1: titik D 3866 di PRZ (zona berbalik) 3866–4015.6.",
  "teks": [
-  "D1 close 3 Nov 03:00 WIB (Oslo 2 Nov 21:00) di 3944.3: di bawah Fibonacci 0.236 (3949), di atas 3900.",
+  "D1 close 4 Nov 03:00 WIB (Oslo 3 Nov 21:00) di 3919.2: di bawah Fibonacci 0.236 (3949), di atas 3900.",
   "Konfirmasi skenario utama (D1 close di atas 3949) dan alternatif (D1 close di bawah 3900) belum terpenuhi."
  ],
  "skenario": {
@@ -51,5 +51,5 @@
  },
  "status_lama": "MENUNGGU",
  "status_teks": "D1 belum close di atas 3949 (konfirmasi skenario utama).",
- "diperbarui_utc": "2026-11-03T20:03Z"
+ "diperbarui_utc": "2026-11-03T20:23Z"
 }
