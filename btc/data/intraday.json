@@ -3,26 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 77068,
- "data_sampai_wib": "3 Nov 2026 19:10",
- "data_sampai_oslo": "3 Nov 2026 13:10",
+ "harga": 77586,
+ "data_sampai_wib": "3 Nov 2026 23:05",
+ "data_sampai_oslo": "3 Nov 2026 17:05",
  "dibuat_utc": "2026-11-03T12:05:00Z",
  "aktif_sampai_utc": "2026-11-03T20:00:00Z",
  "dibuat_wib": "3 Nov 2026 19:05",
  "dibuat_oslo": "3 Nov 2026 13:05",
  "aktif_sampai_wib": "4 Nov 2026 03:00",
  "aktif_sampai_oslo": "3 Nov 2026 21:00",
- "status": "HOLD",
- "bias": "NETRAL",
- "bias_teks": "H4 close 19:00 HA biru, hist −31 → −5 (mengecil) · Stoch H4 25",
+ "status": "MENUNGGU",
+ "bias": "NAIK",
+ "bias_teks": "H4 close 23:00 HA biru, hist −5 → +35 (membesar) · Stoch H4 33",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-03T12:10:36Z",
+ "diperbarui_utc": "2026-11-03T16:07:45Z",
  "teks": [
-  "Posisi SELL aktif · entry 77.095 (18:45 WIB)",
-  "Sinyal E1: Stoch M15 92→85 + HA merah, close 77.095.",
-  "SL 77.250 · TP1 76.810 · TP2 76.550 · floating +27."
+  "Tidak ada posisi · analisa 19:05 masih aktif",
+  "E1 SELL 77.095 kena SL 77.250 jam 19:20 (−155). High 77.887 (20:30).",
+  "E2 BUY 76.483–76.643 belum tersentuh, berlaku s/d 03:00 WIB."
  ],
  "entries": [
   {
@@ -45,7 +45,7 @@
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Posisi aktif"
+   "jenis_entry": "Selesai · kena SL"
   },
   {
    "n": 2,
