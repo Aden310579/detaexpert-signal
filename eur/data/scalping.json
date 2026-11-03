@@ -3,92 +3,92 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.11922,
- "data_sampai_wib": "3 Nov 2026 15:05",
- "data_sampai_oslo": "3 Nov 2026 09:05",
- "dibuat_utc": "2026-11-03T07:05:00Z",
- "aktif_sampai_utc": "2026-11-03T09:00:00Z",
- "dibuat_wib": "3 Nov 2026 14:05",
- "dibuat_oslo": "3 Nov 2026 08:05",
- "aktif_sampai_wib": "3 Nov 2026 16:00",
- "aktif_sampai_oslo": "3 Nov 2026 10:00",
- "diperbarui_utc": "2026-11-03T08:06:35Z",
- "status": "SIAP ENTRY",
- "bias": "NETRAL",
- "bias_teks": "HA M15 merah, H1 biru · BB H1 squeeze · Stoch M15 58 turun · H4 di atas BB tengah",
+ "harga": 1.11927,
+ "data_sampai_wib": "3 Nov 2026 16:10",
+ "data_sampai_oslo": "3 Nov 2026 10:10",
+ "dibuat_utc": "2026-11-03T09:05:00Z",
+ "aktif_sampai_utc": "2026-11-03T11:00:00Z",
+ "dibuat_wib": "3 Nov 2026 16:05",
+ "dibuat_oslo": "3 Nov 2026 10:05",
+ "aktif_sampai_wib": "3 Nov 2026 18:00",
+ "aktif_sampai_oslo": "3 Nov 2026 12:00",
+ "diperbarui_utc": "2026-11-03T09:07:10Z",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "HA M5, M15 & H1 merah · Stoch M5 18 jenuh jual · filter H4 masih naik",
  "bias_label": "M15",
- "kondisi": "Netral",
+ "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Buy lama TP2 selesai · rencana baru",
-  "Buy 1.1182 selesai: TP1 +8 pip (separuh), TP2 1.1194 +12 pip.",
-  "Sideways 1.1185–98. Sell di 1.1196–1.1200, buy di 1.1182–86."
+  "Rencana lama kedaluwarsa · rencana baru",
+  "Sell 1.1196–1.1200 tidak dapat sinyal Stoch M5, rencana lama habis tanpa posisi.",
+  "Buy di 1.1186–90 kalau Stoch M5 naik dari <25. Sell di 1.1202–06."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
-   "zona": [
-    1.1196,
-    1.12
-   ],
-   "entry": 1.1198,
-   "sl": 1.1206,
-   "tp1": 1.119,
-   "tp2": 1.1186,
-   "alasan": [
-    "high hari ini 1.1197–98",
-    "BB atas M15 1.1198",
-    "angka bulat 1.1200",
-    "BB tengah H1 1.1196"
-   ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1205",
-   "jenis_entry": "Resistance"
-  },
-  {
-   "n": 2,
    "side": "BUY",
    "zona": [
-    1.1182,
-    1.1186
+    1.1186,
+    1.119
    ],
-   "entry": 1.1184,
-   "sl": 1.1176,
-   "tp1": 1.1194,
-   "tp2": 1.1206,
+   "entry": 1.1188,
+   "sl": 1.118,
+   "tp1": 1.1196,
+   "tp2": 1.1202,
    "alasan": [
-    "low M5 1.1185",
-    "Fib 0.382 H1 1.1186",
-    "low pagi 1.1183",
-    "BB bawah M15 1.1181"
+    "low M5 1.1186",
+    "BB bawah M15 1.1186",
+    "BB bawah M5 1.1190",
+    "Stoch M5 18 jenuh jual"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1175",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1179",
    "jenis_entry": "Support"
   },
   {
-   "n": 3,
+   "n": 2,
    "side": "SELL",
    "zona": [
-    1.1206,
-    1.121
+    1.1202,
+    1.1206
    ],
-   "entry": 1.1208,
-   "sl": 1.1216,
-   "tp1": 1.1198,
-   "tp2": 1.119,
+   "entry": 1.1204,
+   "sl": 1.1212,
+   "tp1": 1.1194,
+   "tp2": 1.1182,
    "alasan": [
-    "high H1 1.1207",
-    "zona sell intraday 1.1210",
-    "dekat BB atas H1 1.1214"
+    "high hari ini 1.1206",
+    "BB atas M15 1.1202",
+    "BB atas H1 1.1207",
+    "Fib 0.236 M15 1.1202"
    ],
    "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1215",
-   "jenis_entry": "Resistance kuat"
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1211",
+   "jenis_entry": "Resistance"
+  },
+  {
+   "n": 3,
+   "side": "BUY",
+   "zona": [
+    1.1178,
+    1.1182
+   ],
+   "entry": 1.118,
+   "sl": 1.1172,
+   "tp1": 1.119,
+   "tp2": 1.1202,
+   "alasan": [
+    "low hari ini 1.1177",
+    "BB bawah H1 1.1181",
+    "BB tengah H4 1.1181"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1171",
+   "jenis_entry": "Support kuat"
   }
  ]
 }
