@@ -3,18 +3,18 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 3947.9,
- "data_sampai_wib": "3 Nov 2026 07:00",
- "data_sampai_oslo": "3 Nov 2026 01:00",
+ "harga": 3926.8,
+ "data_sampai_wib": "3 Nov 2026 11:00",
+ "data_sampai_oslo": "3 Nov 2026 05:00",
  "dibuat_utc": "2026-11-03T00:00:00Z",
  "aktif_sampai_utc": "2026-11-03T08:00:00Z",
  "dibuat_wib": "3 Nov 2026 07:00",
  "dibuat_oslo": "3 Nov 2026 01:00",
  "aktif_sampai_wib": "3 Nov 2026 15:00",
  "aktif_sampai_oslo": "3 Nov 2026 09:00",
- "status": "LAGI BERJALAN",
+ "status": "SELESAI",
  "teks": [
-  "Posisi analisa sebelumnya: Entry 1 BUY @3943.8 (masuk 3 Nov 03:45 WIB / 21:45 Oslo) masih berjalan. Stop Loss 3918.8, Take Profit 1 3951.9, Take Profit 2 3967.6.",
+  "Posisi analisa sebelumnya: Entry 1 BUY @3943.8 (masuk 3 Nov 03:45 WIB / 21:45 Oslo): setengah Take Profit 1 3951.9, sisa ditutup impas pukul 3 Nov 09:15 WIB / 03:15 Oslo.",
   "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
  "bias": "NAIK",
@@ -42,10 +42,12 @@
    "t": "2026-11-03 07:30:00",
    "masuk": "2026-11-03 07:45:00",
    "tp1_kena_awal": false,
-   "tp1_kena": false,
-   "hasil": null
+   "tp1_kena": true,
+   "tp1_t": "2026-11-03 11:15:00",
+   "hasil": "TP1+impas",
+   "selesai": "2026-11-03 13:15:00"
   }
  ],
- "diperbarui_utc": "2026-11-03T00:03:00Z",
- "status_lama": "MENUNGGU"
+ "diperbarui_utc": "2026-11-03T04:03:00Z",
+ "status_lama": "LAGI BERJALAN"
 }
