@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.11992,
- "data_sampai_wib": "3 Nov 2026 06:05",
- "data_sampai_oslo": "3 Nov 2026 00:05",
+ "harga": 1.11937,
+ "data_sampai_wib": "3 Nov 2026 07:10",
+ "data_sampai_oslo": "3 Nov 2026 01:10",
  "dibuat_utc": "2026-11-02T16:15:00Z",
  "aktif_sampai_utc": "2026-11-03T00:00:00Z",
  "dibuat_wib": "2 Nov 2026 23:15",
  "dibuat_oslo": "2 Nov 2026 17:15",
  "aktif_sampai_wib": "3 Nov 2026 07:00",
  "aktif_sampai_oslo": "3 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-02T23:06:54Z",
- "status": "SIAP ENTRY",
+ "diperbarui_utc": "2026-11-03T00:07:30Z",
+ "status": "ENTRY 1 BERJALAN",
  "bias": "NETRAL",
- "bias_teks": "HA H4 merah · histogram MACD H4 +4.5 mengecil · Stoch H4 62 turun · BB M15 squeeze",
+ "bias_teks": "HA H4 merah · histogram MACD H4 +3.5 mengecil · M15 HA biru naik · BB M15 squeeze",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · harga di tengah range",
-  "Harga 1.11992 bergerak 1.1191–1.1210. Sell 1.1210–16 siap, belum ada sinyal.",
-  "Buy 1.1182–88 kalau Stoch M15 <20 naik + HA biru. Sell kalau Stoch M15 >80 turun."
+  "Entry 1 BUY berjalan · +9 pip",
+  "Buy aktif di 1.1185. Harga 1.11937, SL 1.1170 aman, TP1 1.1200 tinggal 6 pip.",
+  "Tahan. Di TP1 tutup separuh dan geser SL ke entry 1.1185."
  ],
  "entries": [
   {
@@ -42,8 +42,8 @@
     "breakout 1.1187 jadi support",
     "Stoch M15 jenuh jual"
    ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1169",
    "jenis_entry": "Fib 0.5"
   },
@@ -65,7 +65,7 @@
     "high 30 Okt 1.1215"
    ],
    "state": "batal",
-   "status": "TERLEWAT",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1228",
    "jenis_entry": "Resistance"
   },
@@ -85,8 +85,8 @@
     "low 2 Nov pagi 1.1163",
     "Fib 0.618 H4 1.1176 di atasnya"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1151",
    "jenis_entry": "Support kuat"
   }
