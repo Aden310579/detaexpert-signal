@@ -3,44 +3,66 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 78340,
- "data_sampai_wib": "4 Nov 2026 15:05",
- "data_sampai_oslo": "4 Nov 2026 09:05",
- "dibuat_utc": "2026-11-04T04:05:00Z",
- "aktif_sampai_utc": "2026-11-04T12:00:00Z",
- "dibuat_wib": "4 Nov 2026 11:05",
- "dibuat_oslo": "4 Nov 2026 05:05",
- "aktif_sampai_wib": "4 Nov 2026 19:00",
- "aktif_sampai_oslo": "4 Nov 2026 13:00",
+ "harga": 78290,
+ "data_sampai_wib": "4 Nov 2026 19:00",
+ "data_sampai_oslo": "4 Nov 2026 13:00",
+ "dibuat_utc": "2026-11-04T12:05:00Z",
+ "aktif_sampai_utc": "2026-11-04T20:00:00Z",
+ "dibuat_wib": "4 Nov 2026 19:05",
+ "dibuat_oslo": "4 Nov 2026 13:05",
+ "aktif_sampai_wib": "5 Nov 2026 03:00",
+ "aktif_sampai_oslo": "4 Nov 2026 21:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "H4 close 15:00 HA biru, hist +19 → +92 · Stoch H4 48",
+ "bias_teks": "H4 close 19:00 HA biru, hist +92 → +159 · Stoch H4 64",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-04T08:07:47Z",
+ "diperbarui_utc": "2026-11-04T12:09:32Z",
  "teks": [
-  "Tidak ada posisi · E2 SELL batal, E1 menunggu",
-  "E2 tersentuh tanpa sinyal (HA biru, Stoch naik).",
-  "E2 batal: H4 close 15:00 = 78.140 > 77.840."
+  "Tidak ada posisi · analisa 15:05 selesai",
+  "E1 BUY 76.355–76.515 tidak tersentuh (low 78.031).",
+  "Masa aktif habis 19:00 WIB, analisa baru."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    76355,
-    76515
+    77490,
+    77650
    ],
-   "entry": 76435,
-   "sl": 76155,
-   "tp1": 76700,
-   "tp2": 77480,
+   "entry": 77570,
+   "sl": 77290,
+   "tp1": 77830,
+   "tp2": 78700,
    "alasan": [
-    "Fib 0.236 H4 76.366",
-    "BB bawah H4 76.382",
-    "swing H4 76.389",
-    "angka bulat 76.500"
+    "angka bulat 77.500",
+    "Fib 0.382 H4 77.579",
+    "swing H4 77.620",
+    "BB tengah H4 77.646"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pullback searah"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    76430,
+    76590
+   ],
+   "entry": 76510,
+   "sl": 76230,
+   "tp1": 76780,
+   "tp2": 77490,
+   "alasan": [
+    "BB bawah H4 76.472",
+    "angka bulat 76.500",
+    "swing H4 76.434–76.500"
    ],
    "state": "tunggu",
    "info": "",
