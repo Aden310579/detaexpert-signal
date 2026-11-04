@@ -3,72 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 80380,
- "data_sampai_wib": "4 Nov 2026 23:00",
- "data_sampai_oslo": "4 Nov 2026 17:00",
- "dibuat_utc": "2026-11-04T12:05:00Z",
- "aktif_sampai_utc": "2026-11-04T20:00:00Z",
- "dibuat_wib": "4 Nov 2026 19:05",
- "dibuat_oslo": "4 Nov 2026 13:05",
- "aktif_sampai_wib": "5 Nov 2026 03:00",
- "aktif_sampai_oslo": "4 Nov 2026 21:00",
+ "harga": 79974,
+ "data_sampai_wib": "5 Nov 2026 03:00",
+ "data_sampai_oslo": "4 Nov 2026 21:00",
+ "dibuat_utc": "2026-11-04T20:05:00Z",
+ "aktif_sampai_utc": "2026-11-05T04:00:00Z",
+ "dibuat_wib": "5 Nov 2026 03:05",
+ "dibuat_oslo": "4 Nov 2026 21:05",
+ "aktif_sampai_wib": "5 Nov 2026 11:00",
+ "aktif_sampai_oslo": "5 Nov 2026 05:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "H4 close 23:00 HA biru, hist +159 → +311 · Stoch H4 84",
+ "bias_teks": "H4 close 03:00 HA biru, hist +311 → +374 · Stoch H4 84",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-04T16:06:31Z",
+ "diperbarui_utc": "2026-11-04T20:06:30Z",
  "teks": [
-  "Tidak ada posisi · analisa 19:05 masih aktif",
-  "E1/E2 belum tersentuh (low 78.002). H4 close 23:00 = 80.296,",
-  "high 81.196. Angka terkunci sampai 03:00 WIB."
+  "Tidak ada posisi · analisa 19:05 selesai tanpa entry",
+  "E1 77.490–77.650 / E2 76.430–76.590 tidak tersentuh (low 78.002).",
+  "Zona baru: semua kandidat < 3 alasan → tidak dipakai."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "BUY",
-   "zona": [
-    77490,
-    77650
-   ],
-   "entry": 77570,
-   "sl": 77290,
-   "tp1": 77830,
-   "tp2": 78700,
-   "alasan": [
-    "angka bulat 77.500",
-    "Fib 0.382 H4 77.579",
-    "swing H4 77.620",
-    "BB tengah H4 77.646"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback searah"
-  },
-  {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    76430,
-    76590
-   ],
-   "entry": 76510,
-   "sl": 76230,
-   "tp1": 76780,
-   "tp2": 77490,
-   "alasan": [
-    "BB bawah H4 76.472",
-    "angka bulat 76.500",
-    "swing H4 76.434–76.500"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
-  }
- ]
+ "entries": []
 }
