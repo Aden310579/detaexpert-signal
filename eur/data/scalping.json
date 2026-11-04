@@ -3,92 +3,90 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.11895,
- "data_sampai_wib": "4 Nov 2026 07:05",
- "data_sampai_oslo": "4 Nov 2026 01:05",
- "dibuat_utc": "2026-11-03T17:05:00Z",
- "aktif_sampai_utc": "2026-11-03T19:00:00Z",
- "dibuat_wib": "4 Nov 2026 00:05",
- "dibuat_oslo": "3 Nov 2026 18:05",
- "aktif_sampai_wib": "4 Nov 2026 02:00",
- "aktif_sampai_oslo": "3 Nov 2026 20:00",
- "diperbarui_utc": "2026-11-04T00:21:02Z",
- "status": "KEDALUWARSA",
- "bias": "TURUN",
- "bias_teks": "HA M5, M15 & H1 merah · MACD M15 −0.6 · BB squeeze · sesi Asia sepi",
+ "harga": 1.12275,
+ "data_sampai_wib": "4 Nov 2026 08:05",
+ "data_sampai_oslo": "4 Nov 2026 02:05",
+ "dibuat_utc": "2026-11-04T01:05:00Z",
+ "aktif_sampai_utc": "2026-11-04T03:00:00Z",
+ "dibuat_wib": "4 Nov 2026 08:05",
+ "dibuat_oslo": "4 Nov 2026 02:05",
+ "aktif_sampai_wib": "4 Nov 2026 10:00",
+ "aktif_sampai_oslo": "4 Nov 2026 04:00",
+ "diperbarui_utc": "2026-11-04T01:06:53Z",
+ "status": "MENUNGGU",
+ "bias": "NAIK",
+ "bias_teks": "HA M5, M15 & H1 biru · tembus atap 1.1206 · MACD M15 +3.5 · Stoch H1 94 jenuh beli",
  "bias_label": "M15",
- "kondisi": "Turun",
+ "kondisi": "Naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Entry 1 SELL hold · sisa +11 pip",
-  "TP1 +8 pip sudah diambil. Sisa jalan +11 pip, low 1.11867 (TP2 kurang 1 pip).",
-  "SL sisa di entry 1.1201 (aman). Tahan ke TP2 1.1186."
+  "Sell lama impas · harga breakout · rencana baru",
+  "Sell 1.1201: TP1 +8 pip (separuh), sisa kena SL di entry. Harga lalu tembus 1.1228.",
+  "Buy pullback di 1.1214–18 kalau Stoch M5 naik dari <25. Sell di 1.1232–36."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    1.1199,
-    1.1203
+    1.1214,
+    1.1218
    ],
-   "entry": 1.1201,
-   "sl": 1.1209,
-   "tp1": 1.1193,
-   "tp2": 1.1186,
+   "entry": 1.1216,
+   "sl": 1.1208,
+   "tp1": 1.1226,
+   "tp2": 1.1232,
    "alasan": [
-    "high malam 1.1199–1.1203",
-    "BB atas M5 & H1 1.1200",
-    "BB atas M15 1.1202",
-    "angka bulat 1.1200"
+    "Fib 0.236 M15 1.1218",
+    "Fib 0.236 H1 1.1216",
+    "BB atas H1 1.1217 jadi support"
    ],
-   "state": "dipakai",
-   "status": "IMPAS",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1208",
-   "jenis_entry": "Resistance"
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1207",
+   "jenis_entry": "Pullback"
   },
   {
    "n": 2,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.1182,
-    1.1186
+    1.1232,
+    1.1236
    ],
-   "entry": 1.1184,
-   "sl": 1.1176,
-   "tp1": 1.1194,
-   "tp2": 1.1206,
+   "entry": 1.1234,
+   "sl": 1.1242,
+   "tp1": 1.1226,
+   "tp2": 1.121,
    "alasan": [
-    "Fib 0.382 M15 1.1185",
-    "low M5 1.1185",
-    "BB bawah M5 1.1182",
-    "Fib 0.236 H1 1.1182"
+    "dekat high 2 Nov 1.1240",
+    "Stoch H1 94 jenuh beli",
+    "RSI M15 76 jenuh beli"
    ],
-   "state": "batal",
-   "status": "KEDALUWARSA",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1175",
-   "jenis_entry": "Support"
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1241",
+   "jenis_entry": "Resistance"
   },
   {
    "n": 3,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
     1.1206,
     1.121
    ],
    "entry": 1.1208,
-   "sl": 1.1216,
-   "tp1": 1.1198,
-   "tp2": 1.1186,
+   "sl": 1.12,
+   "tp1": 1.1218,
+   "tp2": 1.1232,
    "alasan": [
-    "high hari ini 1.1206",
-    "zona sell intraday 1.1200–06",
-    "BB atas H4 1.1213"
+    "atap lama 1.1206–10 jadi support",
+    "Fib 0.382 H1 1.1208",
+    "BB tengah M5 1.1210"
    ],
-   "state": "batal",
-   "status": "KEDALUWARSA",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1215",
-   "jenis_entry": "Resistance kuat"
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1199",
+   "jenis_entry": "Support kuat"
   }
  ]
 }
