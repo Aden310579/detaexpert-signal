@@ -3,49 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 77334,
- "data_sampai_wib": "4 Nov 2026 12:05",
- "data_sampai_oslo": "4 Nov 2026 06:05",
- "dibuat_utc": "2026-11-04T05:05:00Z",
- "aktif_sampai_utc": "2026-11-04T07:00:00Z",
- "dibuat_wib": "4 Nov 2026 12:05",
- "dibuat_oslo": "4 Nov 2026 06:05",
- "aktif_sampai_wib": "4 Nov 2026 14:00",
- "aktif_sampai_oslo": "4 Nov 2026 08:00",
+ "harga": 77938,
+ "data_sampai_wib": "4 Nov 2026 14:05",
+ "data_sampai_oslo": "4 Nov 2026 08:05",
+ "dibuat_utc": "2026-11-04T07:05:00Z",
+ "aktif_sampai_utc": "2026-11-04T09:00:00Z",
+ "dibuat_wib": "4 Nov 2026 14:05",
+ "dibuat_oslo": "4 Nov 2026 08:05",
+ "aktif_sampai_wib": "4 Nov 2026 16:00",
+ "aktif_sampai_oslo": "4 Nov 2026 10:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist +95 → +117 · H4 NETRAL (HA merah, hist +41)",
+ "bias_teks": "M15 HA biru, hist +150 → +132 · H4 NAIK (HA biru, hist +79)",
  "bias_label": "M15",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-04T05:06:49Z",
+ "diperbarui_utc": "2026-11-04T07:07:44Z",
  "teks": [
-  "Tidak ada posisi · analisa 10:05 selesai tanpa entry",
-  "E1 SELL tersentuh 10:20–10:40, Stoch M5 maks 58: tanpa sinyal.",
-  "Batal: M15 close 76.496 (11:00) > SL 76.360. High 77.596 (11:55)."
+  "Tidak ada posisi · analisa 12:05 selesai tanpa entry",
+  "E1 BUY 76.809–76.889 tidak tersentuh: low 77.274 (12:00).",
+  "Harga lanjut naik, high 78.164 (12:50)."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    76809,
-    76889
+    77718,
+    77798
    ],
-   "entry": 76849,
-   "sl": 76709,
-   "tp1": 77000,
-   "tp2": 77157,
+   "entry": 77758,
+   "sl": 77618,
+   "tp1": 77900,
+   "tp2": 78164,
    "alasan": [
-    "BB tengah 76.811",
-    "swing M15 76.816",
-    "Fib 0.382 76.885"
+    "swing M15 77.718",
+    "angka bulat 77.750",
+    "Fib 0.236 77.795"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
    "jenis_entry": "Pullback"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    77520,
+    77600
+   ],
+   "entry": 77560,
+   "sl": 77420,
+   "tp1": 77700,
+   "tp2": 77758,
+   "alasan": [
+    "BB bawah M5 77.526",
+    "Fib 0.382 77.567",
+    "swing M15 77.596"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pullback dalam"
   }
  ]
 }
