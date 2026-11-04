@@ -3,7 +3,7 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 3933.8,
+ "harga": 4023.7,
  "dibuat_utc": "2026-11-02T20:21:00Z",
  "aktif_sampai_utc": "2026-11-04T20:00:00Z",
  "dibuat_wib": "3 Nov 2026 03:21",
@@ -12,7 +12,7 @@
  "aktif_sampai_oslo": "4 Nov 2026 21:00",
  "data_sampai_wib": "4 Nov 2026 03:00",
  "data_sampai_oslo": "3 Nov 2026 21:00",
- "status": "MENUNGGU",
+ "status": "SELESAI",
  "bias": "NAIK (pantulan)",
  "bias_teks": "Heikin Ashi D1 berganti biru, histogram MACD D1 mengecil (−11.45 → −8.76), Stochastic D1 16. Bullish AB=CD D1: titik D 3866 di PRZ (zona berbalik) 3866–4015.6.",
  "teks": [
@@ -50,6 +50,6 @@
   "target_alt": 3869
  },
  "status_lama": "MENUNGGU",
- "status_teks": "D1 belum close di atas 3949 (konfirmasi skenario utama).",
- "diperbarui_utc": "2026-11-04T04:03Z"
+ "status_teks": "Target skenario utama 4000 tercapai (D1 4 Nov).",
+ "diperbarui_utc": "2026-11-04T08:04Z"
 }
