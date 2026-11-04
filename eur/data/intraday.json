@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.12467,
+ "harga": 1.12428,
  "data_sampai_wib": "4 Nov 2026 14:05",
  "data_sampai_oslo": "4 Nov 2026 08:05",
  "dibuat_utc": "2026-11-04T04:05:00Z",
@@ -12,17 +12,17 @@
  "dibuat_oslo": "4 Nov 2026 05:05",
  "aktif_sampai_wib": "4 Nov 2026 19:00",
  "aktif_sampai_oslo": "4 Nov 2026 13:00",
- "diperbarui_utc": "2026-11-04T07:08:54Z",
- "status": "SIAP ENTRY",
+ "diperbarui_utc": "2026-11-04T08:07:12Z",
+ "status": "ENTRY 1 HOLD",
  "bias": "NAIK",
- "bias_teks": "HA H4 biru · MACD H4 +5.9 · tembus high 2 Nov 1.1240 · Stoch H4 77 dekat jenuh beli",
+ "bias_teks": "HA H4 biru · MACD H4 +5.9 · bertahan di atas 1.1225 · Stoch H4 79 dekat jenuh beli",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana lama selesai · harga 1.1247",
-  "Harga reli ke 1.1264 lalu koreksi. Tidak ada posisi terbuka.",
-  "Buy 1.1226–32 jika Stoch M15 <20 naik. Sell 1.1255–61 jika >80 turun."
+  "Entry 1 BUY HOLD · TP1 1.1244 kena",
+  "Buy 1.1229 masuk, TP1 1.1244 kena (+15 pip, tutup separuh).",
+  "SL dipindah ke entry 1.1229. Sisa posisi tahan ke TP2 1.1255."
  ],
  "entries": [
   {
@@ -42,8 +42,8 @@
     "BB tengah M15 1.1233",
     "Fib 0.236 D1 1.1227"
    ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
+   "state": "dipakai",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1214",
    "jenis_entry": "Pullback"
   },
