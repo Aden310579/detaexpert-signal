@@ -3,71 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 76974,
- "data_sampai_wib": "3 Nov 2026 07:20",
- "data_sampai_oslo": "3 Nov 2026 01:20",
- "dibuat_utc": "2026-11-02T00:21:00Z",
- "aktif_sampai_utc": "2026-11-04T00:00:00Z",
- "dibuat_wib": "2 Nov 2026 07:21",
- "dibuat_oslo": "2 Nov 2026 01:21",
- "aktif_sampai_wib": "4 Nov 2026 07:00",
- "aktif_sampai_oslo": "4 Nov 2026 01:00",
+ "harga": 77257,
+ "data_sampai_wib": "4 Nov 2026 07:20",
+ "data_sampai_oslo": "4 Nov 2026 01:20",
+ "dibuat_utc": "2026-11-04T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-06T00:00:00Z",
+ "dibuat_wib": "4 Nov 2026 07:20",
+ "dibuat_oslo": "4 Nov 2026 01:20",
+ "aktif_sampai_wib": "6 Nov 2026 07:00",
+ "aktif_sampai_oslo": "6 Nov 2026 01:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 −452 → −480 (membesar) · buy hanya lawan arah",
+ "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 −480 → −425 (mengecil) · Stoch D1 14",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-03T00:22:08Z",
+ "diperbarui_utc": "2026-11-04T00:22:06Z",
  "teks": [
-  "Tidak ada posisi · analisa 2 Nov masih aktif",
-  "Sell 78.900–79.500 belum tersentuh: high D1 2 Nov 78.878 (kurang 22).",
-  "D1 2 Nov close 76.816 (low 76.705). Sell 80.550–81.150 tidak tersentuh."
+  "Tidak ada posisi · analisa 2 Nov selesai tanpa entry",
+  "Sell 78.900–79.500 tidak tersentuh: high D1 3 Nov 78.063.",
+  "Sell 80.550–81.150 tidak tersentuh. D1 3 Nov close 77.454."
  ],
  "entries": [
   {
    "n": 1,
+   "side": "BUY",
+   "zona": [
+    75862,
+    76462
+   ],
+   "entry": 76162,
+   "sl": 75110,
+   "tp1": 76900,
+   "tp2": 77679,
+   "alasan": [
+    "angka bulat 76.000",
+    "BB bawah D1 76.315",
+    "swing D1 76.326"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Lawan arah"
+  },
+  {
+   "n": 2,
    "side": "SELL",
    "zona": [
-    78900,
-    79500
+    79912,
+    80512
    ],
-   "entry": 79200,
-   "sl": 79950,
-   "tp1": 78500,
-   "tp2": 77700,
+   "entry": 80212,
+   "sl": 81260,
+   "tp1": 79500,
+   "tp2": 78517,
    "alasan": [
-    "angka bulat 79.000",
-    "swing D1 79.221",
-    "Fibonacci 0.382 D1 79.402"
+    "angka bulat 80.000",
+    "swing D1 80.394",
+    "BB tengah D1 80.407"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
    "jenis_entry": "Utama"
-  },
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    80550,
-    81150
-   ],
-   "entry": 80850,
-   "sl": 81600,
-   "tp1": 80150,
-   "tp2": 79500,
-   "alasan": [
-    "BB tengah D1 80.681",
-    "swing D1 80.684",
-    "angka bulat 81.000"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Lanjutan"
   }
  ]
 }

@@ -3,22 +3,22 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 76974,
- "data_sampai_wib": "3 Nov 2026 07:20",
- "data_sampai_oslo": "3 Nov 2026 01:20",
- "dibuat_utc": "2026-11-03T00:22:00Z",
- "aktif_sampai_utc": "2026-11-04T00:00:00Z",
- "dibuat_wib": "3 Nov 2026 07:22",
- "dibuat_oslo": "3 Nov 2026 01:22",
- "aktif_sampai_wib": "4 Nov 2026 07:00",
- "aktif_sampai_oslo": "4 Nov 2026 01:00",
+ "harga": 77257,
+ "data_sampai_wib": "4 Nov 2026 07:20",
+ "data_sampai_oslo": "4 Nov 2026 01:20",
+ "dibuat_utc": "2026-11-04T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-05T00:00:00Z",
+ "dibuat_wib": "4 Nov 2026 07:20",
+ "dibuat_oslo": "4 Nov 2026 01:20",
+ "aktif_sampai_wib": "5 Nov 2026 07:00",
+ "aktif_sampai_oslo": "5 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "HA D1 merah · histogram MACD D1 membesar lagi (−452 → −480) · harga di dalam PRZ",
+ "bias_teks": "HA D1 merah · histogram MACD D1 mengecil (−480 → −425) · harga di dalam PRZ",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-03T00:22:08Z",
+ "diperbarui_utc": "2026-11-04T00:22:07Z",
  "teks": [
   "Lanjut turun ke batas bawah PRZ 76.300",
   "Pantul dari PRZ, naik ke 78.349"
@@ -29,9 +29,9 @@
    "target": "76.300",
    "konfirmasi": "D1 close di bawah 76.700 + HA merah",
    "poin": [
-    "D1 2 Nov close 76.816, di bawah 77.500.",
-    "HA D1 merah, MACD D1 membesar lagi (−452 → −480).",
-    "Target batas bawah PRZ = 76.300 (low 30 Okt 76.326)."
+    "D1 3 Nov close 77.454, low 76.389.",
+    "HA D1 merah, MACD D1 masih negatif (−425).",
+    "Target batas bawah PRZ = 76.300."
    ]
   },
   "alternatif": {
@@ -39,8 +39,8 @@
    "target": "78.349",
    "konfirmasi": "D1 close di atas 77.500 + HA biru",
    "poin": [
-    "Harga sudah di dalam PRZ 76.300–77.500.",
-    "Stochastic D1 14,7 (jenuh jual).",
+    "Harga di dalam PRZ 76.300–77.500.",
+    "Stoch D1 14 (jenuh jual), MACD mengecil.",
     "Target Fibonacci 0.236 = 78.349."
    ]
   }
