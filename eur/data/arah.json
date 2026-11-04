@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 1.11937,
+ "harga": 1.12092,
  "data_sampai_wib": "4 Nov 2026 07:05",
  "data_sampai_oslo": "4 Nov 2026 01:05",
  "dibuat_utc": "2026-11-03T00:20:00Z",
@@ -12,27 +12,27 @@
  "dibuat_oslo": "3 Nov 2026 01:20",
  "aktif_sampai_wib": "5 Nov 2026 07:00",
  "aktif_sampai_oslo": "5 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-04T00:06:57Z",
+ "diperbarui_utc": "2026-11-04T00:21:02Z",
  "status": "ARAH",
  "bias": "NAIK",
- "bias_teks": "HA D1 biru · MACD D1 −48, histogram +7.7 naik · RSI 43 · Stoch D1 44",
+ "bias_teks": "HA D1 biru · histogram MACD D1 +10 naik · RSI 45 · Stoch D1 50 naik",
  "bias_label": "D1",
  "kondisi": "Squeeze",
  "indikator_utama": "Harmonic + Fibo",
  "teks": [
-  "Close D1 1.1191 tepat di bawah BB tengah 1.1198",
-  "Ekor atas panjang ke 1.1240 (2 Nov). Close D1 berikut 4 Nov 07:00 WIB · 01:00 CET."
+  "Close D1 1.1208 di atas BB tengah 1.1198",
+  "Skenario utama aktif (close > 1.1200). Close D1 berikut 5 Nov 07:00 WIB · 01:00 CET."
  ],
  "skenario": {
   "utama": {
-   "judul": "Pantulan berlanjut · Konfirmasi: close D1 > 1.1200",
+   "judul": "Pantulan berlanjut · Aktif: close D1 1.1208 > 1.1200",
    "target": "1.1260",
-   "konfirmasi": "close D1 > 1.1200",
+   "konfirmasi": "Aktif: close D1 1.1208 > 1.1200",
    "poin": [
-    "Low 1.1107 bertahan, harga di atas Fib 0.382 (1.1165)",
+    "Low 1.1175 bertahan, harga di atas BB tengah D1 1.1198",
     "Target 1: 1.1240 (high 2 Nov)",
     "Target 2: 1.1256–1.1269 (BB atas D1 / high Okt)",
-    "Gagal bila close D1 < 1.1165"
+    "Gagal bila close D1 < 1.1175"
    ]
   },
   "alternatif": {
@@ -43,9 +43,9 @@
     "Ekor atas 2 Nov = penolakan di 1.1240",
     "Target 1: 1.1140 (BB bawah D1)",
     "Target 2: 1.1107 (low 29 Okt), lalu PRZ 1.1000–1.1010",
-    "Gagal bila close D1 > 1.1200"
+    "Gagal bila close D1 > 1.1240"
    ]
   }
  },
- "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Area 1.1165–1.1200 = transisi. Close D1 di atas 1.1200 membuka 1.1256; di bawah 1.1165 membuka 1.1107."
+ "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Close di atas 1.1200 mengaktifkan skenario utama ke 1.1240 lalu 1.1256. Waspada kalau kembali close di bawah 1.1175."
 }

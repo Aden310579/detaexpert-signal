@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 1.11937,
+ "harga": 1.12092,
  "data_sampai_wib": "4 Nov 2026 07:05",
  "data_sampai_oslo": "4 Nov 2026 01:05",
  "dibuat_utc": "2026-11-03T00:20:00Z",
@@ -12,16 +12,16 @@
  "dibuat_oslo": "3 Nov 2026 01:20",
  "aktif_sampai_wib": "5 Nov 2026 07:00",
  "aktif_sampai_oslo": "5 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-04T00:06:57Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-04T00:21:02Z",
+ "status": "SIAP ENTRY",
  "bias": "NAIK",
- "bias_teks": "HA D1 biru · histogram MACD D1 +7.7 naik · Stoch D1 44 naik · close 1.1191 dekat BB tengah 1.1198",
+ "bias_teks": "HA D1 biru · close 1.1208 di atas BB tengah 1.1198 · histogram MACD D1 +10 naik · Stoch D1 50",
  "bias_label": "D1",
- "kondisi": "Naik (lemah)",
+ "kondisi": "Naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell lama kena SL (−46 pip) · rencana baru",
-  "Sell 1.1169 kena Stop Loss 1.1215 saat reli 2 Nov ke 1.1240.",
+  "Entry 1 BUY siap entry",
+  "Low 3 Nov 1.1175 sentuh atas zona buy, Stoch H4 belum <25. Belum ada posisi.",
   "Buy 1.1160–75 kalau Stoch H4 <25 naik + HA H4 biru. Sell 1.1255–70 kalau ditolak."
  ],
  "entries": [
@@ -43,7 +43,7 @@
     "Gartley B H4 1.1176"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.1115",
    "jenis_entry": "Pullback"
   },
