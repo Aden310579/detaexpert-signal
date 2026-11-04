@@ -4,16 +4,16 @@
  "judul": "Intraday M15",
  "tf": "H4 / M15",
  "harga": 1.12339,
- "data_sampai_wib": "4 Nov 2026 22:10",
- "data_sampai_oslo": "4 Nov 2026 16:10",
+ "data_sampai_wib": "5 Nov 2026 00:10",
+ "data_sampai_oslo": "4 Nov 2026 18:10",
  "dibuat_utc": "2026-11-04T12:05:00Z",
  "aktif_sampai_utc": "2026-11-04T20:00:00Z",
  "dibuat_wib": "4 Nov 2026 19:05",
  "dibuat_oslo": "4 Nov 2026 13:05",
  "aktif_sampai_wib": "5 Nov 2026 03:00",
  "aktif_sampai_oslo": "4 Nov 2026 21:00",
- "diperbarui_utc": "2026-11-04T16:07:29Z",
- "status": "ENTRY 2 HOLD",
+ "diperbarui_utc": "2026-11-04T17:08:03Z",
+ "status": "SIAP ENTRY",
  "bias": "NAIK",
  "bias_teks": "HA H4 biru · MACD H4 +5.7 · koreksi dari 1.1273 · Stoch M15 7 jenuh jual · Stoch H4 75",
  "bias_label": "H4",
@@ -65,7 +65,7 @@
     "Stoch H4 83 jenuh beli"
    ],
    "state": "dipakai",
-   "status": "HOLD",
+   "status": "TP2 SELESAI",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1280",
    "jenis_entry": "Resistance"
   },
@@ -87,7 +87,7 @@
     "BB tengah H1 1.1222"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1200",
    "jenis_entry": "Support kuat"
   }
