@@ -3,9 +3,9 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 4021.7,
- "data_sampai_wib": "4 Nov 2026 15:00",
- "data_sampai_oslo": "4 Nov 2026 09:00",
+ "harga": 4042.0,
+ "data_sampai_wib": "4 Nov 2026 19:00",
+ "data_sampai_oslo": "4 Nov 2026 13:00",
  "dibuat_utc": "2026-11-04T08:00:00Z",
  "aktif_sampai_utc": "2026-11-04T16:00:00Z",
  "dibuat_wib": "4 Nov 2026 15:00",
@@ -14,7 +14,7 @@
  "aktif_sampai_oslo": "4 Nov 2026 17:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4021.7, 10 poin dari Entry 2 (SELL). Stochastic M15 94, Heikin Ashi M15 biru. Tunggu sinyal di zona."
+  "Harga 4042.0, 10 poin dari Entry 2 (SELL). Stochastic M15 73, Heikin Ashi M15 biru. Tunggu sinyal di zona."
  ],
  "bias": "NAIK",
  "bias_teks": "Heikin Ashi H4 biru · histogram MACD H4 +12.40 (membesar dari +7.00)",
@@ -54,6 +54,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-04T08:03:00Z",
+ "diperbarui_utc": "2026-11-04T12:03:00Z",
  "status_lama": "MENUNGGU"
 }
