@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 76675,
- "data_sampai_wib": "4 Nov 2026 11:05",
- "data_sampai_oslo": "4 Nov 2026 05:05",
+ "harga": 78340,
+ "data_sampai_wib": "4 Nov 2026 15:05",
+ "data_sampai_oslo": "4 Nov 2026 09:05",
  "dibuat_utc": "2026-11-04T04:05:00Z",
  "aktif_sampai_utc": "2026-11-04T12:00:00Z",
  "dibuat_wib": "4 Nov 2026 11:05",
@@ -13,16 +13,16 @@
  "aktif_sampai_wib": "4 Nov 2026 19:00",
  "aktif_sampai_oslo": "4 Nov 2026 13:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "H4 close 11:00 HA merah, hist +74 → +19 (mengecil cepat) · Stoch H4 39",
+ "bias": "NAIK",
+ "bias_teks": "H4 close 15:00 HA biru, hist +19 → +92 · Stoch H4 48",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-04T04:07:45Z",
+ "diperbarui_utc": "2026-11-04T08:07:47Z",
  "teks": [
-  "Tidak ada posisi · analisa 03:05 selesai tanpa entry",
-  "E1 & E2 BUY tersentuh, tanpa sinyal (HA/Stoch M15 tidak sesuai).",
-  "Keduanya batal: H4 close 11:00 = 76.496. Low 75.736 (10:05)."
+  "Tidak ada posisi · E2 SELL batal, E1 menunggu",
+  "E2 tersentuh tanpa sinyal (HA biru, Stoch naik).",
+  "E2 batal: H4 close 15:00 = 78.140 > 77.840."
  ],
  "entries": [
   {
@@ -47,28 +47,6 @@
    "lawan_arah": false,
    "masuk_lagi": false,
    "jenis_entry": "Pantulan bawah"
-  },
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    77480,
-    77640
-   ],
-   "entry": 77560,
-   "sl": 77840,
-   "tp1": 77300,
-   "tp2": 76515,
-   "alasan": [
-    "angka bulat 77.500",
-    "BB tengah H4 77.539",
-    "swing H4 77.620"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan atas"
   }
  ]
 }
