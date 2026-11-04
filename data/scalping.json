@@ -3,34 +3,34 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 4046.1,
- "data_sampai_wib": "4 Nov 2026 21:05",
- "data_sampai_oslo": "4 Nov 2026 15:05",
- "dibuat_utc": "2026-11-04T14:00:00Z",
- "aktif_sampai_utc": "2026-11-04T16:00:00Z",
- "dibuat_wib": "4 Nov 2026 21:00",
- "dibuat_oslo": "4 Nov 2026 15:00",
- "aktif_sampai_wib": "4 Nov 2026 23:00",
- "aktif_sampai_oslo": "4 Nov 2026 17:00",
+ "harga": 4048.9,
+ "data_sampai_wib": "4 Nov 2026 23:00",
+ "data_sampai_oslo": "4 Nov 2026 17:00",
+ "dibuat_utc": "2026-11-04T16:00:00Z",
+ "aktif_sampai_utc": "2026-11-04T18:00:00Z",
+ "dibuat_wib": "4 Nov 2026 23:00",
+ "dibuat_oslo": "4 Nov 2026 17:00",
+ "aktif_sampai_wib": "5 Nov 2026 01:00",
+ "aktif_sampai_oslo": "4 Nov 2026 19:00",
  "status": "MENUNGGU",
  "teks": [
   "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
- "bias": "NAIK",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +7.60 (mengecil dari +9.00)",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +4.60 (mengecil dari +5.60)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  4079.9,
-  3978.5,
-  3877.0
+  4091.4,
+  3990.4,
+  3889.4
  ],
  "fibonacci": [
-  4021.2,
-  4003.3
+  4023.9,
+  4006.7
  ],
  "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-04T14:05:00Z",
+ "diperbarui_utc": "2026-11-04T16:04:00Z",
  "status_lama": "MENUNGGU"
 }
