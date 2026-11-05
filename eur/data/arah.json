@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 1.12092,
+ "harga": 1.12347,
  "data_sampai_wib": "5 Nov 2026 06:10",
  "data_sampai_oslo": "5 Nov 2026 00:10",
  "dibuat_utc": "2026-11-03T00:20:00Z",
@@ -12,40 +12,40 @@
  "dibuat_oslo": "3 Nov 2026 01:20",
  "aktif_sampai_wib": "5 Nov 2026 07:00",
  "aktif_sampai_oslo": "5 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-05T00:08:27Z",
+ "diperbarui_utc": "2026-11-05T00:22:47Z",
  "status": "ARAH",
  "bias": "NAIK",
- "bias_teks": "HA D1 biru · histogram MACD D1 +10 naik · RSI 45 · Stoch D1 50 naik",
+ "bias_teks": "HA D1 biru · histogram MACD D1 +13 naik · RSI 50 · Stoch D1 65 naik · BB squeeze",
  "bias_label": "D1",
  "kondisi": "Squeeze",
  "indikator_utama": "Harmonic + Fibo",
  "teks": [
-  "Close D1 1.1208 di atas BB tengah 1.1198",
-  "Skenario utama aktif (close > 1.1200). Close D1 berikut 5 Nov 07:00 WIB · 01:00 CET."
+  "Close D1 1.1235 · target 1.1256–69 tercapai",
+  "High 4 Nov 1.1273 di atas BB atas D1. Close D1 berikut 6 Nov 07:00 WIB · 01:00 CET."
  ],
  "skenario": {
   "utama": {
-   "judul": "Pantulan berlanjut · Aktif: close D1 1.1208 > 1.1200",
-   "target": "1.1260",
-   "konfirmasi": "Aktif: close D1 1.1208 > 1.1200",
+   "judul": "Naik berlanjut · Aktif selama close D1 > 1.1200",
+   "target": "1.1300",
+   "konfirmasi": "Aktif selama close D1 > 1.1200",
    "poin": [
-    "Low 1.1175 bertahan, harga di atas BB tengah D1 1.1198",
-    "Target 1: 1.1240 (high 2 Nov)",
-    "Target 2: 1.1256–1.1269 (BB atas D1 / high Okt)",
-    "Gagal bila close D1 < 1.1175"
+    "Close 1.1235 di atas BB tengah 1.1199 & Fib 0.382",
+    "Target 1: 1.1273 (high 4 Nov)",
+    "Target 2: 1.1300, lalu AB=CD D 1.1380",
+    "Gagal bila close D1 < 1.1200"
    ]
   },
   "alternatif": {
-   "judul": "Turun lagi · Konfirmasi: close D1 < 1.1165",
-   "target": "1.1107",
-   "konfirmasi": "close D1 < 1.1165",
+   "judul": "Ditolak di atas · Konfirmasi: close D1 < 1.1200",
+   "target": "1.1140",
+   "konfirmasi": "close D1 < 1.1200",
    "poin": [
-    "Ekor atas 2 Nov = penolakan di 1.1240",
-    "Target 1: 1.1140 (BB bawah D1)",
-    "Target 2: 1.1107 (low 29 Okt), lalu PRZ 1.1000–1.1010",
-    "Gagal bila close D1 > 1.1240"
+    "Ekor atas 4 Nov = penolakan di 1.1260–73",
+    "Target 1: 1.1165 (low 3 Nov area)",
+    "Target 2: 1.1140 (BB bawah D1)",
+    "Gagal bila close D1 > 1.1273"
    ]
   }
  },
- "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Close di atas 1.1200 mengaktifkan skenario utama ke 1.1240 lalu 1.1256. Waspada kalau kembali close di bawah 1.1175."
+ "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Selama close D1 di atas 1.1200, arah tetap naik ke 1.1273 lalu 1.1300. Close di bawah 1.1200 membuka koreksi ke 1.1165–1.1140."
 }
