@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 80445,
- "data_sampai_wib": "5 Nov 2026 11:00",
- "data_sampai_oslo": "5 Nov 2026 05:00",
+ "harga": 80402,
+ "data_sampai_wib": "5 Nov 2026 15:00",
+ "data_sampai_oslo": "5 Nov 2026 09:00",
  "dibuat_utc": "2026-11-05T04:05:00Z",
  "aktif_sampai_utc": "2026-11-05T12:00:00Z",
  "dibuat_wib": "5 Nov 2026 11:05",
@@ -14,15 +14,15 @@
  "aktif_sampai_oslo": "5 Nov 2026 13:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "H4 close 11:00 HA biru, hist +428 → +443 · Stoch H4 84",
+ "bias_teks": "H4 close 15:00 HA biru, hist +443 → +417 (mengecil) · Stoch H4 87",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-05T04:06:28Z",
+ "diperbarui_utc": "2026-11-05T08:06:04Z",
  "teks": [
-  "Tidak ada posisi · analisa 03:05 selesai tanpa zona",
-  "H4 close 11:00 = 80.543 (range 80.256–80.918).",
-  "Analisa baru: tetap tidak ada zona dengan minimal 3 alasan."
+  "Tidak ada posisi · analisa 11:05 masih aktif",
+  "H4 close 15:00 = 80.359 (range 80.294–80.794).",
+  "Cek ulang: tetap tidak ada zona dengan minimal 3 alasan."
  ],
  "entries": []
 }
