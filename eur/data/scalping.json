@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.12475,
- "data_sampai_wib": "5 Nov 2026 08:05",
- "data_sampai_oslo": "5 Nov 2026 02:05",
+ "harga": 1.12548,
+ "data_sampai_wib": "5 Nov 2026 10:10",
+ "data_sampai_oslo": "5 Nov 2026 04:10",
  "dibuat_utc": "2026-11-05T01:05:00Z",
  "aktif_sampai_utc": "2026-11-05T03:00:00Z",
  "dibuat_wib": "5 Nov 2026 08:05",
  "dibuat_oslo": "5 Nov 2026 02:05",
  "aktif_sampai_wib": "5 Nov 2026 10:00",
  "aktif_sampai_oslo": "5 Nov 2026 04:00",
- "diperbarui_utc": "2026-11-05T01:06:58Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-05T03:08:40Z",
+ "status": "ENTRY 1 BERJALAN",
  "bias": "NAIK",
- "bias_teks": "HA M5 & M15 biru · tembus BB atas M15 1.1246 · Stoch M5 97 & M15 89 jenuh beli",
+ "bias_teks": "HA M15 & H1 biru · harga tertahan 1.1250–58 · Stoch M15 89 jenuh beli · M5 squeeze",
  "bias_label": "M15",
  "kondisi": "Naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana lama kedaluwarsa · harga naik ke 1.1248",
-  "Harga naik pelan ke 1.1248 tanpa sinyal entry. Tidak ada posisi scalping.",
-  "Sell 1.1250–54 kalau Stoch M5 turun dari >75. Buy 1.1232–36 kalau <25 naik."
+  "Entry 1 SELL berjalan · harga 1.1255",
+  "Sell 1.1252 masuk (Stoch M5 turun dari jenuh beli). Harga 1.1255, −3 pip.",
+  "SL 1.1260 tetap. TP1 1.1242 tutup separuh lalu SL ke entry, TP2 1.1236."
  ],
  "entries": [
   {
@@ -42,8 +42,8 @@
     "BB atas M15 1.1246",
     "Stoch M5 97 jenuh beli"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1261",
    "jenis_entry": "Resistance"
   },
@@ -64,8 +64,8 @@
     "Fib 0.382 H1 1.1234",
     "low M5 1.1234"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1225",
    "jenis_entry": "Pullback"
   },
@@ -85,8 +85,8 @@
     "high 4 Nov 1.1260",
     "zona sell swing 1.1255–70"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1269",
    "jenis_entry": "Resistance kuat"
   }
