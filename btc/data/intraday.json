@@ -3,43 +3,65 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 80170,
- "data_sampai_wib": "5 Nov 2026 19:05",
- "data_sampai_oslo": "5 Nov 2026 13:05",
- "dibuat_utc": "2026-11-05T12:05:00Z",
- "aktif_sampai_utc": "2026-11-05T20:00:00Z",
- "dibuat_wib": "5 Nov 2026 19:05",
- "dibuat_oslo": "5 Nov 2026 13:05",
- "aktif_sampai_wib": "6 Nov 2026 03:00",
- "aktif_sampai_oslo": "5 Nov 2026 21:00",
+ "harga": 75764,
+ "data_sampai_wib": "5 Nov 2026 23:05",
+ "data_sampai_oslo": "5 Nov 2026 17:05",
+ "dibuat_utc": "2026-11-05T16:05:00Z",
+ "aktif_sampai_utc": "2026-11-06T00:00:00Z",
+ "dibuat_wib": "5 Nov 2026 23:05",
+ "dibuat_oslo": "5 Nov 2026 17:05",
+ "aktif_sampai_wib": "6 Nov 2026 07:00",
+ "aktif_sampai_oslo": "6 Nov 2026 01:00",
  "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "H4 close 19:00 HA biru, hist +417 → +380 (mengecil) · Stoch H4 86 (jenuh beli)",
+ "bias": "TURUN",
+ "bias_teks": "H4 close 23:00 HA merah, hist +380 → +57 · Stoch H4 59 · ATR H4 1.300",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-05T12:08:12Z",
+ "diperbarui_utc": "2026-11-05T16:08:15Z",
  "teks": [
-  "Tidak ada posisi · analisa 11:05 selesai tanpa zona entry",
-  "Analisa 11:05 tidak punya zona dengan minimal 3 alasan.",
-  "H4 close 19:00 = 80.390 (range 80.228–80.643). Harga kini 80.170."
+  "Tidak ada posisi · analisa 19:05 batal tanpa entry",
+  "E1 BUY 79.880–80.040 tersentuh tanpa sinyal M15.",
+  "H4 close 23:00 = 76.030 (< 79.680) → batal. Turun 4.360 poin, low 75.568."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    79880,
-    80040
+    75420,
+    75580
    ],
-   "entry": 79960,
-   "sl": 79680,
-   "tp1": 80200,
-   "tp2": 80500,
+   "entry": 75500,
+   "sl": 75220,
+   "tp1": 75800,
+   "tp2": 76200,
    "alasan": [
-    "swing H4 79.952",
-    "angka bulat 80.000",
-    "Fib 0.236 79.908"
+    "angka bulat 75.500",
+    "swing M15 75.568",
+    "PRZ D1 bawah 75.736"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan bawah"
+  },
+  {
+   "n": 2,
+   "side": "SELL",
+   "zona": [
+    76880,
+    77040
+   ],
+   "entry": 76960,
+   "sl": 77240,
+   "tp1": 76700,
+   "tp2": 76200,
+   "alasan": [
+    "Fib 0.236 76.896",
+    "angka bulat 77.000",
+    "swing H4 77.002"
    ],
    "state": "tunggu",
    "info": "",
