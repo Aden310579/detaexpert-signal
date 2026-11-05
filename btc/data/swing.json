@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 77257,
- "data_sampai_wib": "4 Nov 2026 07:20",
- "data_sampai_oslo": "4 Nov 2026 01:20",
+ "harga": 80676,
+ "data_sampai_wib": "5 Nov 2026 07:00",
+ "data_sampai_oslo": "5 Nov 2026 01:00",
  "dibuat_utc": "2026-11-04T00:20:00Z",
  "aktif_sampai_utc": "2026-11-06T00:00:00Z",
  "dibuat_wib": "4 Nov 2026 07:20",
@@ -13,16 +13,16 @@
  "aktif_sampai_wib": "6 Nov 2026 07:00",
  "aktif_sampai_oslo": "6 Nov 2026 01:00",
  "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 −480 → −425 (mengecil) · Stoch D1 14",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi D1 biru · histogram MACD D1 −425 → −165 (mengecil) · Stoch D1 25",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-04T00:22:06Z",
+ "diperbarui_utc": "2026-11-05T00:21:27Z",
  "teks": [
-  "Tidak ada posisi · analisa 2 Nov selesai tanpa entry",
-  "Sell 78.900–79.500 tidak tersentuh: high D1 3 Nov 78.063.",
-  "Sell 80.550–81.150 tidak tersentuh. D1 3 Nov close 77.454."
+  "Tidak ada posisi · analisa 4 Nov masih aktif",
+  "E1 tersentuh (low 75.736) tanpa sinyal Stoch H4 <25.",
+  "E2 tersentuh (high 81.196), Stoch H4 83 tapi HA H4 masih biru."
  ],
  "entries": [
   {
