@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.12274,
+ "harga": 1.12347,
  "data_sampai_wib": "5 Nov 2026 06:10",
  "data_sampai_oslo": "5 Nov 2026 00:10",
  "dibuat_utc": "2026-11-04T20:05:00Z",
@@ -12,17 +12,17 @@
  "dibuat_oslo": "4 Nov 2026 21:05",
  "aktif_sampai_wib": "5 Nov 2026 11:00",
  "aktif_sampai_oslo": "5 Nov 2026 05:00",
- "diperbarui_utc": "2026-11-04T23:07:51Z",
+ "diperbarui_utc": "2026-11-05T00:08:27Z",
  "status": "SIAP ENTRY",
- "bias": "TURUN",
- "bias_teks": "HA H4 merah · Stoch H4 54 turun · koreksi dari 1.1273 · low ganda 1.1214 · D1 masih naik",
+ "bias": "NAIK",
+ "bias_teks": "HA H4 biru · MACD H4 +2.7 · range 1.1214–1.1248 · BB M15 squeeze · D1 naik",
  "bias_label": "H4",
- "kondisi": "Koreksi",
+ "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell 1.1265 TP2 selesai · rencana baru",
-  "Sell 1.1265: TP1 +15 & TP2 1.1218 +47 pip selesai. Tidak ada posisi.",
-  "Buy 1.1210–16 jika Stoch M15 <20 naik. Sell 1.1236–42 jika >80 turun."
+  "Entry 2 SELL siap entry · harga 1.1235",
+  "Harga di zona sell 1.1236–42 (sempat 1.1248). Stoch M15 41, belum >80.",
+  "Sell hanya jika Stoch M15 turun dari >80 + HA merah."
  ],
  "entries": [
   {
