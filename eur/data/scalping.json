@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.12289,
- "data_sampai_wib": "5 Nov 2026 18:05",
- "data_sampai_oslo": "5 Nov 2026 12:05",
+ "harga": 1.12242,
+ "data_sampai_wib": "5 Nov 2026 20:15",
+ "data_sampai_oslo": "5 Nov 2026 14:15",
  "dibuat_utc": "2026-11-05T11:05:00Z",
  "aktif_sampai_utc": "2026-11-05T13:00:00Z",
  "dibuat_wib": "5 Nov 2026 18:05",
  "dibuat_oslo": "5 Nov 2026 12:05",
  "aktif_sampai_wib": "5 Nov 2026 20:00",
  "aktif_sampai_oslo": "5 Nov 2026 14:00",
- "diperbarui_utc": "2026-11-05T12:10:46Z",
- "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "M15 & H1 turun · HA merah · Stoch M15 6 jenuh jual · BB bawah M15 1.1221",
+ "diperbarui_utc": "2026-11-05T13:12:13Z",
+ "status": "ENTRY 2 BERJALAN",
+ "bias": "NETRAL",
+ "bias_teks": "H1 turun · M15 netral, Stoch M15 20 naik · HA M5 & M15 biru · low hari ini 1.1217",
  "bias_label": "M15",
- "kondisi": "Turun",
+ "kondisi": "Netral (H1 turun)",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · tunggu sell 1.1234–38",
-  "Rencana 16:05 tanpa posisi: buy batal (H1 close < 1.1231), sell tak tersentuh.",
-  "Harga 1.1229. Tunggu Stoch M5 >75 turun + HA merah di 1.1234–38."
+  "Entry 2 BUY berjalan · harga 1.1224",
+  "Buy 1.1220 masuk 19:15 WIB (Stoch M5 naik dari jenuh jual). Harga 1.1224, +4 pip.",
+  "SL 1.1212 tetap. TP1 1.1228 tutup separuh lalu SL ke entry, TP2 1.1240."
  ],
  "entries": [
   {
@@ -42,8 +42,8 @@
     "high M5 21:30 1.1236",
     "M15 & H1 turun"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1245",
    "jenis_entry": "Pullback"
   },
@@ -64,8 +64,8 @@
     "low 5 Nov 03:00 1.1214",
     "Stoch M15 6 jenuh jual"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika H1 close < 1.1211",
    "jenis_entry": "Support"
   },
@@ -86,8 +86,8 @@
     "BB tengah H1 1.1241",
     "low M15 19:00 1.1238 jadi resisten"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1251",
    "jenis_entry": "Resistance"
   }
