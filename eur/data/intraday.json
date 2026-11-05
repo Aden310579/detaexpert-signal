@@ -3,93 +3,93 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.12404,
+ "harga": 1.12186,
  "data_sampai_wib": "5 Nov 2026 18:05",
  "data_sampai_oslo": "5 Nov 2026 12:05",
- "dibuat_utc": "2026-11-05T04:05:00Z",
- "aktif_sampai_utc": "2026-11-05T12:00:00Z",
- "dibuat_wib": "5 Nov 2026 11:05",
- "dibuat_oslo": "5 Nov 2026 05:05",
- "aktif_sampai_wib": "5 Nov 2026 19:00",
- "aktif_sampai_oslo": "5 Nov 2026 13:00",
- "diperbarui_utc": "2026-11-05T11:06:43Z",
- "status": "SIAP ENTRY",
- "bias": "NETRAL",
- "bias_teks": "H4 close 1.1243 · HA H4 merah · MACD H4 mengecil · Stoch M15 9 jenuh jual · Fib 0.382 H4 1.1236",
+ "dibuat_utc": "2026-11-05T12:05:00Z",
+ "aktif_sampai_utc": "2026-11-05T20:00:00Z",
+ "dibuat_wib": "5 Nov 2026 19:05",
+ "dibuat_oslo": "5 Nov 2026 13:05",
+ "aktif_sampai_wib": "6 Nov 2026 03:00",
+ "aktif_sampai_oslo": "5 Nov 2026 21:00",
+ "diperbarui_utc": "2026-11-05T12:10:46Z",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "H4 close 1.1223 · HA H4 merah 2x · MACD H4 negatif · Stoch M15 9 & H1 8 jenuh jual",
  "bias_label": "H4",
- "kondisi": "Koreksi",
+ "kondisi": "Koreksi turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Entry 1 BUY siap · tunggu sinyal Stoch M15",
-  "Sell 1.1270–76 tidak tersentuh (high 1.1268). Harga turun ke 1.1240.",
-  "Buy 1.1246–52 siap: tunggu Stoch M15 <20 naik + HA biru. SL 1.1235."
+  "Rencana baru · tunggu pullback sell 1.1228–34",
+  "Rencana 11:05 selesai tanpa posisi (buy 1.1246–52 batal). Harga 1.1219.",
+  "Sell di 1.1228–34 jika Stoch M15 turun dari >80. Buy di PRZ Gartley 1.1194–1.1200."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.1246,
-    1.1252
+    1.1228,
+    1.1234
    ],
-   "entry": 1.1249,
-   "sl": 1.1235,
-   "tp1": 1.1264,
-   "tp2": 1.127,
+   "entry": 1.1231,
+   "sl": 1.1245,
+   "tp1": 1.1216,
+   "tp2": 1.12,
    "alasan": [
-    "Fib 0.236 H4 1.1250",
-    "BB tengah M15 1.1250",
-    "low M15 1.1248",
-    "high 5 Nov pagi 1.1248"
+    "Fib 0.236 H1 1.1229",
+    "Fib 0.382 M15 1.1227",
+    "low M15 21:45 1.1228 jadi resisten",
+    "HA H4 merah 2x"
    ],
    "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1234",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1246",
    "jenis_entry": "Pullback"
   },
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    1.127,
-    1.1276
+    1.1194,
+    1.12
    ],
-   "entry": 1.1273,
-   "sl": 1.1287,
-   "tp1": 1.1258,
+   "entry": 1.1197,
+   "sl": 1.1183,
+   "tp1": 1.1211,
    "tp2": 1.1236,
    "alasan": [
-    "high 4 Nov 1.1273",
-    "BB atas D1 1.1269 & H4 1.1270",
-    "BB atas M15 1.1270",
-    "Stoch M15 98 jenuh beli"
+    "Gartley H4 D 0.786 = 1.1196",
+    "Fib 0.382 D1 1.1210 di atasnya",
+    "low H4 4 Nov 1.1187 penahan",
+    "D1 masih naik"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1288",
-   "jenis_entry": "Resistance"
+   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1182",
+   "jenis_entry": "Harmonic PRZ"
   },
   {
    "n": 3,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.123,
-    1.1236
+    1.1236,
+    1.1242
    ],
-   "entry": 1.1233,
-   "sl": 1.1219,
-   "tp1": 1.1248,
-   "tp2": 1.1258,
+   "entry": 1.1239,
+   "sl": 1.1253,
+   "tp1": 1.1224,
+   "tp2": 1.121,
    "alasan": [
-    "Fib 0.382 H4 1.1236",
-    "Fib 0.236 D1 1.1234",
-    "BB bawah M15 1.1230",
-    "low M15 1.1235"
+    "Fib 0.382 H1 1.1236",
+    "Fib 0.382 H4 1.1240",
+    "BB tengah M15 1.1235",
+    "low M15 19:00 1.1238 jadi resisten"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1218",
-   "jenis_entry": "Support kuat"
+   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1254",
+   "jenis_entry": "Resistance"
   }
  ]
 }
