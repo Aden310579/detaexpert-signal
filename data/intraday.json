@@ -3,31 +3,31 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 4114.4,
- "data_sampai_wib": "6 Nov 2026 03:00",
- "data_sampai_oslo": "5 Nov 2026 21:00",
- "dibuat_utc": "2026-11-05T16:00:00Z",
- "aktif_sampai_utc": "2026-11-06T00:00:00Z",
- "dibuat_wib": "5 Nov 2026 23:00",
- "dibuat_oslo": "5 Nov 2026 17:00",
- "aktif_sampai_wib": "6 Nov 2026 07:00",
- "aktif_sampai_oslo": "6 Nov 2026 01:00",
+ "harga": 4086.6,
+ "data_sampai_wib": "6 Nov 2026 07:00",
+ "data_sampai_oslo": "6 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-06T00:00:00Z",
+ "aktif_sampai_utc": "2026-11-06T08:00:00Z",
+ "dibuat_wib": "6 Nov 2026 07:00",
+ "dibuat_oslo": "6 Nov 2026 01:00",
+ "aktif_sampai_wib": "6 Nov 2026 15:00",
+ "aktif_sampai_oslo": "6 Nov 2026 09:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4114.4, 36 poin dari Entry 2 (SELL). Stochastic M15 51, Heikin Ashi M15 biru. Tunggu sinyal di zona."
+  "Harga 4086.6, 64 poin dari Entry 2 (SELL). Stochastic M15 57, Heikin Ashi M15 biru. Tunggu sinyal di zona."
  ],
  "bias": "NETRAL",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 +17.70 (mengecil dari +22.90)",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 +11.00 (mengecil dari +15.30)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  4158.8,
-  3996.9,
-  3835.1
+  4179.2,
+  4014.0,
+  3848.9
  ],
  "fibonacci": [
-  4093.3,
-  4059.7
+  4093.8,
+  4060.6
  ],
  "entries": [
   {
@@ -39,8 +39,8 @@
    ],
    "entry": 4150.6,
    "sl": 4163.6,
-   "tp1": 4121.9,
-   "tp2": 4093.3,
+   "tp1": 4122.2,
+   "tp2": 4093.8,
    "alasan": [
     "swing ekstrem 12 candle H4",
     "swing H4 sebelumnya 4147.6",
@@ -54,6 +54,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-05T20:03:00Z",
+ "diperbarui_utc": "2026-11-06T00:04:00Z",
  "status_lama": "MENUNGGU"
 }
