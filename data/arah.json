@@ -3,53 +3,54 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 4063.3,
- "dibuat_utc": "2026-11-04T20:22:00Z",
- "aktif_sampai_utc": "2026-11-06T20:00:00Z",
- "dibuat_wib": "5 Nov 2026 03:22",
- "dibuat_oslo": "4 Nov 2026 21:22",
- "aktif_sampai_wib": "7 Nov 2026 03:00",
- "aktif_sampai_oslo": "6 Nov 2026 21:00",
- "data_sampai_wib": "6 Nov 2026 03:00",
- "data_sampai_oslo": "5 Nov 2026 21:00",
- "status": "LAGI BERJALAN",
+ "harga": 4061.1,
+ "dibuat_utc": "2026-11-06T20:22:00Z",
+ "aktif_sampai_utc": "2026-11-08T20:00:00Z",
+ "dibuat_wib": "7 Nov 2026 03:22",
+ "dibuat_oslo": "6 Nov 2026 21:22",
+ "aktif_sampai_wib": "9 Nov 2026 03:00",
+ "aktif_sampai_oslo": "8 Nov 2026 21:00",
+ "data_sampai_wib": "7 Nov 2026 03:00",
+ "data_sampai_oslo": "6 Nov 2026 21:00",
+ "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "Heikin Ashi D1 biru, histogram MACD D1 positif (0.67 → 8.52), Stochastic D1 52. Bearish AB=CD D1: titik D 4070.5 di PRZ (zona berbalik) 4058.6–4070.5.",
+ "bias_teks": "Heikin Ashi D1 biru, histogram MACD D1 positif (15.18 → 17.02), Stochastic D1 76. Bearish AB=CD D1: titik D 4147.6, PRZ (zona berbalik) 4058.6–4147.6.",
  "teks": [
-  "D1 close 6 Nov 03:00 WIB (Oslo 5 Nov 21:00) di 4114.4: di atas PRZ (zona berbalik) 4058.6–4070.5 dan di atas Bollinger tengah.",
-  "Konfirmasi skenario utama (D1 close di atas 4070.5) sudah terpenuhi; target utama ±4224 belum tercapai. Konfirmasi alternatif (D1 close di bawah 4046) belum terpenuhi."
+  "Analisa sebelumnya (habis 7 Nov 03:00 WIB, Oslo 6 Nov 21:00) selesai dengan status LAGI BERJALAN: target 4224 tidak tercapai (tertinggi 4147.6), konfirmasi alternatif 4046 tidak tersentuh close D1.",
+  "D1 close 7 Nov 03:00 WIB (Oslo 6 Nov 21:00) di 4063.3: di dalam PRZ (zona berbalik) 4058.6–4147.6, di antara Fibonacci 0.382 (4040.0) dan 0.236 (4081.1).",
+  "Konfirmasi utama: D1 close di atas 4081.1 → target 4147.6. Konfirmasi alternatif: D1 close di bawah 4040.0 → target 3870.9. Belum ada yang terpenuhi."
  ],
  "skenario": {
   "utama": {
-   "judul": "Naik ke Bollinger atas",
-   "target": "±4224",
-   "konfirmasi": "D1 close di atas 4070.5",
+   "judul": "Naik ke tepi atas PRZ",
+   "target": "±4148",
+   "konfirmasi": "D1 close di atas 4081.1",
    "poin": [
-    "Heikin Ashi D1 biru",
-    "Histogram MACD D1 positif (8.52)",
-    "Close 4058 di atas Bollinger tengah 4046"
+    "Heikin Ashi D1 biru dua candle",
+    "Histogram MACD D1 positif dan membesar (17.02)",
+    "Close 4063 di atas Bollinger tengah 4042"
    ]
   },
   "alternatif": {
-   "judul": "Turun ke Fibonacci 0.236",
-   "target": "±4022",
-   "konfirmasi": "D1 close di bawah 4046",
+   "judul": "Turun ke Bollinger bawah",
+   "target": "±3871",
+   "konfirmasi": "D1 close di bawah 4040.0",
    "poin": [
-    "Bearish AB=CD: D 4070.5 di PRZ (zona berbalik)",
-    "Harga sedang di PRZ 4058.6–4070.5",
-    "Stochastic D1 52, belum jenuh beli"
+    "Bearish AB=CD: D 4147.6, harga di PRZ (zona berbalik)",
+    "Stochastic D1 76, dekat jenuh beli",
+    "4040 = Fibonacci 0.382 + Bollinger tengah 4042"
    ]
   }
  },
  "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. PRZ = Potential Reversal Zone, zona tempat harga berpotensi berbalik arah (titik D pola harmonic).",
  "level": {
   "arah_utama": 1,
-  "konfirmasi_utama": 4070.5,
-  "target_utama": 4224,
-  "konfirmasi_alt": 4046,
-  "target_alt": 4022
+  "konfirmasi_utama": 4081.1,
+  "target_utama": 4147.6,
+  "konfirmasi_alt": 4040.0,
+  "target_alt": 3870.9
  },
- "status_lama": "LAGI BERJALAN",
- "status_teks": "D1 close 4114.4 pukul 6 Nov 03:00 WIB di atas 4070.5: skenario utama berjalan ke 4224.",
- "diperbarui_utc": "2026-11-06T20:02Z"
+ "status_lama": "MENUNGGU",
+ "status_teks": "D1 belum close di atas 4081.1 (konfirmasi skenario utama).",
+ "diperbarui_utc": "2026-11-06T20:21Z"
 }
