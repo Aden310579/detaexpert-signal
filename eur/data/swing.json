@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 1.12347,
+ "harga": 1.12273,
  "data_sampai_wib": "6 Nov 2026 06:10",
  "data_sampai_oslo": "6 Nov 2026 00:10",
  "dibuat_utc": "2026-11-03T00:20:00Z",
@@ -12,17 +12,17 @@
  "dibuat_oslo": "3 Nov 2026 01:20",
  "aktif_sampai_wib": "5 Nov 2026 07:00",
  "aktif_sampai_oslo": "5 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-06T00:06:36Z",
+ "diperbarui_utc": "2026-11-06T00:21:38Z",
  "status": "ENTRY 2 BERJALAN",
  "bias": "NAIK",
- "bias_teks": "HA D1 biru · close 1.1235 di atas BB tengah 1.1199 · high 1.1273 · Stoch D1 65",
+ "bias_teks": "HA D1 biru · close 1.1228 di atas BB tengah 1.1203 · high 1.1268 gagal tembus 1.1273 · Stoch D1 72",
  "bias_label": "D1",
  "kondisi": "Naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Entry 2 SELL berjalan · +27 pip",
-  "Sell 1.1262 masuk saat Stoch H4 turun dari jenuh beli (high 1.1273). Harga 1.1235.",
-  "SL 1.1315 tetap. Tutup separuh di TP1 1.1200 lalu SL ke entry."
+  "Entry 2 SELL berjalan · +35 pip",
+  "Sell 1.1262 jalan sejak 5 Nov. Low 1.1204, harga 1.1227. TP1 1.1200 kurang 4 pip.",
+  "SL 1.1315 tetap. Tutup separuh di TP1 1.1200 lalu SL ke entry, TP2 1.1150."
  ],
  "entries": [
   {
