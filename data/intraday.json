@@ -3,9 +3,9 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 4055.0,
- "data_sampai_wib": "6 Nov 2026 23:00",
- "data_sampai_oslo": "6 Nov 2026 17:00",
+ "harga": 4063.3,
+ "data_sampai_wib": "7 Nov 2026 03:00",
+ "data_sampai_oslo": "6 Nov 2026 21:00",
  "dibuat_utc": "2026-11-06T16:00:00Z",
  "aktif_sampai_utc": "2026-11-07T00:00:00Z",
  "dibuat_wib": "6 Nov 2026 23:00",
@@ -31,6 +31,6 @@
  ],
  "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-06T16:03:00Z",
+ "diperbarui_utc": "2026-11-06T20:02:00Z",
  "status_lama": "MENUNGGU"
 }

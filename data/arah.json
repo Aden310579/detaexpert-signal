@@ -3,7 +3,7 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 4055.7,
+ "harga": 4063.3,
  "dibuat_utc": "2026-11-04T20:22:00Z",
  "aktif_sampai_utc": "2026-11-06T20:00:00Z",
  "dibuat_wib": "5 Nov 2026 03:22",
@@ -51,5 +51,5 @@
  },
  "status_lama": "LAGI BERJALAN",
  "status_teks": "D1 close 4114.4 pukul 6 Nov 03:00 WIB di atas 4070.5: skenario utama berjalan ke 4224.",
- "diperbarui_utc": "2026-11-06T16:03Z"
+ "diperbarui_utc": "2026-11-06T20:02Z"
 }
