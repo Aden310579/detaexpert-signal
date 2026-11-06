@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 1.12273,
- "data_sampai_wib": "6 Nov 2026 20:05",
- "data_sampai_oslo": "6 Nov 2026 14:05",
+ "harga": 1.11491,
+ "data_sampai_wib": "6 Nov 2026 22:05",
+ "data_sampai_oslo": "6 Nov 2026 16:05",
  "dibuat_utc": "2026-11-03T00:20:00Z",
  "aktif_sampai_utc": "2026-11-05T00:00:00Z",
  "dibuat_wib": "3 Nov 2026 07:20",
  "dibuat_oslo": "3 Nov 2026 01:20",
  "aktif_sampai_wib": "5 Nov 2026 07:00",
  "aktif_sampai_oslo": "5 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-06T13:06:01Z",
- "status": "ENTRY 2 BERJALAN",
+ "diperbarui_utc": "2026-11-06T15:07:25Z",
+ "status": "TP2 SELESAI",
  "bias": "NAIK",
  "bias_teks": "HA D1 biru · close 1.1228 di atas BB tengah 1.1203 · high 1.1268 gagal tembus 1.1273 · Stoch D1 72",
  "bias_label": "D1",
  "kondisi": "Naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Entry 2 SELL berjalan · +35 pip",
-  "Sell 1.1262 jalan sejak 5 Nov. Low 1.1204, harga 1.1227. TP1 1.1200 kurang 4 pip.",
-  "SL 1.1315 tetap. Tutup separuh di TP1 1.1200 lalu SL ke entry, TP2 1.1150."
+  "Sell 1.1262 TP2 SELESAI · +62 / +112 pip",
+  "TP1 1.1200 kena 6 Nov (+62 separuh), TP2 1.1150 kena 6 Nov 21:30 WIB (+112).",
+  "Tidak ada posisi. Rencana swing baru Senin 9 Nov 07:20 WIB."
  ],
  "entries": [
   {
@@ -64,7 +64,7 @@
     "high 16 Okt 1.1269"
    ],
    "state": "dipakai",
-   "status": "BERJALAN",
+   "status": "TP2 SELESAI",
    "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1315",
    "jenis_entry": "BB atas D1"
   },
