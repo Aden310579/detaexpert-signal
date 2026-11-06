@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 75798,
- "data_sampai_wib": "7 Nov 2026 02:00",
- "data_sampai_oslo": "6 Nov 2026 20:00",
- "dibuat_utc": "2026-11-06T19:05:00Z",
- "aktif_sampai_utc": "2026-11-06T21:00:00Z",
- "dibuat_wib": "7 Nov 2026 02:05",
- "dibuat_oslo": "6 Nov 2026 20:05",
- "aktif_sampai_wib": "7 Nov 2026 04:00",
- "aktif_sampai_oslo": "6 Nov 2026 22:00",
+ "harga": 75870,
+ "data_sampai_wib": "7 Nov 2026 04:05",
+ "data_sampai_oslo": "6 Nov 2026 22:05",
+ "dibuat_utc": "2026-11-06T21:05:00Z",
+ "aktif_sampai_utc": "2026-11-06T23:00:00Z",
+ "dibuat_wib": "7 Nov 2026 04:05",
+ "dibuat_oslo": "6 Nov 2026 22:05",
+ "aktif_sampai_wib": "7 Nov 2026 06:00",
+ "aktif_sampai_oslo": "7 Nov 2026 00:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist +17 → +13 · Stoch M15 68 · H4 TURUN",
+ "bias_teks": "M15 HA biru, hist +15 → +14 · Stoch M15 74 · H4 TURUN",
  "bias_label": "M15",
  "kondisi": "Squeeze",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-06T19:06:05Z",
+ "diperbarui_utc": "2026-11-06T21:07:35Z",
  "teks": [
-  "Tidak ada posisi · analisa 00:05 selesai tanpa entry",
-  "E1 BUY tersentuh (low 75.508), sinyal close 75.782 di luar zona → dilewati.",
-  "E2 SELL 76.230–76.310 tidak tersentuh (high 76.150)."
+  "Tidak ada posisi · analisa 02:05 selesai tanpa entry",
+  "E1 BUY 75.470–75.550 tidak tersentuh (low 75.689).",
+  "E2 SELL tersentuh (high 76.016), HA M5 biru → tanpa sinyal."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    75470,
-    75550
+    75660,
+    75740
    ],
-   "entry": 75510,
-   "sl": 75370,
-   "tp1": 75650,
-   "tp2": 75800,
+   "entry": 75700,
+   "sl": 75560,
+   "tp1": 75840,
+   "tp2": 75960,
    "alasan": [
-    "angka bulat 75.500",
-    "BB bawah M15 75.501",
-    "swing M5 75.508"
+    "swing M15 75.689",
+    "BB bawah M5 75.687",
+    "BB bawah M15 75.655"
    ],
    "state": "tunggu",
    "info": "",
@@ -57,11 +57,11 @@
    "entry": 76000,
    "sl": 76140,
    "tp1": 75860,
-   "tp2": 75750,
+   "tp2": 75740,
    "alasan": [
-    "Fib 0.236 75.975",
+    "high M5 76.016",
     "angka bulat 76.000",
-    "BB atas M15 76.026"
+    "BB atas M15 76.006"
    ],
    "state": "tunggu",
    "info": "",
