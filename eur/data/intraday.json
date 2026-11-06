@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.12336,
+ "harga": 1.11981,
  "data_sampai_wib": "6 Nov 2026 10:05",
  "data_sampai_oslo": "6 Nov 2026 04:05",
  "dibuat_utc": "2026-11-06T00:05:00Z",
@@ -12,17 +12,17 @@
  "dibuat_oslo": "6 Nov 2026 01:05",
  "aktif_sampai_wib": "6 Nov 2026 15:00",
  "aktif_sampai_oslo": "6 Nov 2026 09:00",
- "diperbarui_utc": "2026-11-06T03:06:23Z",
- "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "H4 close 1.1228 · HA H4 biru · MACD H4 datar · D1 naik · Gartley H4 D 1.1196 belum tersentuh",
+ "diperbarui_utc": "2026-11-06T04:06:26Z",
+ "status": "SIAP ENTRY",
+ "bias": "TURUN",
+ "bias_teks": "H4 close 1.1199 · HA H4 merah · MACD H4 −5.4 · Stoch M15 3 & H1 4 jenuh jual · PRZ Gartley tersentuh",
  "bias_label": "H4",
- "kondisi": "Sideways",
+ "kondisi": "Turun ke PRZ",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell 1.1231 selesai IMPAS · rencana baru",
-  "Sell 1.1231: TP1 1.1216 kena (+15 pip separuh), sisa keluar di entry (impas).",
-  "Buy 1.1218–24 jika Stoch M15 <20 naik. Sell 1.1244–50 jika >80 turun."
+  "Entry 3 BUY siap · harga di PRZ Gartley",
+  "Buy 1.1218–24 batal (H4 close 1.1199). Harga turun ke PRZ 1.1196–1.1200.",
+  "Buy 1.1204–10 siap: tunggu Stoch M15 <20 naik + HA biru. SL 1.1193."
  ],
  "entries": [
   {
@@ -42,8 +42,8 @@
     "low M15 1.1215 (2x)",
     "D1 masih naik"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "BATAL",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1206",
    "jenis_entry": "Pullback"
   },
@@ -87,7 +87,7 @@
     "dekat PRZ Gartley 1.1196–1.1200"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1192",
    "jenis_entry": "Support kuat"
   }
