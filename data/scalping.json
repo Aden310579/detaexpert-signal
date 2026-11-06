@@ -3,47 +3,70 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 4063.3,
- "data_sampai_wib": "7 Nov 2026 03:00",
- "data_sampai_oslo": "6 Nov 2026 21:00",
- "dibuat_utc": "2026-11-06T20:00:00Z",
- "aktif_sampai_utc": "2026-11-06T22:00:00Z",
- "dibuat_wib": "7 Nov 2026 03:00",
- "dibuat_oslo": "6 Nov 2026 21:00",
- "aktif_sampai_wib": "7 Nov 2026 05:00",
- "aktif_sampai_oslo": "6 Nov 2026 23:00",
+ "harga": 4068.7,
+ "data_sampai_wib": "7 Nov 2026 05:00",
+ "data_sampai_oslo": "6 Nov 2026 23:00",
+ "dibuat_utc": "2026-11-06T22:00:00Z",
+ "aktif_sampai_utc": "2026-11-07T00:00:00Z",
+ "dibuat_wib": "7 Nov 2026 05:00",
+ "dibuat_oslo": "6 Nov 2026 23:00",
+ "aktif_sampai_wib": "7 Nov 2026 07:00",
+ "aktif_sampai_oslo": "7 Nov 2026 01:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4063.3, 21 poin dari Entry 2 (SELL). Stochastic M5 12, Heikin Ashi M5 merah. Tunggu sinyal di zona."
+  "Harga 4068.7, 14 poin dari Entry 2 (SELL). Stochastic M5 85, Heikin Ashi M5 biru. Tunggu sinyal di zona."
  ],
  "bias": "NAIK",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +1.70 (mengecil dari +1.80)",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +2.10 (membesar dari +1.90)",
  "kondisi": "Squeeze",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  4086.1,
-  4060.4,
-  4034.8
+  4081.2,
+  4059.6,
+  4037.9
  ],
  "fibonacci": [
-  4040.9,
-  4048.6
+  4040.5,
+  4047.9
  ],
  "entries": [
+  {
+   "n": 1,
+   "side": "BUY",
+   "zona": [
+    4040.5,
+    4047.9
+   ],
+   "entry": 4044.2,
+   "sl": 4030.5,
+   "tp1": 4061.7,
+   "tp2": 4079.2,
+   "alasan": [
+    "Fibonacci 0.236/0.382 (4040.5 / 4047.9)",
+    "Bollinger H1 bawah 4037.9",
+    "swing H1 sebelumnya 4036.7",
+    "angka bulat 4050"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Utama"
+  },
   {
    "n": 2,
    "side": "SELL",
    "zona": [
-    4081.0,
-    4087.0
+    4079.2,
+    4085.2
    ],
-   "entry": 4084.0,
-   "sl": 4097.0,
-   "tp1": 4066.3,
-   "tp2": 4048.6,
+   "entry": 4082.2,
+   "sl": 4095.2,
+   "tp1": 4065.1,
+   "tp2": 4047.9,
    "alasan": [
     "swing ekstrem 12 candle H1",
-    "Bollinger H1 atas 4086.1",
+    "Bollinger H1 atas 4081.2",
     "swing H1 sebelumnya 4081.0"
    ],
    "state": "tunggu",
@@ -51,9 +74,32 @@
    "lawan_arah": true,
    "masuk_lagi": false,
    "jenis_entry": "Lawan arah"
+  },
+  {
+   "n": 3,
+   "side": "BUY",
+   "zona": [
+    4040.5,
+    4047.9
+   ],
+   "entry": 4044.2,
+   "sl": 4030.5,
+   "tp1": 4069.7,
+   "tp2": 4095.2,
+   "alasan": [
+    "Fibonacci 0.236/0.382 (4040.5 / 4047.9)",
+    "Bollinger H1 bawah 4037.9",
+    "swing H1 sebelumnya 4036.7",
+    "angka bulat 4050"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": true,
+   "jenis_entry": "Masuk lagi"
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-06T20:04:00Z",
+ "diperbarui_utc": "2026-11-06T22:04:00Z",
  "status_lama": "MENUNGGU"
 }
