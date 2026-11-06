@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 75720,
- "data_sampai_wib": "6 Nov 2026 11:05",
- "data_sampai_oslo": "6 Nov 2026 05:05",
- "dibuat_utc": "2026-11-06T00:05:00Z",
- "aktif_sampai_utc": "2026-11-06T08:00:00Z",
- "dibuat_wib": "6 Nov 2026 07:05",
- "dibuat_oslo": "6 Nov 2026 01:05",
- "aktif_sampai_wib": "6 Nov 2026 15:00",
- "aktif_sampai_oslo": "6 Nov 2026 09:00",
+ "harga": 75589,
+ "data_sampai_wib": "6 Nov 2026 15:05",
+ "data_sampai_oslo": "6 Nov 2026 09:05",
+ "dibuat_utc": "2026-11-06T08:05:00Z",
+ "aktif_sampai_utc": "2026-11-06T16:00:00Z",
+ "dibuat_wib": "6 Nov 2026 15:05",
+ "dibuat_oslo": "6 Nov 2026 09:05",
+ "aktif_sampai_wib": "6 Nov 2026 23:00",
+ "aktif_sampai_oslo": "6 Nov 2026 17:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "H4 close 11:00 HA merah, hist −259 → −339 · Stoch H4 14",
+ "bias_teks": "H4 close 15:00 = 75.616 HA merah, hist −339 → −391 · Stoch H4 11",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-06T04:06:54Z",
+ "diperbarui_utc": "2026-11-06T08:07:43Z",
  "teks": [
-  "Tidak ada posisi · analisa 07:05 masih aktif",
-  "E1 SELL 76.540–76.700 belum tersentuh (high 76.416). E2 belum tersentuh.",
-  "H4 close 11:00 = 75.913 (range 75.778–76.416)."
+  "Tidak ada posisi · analisa 07:05 selesai tanpa entry",
+  "E1 SELL 76.540–76.700 tidak tersentuh (high maks 76.416).",
+  "E2 SELL 77.480–77.640 tidak tersentuh. Low baru 75.304 (14:30)."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    76540,
-    76700
+    75920,
+    76080
    ],
-   "entry": 76620,
-   "sl": 76900,
-   "tp1": 76350,
-   "tp2": 76000,
+   "entry": 76000,
+   "sl": 76280,
+   "tp1": 75750,
+   "tp2": 75300,
    "alasan": [
-    "Fib 0.236 76.621",
-    "angka bulat 76.500",
-    "swing M15 76.560"
+    "angka bulat 76.000",
+    "BB atas M15 75.986",
+    "swing M15 75.987"
    ],
    "state": "tunggu",
    "info": "",
@@ -51,17 +51,17 @@
    "n": 2,
    "side": "SELL",
    "zona": [
-    77480,
-    77640
+    76340,
+    76500
    ],
-   "entry": 77560,
-   "sl": 77840,
-   "tp1": 77300,
-   "tp2": 76700,
+   "entry": 76420,
+   "sl": 76700,
+   "tp1": 76150,
+   "tp2": 76000,
    "alasan": [
-    "Fib 0.382 77.496",
-    "angka bulat 77.500",
-    "swing 77.620"
+    "swing M15 76.400",
+    "high H4 76.416",
+    "angka bulat 76.500"
    ],
    "state": "tunggu",
    "info": "",
