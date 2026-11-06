@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.11471,
+ "harga": 1.11398,
  "data_sampai_wib": "7 Nov 2026 02:05",
  "data_sampai_oslo": "6 Nov 2026 20:05",
  "dibuat_utc": "2026-11-06T16:05:00Z",
@@ -12,17 +12,17 @@
  "dibuat_oslo": "6 Nov 2026 17:05",
  "aktif_sampai_wib": "7 Nov 2026 05:00",
  "aktif_sampai_oslo": "6 Nov 2026 23:00",
- "diperbarui_utc": "2026-11-06T19:07:12Z",
+ "diperbarui_utc": "2026-11-06T20:06:25Z",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "H4 close 1.1146 · HA H4 merah · MACD H4 −3.6 · Stoch H4 8 · low 1.1132",
+ "bias_teks": "H4 close 1.1140 · HA H4 merah · Stoch H4 rendah · D AB=CD proyeksi 1.1117",
  "bias_label": "H4",
  "kondisi": "Turun · menuju D",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · tunggu sell 1.1160–66",
-  "Buy 1.1166–72 batal: H4 close 1.1146, di bawah batas 1.1154.",
-  "Tunggu pullback: Stoch M15 >80 turun + HA merah di 1.1160–66."
+  "Belum ada posisi · sell 1.1160–66 belum tersentuh",
+  "H4 close 1.1140. Harga belum naik ke 1.1160–66, high 1.1160.",
+  "Pasar tutup ±05:00 WIB: jangan buka posisi baru menjelang tutup."
  ],
  "entries": [
   {
