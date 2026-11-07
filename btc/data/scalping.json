@@ -3,26 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 75792,
- "data_sampai_wib": "8 Nov 2026 00:05",
- "data_sampai_oslo": "7 Nov 2026 18:05",
- "dibuat_utc": "2026-11-07T17:05:00Z",
- "aktif_sampai_utc": "2026-11-07T19:00:00Z",
- "dibuat_wib": "8 Nov 2026 00:05",
- "dibuat_oslo": "7 Nov 2026 18:05",
- "aktif_sampai_wib": "8 Nov 2026 02:00",
- "aktif_sampai_oslo": "7 Nov 2026 20:00",
+ "harga": 75829,
+ "data_sampai_wib": "8 Nov 2026 02:05",
+ "data_sampai_oslo": "7 Nov 2026 20:05",
+ "dibuat_utc": "2026-11-07T19:05:00Z",
+ "aktif_sampai_utc": "2026-11-07T21:00:00Z",
+ "dibuat_wib": "8 Nov 2026 02:05",
+ "dibuat_oslo": "7 Nov 2026 20:05",
+ "aktif_sampai_wib": "8 Nov 2026 04:00",
+ "aktif_sampai_oslo": "7 Nov 2026 22:00",
  "status": "MENUNGGU",
  "bias": "NETRAL",
- "bias_teks": "M15 HA biru, hist −15 → −10 · Stoch M15 44 · sideways · H4 TURUN · ATR 71",
+ "bias_teks": "M15 HA merah, hist +9 · Stoch M15 76 · squeeze (BB 0,34%) · H4 TURUN · ATR 66",
  "bias_label": "M15",
- "kondisi": "Sideways",
+ "kondisi": "Squeeze",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-07T17:05:55Z",
+ "diperbarui_utc": "2026-11-07T19:05:37Z",
  "teks": [
-  "Tidak ada posisi · BUY 75.900 kena SL 75.770 (−130)",
-  "SL kena 22:35 (low 75.766), lanjut turun ke 75.601 pukul 22:45.",
-  "BUY 75.830–75.910: HA biru pertama 23:00 close 75.755 di luar zona → dilewati."
+  "Tidak ada posisi · analisa 00:05 selesai tanpa entry",
+  "Range 00:00–02:00: high 75.892, low 75.770.",
+  "BUY 75.690–75.770 (low 75.770,34) dan SELL 75.980–76.060 tidak tersentuh."
  ],
  "entries": [
   {
@@ -34,12 +34,12 @@
    ],
    "entry": 75730,
    "sl": 75590,
-   "tp1": 75870,
-   "tp2": 75980,
+   "tp1": 75850,
+   "tp2": 75960,
    "alasan": [
-    "bulat 75.750",
-    "BB bawah M15 75.696",
-    "Fib 0.382 75.746"
+    "swing M15 75.696",
+    "BB bawah M15 75.699",
+    "bulat 75.750"
    ],
    "state": "tunggu",
    "info": "",
@@ -51,17 +51,17 @@
    "n": 2,
    "side": "SELL",
    "zona": [
-    75980,
-    76060
+    75950,
+    76030
    ],
-   "entry": 76020,
-   "sl": 76160,
-   "tp1": 75870,
+   "entry": 75990,
+   "sl": 76130,
+   "tp1": 75850,
    "tp2": 75760,
    "alasan": [
-    "bulat 76.000",
-    "swing M15 75.987",
-    "BB atas M15 76.030"
+    "BB atas M15 75.961",
+    "swing M15 75.981",
+    "bulat 76.000"
    ],
    "state": "tunggu",
    "info": "",
