@@ -3,71 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 75683,
- "data_sampai_wib": "8 Nov 2026 04:05",
- "data_sampai_oslo": "7 Nov 2026 22:05",
- "dibuat_utc": "2026-11-07T21:05:00Z",
- "aktif_sampai_utc": "2026-11-07T23:00:00Z",
- "dibuat_wib": "8 Nov 2026 04:05",
- "dibuat_oslo": "7 Nov 2026 22:05",
- "aktif_sampai_wib": "8 Nov 2026 06:00",
- "aktif_sampai_oslo": "8 Nov 2026 00:00",
+ "harga": 75764,
+ "data_sampai_wib": "8 Nov 2026 06:05",
+ "data_sampai_oslo": "8 Nov 2026 00:05",
+ "dibuat_utc": "2026-11-07T23:05:00Z",
+ "aktif_sampai_utc": "2026-11-08T01:00:00Z",
+ "dibuat_wib": "8 Nov 2026 06:05",
+ "dibuat_oslo": "8 Nov 2026 00:05",
+ "aktif_sampai_wib": "8 Nov 2026 08:00",
+ "aktif_sampai_oslo": "8 Nov 2026 02:00",
  "status": "HOLD",
- "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist −4 → −7 · Stoch M15 20 · squeeze (BB 0,27%) · H4 TURUN · ATR 43",
+ "bias": "NETRAL",
+ "bias_teks": "M15 HA merah, hist +12 · Stoch M15 86 (jenuh beli) · squeeze (BB 0,29%) · H4 TURUN · ATR 67",
  "bias_label": "M15",
- "kondisi": "Squeeze turun",
+ "kondisi": "Squeeze",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-07T21:05:54Z",
+ "diperbarui_utc": "2026-11-07T23:05:52Z",
  "teks": [
-  "BUY 75.767 aktif · SL 75.590 · TP1 75.850",
-  "E1 BUY aktif 02:50 (HA biru, Stoch M5 naik dari 8). High 75.805, TP1 belum kena.",
-  "Low 75.603,70 (03:50) nyaris SL 75.590. Floating −84."
+  "SELL 75.788 aktif · SL 75.940 · TP1 75.660",
+  "BUY 75.767 kena SL 75.590 pukul 04:30 (low 75.571) → −177.",
+  "SELL aktif 05:30 (HA merah, Stoch 84 turun) di 75.788. Floating +24."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    75760,
-    75840
+    75600,
+    75680
    ],
-   "entry": 75800,
-   "sl": 75940,
-   "tp1": 75660,
-   "tp2": 75560,
+   "entry": 75640,
+   "sl": 75500,
+   "tp1": 75760,
+   "tp2": 75840,
    "alasan": [
-    "BB tengah M15 75.783",
-    "bulat 75.750",
-    "high M5 75.805"
+    "low malam 75.571",
+    "BB bawah M15 75.644",
+    "TP1 SELL 75.660"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback searah"
+   "jenis_entry": "Pantulan bawah"
   },
   {
    "n": 2,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    75560,
-    75640
+    75860,
+    75940
    ],
-   "entry": 75600,
-   "sl": 75460,
-   "tp1": 75720,
-   "tp2": 75800,
+   "entry": 75900,
+   "sl": 76040,
+   "tp1": 75760,
+   "tp2": 75680,
    "alasan": [
-    "low hari ini 75.601",
-    "swing M5 75.604",
-    "BB bawah M15 75.679"
+    "BB atas M15 75.863",
+    "swing M15 75.892",
+    "SL SELL 75.940"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": true,
+   "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
+   "jenis_entry": "Pantulan atas"
   }
  ]
 }
