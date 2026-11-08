@@ -3,26 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 75797,
- "data_sampai_wib": "8 Nov 2026 03:05",
- "data_sampai_oslo": "7 Nov 2026 21:05",
- "dibuat_utc": "2026-11-07T16:05:00Z",
- "aktif_sampai_utc": "2026-11-08T00:00:00Z",
- "dibuat_wib": "7 Nov 2026 23:05",
- "dibuat_oslo": "7 Nov 2026 17:05",
- "aktif_sampai_wib": "8 Nov 2026 07:00",
- "aktif_sampai_oslo": "8 Nov 2026 01:00",
- "status": "HOLD",
- "bias": "TURUN",
- "bias_teks": "H4 close 03:00 = 75.805 HA merah ke-2, hist −114 → −84 · Stoch H4 17",
+ "harga": 75823,
+ "data_sampai_wib": "8 Nov 2026 07:05",
+ "data_sampai_oslo": "8 Nov 2026 01:05",
+ "dibuat_utc": "2026-11-08T00:05:00Z",
+ "aktif_sampai_utc": "2026-11-08T08:00:00Z",
+ "dibuat_wib": "8 Nov 2026 07:05",
+ "dibuat_oslo": "8 Nov 2026 01:05",
+ "aktif_sampai_wib": "8 Nov 2026 15:00",
+ "aktif_sampai_oslo": "8 Nov 2026 09:00",
+ "status": "MENUNGGU",
+ "bias": "NETRAL",
+ "bias_teks": "H4 close 07:00 = 75.868 HA merah ke-3, hist −84 → −52 · Stoch H4 26 naik",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-07T20:05:32Z",
+ "diperbarui_utc": "2026-11-08T00:06:23Z",
  "teks": [
-  "BUY 75.941 masih aktif · SL 75.600 · TP1 76.100",
-  "23:00–03:00: high 75.892, low 75.696. Floating −144.",
-  "E1 SELL 75.920–76.080 belum tersentuh (menunggu BUY selesai)."
+  "Tidak ada posisi · BUY 75.941 kena SL 75.600 (−341)",
+  "SL kena 04:30 (low 75.571). Zona SELL tersentuh 06:45 (high 75.924),",
+  "M15 tetap HA biru → belum ada sinyal. Zona BUY dilewati."
  ],
  "entries": [
   {
@@ -37,15 +37,15 @@
    "tp1": 75700,
    "tp2": 75500,
    "alasan": [
-    "BB tengah M15 75.910",
     "angka bulat 76.000",
+    "high H4 75.924",
     "swing M15 75.987"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback searah"
+   "jenis_entry": "Pantulan atas"
   },
   {
    "n": 2,
@@ -59,13 +59,13 @@
    "tp1": 75750,
    "tp2": 75920,
    "alasan": [
-    "Fib 0.382 75.472",
+    "Fib 0.382 75.457",
     "angka bulat 75.500",
-    "low hari ini 75.601"
+    "low 7 Nov 75.571"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": true,
+   "lawan_arah": false,
    "masuk_lagi": false,
    "jenis_entry": "Pantulan bawah"
   }
