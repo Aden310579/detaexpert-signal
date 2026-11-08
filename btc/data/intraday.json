@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 75992,
- "data_sampai_wib": "8 Nov 2026 19:00",
- "data_sampai_oslo": "8 Nov 2026 13:00",
- "dibuat_utc": "2026-11-08T08:05:00Z",
- "aktif_sampai_utc": "2026-11-08T16:00:00Z",
- "dibuat_wib": "8 Nov 2026 15:05",
- "dibuat_oslo": "8 Nov 2026 09:05",
- "aktif_sampai_wib": "8 Nov 2026 23:00",
- "aktif_sampai_oslo": "8 Nov 2026 17:00",
+ "harga": 76084,
+ "data_sampai_wib": "8 Nov 2026 23:00",
+ "data_sampai_oslo": "8 Nov 2026 17:00",
+ "dibuat_utc": "2026-11-08T16:05:00Z",
+ "aktif_sampai_utc": "2026-11-09T00:00:00Z",
+ "dibuat_wib": "8 Nov 2026 23:05",
+ "dibuat_oslo": "8 Nov 2026 17:05",
+ "aktif_sampai_wib": "9 Nov 2026 07:00",
+ "aktif_sampai_oslo": "9 Nov 2026 01:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "H4 close 19:00 = 75.981 HA biru, hist +8 → +32 · Stoch H4 71 naik",
+ "bias_teks": "H4 close 23:00 = 76.074 HA biru, hist +32 → +57 · Stoch H4 75",
  "bias_label": "H4",
- "kondisi": "Trending",
- "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-08T12:06:08Z",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
+ "diperbarui_utc": "2026-11-08T16:06:37Z",
  "teks": [
-  "Belum ada posisi · kedua zona belum tersentuh",
-  "Range sejak 15:00: high 76.037 (18:20), low 75.804 (17:30).",
-  "BUY 75.440–75.600 dan SELL 76.240–76.400 belum tersentuh."
+  "Belum ada posisi · analisa 15:05 selesai tanpa entry",
+  "Range 15:00–23:00: high 76.200 (20:20), low 75.804 (17:30).",
+  "BUY 75.440–75.600 dan SELL 76.240–76.400 tidak tersentuh."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    75440,
-    75600
+    75910,
+    76070
    ],
-   "entry": 75520,
-   "sl": 75240,
-   "tp1": 75800,
-   "tp2": 76240,
+   "entry": 75990,
+   "sl": 75710,
+   "tp1": 76220,
+   "tp2": 76380,
    "alasan": [
-    "Fib 0.382 75.457",
-    "angka bulat 75.500",
-    "low 7 Nov 75.571"
+    "Fib 0.382 75.929",
+    "angka bulat 76.000",
+    "Fib 0.236 76.052"
    ],
    "state": "tunggu",
    "info": "",
@@ -51,16 +51,16 @@
    "n": 2,
    "side": "SELL",
    "zona": [
-    76240,
-    76400
+    76300,
+    76460
    ],
-   "entry": 76320,
-   "sl": 76600,
-   "tp1": 76050,
-   "tp2": 75600,
+   "entry": 76380,
+   "sl": 76660,
+   "tp1": 76100,
+   "tp2": 75990,
    "alasan": [
     "high 6 Nov 76.378",
-    "high 7 Nov 76.250",
+    "low 3 Nov 76.389",
     "Fib 0.236 D1 76.377"
    ],
    "state": "tunggu",
