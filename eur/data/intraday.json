@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.11934,
+ "harga": 1.12204,
  "data_sampai_wib": "10 Nov 2026 02:10",
  "data_sampai_oslo": "9 Nov 2026 20:10",
  "dibuat_utc": "2026-11-09T16:05:00Z",
@@ -12,17 +12,17 @@
  "dibuat_oslo": "9 Nov 2026 17:05",
  "aktif_sampai_wib": "10 Nov 2026 07:00",
  "aktif_sampai_oslo": "10 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-09T19:07:18Z",
- "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "MACD H4 −8.8 hampir nol · Stoch H4 45 naik · HA H4 biru · close di BB tengah H4",
+ "diperbarui_utc": "2026-11-09T20:06:44Z",
+ "status": "SIAP ENTRY",
+ "bias": "NAIK",
+ "bias_teks": "Histogram MACD H4 +4.3 · Stoch H4 75 · HA H4 biru · RSI 58",
  "bias_label": "H4",
- "kondisi": "Netral · naik",
+ "kondisi": "Naik · dekat jenuh",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · buy 1.1182–88 paling dekat",
-  "Rencana 15:05 habis tanpa entry. H4 close 1.1196, range 1.1185–1.1203.",
-  "Tunggu Stoch M15 <20 naik + HA biru di 1.1182–88."
+  "Belum ada posisi · sell 1.1212–18 siap",
+  "H4 close 1.1224, naik 30 pip dari 1.1193. Buy 1.1182–88 tidak tersentuh.",
+  "Sell hanya jika Stoch M15 turun dari >80 + HA merah di 1.1212–18."
  ],
  "entries": [
   {
@@ -63,7 +63,7 @@
     "di atas PRZ AB=CD 1.1203"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1230",
    "jenis_entry": "Resistance"
   },
