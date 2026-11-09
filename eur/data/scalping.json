@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.11932,
- "data_sampai_wib": "9 Nov 2026 18:10",
- "data_sampai_oslo": "9 Nov 2026 12:10",
+ "harga": 1.1188,
+ "data_sampai_wib": "9 Nov 2026 19:05",
+ "data_sampai_oslo": "9 Nov 2026 13:05",
  "dibuat_utc": "2026-11-09T09:05:00Z",
  "aktif_sampai_utc": "2026-11-09T11:00:00Z",
  "dibuat_wib": "9 Nov 2026 16:05",
  "dibuat_oslo": "9 Nov 2026 10:05",
  "aktif_sampai_wib": "9 Nov 2026 18:00",
  "aktif_sampai_oslo": "9 Nov 2026 12:00",
- "diperbarui_utc": "2026-11-09T11:07:32Z",
- "status": "ENTRY 1 BERJALAN",
+ "diperbarui_utc": "2026-11-09T12:06:51Z",
+ "status": "KEDALUWARSA",
  "bias": "NAIK",
  "bias_teks": "M15 HA merah, Stoch M15 90 mulai turun · H1 96 jenuh beli · harga di BB atas H1",
  "bias_label": "M15",
  "kondisi": "Naik · jenuh beli",
  "indikator_utama": "Stochastic",
  "teks": [
-  "SELL 1.1190 BERJALAN · −3 pip",
-  "Masuk 16:15 WIB di 1.1190. High 1.1196, belum kena SL 1.1198.",
-  "Tahan. TP1 1.1182 → tutup separuh, SL ke entry. TP2 1.1176."
+  "SELL 1.1190 kena SL (−8 pip)",
+  "Harga naik ke 1.1198 jam 18:15 WIB, SL kena. Tidak ada posisi.",
+  "Rencana scalping baru di update 20:05 WIB."
  ],
  "entries": [
   {
@@ -41,8 +41,8 @@
     "BB atas M15 1.1190",
     "Stoch M15/H1 >90 jenuh beli"
    ],
-   "state": "dipakai",
-   "status": "BERJALAN",
+   "state": "batal",
+   "status": "STOP LOSS",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika H1 close > 1.1200",
    "jenis_entry": "Pullback"
   },

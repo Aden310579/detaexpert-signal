@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.11749,
- "data_sampai_wib": "9 Nov 2026 18:10",
- "data_sampai_oslo": "9 Nov 2026 12:10",
+ "harga": 1.1188,
+ "data_sampai_wib": "9 Nov 2026 19:05",
+ "data_sampai_oslo": "9 Nov 2026 13:05",
  "dibuat_utc": "2026-11-09T08:05:00Z",
  "aktif_sampai_utc": "2026-11-09T16:00:00Z",
  "dibuat_wib": "9 Nov 2026 15:05",
  "dibuat_oslo": "9 Nov 2026 09:05",
  "aktif_sampai_wib": "9 Nov 2026 23:00",
  "aktif_sampai_oslo": "9 Nov 2026 17:00",
- "diperbarui_utc": "2026-11-09T11:07:32Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-09T12:06:51Z",
+ "status": "SIAP ENTRY",
  "bias": "TURUN",
- "bias_teks": "MACD H4 −12.3 (mengecil) · Stoch H4 27 naik · HA H4 biru · harga di Fib 0.382 H4",
+ "bias_teks": "MACD H4 −9.4 (mengecil) · Stoch H4 43 naik · HA H4 biru · RSI 50",
  "bias_label": "H4",
  "kondisi": "Turun · koreksi naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · tunggu sell 1.1178–84",
-  "Rencana 07:05 habis tanpa entry. H4 close 1.1172, naik 20 pip dari pagi.",
-  "Tunggu Stoch M15 >80 turun + HA merah di 1.1178–84."
+  "Belum ada posisi · zona sell 1.1178–84 aktif",
+  "H4 close 1.1190, high 1.1198. Stoch M15 turun ke 51 tanpa sinyal di zona.",
+  "Sell hanya jika Stoch M15 naik >80 lalu turun + HA merah di 1.1178–84."
  ],
  "entries": [
   {
@@ -42,7 +42,7 @@
     "Stoch H1 96 jenuh beli"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1196",
    "jenis_entry": "Pullback"
   },
