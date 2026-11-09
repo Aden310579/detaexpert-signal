@@ -3,22 +3,22 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 4138.2,
+ "harga": 4138.3,
  "dibuat_utc": "2026-11-09T07:05:00Z",
  "aktif_sampai_utc": "2026-11-10T20:00:00Z",
  "dibuat_wib": "9 Nov 2026 14:05",
  "dibuat_oslo": "9 Nov 2026 08:05",
  "aktif_sampai_wib": "11 Nov 2026 03:00",
  "aktif_sampai_oslo": "10 Nov 2026 21:00",
- "data_sampai_wib": "9 Nov 2026 14:00",
- "data_sampai_oslo": "9 Nov 2026 08:00",
+ "data_sampai_wib": "10 Nov 2026 03:00",
+ "data_sampai_oslo": "9 Nov 2026 21:00",
  "status": "LAGI BERJALAN",
  "bias": "NAIK",
  "bias_teks": "Heikin Ashi D1 biru, histogram MACD D1 positif (18.28 → 21.04), Stochastic D1 76. Bearish AB=CD D1: titik D 4147.6, PRZ (zona berbalik) 4058.6–4147.6.",
  "teks": [
   "Analisa sebelumnya (habis 9 Nov 03:00 WIB, Oslo 8 Nov 21:00) selesai dengan status MENUNGGU: D1 belum close di atas 4081.1 dan belum close di bawah 4040.0.",
   "D1 close terakhir 7 Nov 03:00 WIB (Oslo 6 Nov 21:00) di 4066.0: di dalam PRZ (zona berbalik) 4058.6–4147.6, di antara Fibonacci 0.382 (4040.0) dan 0.236 (4081.1). Harga sekarang 4107.9.",
-  "Konfirmasi utama: D1 close di atas 4081.1 → target 4147.6. Konfirmasi alternatif: D1 close di bawah 4040.0 → target 3879.9. Belum ada yang terpenuhi."
+  "Konfirmasi utama terpenuhi: D1 close 10 Nov 03:00 WIB (Oslo 9 Nov 21:00) di 4134.0, di atas 4081.1 → target 4147.6. Konfirmasi alternatif (D1 close di bawah 4040.0) tidak terpenuhi."
  ],
  "skenario": {
   "utama": {
@@ -50,7 +50,7 @@
   "konfirmasi_alt": 4040.0,
   "target_alt": 3879.9
  },
- "status_lama": "MENUNGGU",
+ "status_lama": "LAGI BERJALAN",
  "status_teks": "D1 close 4134.0 pukul 10 Nov 03:00 WIB di atas 4081.1: skenario utama berjalan ke 4147.6.",
- "diperbarui_utc": "2026-11-09T20:07Z"
+ "diperbarui_utc": "2026-11-09T20:21Z"
 }
