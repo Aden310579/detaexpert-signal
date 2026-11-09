@@ -3,45 +3,45 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 75823,
- "data_sampai_wib": "8 Nov 2026 07:20",
- "data_sampai_oslo": "8 Nov 2026 01:20",
- "dibuat_utc": "2026-11-08T00:20:00Z",
- "aktif_sampai_utc": "2026-11-09T00:00:00Z",
- "dibuat_wib": "8 Nov 2026 07:20",
- "dibuat_oslo": "8 Nov 2026 01:20",
- "aktif_sampai_wib": "9 Nov 2026 07:00",
- "aktif_sampai_oslo": "9 Nov 2026 01:00",
+ "harga": 74830,
+ "data_sampai_wib": "9 Nov 2026 07:00",
+ "data_sampai_oslo": "9 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-09T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-10T00:00:00Z",
+ "dibuat_wib": "9 Nov 2026 07:20",
+ "dibuat_oslo": "9 Nov 2026 01:20",
+ "aktif_sampai_wib": "10 Nov 2026 07:00",
+ "aktif_sampai_oslo": "10 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "D1 7 Nov close 75.868 (+24) · histogram MACD D1 −324 → −332 · Stoch D1 13",
+ "bias_teks": "D1 8 Nov close 74.851 (−1.016) · histogram MACD D1 −332 → −373 · Stoch D1 14",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-08T00:21:35Z",
+ "diperbarui_utc": "2026-11-09T00:21:54Z",
  "teks": [
   "Lanjut turun ke low 21 Agu 73.027",
-  "Pantul naik ke Fib 0.382 = 77.298"
+  "Pantul naik ke Fib 0.382 = 76.446"
  ],
  "skenario": {
   "utama": {
    "judul": "Lanjut turun ke low 21 Agu 73.027",
    "target": "73.027",
-   "konfirmasi": "D1 close di bawah 74.888 + HA merah",
+   "konfirmasi": "D1 close di bawah 73.510 + HA merah",
    "poin": [
-    "D1 7 Nov tertahan di PRZ (low 75.571).",
-    "MACD D1 masih turun (−332).",
+    "D1 8 Nov low baru 73.510.",
+    "MACD D1 makin turun (−373).",
     "Target berikut low 21 Agu = 73.027."
    ]
   },
   "alternatif": {
-   "judul": "Pantul naik ke Fib 0.382 = 77.298",
-   "target": "77.298",
-   "konfirmasi": "D1 close di atas 76.377 + HA biru",
+   "judul": "Pantul naik ke Fib 0.382 = 76.446",
+   "target": "76.446",
+   "konfirmasi": "D1 close di atas 75.324 + HA biru",
    "poin": [
-    "Low 74.888 = AB=CD 1.35 di PRZ.",
-    "Stoch D1 13, jenuh jual.",
-    "Target Fibonacci 0.382 = 77.298."
+    "Low 73.510 = AB=CD 1.53 di PRZ.",
+    "Stoch D1 14, jenuh jual.",
+    "Target Fibonacci 0.382 = 76.446."
    ]
   }
  },

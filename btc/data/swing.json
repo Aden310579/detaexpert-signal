@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 75823,
- "data_sampai_wib": "8 Nov 2026 07:20",
- "data_sampai_oslo": "8 Nov 2026 01:20",
+ "harga": 74830,
+ "data_sampai_wib": "9 Nov 2026 07:00",
+ "data_sampai_oslo": "9 Nov 2026 01:00",
  "dibuat_utc": "2026-11-08T00:20:00Z",
  "aktif_sampai_utc": "2026-11-10T00:00:00Z",
  "dibuat_wib": "8 Nov 2026 07:20",
@@ -14,15 +14,15 @@
  "aktif_sampai_oslo": "10 Nov 2026 01:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "D1 7 Nov close 75.868 (+24) · histogram MACD D1 −324 → −332 · HA D1 merah · Stoch D1 13",
+ "bias_teks": "D1 8 Nov close 74.851 (−1.016) · histogram MACD D1 −332 → −373 · HA D1 merah · Stoch D1 14",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-08T00:21:35Z",
+ "diperbarui_utc": "2026-11-09T00:21:54Z",
  "teks": [
-  "Tidak ada posisi · analisa 6 Nov selesai tanpa entry",
-  "E1 BUY tersentuh (low 75.571), H4 tetap HA merah → tidak ada sinyal.",
-  "E2 SELL 77.600–78.200 tidak tersentuh (high 76.250)."
+  "Belum ada posisi · status (analisa 8 Nov aktif)",
+  "SELL 76.000–76.600 tersentuh (high 76.200), H4 Stoch maks 75 → tanpa sinyal.",
+  "Turun ke 73.510; BUY 74.500–75.100 tersentuh, H4 belum Stoch <25 + HA biru."
  ],
  "entries": [
   {
