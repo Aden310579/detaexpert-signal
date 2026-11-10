@@ -3,49 +3,49 @@
  "pasar": "EURUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 1.12273,
+ "harga": 1.12214,
  "data_sampai_wib": "10 Nov 2026 04:05",
  "data_sampai_oslo": "9 Nov 2026 22:05",
- "dibuat_utc": "2026-11-03T00:20:00Z",
- "aktif_sampai_utc": "2026-11-05T00:00:00Z",
- "dibuat_wib": "3 Nov 2026 07:20",
- "dibuat_oslo": "3 Nov 2026 01:20",
- "aktif_sampai_wib": "5 Nov 2026 07:00",
- "aktif_sampai_oslo": "5 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-10T00:06:50Z",
+ "dibuat_utc": "2026-11-10T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-12T00:00:00Z",
+ "dibuat_wib": "10 Nov 2026 07:20",
+ "dibuat_oslo": "10 Nov 2026 01:20",
+ "aktif_sampai_wib": "12 Nov 2026 07:00",
+ "aktif_sampai_oslo": "12 Nov 2026 01:00",
+ "diperbarui_utc": "2026-11-10T00:21:33Z",
  "status": "ARAH",
  "bias": "NAIK",
- "bias_teks": "HA D1 biru · histogram MACD D1 +14.7 naik · RSI 49 · Stoch D1 72 · BB squeeze",
+ "bias_teks": "Close di atas BB tengah 1.1201 · histogram MACD D1 +11.6 · RSI 49 · Stoch D1 54 · HA D1 merah",
  "bias_label": "D1",
- "kondisi": "Squeeze",
+ "kondisi": "Sideways",
  "indikator_utama": "Harmonic + Fibo",
  "teks": [
-  "Close D1 1.1228 · bertahan di atas 1.1200",
-  "High 1.1268 gagal tembus 1.1273. Close D1 berikut 7 Nov 07:00 WIB · 01:00 CET."
+  "Close D1 1.1222 · pulih dari 1.1147",
+  "Senin naik 74 pip, close di atas 1.1200. Close D1 berikut 11 Nov 07:00 WIB."
  ],
  "skenario": {
   "utama": {
    "judul": "Naik berlanjut · Aktif selama close D1 > 1.1200",
-   "target": "1.1300",
+   "target": "1.1299",
    "konfirmasi": "Aktif selama close D1 > 1.1200",
    "poin": [
-    "Low 1.1204 ditahan Fib 0.382 1.1210 & BB tengah 1.1203",
+    "Low 6 Nov 1.1132 jadi titik C AB=CD",
     "Target 1: 1.1273 (high 4 Nov)",
-    "Target 2: 1.1300, lalu AB=CD D 1.1371",
+    "Target 2: 1.1299 (D AB=CD)",
     "Gagal bila close D1 < 1.1200"
    ]
   },
   "alternatif": {
    "judul": "Ditolak di atas · Konfirmasi: close D1 < 1.1200",
-   "target": "1.1140",
+   "target": "1.1132",
    "konfirmasi": "close D1 < 1.1200",
    "poin": [
-    "Dua hari gagal tembus 1.1268–73 (double top)",
+    "Gagal tembus Fib 0.236 1.1234 lalu 1.1273",
     "Target 1: 1.1165 (low 3 Nov area)",
-    "Target 2: 1.1140 (BB bawah D1)",
+    "Target 2: 1.1132 (low 6 Nov)",
     "Gagal bila close D1 > 1.1273"
    ]
   }
  },
- "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Close D1 di atas 1.1200 menjaga arah naik ke 1.1273 lalu 1.1300. Close di bawah 1.1200 membuka koreksi ke 1.1165–1.1140."
+ "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Close D1 di atas 1.1200 menjaga arah naik ke 1.1273 lalu 1.1299. Close di bawah 1.1200 membuka koreksi ke 1.1165–1.1132."
 }
