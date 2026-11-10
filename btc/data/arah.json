@@ -3,22 +3,22 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 74830,
- "data_sampai_wib": "9 Nov 2026 07:00",
- "data_sampai_oslo": "9 Nov 2026 01:00",
- "dibuat_utc": "2026-11-09T00:20:00Z",
- "aktif_sampai_utc": "2026-11-10T00:00:00Z",
- "dibuat_wib": "9 Nov 2026 07:20",
- "dibuat_oslo": "9 Nov 2026 01:20",
- "aktif_sampai_wib": "10 Nov 2026 07:00",
- "aktif_sampai_oslo": "10 Nov 2026 01:00",
+ "harga": 75347,
+ "data_sampai_wib": "10 Nov 2026 07:00",
+ "data_sampai_oslo": "10 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-10T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-11T00:00:00Z",
+ "dibuat_wib": "10 Nov 2026 07:20",
+ "dibuat_oslo": "10 Nov 2026 01:20",
+ "aktif_sampai_wib": "11 Nov 2026 07:00",
+ "aktif_sampai_oslo": "11 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "D1 8 Nov close 74.851 (−1.016) · histogram MACD D1 −332 → −373 · Stoch D1 14",
+ "bias_teks": "D1 9 Nov close 75.368 (+517) · histogram MACD D1 −373 → −336 · Stoch D1 17",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-09T00:21:54Z",
+ "diperbarui_utc": "2026-11-10T00:21:44Z",
  "teks": [
   "Lanjut turun ke low 21 Agu 73.027",
   "Pantul naik ke Fib 0.382 = 76.446"
@@ -29,18 +29,18 @@
    "target": "73.027",
    "konfirmasi": "D1 close di bawah 73.510 + HA merah",
    "poin": [
-    "D1 8 Nov low baru 73.510.",
-    "MACD D1 makin turun (−373).",
-    "Target berikut low 21 Agu = 73.027."
+    "HA D1 9 Nov masih merah.",
+    "MACD D1 −336, masih negatif.",
+    "Target low 21 Agu = 73.027."
    ]
   },
   "alternatif": {
    "judul": "Pantul naik ke Fib 0.382 = 76.446",
    "target": "76.446",
-   "konfirmasi": "D1 close di atas 75.324 + HA biru",
+   "konfirmasi": "HA D1 biru + close di atas 75.324",
    "poin": [
-    "Low 73.510 = AB=CD 1.53 di PRZ.",
-    "Stoch D1 14, jenuh jual.",
+    "D1 9 Nov close 75.368 > Fib 0.236.",
+    "Stoch D1 17, jenuh jual.",
     "Target Fibonacci 0.382 = 76.446."
    ]
   }

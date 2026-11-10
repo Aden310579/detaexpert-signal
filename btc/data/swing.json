@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 74830,
- "data_sampai_wib": "9 Nov 2026 07:00",
- "data_sampai_oslo": "9 Nov 2026 01:00",
- "dibuat_utc": "2026-11-08T00:20:00Z",
- "aktif_sampai_utc": "2026-11-10T00:00:00Z",
- "dibuat_wib": "8 Nov 2026 07:20",
- "dibuat_oslo": "8 Nov 2026 01:20",
- "aktif_sampai_wib": "10 Nov 2026 07:00",
- "aktif_sampai_oslo": "10 Nov 2026 01:00",
+ "harga": 75347,
+ "data_sampai_wib": "10 Nov 2026 07:00",
+ "data_sampai_oslo": "10 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-10T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-12T00:00:00Z",
+ "dibuat_wib": "10 Nov 2026 07:20",
+ "dibuat_oslo": "10 Nov 2026 01:20",
+ "aktif_sampai_wib": "12 Nov 2026 07:00",
+ "aktif_sampai_oslo": "12 Nov 2026 01:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "D1 8 Nov close 74.851 (−1.016) · histogram MACD D1 −332 → −373 · HA D1 merah · Stoch D1 14",
+ "bias_teks": "D1 9 Nov close 75.368 (+517) · histogram MACD D1 −373 → −336 · HA D1 merah · Stoch D1 17",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-09T00:21:54Z",
+ "diperbarui_utc": "2026-11-10T00:21:44Z",
  "teks": [
-  "Belum ada posisi · status (analisa 8 Nov aktif)",
-  "SELL 76.000–76.600 tersentuh (high 76.200), H4 Stoch maks 75 → tanpa sinyal.",
-  "Turun ke 73.510; BUY 74.500–75.100 tersentuh, H4 belum Stoch <25 + HA biru."
+  "Analisa 8 Nov selesai tanpa entry",
+  "SELL 76.000–76.600 tersentuh (high 76.200) tanpa sinyal H4.",
+  "BUY 74.500–75.100 tersentuh (low 73.510), Stoch H4 min 31 → tanpa sinyal."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    76000,
-    76600
+    75900,
+    76500
    ],
-   "entry": 76300,
-   "sl": 77350,
-   "tp1": 75200,
-   "tp2": 74100,
+   "entry": 76200,
+   "sl": 77250,
+   "tp1": 75000,
+   "tp2": 73800,
    "alasan": [
     "angka bulat 76.000",
-    "swing D1 76.416",
-    "Fib 0.236 76.377"
+    "high 8 Nov 76.200",
+    "swing D1 76.416"
    ],
    "state": "tunggu",
    "info": "",
@@ -51,17 +51,17 @@
    "n": 2,
    "side": "BUY",
    "zona": [
-    74500,
-    75100
+    73500,
+    74100
    ],
-   "entry": 74800,
-   "sl": 73750,
-   "tp1": 75900,
-   "tp2": 76600,
+   "entry": 73800,
+   "sl": 72750,
+   "tp1": 75000,
+   "tp2": 76000,
    "alasan": [
-    "BB bawah D1 74.621",
-    "low 6 Nov 74.888",
-    "angka bulat 75.000"
+    "low 8 Nov 73.510",
+    "BB bawah D1 73.723",
+    "angka bulat 74.000"
    ],
    "state": "tunggu",
    "info": "",
