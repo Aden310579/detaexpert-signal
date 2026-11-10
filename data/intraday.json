@@ -3,27 +3,27 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 4137.1,
- "data_sampai_wib": "10 Nov 2026 07:00",
- "data_sampai_oslo": "10 Nov 2026 01:00",
- "dibuat_utc": "2026-11-10T00:00:00Z",
- "aktif_sampai_utc": "2026-11-10T08:00:00Z",
- "dibuat_wib": "10 Nov 2026 07:00",
- "dibuat_oslo": "10 Nov 2026 01:00",
- "aktif_sampai_wib": "10 Nov 2026 15:00",
- "aktif_sampai_oslo": "10 Nov 2026 09:00",
+ "harga": 4072.2,
+ "data_sampai_wib": "10 Nov 2026 19:00",
+ "data_sampai_oslo": "10 Nov 2026 13:00",
+ "dibuat_utc": "2026-11-10T12:00:00Z",
+ "aktif_sampai_utc": "2026-11-10T20:00:00Z",
+ "dibuat_wib": "10 Nov 2026 19:00",
+ "dibuat_oslo": "10 Nov 2026 13:00",
+ "aktif_sampai_wib": "11 Nov 2026 03:00",
+ "aktif_sampai_oslo": "10 Nov 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4137.1, 15 poin dari Entry 2 (SELL). Stochastic M15 39, Heikin Ashi M15 merah. Tunggu sinyal di zona."
+  "Harga 4072.2, 20 poin dari Entry 2 (BUY). Stochastic M15 8, Heikin Ashi M15 merah. Tunggu sinyal di zona."
  ],
- "bias": "NAIK",
- "bias_teks": "Heikin Ashi H4 biru · histogram MACD H4 +3.40 (membesar dari +2.50)",
+ "bias": "TURUN",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -2.80 (membesar dari +0.80)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  4138.5,
-  4081.9,
-  4025.3
+  4139.9,
+  4084.4,
+  4028.9
  ],
  "fibonacci": [
   4126.8,
@@ -32,19 +32,19 @@
  "entries": [
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    4149.0,
-    4155.0
+    4048.9,
+    4054.9
    ],
-   "entry": 4152.0,
-   "sl": 4165.0,
-   "tp1": 4139.4,
-   "tp2": 4126.8,
+   "entry": 4051.9,
+   "sl": 4038.9,
+   "tp1": 4082.5,
+   "tp2": 4113.0,
    "alasan": [
     "swing ekstrem 12 candle H4",
-    "swing H4 sebelumnya 4147.6",
-    "angka bulat 4150"
+    "swing H4 sebelumnya 4054.9",
+    "angka bulat 4050"
    ],
    "state": "tunggu",
    "info": "",
@@ -54,6 +54,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-10T00:04:00Z",
+ "diperbarui_utc": "2026-11-10T12:03:00Z",
  "status_lama": "MENUNGGU"
 }
