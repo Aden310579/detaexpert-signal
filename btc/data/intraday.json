@@ -3,71 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 75347,
- "data_sampai_wib": "10 Nov 2026 07:05",
- "data_sampai_oslo": "10 Nov 2026 01:05",
- "dibuat_utc": "2026-11-10T00:07:00Z",
- "aktif_sampai_utc": "2026-11-10T08:00:00Z",
- "dibuat_wib": "10 Nov 2026 07:07",
- "dibuat_oslo": "10 Nov 2026 01:07",
- "aktif_sampai_wib": "10 Nov 2026 15:00",
- "aktif_sampai_oslo": "10 Nov 2026 09:00",
+ "harga": 74420,
+ "data_sampai_wib": "10 Nov 2026 19:00",
+ "data_sampai_oslo": "10 Nov 2026 13:00",
+ "dibuat_utc": "2026-11-10T12:05:00Z",
+ "aktif_sampai_utc": "2026-11-10T20:00:00Z",
+ "dibuat_wib": "10 Nov 2026 19:05",
+ "dibuat_oslo": "10 Nov 2026 13:05",
+ "aktif_sampai_wib": "11 Nov 2026 03:00",
+ "aktif_sampai_oslo": "10 Nov 2026 21:00",
  "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "H4 close 07:00 = 75.368 HA biru, hist −15 → +34 · Stoch H4 65 · ATR 777",
+ "bias": "NETRAL",
+ "bias_teks": "H4 close 19:00 = 74.420 HA merah, hist +28 → +13 · Stoch H4 41 · ATR 891",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-10T00:07:38Z",
+ "diperbarui_utc": "2026-11-10T12:06:38Z",
  "teks": [
-  "Analisa 23:05 selesai tanpa entry",
-  "BUY 74.920–75.080 tersentuh, Stoch M15 tidak <25 → tanpa sinyal.",
-  "SELL 75.460–75.620 tidak tersentuh (high 75.397). Masa aktif habis."
+  "Analisa 07:05 selesai tanpa entry",
+  "BUY 75.020–75.180 tersentuh 07:15, tanpa sinyal; tembus SL 74.820 09:30.",
+  "SELL 75.460–75.620 tidak tersentuh (high 75.442). Masa aktif habis."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    75020,
-    75180
+    74460,
+    74620
    ],
-   "entry": 75100,
+   "entry": 74540,
    "sl": 74820,
-   "tp1": 75350,
-   "tp2": 75570,
+   "tp1": 74300,
+   "tp2": 74070,
    "alasan": [
-    "low 06:05 75.102",
-    "BB tengah M15 75.042",
-    "high 05:15 75.146"
+    "Fib 0.382 74.538",
+    "bulat 74.500",
+    "high 17:00 74.559"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback searah"
+   "jenis_entry": "Pantulan atas"
   },
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    75460,
-    75620
+    73990,
+    74150
    ],
-   "entry": 75540,
-   "sl": 75820,
-   "tp1": 75300,
-   "tp2": 75000,
+   "entry": 74070,
+   "sl": 73790,
+   "tp1": 74300,
+   "tp2": 74540,
    "alasan": [
-    "BB tengah H4 75.510",
-    "high 9 Nov 75.568",
-    "angka bulat 75.500"
+    "BB bawah H4 73.990",
+    "bulat 74.000",
+    "Fib 0.236 74.145"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": true,
+   "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pantulan atas"
+   "jenis_entry": "Pantulan bawah"
   }
  ]
 }
