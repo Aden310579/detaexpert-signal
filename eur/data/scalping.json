@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.11641,
- "data_sampai_wib": "11 Nov 2026 04:05",
- "data_sampai_oslo": "10 Nov 2026 22:05",
+ "harga": 1.11687,
+ "data_sampai_wib": "11 Nov 2026 06:05",
+ "data_sampai_oslo": "11 Nov 2026 00:05",
  "dibuat_utc": "2026-11-10T19:05:00Z",
  "aktif_sampai_utc": "2026-11-10T21:00:00Z",
  "dibuat_wib": "11 Nov 2026 02:05",
  "dibuat_oslo": "10 Nov 2026 20:05",
  "aktif_sampai_wib": "11 Nov 2026 04:00",
  "aktif_sampai_oslo": "10 Nov 2026 22:00",
- "diperbarui_utc": "2026-11-10T21:06:01Z",
- "status": "ENTRY 1 BERJALAN",
- "bias": "TURUN",
- "bias_teks": "H1 & H4 turun · M15 datar · Stoch M15 78 mulai turun · pasar sepi",
+ "diperbarui_utc": "2026-11-10T23:06:10Z",
+ "status": "ENTRY 1 HOLD",
+ "bias": "NETRAL",
+ "bias_teks": "H4 turun · H1 netral · M15 naik pelan · Stoch M15 84 jenuh beli",
  "bias_label": "M15",
- "kondisi": "Datar · H1 turun",
+ "kondisi": "Naik pelan",
  "indikator_utama": "Stochastic",
  "teks": [
-  "SELL 1.1170 berjalan · plus 6 pip",
-  "Sell aktif jam 03:00 WIB. Low 1.1162, hampir kena TP1 1.1162.",
-  "Tahan sampai TP1 1.1162 (tutup setengah, SL ke 1.1170) atau SL 1.1178."
+  "SELL 1.1170 HOLD · TP1 kena (+8 pip setengah)",
+  "TP1 1.1162 kena jam 04:05 WIB. SL sisa posisi sudah di 1.1170 (impas).",
+  "Harga naik ke 1.1169, dekat SL impas. Tahan sisa sampai TP2 1.1150 atau 1.1170."
  ],
  "entries": [
   {
@@ -42,7 +42,7 @@
     "H1 & H4 masih turun"
    ],
    "state": "dipakai",
-   "status": "BERJALAN",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.1179",
    "jenis_entry": "Pullback"
   },
