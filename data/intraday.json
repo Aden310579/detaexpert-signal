@@ -3,57 +3,79 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 4044.1,
- "data_sampai_wib": "10 Nov 2026 23:00",
- "data_sampai_oslo": "10 Nov 2026 17:00",
- "dibuat_utc": "2026-11-10T12:00:00Z",
- "aktif_sampai_utc": "2026-11-10T20:00:00Z",
- "dibuat_wib": "10 Nov 2026 19:00",
- "dibuat_oslo": "10 Nov 2026 13:00",
- "aktif_sampai_wib": "11 Nov 2026 03:00",
- "aktif_sampai_oslo": "10 Nov 2026 21:00",
+ "harga": 4030.4,
+ "data_sampai_wib": "11 Nov 2026 03:00",
+ "data_sampai_oslo": "10 Nov 2026 21:00",
+ "dibuat_utc": "2026-11-10T20:00:00Z",
+ "aktif_sampai_utc": "2026-11-11T04:00:00Z",
+ "dibuat_wib": "11 Nov 2026 03:00",
+ "dibuat_oslo": "10 Nov 2026 21:00",
+ "aktif_sampai_wib": "11 Nov 2026 11:00",
+ "aktif_sampai_oslo": "11 Nov 2026 05:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4044.1, 8 poin dari Entry 2 (BUY). Stochastic M15 34, Heikin Ashi M15 merah. Tunggu sinyal di zona."
+  "Harga 4030.4, 25 poin dari Entry 1 (SELL). Stochastic M15 65, Heikin Ashi M15 biru. Tunggu sinyal di zona."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -2.80 (membesar dari +0.80)",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -10.20 (membesar dari -6.90)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  4139.9,
-  4084.4,
-  4028.9
+  4143.1,
+  4082.2,
+  4021.2
  ],
  "fibonacci": [
-  4126.8,
-  4113.0
+  4045.7,
+  4065.5
  ],
  "entries": [
   {
-   "n": 2,
-   "side": "BUY",
+   "n": 1,
+   "side": "SELL",
    "zona": [
-    4048.9,
-    4054.9
+    4045.7,
+    4065.5
    ],
-   "entry": 4051.9,
-   "sl": 4038.9,
-   "tp1": 4082.5,
-   "tp2": 4113.0,
+   "entry": 4055.6,
+   "sl": 4075.5,
+   "tp1": 4034.7,
+   "tp2": 4013.8,
    "alasan": [
-    "swing ekstrem 12 candle H4",
+    "Fibonacci 0.236/0.382 (4045.7 / 4065.5)",
     "swing H4 sebelumnya 4054.9",
     "angka bulat 4050"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": true,
+   "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Lawan arah"
+   "jenis_entry": "Utama"
+  },
+  {
+   "n": 3,
+   "side": "SELL",
+   "zona": [
+    4045.7,
+    4065.5
+   ],
+   "entry": 4055.6,
+   "sl": 4075.5,
+   "tp1": 4026.7,
+   "tp2": 3997.8,
+   "alasan": [
+    "Fibonacci 0.236/0.382 (4045.7 / 4065.5)",
+    "swing H4 sebelumnya 4054.9",
+    "angka bulat 4050"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": true,
+   "jenis_entry": "Masuk lagi"
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-10T16:03:00Z",
+ "diperbarui_utc": "2026-11-10T20:03:00Z",
  "status_lama": "MENUNGGU"
 }
