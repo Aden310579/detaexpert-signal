@@ -3,27 +3,27 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 4059.7,
- "data_sampai_wib": "11 Nov 2026 15:00",
- "data_sampai_oslo": "11 Nov 2026 09:00",
- "dibuat_utc": "2026-11-11T04:00:00Z",
- "aktif_sampai_utc": "2026-11-11T12:00:00Z",
- "dibuat_wib": "11 Nov 2026 11:00",
- "dibuat_oslo": "11 Nov 2026 05:00",
- "aktif_sampai_wib": "11 Nov 2026 19:00",
- "aktif_sampai_oslo": "11 Nov 2026 13:00",
+ "harga": 4046.3,
+ "data_sampai_wib": "11 Nov 2026 19:00",
+ "data_sampai_oslo": "11 Nov 2026 13:00",
+ "dibuat_utc": "2026-11-11T12:00:00Z",
+ "aktif_sampai_utc": "2026-11-11T20:00:00Z",
+ "dibuat_wib": "11 Nov 2026 19:00",
+ "dibuat_oslo": "11 Nov 2026 13:00",
+ "aktif_sampai_wib": "12 Nov 2026 03:00",
+ "aktif_sampai_oslo": "11 Nov 2026 21:00",
  "status": "LAGI BERJALAN",
  "teks": [
-  "Entry 1 SELL @4044.4 (masuk 11 Nov 11:15 WIB / 05:15 Oslo) masih berjalan. Stop Loss 4075.5, Take Profit 1 4034.7, Take Profit 2 4013.8."
+  "Posisi analisa sebelumnya: Entry 1 SELL @4044.4 (masuk 11 Nov 11:15 WIB / 05:15 Oslo) masih berjalan. Stop Loss 4075.5, Take Profit 1 4034.7, Take Profit 2 4013.8."
  ],
- "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -11.10 (mengecil dari -11.40)",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi H4 biru · histogram MACD H4 -9.20 (mengecil dari -9.70)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  4144.7,
-  4080.5,
-  4016.3
+  4145.1,
+  4079.2,
+  4013.3
  ],
  "fibonacci": [
   4045.7,
@@ -46,7 +46,7 @@
     "swing H4 sebelumnya 4054.9",
     "angka bulat 4050"
    ],
-   "state": "jalan",
+   "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
@@ -65,7 +65,7 @@
    "tp2": 4045.7,
    "alasan": [
     "swing ekstrem 12 candle H4",
-    "Bollinger H4 bawah 4016.3",
+    "Bollinger H4 bawah 4013.3",
     "swing H4 sebelumnya 4013.8"
    ],
    "state": "tunggu",
@@ -107,10 +107,11 @@
    "tp2": 4013.8,
    "t": "2026-11-11 15:00:00",
    "masuk": "2026-11-11 15:15:00",
+   "tp1_kena_awal": false,
    "tp1_kena": false,
    "hasil": null
   }
  ],
- "diperbarui_utc": "2026-11-11T08:02:00Z",
- "status_lama": "MENUNGGU"
+ "diperbarui_utc": "2026-11-11T12:04:00Z",
+ "status_lama": "LAGI BERJALAN"
 }
