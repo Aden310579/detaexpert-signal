@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 73342,
- "data_sampai_wib": "11 Nov 2026 03:00",
- "data_sampai_oslo": "10 Nov 2026 21:00",
- "dibuat_utc": "2026-11-10T20:05:00Z",
- "aktif_sampai_utc": "2026-11-11T00:00:00Z",
- "dibuat_wib": "11 Nov 2026 03:05",
- "dibuat_oslo": "10 Nov 2026 21:05",
- "aktif_sampai_wib": "11 Nov 2026 07:00",
- "aktif_sampai_oslo": "11 Nov 2026 01:00",
+ "harga": 73787,
+ "data_sampai_wib": "11 Nov 2026 07:00",
+ "data_sampai_oslo": "11 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-11T00:05:00Z",
+ "aktif_sampai_utc": "2026-11-11T08:00:00Z",
+ "dibuat_wib": "11 Nov 2026 07:05",
+ "dibuat_oslo": "11 Nov 2026 01:05",
+ "aktif_sampai_wib": "11 Nov 2026 15:00",
+ "aktif_sampai_oslo": "11 Nov 2026 09:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "H4 close 03:00 = 73.473 HA merah, hist −69 → −95 · Stoch H4 22 · ATR 1.068",
+ "bias_teks": "H4 close 07:00 = 73.796 HA merah, hist −95 → −80 · Stoch H4 21 · ATR 1.099",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-10T20:06:36Z",
+ "diperbarui_utc": "2026-11-11T00:06:51Z",
  "teks": [
-  "Analisa 19:05 sudah selesai (batal)",
-  "Kedua zona 19:05 batal: SL tersentuh tanpa sinyal (status 23:05).",
-  "Low sejak itu 72.727 (23:35), high 73.680 (01:35)."
+  "Analisa 03:05 selesai · tanpa entry",
+  "SELL 73.920–74.080 tersentuh 04:05; sinyal 04:45 di luar zona (dilewati).",
+  "BUY 72.670–72.830 tidak tersentuh (low 73.312). Masa aktif habis 07:00."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    73920,
-    74080
+    73960,
+    74120
    ],
-   "entry": 74000,
-   "sl": 74280,
-   "tp1": 73750,
+   "entry": 74040,
+   "sl": 74320,
+   "tp1": 73800,
    "tp2": 73500,
    "alasan": [
-    "Fib 0.382 73.956",
     "bulat 74.000",
-    "BB atas M15 74.076"
+    "high 04:30 74.056",
+    "BB atas M15 74.057"
    ],
    "state": "tunggu",
    "info": "",
@@ -51,17 +51,17 @@
    "n": 2,
    "side": "BUY",
    "zona": [
-    72670,
-    72830
+    73380,
+    73540
    ],
-   "entry": 72750,
-   "sl": 72470,
-   "tp1": 73000,
-   "tp2": 73340,
+   "entry": 73460,
+   "sl": 73180,
+   "tp1": 73700,
+   "tp2": 74000,
    "alasan": [
-    "low 23:35 72.727",
-    "bulat 72.750",
-    "low 00:35 72.785"
+    "Fib 0.236 73.405",
+    "bulat 73.500",
+    "swing 73.510"
    ],
    "state": "tunggu",
    "info": "",
