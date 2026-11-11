@@ -3,7 +3,7 @@
  "pasar": "EURUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 1.12214,
+ "harga": 1.11681,
  "data_sampai_wib": "11 Nov 2026 07:05",
  "data_sampai_oslo": "11 Nov 2026 01:05",
  "dibuat_utc": "2026-11-10T00:20:00Z",
@@ -12,17 +12,17 @@
  "dibuat_oslo": "10 Nov 2026 01:20",
  "aktif_sampai_wib": "12 Nov 2026 07:00",
  "aktif_sampai_oslo": "12 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-11T00:06:34Z",
- "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "Close D1 1.1222 di atas BB tengah 1.1201 · histogram MACD D1 +11.6 · Stoch D1 54 · H4 jenuh beli",
+ "diperbarui_utc": "2026-11-11T00:21:33Z",
+ "status": "SIAP ENTRY",
+ "bias": "NETRAL",
+ "bias_teks": "Close D1 1.1169 di bawah BB tengah 1.1199 · histogram MACD D1 +9.1 mengecil · Stoch D1 43 turun",
  "bias_label": "D1",
- "kondisi": "Naik",
+ "kondisi": "Koreksi turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · rencana swing baru",
-  "Close D1 9 Nov 1.1222, pulih 74 pip dari low 1.1147.",
-  "Tunggu buy 1.1195–1.1210: Stoch H4 <25 naik + HA H4 biru."
+  "Belum ada posisi · harga di zona buy 3",
+  "Close D1 10 Nov 1.1169, turun 53 pip dan tembus zona buy 1.1195–1.1210.",
+  "Harga di buy 1.1165–80: tunggu Stoch H4 <25 naik + HA H4 biru."
  ],
  "entries": [
   {
@@ -42,7 +42,7 @@
     "Fib 0.236 H4 1.1204"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.1150",
    "jenis_entry": "Pullback"
   },
@@ -84,7 +84,7 @@
     "open D1 9 Nov area 1.1149–75"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.1120",
    "jenis_entry": "Support kuat"
   }
