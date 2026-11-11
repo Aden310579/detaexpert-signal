@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 74089,
- "data_sampai_wib": "11 Nov 2026 15:00",
- "data_sampai_oslo": "11 Nov 2026 09:00",
+ "harga": 73889,
+ "data_sampai_wib": "11 Nov 2026 19:05",
+ "data_sampai_oslo": "11 Nov 2026 13:05",
  "dibuat_utc": "2026-11-11T08:05:00Z",
  "aktif_sampai_utc": "2026-11-11T16:00:00Z",
  "dibuat_wib": "11 Nov 2026 15:05",
@@ -13,16 +13,16 @@
  "aktif_sampai_wib": "11 Nov 2026 23:00",
  "aktif_sampai_oslo": "11 Nov 2026 17:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "H4 close 15:00 = 74.089 HA biru, hist −62 → −21 · Stoch H4 37 · Stoch M15 85 · ATR 999",
+ "bias": "NAIK",
+ "bias_teks": "H4 close 19:00 = 73.889 HA biru, hist −21 → 6 · Stoch H4 41 · Stoch M15 69 · ATR 879",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-11T08:07:56Z",
+ "diperbarui_utc": "2026-11-11T12:07:41Z",
  "teks": [
-  "Analisa 07:05 selesai · tanpa entry",
-  "BUY 73.380–73.540 tersentuh (low 73.209), Stoch M15 tidak <25 saat HA biru.",
-  "SELL 73.960–74.120 tersentuh 14:45 (high 74.112), HA biru → tanpa sinyal."
+  "Status 19:05 · analisa 15:05 masih aktif",
+  "BUY 73.420–73.580: sinyal 16:45 close 73.790 di luar zona → dilewati.",
+  "SELL 74.420–74.580 belum tersentuh (high 74.180) → masih menunggu."
  ],
  "entries": [
   {
