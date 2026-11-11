@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 1.11669,
- "data_sampai_wib": "11 Nov 2026 20:05",
- "data_sampai_oslo": "11 Nov 2026 14:05",
+ "harga": 1.10876,
+ "data_sampai_wib": "11 Nov 2026 22:05",
+ "data_sampai_oslo": "11 Nov 2026 16:05",
  "dibuat_utc": "2026-11-10T00:20:00Z",
  "aktif_sampai_utc": "2026-11-12T00:00:00Z",
  "dibuat_wib": "10 Nov 2026 07:20",
  "dibuat_oslo": "10 Nov 2026 01:20",
  "aktif_sampai_wib": "12 Nov 2026 07:00",
  "aktif_sampai_oslo": "12 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-11T13:06:00Z",
- "status": "ENTRY 3 BERJALAN",
- "bias": "NETRAL",
- "bias_teks": "Close D1 1.1169 di bawah BB tengah 1.1199 · histogram MACD D1 +9.1 mengecil · Stoch D1 43 turun",
+ "diperbarui_utc": "2026-11-11T15:06:37Z",
+ "status": "SIAP ENTRY",
+ "bias": "TURUN",
+ "bias_teks": "Harga di bawah BB bawah D1 1.1133 · low 29 Okt 1.1107 jebol · Stoch H4 jenuh jual",
  "bias_label": "D1",
- "kondisi": "Koreksi turun",
+ "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "BUY 1.11725 berjalan · Entry 3",
-  "Sinyal buy muncul 08:30 WIB di zona 1.1165–80. Low sejauh ini 1.1159.",
-  "Tahan sampai TP1 1.1225 (tutup setengah, SL ke entry) atau SL 1.1120."
+  "Buy 1.11725 kena STOP LOSS (−52 pip)",
+  "Euro jatuh di sesi AS ke 1.1083, SL buy swing 1.1120 kena.",
+  "Tidak ada posisi. Rencana swing baru disusun setelah close D1 07:00 WIB."
  ],
  "entries": [
   {
@@ -83,8 +83,8 @@
     "low 3 Nov 1.1175",
     "open D1 9 Nov area 1.1149–75"
    ],
-   "state": "dipakai",
-   "status": "BERJALAN",
+   "state": "batal",
+   "status": "STOP LOSS",
    "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.1120",
    "jenis_entry": "Support kuat"
   }
