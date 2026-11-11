@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.10924,
- "data_sampai_wib": "12 Nov 2026 00:05",
- "data_sampai_oslo": "11 Nov 2026 18:05",
+ "harga": 1.10891,
+ "data_sampai_wib": "12 Nov 2026 02:10",
+ "data_sampai_oslo": "11 Nov 2026 20:10",
  "dibuat_utc": "2026-11-11T17:05:00Z",
  "aktif_sampai_utc": "2026-11-11T19:00:00Z",
  "dibuat_wib": "12 Nov 2026 00:05",
  "dibuat_oslo": "11 Nov 2026 18:05",
  "aktif_sampai_wib": "12 Nov 2026 02:00",
  "aktif_sampai_oslo": "11 Nov 2026 20:00",
- "diperbarui_utc": "2026-11-11T17:07:24Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-11T19:07:46Z",
+ "status": "ENTRY 2 HOLD",
  "bias": "TURUN",
- "bias_teks": "H4 & H1 turun · M15 netral jenuh jual · RSI H1 22 · range M5 sempit (squeeze)",
+ "bias_teks": "H4 & H1 turun · M15 netral sideways · RSI H1 22 jenuh jual · M5 squeeze 1.1086–95",
  "bias_label": "M15",
- "kondisi": "Turun · konsolidasi",
+ "kondisi": "Turun · sideways",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana 22:05 habis tanpa entry · rencana baru",
-  "Harga sideways sempit 1.1083–99 setelah jatuh, zona 1.1100–04 tidak tersentuh.",
-  "Sell di pantulan 1.1100–04, atau buy cepat di 1.1082–86 kalau low diuji lagi."
+  "Buy 1.1084 HOLD · TP1 1.1092 kena (+8 pip)",
+  "Buy masuk 00:20 WIB, TP1 kena 00:25. Setengah ditutup, SL geser ke entry 1.1084.",
+  "Sisa posisi tunggu TP2 1.1112. Kalau balik ke 1.1084, keluar impas."
  ],
  "entries": [
   {
@@ -41,8 +41,8 @@
     "Fib 0.236 H1 1.1102",
     "high M5 1.1099 + angka bulat 1.1100"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.1111",
    "jenis_entry": "Pullback"
   },
@@ -62,8 +62,8 @@
     "BB bawah H1 1.1083",
     "Stoch H1 13 jenuh jual"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.1075",
    "jenis_entry": "Support"
   },
@@ -83,8 +83,8 @@
     "bekas support 1.1107–15",
     "di bawah zona sell intraday 1.1118"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.1123",
    "jenis_entry": "Resistance"
   }
