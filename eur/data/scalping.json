@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.11669,
- "data_sampai_wib": "11 Nov 2026 11:05",
- "data_sampai_oslo": "11 Nov 2026 05:05",
+ "harga": 1.11664,
+ "data_sampai_wib": "11 Nov 2026 12:10",
+ "data_sampai_oslo": "11 Nov 2026 06:10",
  "dibuat_utc": "2026-11-11T01:05:00Z",
  "aktif_sampai_utc": "2026-11-11T03:00:00Z",
  "dibuat_wib": "11 Nov 2026 08:05",
  "dibuat_oslo": "11 Nov 2026 02:05",
  "aktif_sampai_wib": "11 Nov 2026 10:00",
  "aktif_sampai_oslo": "11 Nov 2026 04:00",
- "diperbarui_utc": "2026-11-11T04:06:00Z",
+ "diperbarui_utc": "2026-11-11T05:07:28Z",
  "status": "ENTRY 1 HOLD",
  "bias": "NETRAL",
- "bias_teks": "H1 & H4 turun · M15 datar sempit 1.1159–1.1170 · Stoch M15 61",
+ "bias_teks": "H4 turun · H1 & M15 datar sempit 1.1160–1.1170 · Stoch M5 90 jenuh beli",
  "bias_label": "M15",
  "kondisi": "Datar · H1 turun",
  "indikator_utama": "Stochastic",
  "teks": [
   "SELL 1.1172 HOLD · TP1 kena (+8 pip setengah)",
-  "Sell aktif 09:10 WIB, TP1 1.1164 kena. SL sisa posisi di 1.1172 (impas).",
-  "Tahan sisa sampai TP2 1.1150 atau SL impas 1.1172."
+  "TP1 1.1164 sudah kena (+8 pip setengah). SL sisa posisi di 1.1172 (impas).",
+  "Harga masih sempit 1.1160–1.1170. Tahan sisa sampai TP2 1.1150 atau SL impas."
  ],
  "entries": [
   {
