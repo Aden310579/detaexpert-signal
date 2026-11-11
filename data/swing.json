@@ -3,9 +3,9 @@
  "kode": "/xausw",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 4030.4,
- "data_sampai_wib": "11 Nov 2026 03:00",
- "data_sampai_oslo": "10 Nov 2026 21:00",
+ "harga": 4038.3,
+ "data_sampai_wib": "11 Nov 2026 07:00",
+ "data_sampai_oslo": "11 Nov 2026 01:00",
  "dibuat_utc": "2026-11-10T20:00:00Z",
  "aktif_sampai_utc": "2026-11-12T20:00:00Z",
  "dibuat_wib": "11 Nov 2026 03:00",
@@ -14,7 +14,7 @@
  "aktif_sampai_oslo": "12 Nov 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 4030.4, 31 poin dari Entry 1 (BUY). Stochastic H4 14, Heikin Ashi H4 merah. Tunggu sinyal di zona."
+  "Harga 4038.3, 23 poin dari Entry 1 (BUY). Stochastic H4 14, Heikin Ashi H4 merah. Tunggu sinyal di zona."
  ],
  "bias": "NAIK",
  "bias_teks": "Heikin Ashi D1 biru · histogram MACD D1 +18.10 (mengecil dari +22.70)",
@@ -100,6 +100,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-10T20:23:00Z",
+ "diperbarui_utc": "2026-11-11T00:03:00Z",
  "status_lama": "MENUNGGU"
 }
