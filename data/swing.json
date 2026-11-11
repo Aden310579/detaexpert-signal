@@ -3,18 +3,19 @@
  "kode": "/xausw",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 4046.3,
- "data_sampai_wib": "11 Nov 2026 19:00",
- "data_sampai_oslo": "11 Nov 2026 13:00",
+ "harga": 4006.6,
+ "data_sampai_wib": "11 Nov 2026 23:00",
+ "data_sampai_oslo": "11 Nov 2026 17:00",
  "dibuat_utc": "2026-11-10T20:00:00Z",
  "aktif_sampai_utc": "2026-11-12T20:00:00Z",
  "dibuat_wib": "11 Nov 2026 03:00",
  "dibuat_oslo": "10 Nov 2026 21:00",
  "aktif_sampai_wib": "13 Nov 2026 03:00",
  "aktif_sampai_oslo": "12 Nov 2026 21:00",
- "status": "LAGI BERJALAN",
+ "status": "GAGAL",
  "teks": [
-  "Entry 1 BUY @4047.0 (masuk 11 Nov 11:00 WIB / 05:00 Oslo) masih berjalan. Stop Loss 4010.9, Take Profit 1 4105.3, Take Profit 2 4149."
+  "Entry 1 BUY @4047.0 (masuk 11 Nov 11:00 WIB / 05:00 Oslo) kena Stop Loss 4010.9 pukul 11 Nov 23:00 WIB / 17:00 Oslo.",
+  "Harga 4006.6, 55 poin dari Entry 3 (BUY). Stochastic H4 21, Heikin Ashi H4 merah. Tunggu sinyal di zona."
  ],
  "bias": "NAIK",
  "bias_teks": "Heikin Ashi D1 biru · histogram MACD D1 +18.10 (mengecil dari +22.70)",
@@ -47,7 +48,7 @@
     "swing D1 sebelumnya 4082.0",
     "angka bulat 4050"
    ],
-   "state": "jalan",
+   "state": "gagal",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
@@ -110,9 +111,10 @@
    "t": "2026-11-11 11:00:00",
    "masuk": "2026-11-11 15:00:00",
    "tp1_kena": false,
-   "hasil": null
+   "hasil": "SL",
+   "selesai": "2026-11-12 03:00:00"
   }
  ],
- "diperbarui_utc": "2026-11-11T12:04:00Z",
- "status_lama": "LAGI BERJALAN"
+ "diperbarui_utc": "2026-11-11T16:04:00Z",
+ "status_lama": "GAGAL"
 }
