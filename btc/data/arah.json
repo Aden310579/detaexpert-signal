@@ -3,45 +3,45 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 75347,
- "data_sampai_wib": "10 Nov 2026 07:00",
- "data_sampai_oslo": "10 Nov 2026 01:00",
- "dibuat_utc": "2026-11-10T00:20:00Z",
- "aktif_sampai_utc": "2026-11-11T00:00:00Z",
- "dibuat_wib": "10 Nov 2026 07:20",
- "dibuat_oslo": "10 Nov 2026 01:20",
- "aktif_sampai_wib": "11 Nov 2026 07:00",
- "aktif_sampai_oslo": "11 Nov 2026 01:00",
+ "harga": 73685,
+ "data_sampai_wib": "11 Nov 2026 07:15",
+ "data_sampai_oslo": "11 Nov 2026 01:15",
+ "dibuat_utc": "2026-11-11T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-12T00:00:00Z",
+ "dibuat_wib": "11 Nov 2026 07:20",
+ "dibuat_oslo": "11 Nov 2026 01:20",
+ "aktif_sampai_wib": "12 Nov 2026 07:00",
+ "aktif_sampai_oslo": "12 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "D1 9 Nov close 75.368 (+517) · histogram MACD D1 −373 → −336 · Stoch D1 17",
+ "bias_teks": "D1 10 Nov close 73.796 (−1.572) · histogram MACD D1 −336 → −383 · Stoch D1 16",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-10T00:21:44Z",
+ "diperbarui_utc": "2026-11-11T00:21:44Z",
  "teks": [
-  "Lanjut turun ke low 21 Agu 73.027",
-  "Pantul naik ke Fib 0.382 = 76.446"
+  "Lanjut turun ke angka bulat 72.000",
+  "Pantul naik ke Fib 0.236 = 74.726"
  ],
  "skenario": {
   "utama": {
-   "judul": "Lanjut turun ke low 21 Agu 73.027",
-   "target": "73.027",
-   "konfirmasi": "D1 close di bawah 73.510 + HA merah",
+   "judul": "Lanjut turun ke angka bulat 72.000",
+   "target": "72.000",
+   "konfirmasi": "D1 close di bawah 72.727 + HA merah",
    "poin": [
-    "HA D1 9 Nov masih merah.",
-    "MACD D1 −336, masih negatif.",
-    "Target low 21 Agu = 73.027."
+    "HA D1 10 Nov merah, close 73.796.",
+    "MACD D1 −383, makin negatif.",
+    "Target low 21 Agu 73.027 sudah tercapai."
    ]
   },
   "alternatif": {
-   "judul": "Pantul naik ke Fib 0.382 = 76.446",
-   "target": "76.446",
-   "konfirmasi": "HA D1 biru + close di atas 75.324",
+   "judul": "Pantul naik ke Fib 0.236 = 74.726",
+   "target": "74.726",
+   "konfirmasi": "HA D1 biru + close di atas 74.726",
    "poin": [
-    "D1 9 Nov close 75.368 > Fib 0.236.",
-    "Stoch D1 17, jenuh jual.",
-    "Target Fibonacci 0.382 = 76.446."
+    "D = 72.727 dekat CD 1.618 (72.892).",
+    "Stoch D1 16, jenuh jual.",
+    "Target Fibonacci 0.236 = 74.726."
    ]
   }
  },
