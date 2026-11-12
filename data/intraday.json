@@ -3,79 +3,34 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 3966.5,
- "data_sampai_wib": "12 Nov 2026 15:00",
- "data_sampai_oslo": "12 Nov 2026 09:00",
- "dibuat_utc": "2026-11-12T04:00:00Z",
- "aktif_sampai_utc": "2026-11-12T12:00:00Z",
- "dibuat_wib": "12 Nov 2026 11:00",
- "dibuat_oslo": "12 Nov 2026 05:00",
- "aktif_sampai_wib": "12 Nov 2026 19:00",
- "aktif_sampai_oslo": "12 Nov 2026 13:00",
+ "harga": 3944.4,
+ "data_sampai_wib": "12 Nov 2026 19:00",
+ "data_sampai_oslo": "12 Nov 2026 13:00",
+ "dibuat_utc": "2026-11-12T12:00:00Z",
+ "aktif_sampai_utc": "2026-11-12T20:00:00Z",
+ "dibuat_wib": "12 Nov 2026 19:00",
+ "dibuat_oslo": "12 Nov 2026 13:00",
+ "aktif_sampai_wib": "13 Nov 2026 03:00",
+ "aktif_sampai_oslo": "12 Nov 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3966.5, 52 poin dari Entry 1 (SELL). Stochastic M15 15, Heikin Ashi M15 merah. Tunggu sinyal di zona."
+  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -13.60 (mengecil dari -13.90)",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -14.30 (membesar dari -13.70)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  4163.1,
-  4063.8,
-  3964.6
+  4166.3,
+  4050.8,
+  3935.2
  ],
  "fibonacci": [
-  4006.5,
-  4029.6
+  3960.9,
+  3983.6
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "SELL",
-   "zona": [
-    4006.5,
-    4029.6
-   ],
-   "entry": 4018.1,
-   "sl": 4039.6,
-   "tp1": 3993.6,
-   "tp2": 3969.0,
-   "alasan": [
-    "Fibonacci 0.236/0.382 (4006.5 / 4029.6)",
-    "swing H4 sebelumnya 4028.6",
-    "angka bulat 4025"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Utama"
-  },
-  {
-   "n": 3,
-   "side": "SELL",
-   "zona": [
-    4006.5,
-    4029.6
-   ],
-   "entry": 4018.1,
-   "sl": 4039.6,
-   "tp1": 3985.6,
-   "tp2": 3953.0,
-   "alasan": [
-    "Fibonacci 0.236/0.382 (4006.5 / 4029.6)",
-    "swing H4 sebelumnya 4028.6",
-    "angka bulat 4025"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": true,
-   "jenis_entry": "Masuk lagi"
-  }
- ],
+ "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-12T08:04:00Z",
+ "diperbarui_utc": "2026-11-12T12:02:00Z",
  "status_lama": "MENUNGGU"
 }
