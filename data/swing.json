@@ -3,52 +3,50 @@
  "kode": "/xausw",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 3868.8,
- "data_sampai_wib": "12 Nov 2026 23:00",
- "data_sampai_oslo": "12 Nov 2026 17:00",
- "dibuat_utc": "2026-11-10T20:00:00Z",
- "aktif_sampai_utc": "2026-11-12T20:00:00Z",
- "dibuat_wib": "11 Nov 2026 03:00",
- "dibuat_oslo": "10 Nov 2026 21:00",
- "aktif_sampai_wib": "13 Nov 2026 03:00",
- "aktif_sampai_oslo": "12 Nov 2026 21:00",
- "status": "GAGAL",
+ "harga": 3883.7,
+ "data_sampai_wib": "13 Nov 2026 03:00",
+ "data_sampai_oslo": "12 Nov 2026 21:00",
+ "dibuat_utc": "2026-11-12T20:00:00Z",
+ "aktif_sampai_utc": "2026-11-14T20:00:00Z",
+ "dibuat_wib": "13 Nov 2026 03:00",
+ "dibuat_oslo": "12 Nov 2026 21:00",
+ "aktif_sampai_wib": "15 Nov 2026 03:00",
+ "aktif_sampai_oslo": "14 Nov 2026 21:00",
+ "status": "MENUNGGU",
  "teks": [
-  "Entry 1 BUY @4047.0 (masuk 11 Nov 11:00 WIB / 05:00 Oslo) kena Stop Loss 4010.9 pukul 11 Nov 23:00 WIB / 17:00 Oslo.",
-  "Harga 3868.8, 289 poin dari Entry 2 (SELL). Stochastic H4 7, Heikin Ashi H4 merah. Tunggu sinyal di zona."
+  "Harga 3883.7, 61 poin dari Entry 1 (BUY). Stochastic H4 10, Heikin Ashi H4 merah. Tunggu sinyal di zona."
  ],
- "bias": "NAIK",
- "bias_teks": "Heikin Ashi D1 biru · histogram MACD D1 +18.10 (mengecil dari +22.70)",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 +1.10 (mengecil dari +11.80)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  4179.4,
-  4029.9,
-  3880.5
+  4157.9,
+  4010.7,
+  3863.5
  ],
  "fibonacci": [
-  4082.2,
-  4040.9
+  3923.1,
+  3966.2
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    4040.9,
-    4082.2
+    3923.1,
+    3966.2
    ],
-   "entry": 4061.6,
-   "sl": 4010.9,
-   "tp1": 4105.3,
+   "entry": 3944.7,
+   "sl": 3893.1,
+   "tp1": 4046.8,
    "tp2": 4149.0,
    "alasan": [
-    "Fibonacci 0.236/0.382 (4082.2 / 4040.9)",
-    "Bollinger D1 tengah 4029.9",
-    "swing D1 sebelumnya 4082.0",
-    "angka bulat 4050"
+    "Fibonacci 0.236/0.382 (3923.1 / 3966.2)",
+    "swing D1 sebelumnya 3975.8",
+    "angka bulat 3925"
    ],
-   "state": "gagal",
+   "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
@@ -63,10 +61,11 @@
    ],
    "entry": 4158.0,
    "sl": 4197.0,
-   "tp1": 4120.1,
-   "tp2": 4082.2,
+   "tp1": 4062.1,
+   "tp2": 3966.2,
    "alasan": [
     "swing ekstrem 12 candle D1",
+    "Bollinger D1 atas 4157.9",
     "swing D1 sebelumnya 4147.6",
     "angka bulat 4150"
    ],
@@ -80,41 +79,26 @@
    "n": 3,
    "side": "BUY",
    "zona": [
-    4040.9,
-    4082.2
+    3923.1,
+    3966.2
    ],
-   "entry": 4061.6,
-   "sl": 4010.9,
-   "tp1": 4129.3,
+   "entry": 3944.7,
+   "sl": 3893.1,
+   "tp1": 4070.8,
    "tp2": 4197.0,
    "alasan": [
-    "Fibonacci 0.236/0.382 (4082.2 / 4040.9)",
-    "Bollinger D1 tengah 4029.9",
-    "swing D1 sebelumnya 4082.0",
-    "angka bulat 4050"
+    "Fibonacci 0.236/0.382 (3923.1 / 3966.2)",
+    "swing D1 sebelumnya 3975.8",
+    "angka bulat 3925"
    ],
-   "state": "batal",
-   "info": "batal: D1 close 3987.0 melewati Stop Loss",
+   "state": "tunggu",
+   "info": "",
    "lawan_arah": false,
    "masuk_lagi": true,
    "jenis_entry": "Masuk lagi"
   }
  ],
- "posisi": [
-  {
-   "n": 1,
-   "side": 1,
-   "px": 4047.0,
-   "sl": 4010.9,
-   "tp1": 4105.3,
-   "tp2": 4149.0,
-   "t": "2026-11-11 11:00:00",
-   "masuk": "2026-11-11 15:00:00",
-   "tp1_kena": false,
-   "hasil": "SL",
-   "selesai": "2026-11-12 03:00:00"
-  }
- ],
- "diperbarui_utc": "2026-11-12T16:04:00Z",
+ "posisi": [],
+ "diperbarui_utc": "2026-11-12T20:20:00Z",
  "status_lama": "GAGAL"
 }
