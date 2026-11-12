@@ -3,71 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 72842,
- "data_sampai_wib": "12 Nov 2026 20:05",
- "data_sampai_oslo": "12 Nov 2026 14:05",
- "dibuat_utc": "2026-11-12T13:05:00Z",
- "aktif_sampai_utc": "2026-11-12T15:00:00Z",
- "dibuat_wib": "12 Nov 2026 20:05",
- "dibuat_oslo": "12 Nov 2026 14:05",
- "aktif_sampai_wib": "12 Nov 2026 22:00",
- "aktif_sampai_oslo": "12 Nov 2026 16:00",
+ "harga": 71452,
+ "data_sampai_wib": "12 Nov 2026 22:05",
+ "data_sampai_oslo": "12 Nov 2026 16:05",
+ "dibuat_utc": "2026-11-12T15:05:00Z",
+ "aktif_sampai_utc": "2026-11-12T17:00:00Z",
+ "dibuat_wib": "12 Nov 2026 22:05",
+ "dibuat_oslo": "12 Nov 2026 16:05",
+ "aktif_sampai_wib": "13 Nov 2026 00:00",
+ "aktif_sampai_oslo": "12 Nov 2026 18:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist −46 → −43 · H4 HA merah, hist 8 → −26 · Stoch M15 16 · ATR 187",
+ "bias_teks": "M15 HA merah, hist −121 → −129 · H4 HA merah, hist −114 · Stoch M15 10 · ATR 405",
  "bias_label": "M15",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-12T13:06:33Z",
+ "diperbarui_utc": "2026-11-12T15:06:49Z",
  "teks": [
-  "Analisa 18:05 selesai · tanpa entry",
-  "SELL 73.476–73.556 tersentuh 18:00 (high 73.486), Stoch M5 34 → tidak ada sinyal.",
-  "SELL 73.681–73.761 tidak tersentuh → habis masa aktif."
+  "Analisa 20:05 selesai · tanpa entry",
+  "BUY 72.702–72.782 ditembus: M15 close 72.450 < 72.642 → batal.",
+  "SELL 73.219–73.299 tidak tersentuh (high 72.996) → habis masa aktif."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "SELL",
-   "zona": [
-    73219,
-    73299
-   ],
-   "entry": 73259,
-   "sl": 73399,
-   "tp1": 73130,
-   "tp2": 72780,
-   "alasan": [
-    "bulat 73.250",
-    "swing 73.260",
-    "BB tengah M15 73.272"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback searah"
-  },
-  {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    72702,
-    72782
-   ],
-   "entry": 72742,
-   "sl": 72642,
-   "tp1": 72860,
-   "tp2": 72950,
-   "alasan": [
-    "swing low 72.735",
-    "BB bawah M15 72.735",
-    "bulat 72.750"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
-  }
- ]
+ "entries": []
 }
