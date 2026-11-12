@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.10702,
- "data_sampai_wib": "12 Nov 2026 22:05",
- "data_sampai_oslo": "12 Nov 2026 16:05",
+ "harga": 1.10674,
+ "data_sampai_wib": "12 Nov 2026 23:05",
+ "data_sampai_oslo": "12 Nov 2026 17:05",
  "dibuat_utc": "2026-11-12T15:05:00Z",
  "aktif_sampai_utc": "2026-11-12T17:00:00Z",
  "dibuat_wib": "12 Nov 2026 22:05",
  "dibuat_oslo": "12 Nov 2026 16:05",
  "aktif_sampai_wib": "13 Nov 2026 00:00",
  "aktif_sampai_oslo": "12 Nov 2026 18:00",
- "diperbarui_utc": "2026-11-12T15:06:11Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-12T16:06:38Z",
+ "status": "ENTRY 2 HOLD",
  "bias": "TURUN",
- "bias_teks": "M15 & M5 turun (HA merah) · Stoch M5 8 jenuh jual · low hari ini 1.1067 diuji",
+ "bias_teks": "M15 netral, Stoch M15 20 naik · low 1.1054 ditolak · H4 masih turun",
  "bias_label": "M15",
  "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell 1.1102 TP2 SELESAI · rata-rata +16 pip",
-  "TP2 1.1078 kena 20:10 WIB (+8 & +24 pip). Buy intraday 1.1075 selesai impas.",
-  "Sesi AS tekan euro ke 1.1070. Sell di pantulan 1.1080–84 (rencana baru)."
+  "Buy 1.1058 HOLD · TP1 1.1066 kena (+8 pip)",
+  "Euro jatuh ke 1.1054, buy masuk 22:50 WIB, TP1 kena 22:55. SL geser ke 1.1058.",
+  "Sisa posisi tunggu TP2 1.1090. Kalau balik ke 1.1058, keluar impas."
  ],
  "entries": [
   {
@@ -62,8 +62,8 @@
     "sapu stop di bawah low 1.1067",
     "Stoch M5 8 jenuh jual"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.1049",
    "jenis_entry": "Ekstensi"
   },
