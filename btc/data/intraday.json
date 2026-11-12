@@ -3,49 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 72904,
- "data_sampai_wib": "12 Nov 2026 19:05",
- "data_sampai_oslo": "12 Nov 2026 13:05",
- "dibuat_utc": "2026-11-12T08:05:00Z",
- "aktif_sampai_utc": "2026-11-12T16:00:00Z",
- "dibuat_wib": "12 Nov 2026 15:05",
- "dibuat_oslo": "12 Nov 2026 09:05",
- "aktif_sampai_wib": "12 Nov 2026 23:00",
- "aktif_sampai_oslo": "12 Nov 2026 17:00",
- "status": "SELESAI",
+ "harga": 71802,
+ "data_sampai_wib": "12 Nov 2026 23:05",
+ "data_sampai_oslo": "12 Nov 2026 17:05",
+ "dibuat_utc": "2026-11-12T16:05:00Z",
+ "aktif_sampai_utc": "2026-11-13T00:00:00Z",
+ "dibuat_wib": "12 Nov 2026 23:05",
+ "dibuat_oslo": "12 Nov 2026 17:05",
+ "aktif_sampai_wib": "13 Nov 2026 07:00",
+ "aktif_sampai_oslo": "13 Nov 2026 01:00",
+ "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "H4 close 19:00 = 72.904 HA merah, hist 8 → −22 · Stoch H4 18 · Stoch M15 12 · ATR 849",
+ "bias_teks": "H4 close 23:00 = 71.802 HA merah, hist 8 → −98 · Stoch H4 19 · Stoch M15 22 · ATR 941",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-12T12:06:35Z",
+ "diperbarui_utc": "2026-11-12T16:06:12Z",
  "teks": [
-  "Status 19:05 · BUY 73.496 kena SL 73.320",
-  "Sinyal 16:45 (Stoch M15 24→40 + HA biru) close 73.496 → BUY; high 73.632.",
-  "SL 73.320 kena 18:15 WIB (low 73.280) → −176."
+  "Analisa 15:05 selesai",
+  "BUY 73.496 (sinyal 16:45) kena SL 73.320 pukul 18:15 → −176.",
+  "Setelah itu harga turun ke 71.255 (22:00), tanpa entry lain."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    73440,
-    73600
+    71962,
+    72122
    ],
-   "entry": 73520,
-   "sl": 73320,
-   "tp1": 73750,
-   "tp2": 74180,
+   "entry": 72042,
+   "sl": 72242,
+   "tp1": 71800,
+   "tp2": 71300,
    "alasan": [
-    "bulat 73.500",
-    "swing low 73.390 / 73.510",
-    "Fib 0.382 73.536"
+    "BB bawah H4 71.989",
+    "bulat 72.000",
+    "Fib 0.236 72.094"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
+   "jenis_entry": "Pullback searah"
   }
  ]
 }
