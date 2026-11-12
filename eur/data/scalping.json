@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.10556,
- "data_sampai_wib": "13 Nov 2026 04:10",
- "data_sampai_oslo": "12 Nov 2026 22:10",
- "dibuat_utc": "2026-11-12T21:05:00Z",
- "aktif_sampai_utc": "2026-11-12T23:00:00Z",
- "dibuat_wib": "13 Nov 2026 04:05",
- "dibuat_oslo": "12 Nov 2026 22:05",
- "aktif_sampai_wib": "13 Nov 2026 06:00",
- "aktif_sampai_oslo": "13 Nov 2026 00:00",
- "diperbarui_utc": "2026-11-12T21:07:20Z",
+ "harga": 1.10567,
+ "data_sampai_wib": "13 Nov 2026 06:05",
+ "data_sampai_oslo": "13 Nov 2026 00:05",
+ "dibuat_utc": "2026-11-12T23:05:00Z",
+ "aktif_sampai_utc": "2026-11-13T01:00:00Z",
+ "dibuat_wib": "13 Nov 2026 06:05",
+ "dibuat_oslo": "13 Nov 2026 00:05",
+ "aktif_sampai_wib": "13 Nov 2026 08:00",
+ "aktif_sampai_oslo": "13 Nov 2026 02:00",
+ "diperbarui_utc": "2026-11-12T23:06:42Z",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "M15 naik · Stoch M15 85 jenuh beli · H4 turun · H1 Stoch 18 mulai naik",
+ "bias_teks": "M15 & H1 HA biru · M5/M15 squeeze · H4 turun · Stoch H1 18 jenuh jual",
  "bias_label": "M15",
- "kondisi": "Naik · jenuh beli",
+ "kondisi": "Naik · squeeze",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana 02:05 habis tanpa entry · rencana baru",
-  "Harga sideways sempit 1.1048–58. Sell 1.1058 kurang 0.5 pip, tidak terisi.",
-  "Sell di 1.1060–64 (Stoch M15 85), buy di 1.1046–50 (low H4)."
+  "Rencana 04:05 habis tanpa entry · rencana baru",
+  "Pasar sepi 2 jam: harga hanya 1.1053–58 (range 5.5 pip). Tidak ada zona tersentuh.",
+  "Zona tetap: sell 1.1060–64 dan 1.1066–70, buy 1.1046–50."
  ],
  "entries": [
   {
@@ -37,9 +37,9 @@
    "tp1": 1.1054,
    "tp2": 1.1048,
    "alasan": [
-    "BB atas M15 1.1061",
-    "Fib 0.236 H1 1.1059",
-    "Stoch M15 85 jenuh beli"
+    "BB atas M15 1.1058",
+    "Fib 0.236 H1 1.1058",
+    "high range 1.1058"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
@@ -59,8 +59,8 @@
    "tp2": 1.1068,
    "alasan": [
     "low H4 1.1046",
-    "BB bawah M15 1.1047",
-    "Stoch H4 jenuh jual"
+    "BB bawah M15 1.1051",
+    "Stoch H1 18 jenuh jual"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
@@ -79,7 +79,7 @@
    "tp1": 1.106,
    "tp2": 1.1052,
    "alasan": [
-    "Fib 0.382 H1 1.1068",
+    "Fib 0.382 H1 1.1066",
     "bekas low H1 1.1067",
     "bias H4 turun"
    ],
