@@ -3,90 +3,90 @@
  "pasar": "EURUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 1.10876,
+ "harga": 1.1092,
  "data_sampai_wib": "12 Nov 2026 07:10",
  "data_sampai_oslo": "12 Nov 2026 01:10",
- "dibuat_utc": "2026-11-10T00:20:00Z",
- "aktif_sampai_utc": "2026-11-12T00:00:00Z",
- "dibuat_wib": "10 Nov 2026 07:20",
- "dibuat_oslo": "10 Nov 2026 01:20",
- "aktif_sampai_wib": "12 Nov 2026 07:00",
- "aktif_sampai_oslo": "12 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-12T00:07:17Z",
- "status": "SIAP ENTRY",
+ "dibuat_utc": "2026-11-12T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-14T00:00:00Z",
+ "dibuat_wib": "12 Nov 2026 07:20",
+ "dibuat_oslo": "12 Nov 2026 01:20",
+ "aktif_sampai_wib": "14 Nov 2026 07:00",
+ "aktif_sampai_oslo": "14 Nov 2026 01:00",
+ "diperbarui_utc": "2026-11-12T00:21:05Z",
+ "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "Harga di bawah BB bawah D1 1.1133 · low 29 Okt 1.1107 jebol · Stoch H4 jenuh jual",
+ "bias_teks": "Close D1 di bawah BB bawah 1.1114 · RSI D1 37 · Stoch H4 6 jenuh jual · ATR D1 69 pip",
  "bias_label": "D1",
  "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Buy 1.11725 kena STOP LOSS (−52 pip)",
-  "Euro jatuh di sesi AS ke 1.1083, SL buy swing 1.1120 kena.",
-  "Tidak ada posisi. Rencana swing baru disusun setelah close D1 07:00 WIB."
+  "Belum ada posisi · rencana swing baru",
+  "Close D1 11 Nov 1.1095, terendah sejak Maret. Buy 1.11725 kemarin kena SL (−52).",
+  "Utama: sell pantulan 1.1128–43. Buy hanya di 1.1035–50 kalau turun lanjut."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.1195,
-    1.121
+    1.1128,
+    1.1143
    ],
-   "entry": 1.12025,
-   "sl": 1.115,
-   "tp1": 1.125,
-   "tp2": 1.1265,
+   "entry": 1.11355,
+   "sl": 1.1185,
+   "tp1": 1.1085,
+   "tp2": 1.105,
    "alasan": [
-    "Fib 0.382 D1 1.1210",
-    "BB tengah D1 1.1201",
-    "Fib 0.236 H4 1.1204"
+    "Fib 0.236 D1 1.1128",
+    "bekas support 1.1132 (low 6 Nov)",
+    "Fib 0.236 H4 1.1123"
    ],
    "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.1150",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1185",
    "jenis_entry": "Pullback"
   },
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    1.1265,
-    1.128
+    1.1035,
+    1.105
    ],
-   "entry": 1.12725,
-   "sl": 1.1325,
-   "tp1": 1.122,
-   "tp2": 1.118,
+   "entry": 1.10425,
+   "sl": 1.099,
+   "tp1": 1.1092,
+   "tp2": 1.115,
    "alasan": [
-    "BB atas D1 1.1266",
-    "high 4 Nov 1.1273",
-    "high 16 Okt 1.1269"
+    "ekstensi 1.272 D1 1.1031",
+    "angka bulat 1.1050",
+    "1 ATR D1 di bawah close 1.1095"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1325",
-   "jenis_entry": "BB atas D1"
+   "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.0990",
+   "jenis_entry": "Ekstensi"
   },
   {
    "n": 3,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.1165,
-    1.118
+    1.115,
+    1.1165
    ],
-   "entry": 1.11725,
-   "sl": 1.112,
-   "tp1": 1.1225,
-   "tp2": 1.1265,
+   "entry": 1.11575,
+   "sl": 1.1208,
+   "tp1": 1.1108,
+   "tp2": 1.1085,
    "alasan": [
-    "Fib 0.618 D1 1.1170",
-    "low 3 Nov 1.1175",
-    "open D1 9 Nov area 1.1149–75"
+    "Fib 0.382 D1 1.1156",
+    "BB tengah H4 1.1166",
+    "high 11 Nov 1.1170"
    ],
-   "state": "batal",
-   "status": "STOP LOSS",
-   "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.1120",
-   "jenis_entry": "Support kuat"
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1208",
+   "jenis_entry": "Resistance"
   }
  ]
 }

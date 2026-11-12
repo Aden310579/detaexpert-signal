@@ -3,49 +3,49 @@
  "pasar": "EURUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 1.11681,
+ "harga": 1.1092,
  "data_sampai_wib": "12 Nov 2026 07:10",
  "data_sampai_oslo": "12 Nov 2026 01:10",
- "dibuat_utc": "2026-11-10T00:20:00Z",
- "aktif_sampai_utc": "2026-11-12T00:00:00Z",
- "dibuat_wib": "10 Nov 2026 07:20",
- "dibuat_oslo": "10 Nov 2026 01:20",
- "aktif_sampai_wib": "12 Nov 2026 07:00",
- "aktif_sampai_oslo": "12 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-12T00:07:17Z",
+ "dibuat_utc": "2026-11-12T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-14T00:00:00Z",
+ "dibuat_wib": "12 Nov 2026 07:20",
+ "dibuat_oslo": "12 Nov 2026 01:20",
+ "aktif_sampai_wib": "14 Nov 2026 07:00",
+ "aktif_sampai_oslo": "14 Nov 2026 01:00",
+ "diperbarui_utc": "2026-11-12T00:21:05Z",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "Close di bawah BB tengah 1.1199 · histogram MACD D1 +9.1 mengecil · RSI 44 · Stoch D1 43 turun",
+ "bias_teks": "Close di bawah BB bawah 1.1114 · histogram MACD D1 +2.7 mengecil · RSI 37 · Stoch D1 38 turun",
  "bias_label": "D1",
- "kondisi": "Koreksi",
+ "kondisi": "Turun · di PRZ",
  "indikator_utama": "Harmonic + Fibo",
  "teks": [
-  "Close D1 1.1169 · tembus bawah 1.1200",
-  "Selasa ditolak dari 1.1251, turun 53 pip. Close D1 berikut 12 Nov 07:00 WIB."
+  "Close D1 1.1095 · terendah sejak Maret",
+  "Rabu turun 74 pip, target 1.1132 & 1.1107 tercapai. Close berikut 13 Nov 07:00 WIB."
  ],
  "skenario": {
   "utama": {
-   "judul": "Koreksi turun · Aktif selama close D1 < 1.1200",
-   "target": "1.1107",
-   "konfirmasi": "Aktif selama close D1 < 1.1200",
+   "judul": "Turun lanjut · Aktif selama close D1 < 1.1132",
+   "target": "1.1031",
+   "konfirmasi": "Aktif selama close D1 < 1.1132",
    "poin": [
-    "Ditolak di 1.1251, close di bawah Fib 0.382",
-    "Target 1: 1.1132 (low 6 Nov, titik C)",
-    "Target 2: 1.1107 (low 29 Okt)",
-    "Gagal bila close D1 > 1.1210"
+    "Close di bawah BB bawah, low 29 Okt 1.1107 jebol",
+    "Target 1: 1.1050 (angka bulat)",
+    "Target 2: 1.1031 (ekstensi 1.272)",
+    "Gagal bila close D1 > 1.1132"
    ]
   },
   "alternatif": {
-   "judul": "Naik lagi · Konfirmasi: close D1 > 1.1210",
-   "target": "1.1273",
-   "konfirmasi": "close D1 > 1.1210",
+   "judul": "Pantul dari prz · Konfirmasi: close D1 > 1.1132",
+   "target": "1.1192",
+   "konfirmasi": "close D1 > 1.1132",
    "poin": [
-    "Low 1.1146 bertahan di atas titik C 1.1132",
-    "Target 1: 1.1251 (high 10 Nov)",
-    "Target 2: 1.1273 (high 4 Nov)",
-    "Gagal bila close D1 < 1.1132"
+    "AB=CD turun selesai di PRZ 1.1083–1.1110",
+    "Target 1: 1.1156 (Fib 0.382)",
+    "Target 2: 1.1192 (BB tengah D1)",
+    "Gagal bila close D1 < 1.1083"
    ]
   }
  },
- "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Close D1 di bawah 1.1200 membuka koreksi ke 1.1132 lalu 1.1107. Close kembali di atas 1.1210 membuka jalan ke 1.1251–1.1273."
+ "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Close D1 di bawah 1.1132: turun lanjut ke 1.1050–1.1031. Close di atas 1.1132: pantul ke 1.1156–1.1192."
 }
