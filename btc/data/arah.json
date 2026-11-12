@@ -3,25 +3,25 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 73685,
- "data_sampai_wib": "11 Nov 2026 07:15",
- "data_sampai_oslo": "11 Nov 2026 01:15",
- "dibuat_utc": "2026-11-11T00:20:00Z",
- "aktif_sampai_utc": "2026-11-12T00:00:00Z",
- "dibuat_wib": "11 Nov 2026 07:20",
- "dibuat_oslo": "11 Nov 2026 01:20",
- "aktif_sampai_wib": "12 Nov 2026 07:00",
- "aktif_sampai_oslo": "12 Nov 2026 01:00",
+ "harga": 74025,
+ "data_sampai_wib": "12 Nov 2026 07:05",
+ "data_sampai_oslo": "12 Nov 2026 01:05",
+ "dibuat_utc": "2026-11-12T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-13T00:20:00Z",
+ "dibuat_wib": "12 Nov 2026 07:20",
+ "dibuat_oslo": "12 Nov 2026 01:20",
+ "aktif_sampai_wib": "13 Nov 2026 07:20",
+ "aktif_sampai_oslo": "13 Nov 2026 01:20",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "D1 10 Nov close 73.796 (−1.572) · histogram MACD D1 −336 → −383 · Stoch D1 16",
+ "bias_teks": "D1 11 Nov close 74.015 (+219) · histogram MACD D1 −383 → −365 · Stoch D1 16",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-11T00:21:44Z",
+ "diperbarui_utc": "2026-11-12T00:21:29Z",
  "teks": [
   "Lanjut turun ke angka bulat 72.000",
-  "Pantul naik ke Fib 0.236 = 74.726"
+  "Pantul naik ke Fib 0.382 = 75.962"
  ],
  "skenario": {
   "utama": {
@@ -29,19 +29,19 @@
    "target": "72.000",
    "konfirmasi": "D1 close di bawah 72.727 + HA merah",
    "poin": [
-    "HA D1 10 Nov merah, close 73.796.",
-    "MACD D1 −383, makin negatif.",
-    "Target low 21 Agu 73.027 sudah tercapai."
+    "HA D1 11 Nov merah, close 74.015.",
+    "High 74.811 ditolak di atas Fib 0.236.",
+    "MACD D1 −365, masih negatif."
    ]
   },
   "alternatif": {
-   "judul": "Pantul naik ke Fib 0.236 = 74.726",
-   "target": "74.726",
+   "judul": "Pantul naik ke Fib 0.382 = 75.962",
+   "target": "75.962",
    "konfirmasi": "HA D1 biru + close di atas 74.726",
    "poin": [
-    "D = 72.727 dekat CD 1.618 (72.892).",
-    "Stoch D1 16, jenuh jual.",
-    "Target Fibonacci 0.236 = 74.726."
+    "Low 72.727 bertahan di PRZ.",
+    "Histogram D1 mengecil −383 → −365.",
+    "Stoch D1 16, jenuh jual."
    ]
   }
  },
