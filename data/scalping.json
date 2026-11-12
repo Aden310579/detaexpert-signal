@@ -3,34 +3,57 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3868.8,
- "data_sampai_wib": "12 Nov 2026 23:00",
- "data_sampai_oslo": "12 Nov 2026 17:00",
- "dibuat_utc": "2026-11-12T16:00:00Z",
- "aktif_sampai_utc": "2026-11-12T18:00:00Z",
- "dibuat_wib": "12 Nov 2026 23:00",
- "dibuat_oslo": "12 Nov 2026 17:00",
- "aktif_sampai_wib": "13 Nov 2026 01:00",
- "aktif_sampai_oslo": "12 Nov 2026 19:00",
+ "harga": 3872.6,
+ "data_sampai_wib": "13 Nov 2026 01:00",
+ "data_sampai_oslo": "12 Nov 2026 19:00",
+ "dibuat_utc": "2026-11-12T18:00:00Z",
+ "aktif_sampai_utc": "2026-11-12T20:00:00Z",
+ "dibuat_wib": "13 Nov 2026 01:00",
+ "dibuat_oslo": "12 Nov 2026 19:00",
+ "aktif_sampai_wib": "13 Nov 2026 03:00",
+ "aktif_sampai_oslo": "12 Nov 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
-  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
+  "Harga 3872.6, 22 poin dari Entry 2 (BUY). Stochastic M5 31, Heikin Ashi M5 merah. Tunggu sinyal di zona."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -8.10 (membesar dari -7.00)",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -6.90 (mengecil dari -7.50)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  4031.1,
-  3955.5,
-  3879.8
+  4030.2,
+  3944.4,
+  3858.5
  ],
  "fibonacci": [
-  3884.1,
-  3903.2
+  3883.7,
+  3902.5
  ],
- "entries": [],
+ "entries": [
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    3847.3,
+    3853.3
+   ],
+   "entry": 3850.3,
+   "sl": 3837.3,
+   "tp1": 3867.0,
+   "tp2": 3883.7,
+   "alasan": [
+    "swing ekstrem 12 candle H1",
+    "swing H1 sebelumnya 3853.3",
+    "angka bulat 3850"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Lawan arah"
+  }
+ ],
  "posisi": [],
- "diperbarui_utc": "2026-11-12T16:04:00Z",
+ "diperbarui_utc": "2026-11-12T18:04:00Z",
  "status_lama": "MENUNGGU"
 }
