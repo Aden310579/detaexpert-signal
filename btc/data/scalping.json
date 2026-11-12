@@ -3,26 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 71546,
- "data_sampai_wib": "13 Nov 2026 02:05",
- "data_sampai_oslo": "12 Nov 2026 20:05",
- "dibuat_utc": "2026-11-12T19:05:00Z",
- "aktif_sampai_utc": "2026-11-12T21:00:00Z",
- "dibuat_wib": "13 Nov 2026 02:05",
- "dibuat_oslo": "12 Nov 2026 20:05",
- "aktif_sampai_wib": "13 Nov 2026 04:00",
- "aktif_sampai_oslo": "12 Nov 2026 22:00",
+ "harga": 71426,
+ "data_sampai_wib": "13 Nov 2026 04:05",
+ "data_sampai_oslo": "12 Nov 2026 22:05",
+ "dibuat_utc": "2026-11-12T21:05:00Z",
+ "aktif_sampai_utc": "2026-11-12T23:00:00Z",
+ "dibuat_wib": "13 Nov 2026 04:05",
+ "dibuat_oslo": "12 Nov 2026 22:05",
+ "aktif_sampai_wib": "13 Nov 2026 06:00",
+ "aktif_sampai_oslo": "13 Nov 2026 00:00",
  "status": "MENUNGGU",
  "bias": "NETRAL",
- "bias_teks": "M15 HA merah, hist 68 → 48 · H4 HA merah, hist −164 · Stoch M15 42 · ATR 314",
+ "bias_teks": "M15 HA merah, hist 15 → 12 · H4 HA merah, hist −193 · Stoch M15 7 · ATR 186",
  "bias_label": "M15",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-12T19:05:53Z",
+ "diperbarui_utc": "2026-11-12T21:07:32Z",
  "teks": [
-  "Analisa 00:05 · tanpa zona entry",
+  "Analisa 02:05 · tanpa zona entry",
   "Tidak ada zona 3 alasan, tidak ada posisi.",
-  "Range 00:05–02:00: 71.528 – 72.077 (high 01:30)."
+  "Range 02:05–04:00: 71.412 – 71.750."
  ],
- "entries": []
+ "entries": [
+  {
+   "n": 1,
+   "side": "SELL",
+   "zona": [
+    71494,
+    71574
+   ],
+   "entry": 71534,
+   "sl": 71634,
+   "tp1": 71420,
+   "tp2": 71335,
+   "alasan": [
+    "bulat 71.500",
+    "swing 71.501",
+    "Fib 0.236 71.569"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pullback searah"
+  },
+  {
+   "n": 2,
+   "side": "SELL",
+   "zona": [
+    71686,
+    71766
+   ],
+   "entry": 71726,
+   "sl": 71866,
+   "tp1": 71600,
+   "tp2": 71534,
+   "alasan": [
+    "BB tengah M15 71.702",
+    "bulat 71.750",
+    "swing 71.750"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan atas"
+  }
+ ]
 }
