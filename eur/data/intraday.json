@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.10757,
- "data_sampai_wib": "12 Nov 2026 14:10",
- "data_sampai_oslo": "12 Nov 2026 08:10",
+ "harga": 1.1091,
+ "data_sampai_wib": "12 Nov 2026 15:05",
+ "data_sampai_oslo": "12 Nov 2026 09:05",
  "dibuat_utc": "2026-11-12T00:05:00Z",
  "aktif_sampai_utc": "2026-11-12T08:00:00Z",
  "dibuat_wib": "12 Nov 2026 07:05",
  "dibuat_oslo": "12 Nov 2026 01:05",
  "aktif_sampai_wib": "12 Nov 2026 15:00",
  "aktif_sampai_oslo": "12 Nov 2026 09:00",
- "diperbarui_utc": "2026-11-12T07:07:22Z",
- "status": "ENTRY 2 BERJALAN",
+ "diperbarui_utc": "2026-11-12T08:06:04Z",
+ "status": "ENTRY 2 HOLD",
  "bias": "TURUN",
- "bias_teks": "MACD H4 −29.2 · HA H4 merah · Stoch H4 5.5 jenuh jual · RSI 27.6 · low baru 1.1067",
+ "bias_teks": "H4 HA biru pertama · Stoch H4 9 jenuh jual mulai naik · MACD −29 mengecil · RSI 33",
  "bias_label": "H4",
- "kondisi": "Turun · jenuh jual",
+ "kondisi": "Mulai pantul",
  "indikator_utama": "MACD",
  "teks": [
-  "Belum ada posisi · buy 1.1072–78 SIAP ENTRY",
-  "H4 07:00 tutup 1.1075, low baru 1.1067 menembus 1.1083. Harga di zona buy.",
-  "Buy hanya jika Stoch M15 <20 naik + HA biru. Sell tunggu pantulan ke 1.1110–16."
+  "Buy 1.1075 HOLD · TP1 1.1090 kena (+15 pip)",
+  "Buy masuk 11:15 WIB, TP1 kena 15:00 saat London buka. SL geser ke entry 1.1075.",
+  "Sisa posisi tunggu TP2 1.1120. Kalau balik ke 1.1075, keluar impas."
  ],
  "entries": [
   {
@@ -41,8 +41,8 @@
     "BB bawah D1 1.1114",
     "bekas support 1.1107–15"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1128",
    "jenis_entry": "Pullback"
   },
@@ -63,7 +63,7 @@
     "Stoch H4 6 jenuh jual"
    ],
    "state": "dipakai",
-   "status": "BERJALAN",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.1060",
    "jenis_entry": "Support"
   },
@@ -83,8 +83,8 @@
     "Fib 0.236 D1 1.1128",
     "high H1 1.1132 di atasnya"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1138",
    "jenis_entry": "Resistance"
   }
