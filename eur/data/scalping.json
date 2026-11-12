@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.10978,
- "data_sampai_wib": "12 Nov 2026 18:05",
- "data_sampai_oslo": "12 Nov 2026 12:05",
+ "harga": 1.10953,
+ "data_sampai_wib": "12 Nov 2026 19:05",
+ "data_sampai_oslo": "12 Nov 2026 13:05",
  "dibuat_utc": "2026-11-12T09:05:00Z",
  "aktif_sampai_utc": "2026-11-12T11:00:00Z",
  "dibuat_wib": "12 Nov 2026 16:05",
  "dibuat_oslo": "12 Nov 2026 10:05",
  "aktif_sampai_wib": "12 Nov 2026 18:00",
  "aktif_sampai_oslo": "12 Nov 2026 12:00",
- "diperbarui_utc": "2026-11-12T11:05:59Z",
- "status": "ENTRY 2 BERJALAN",
+ "diperbarui_utc": "2026-11-12T12:06:43Z",
+ "status": "ENTRY 2 HOLD",
  "bias": "NAIK",
- "bias_teks": "H1 naik · M15 netral, Stoch M15 84 jenuh beli · M5 mulai turun · resistance 1.1100–04",
+ "bias_teks": "H1 naik · M15 netral setelah ditolak di 1.1103 · M5 sideways 1.1085–96",
  "bias_label": "M15",
- "kondisi": "Naik · jenuh beli",
+ "kondisi": "Netral · naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell 1.1102 BERJALAN · +4 pip",
-  "Sell masuk 17:55 WIB setelah high 1.1103 ditolak (Stoch M5 turun + HA merah).",
-  "SL 1.1110, TP1 1.1094. Kalau TP1 kena: tutup setengah, geser SL ke 1.1102."
+  "Sell 1.1102 HOLD · TP1 1.1094 kena (+8 pip)",
+  "TP1 kena 18:20 WIB. Setengah ditutup, SL geser ke entry 1.1102.",
+  "Sisa posisi tunggu TP2 1.1078. Kalau naik ke 1.1102, keluar impas."
  ],
  "entries": [
   {
@@ -63,7 +63,7 @@
     "Fib 0.236 H4 1.1103"
    ],
    "state": "dipakai",
-   "status": "BERJALAN",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.1111",
    "jenis_entry": "Resistance"
   },
