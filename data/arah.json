@@ -3,7 +3,7 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 3870.2,
+ "harga": 3883.7,
  "dibuat_utc": "2026-11-10T20:25:00Z",
  "aktif_sampai_utc": "2026-11-12T20:00:00Z",
  "dibuat_wib": "11 Nov 2026 03:25",
@@ -50,7 +50,7 @@
   "konfirmasi_alt": 4082.2,
   "target_alt": 4149.0
  },
- "status_lama": "LAGI BERJALAN",
- "diperbarui_utc": "2026-11-12T16:04Z",
+ "status_lama": "SELESAI",
+ "diperbarui_utc": "2026-11-12T20:03Z",
  "status_teks": "Target skenario utama 3881.9 tercapai (D1 12 Nov)."
 }

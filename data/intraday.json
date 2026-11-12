@@ -3,34 +3,34 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 3868.8,
- "data_sampai_wib": "12 Nov 2026 23:00",
- "data_sampai_oslo": "12 Nov 2026 17:00",
- "dibuat_utc": "2026-11-12T12:00:00Z",
- "aktif_sampai_utc": "2026-11-12T20:00:00Z",
- "dibuat_wib": "12 Nov 2026 19:00",
- "dibuat_oslo": "12 Nov 2026 13:00",
- "aktif_sampai_wib": "13 Nov 2026 03:00",
- "aktif_sampai_oslo": "12 Nov 2026 21:00",
+ "harga": 3883.7,
+ "data_sampai_wib": "13 Nov 2026 03:00",
+ "data_sampai_oslo": "12 Nov 2026 21:00",
+ "dibuat_utc": "2026-11-12T20:00:00Z",
+ "aktif_sampai_utc": "2026-11-13T04:00:00Z",
+ "dibuat_wib": "13 Nov 2026 03:00",
+ "dibuat_oslo": "12 Nov 2026 21:00",
+ "aktif_sampai_wib": "13 Nov 2026 11:00",
+ "aktif_sampai_oslo": "13 Nov 2026 05:00",
  "status": "MENUNGGU",
  "teks": [
   "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -14.30 (membesar dari -13.70)",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -19.40 (membesar dari -18.70)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  4166.3,
-  4050.8,
-  3935.2
+  4179.4,
+  4028.7,
+  3878.0
  ],
  "fibonacci": [
-  3960.9,
-  3983.6
+  3903.6,
+  3934.7
  ],
  "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-12T16:04:00Z",
+ "diperbarui_utc": "2026-11-12T20:03:00Z",
  "status_lama": "MENUNGGU"
 }
