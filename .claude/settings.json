@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(WA_KEY=* python3 /mnt/project-files/wa-vip/kirim_signal.py:*)",
+      "Bash(python3 /mnt/project-files/wa-vip/kirim_signal.py:*)"
+    ]
+  }
+}
