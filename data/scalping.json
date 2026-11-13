@@ -3,44 +3,44 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3895.4,
- "data_sampai_wib": "13 Nov 2026 19:00",
- "data_sampai_oslo": "13 Nov 2026 13:00",
- "dibuat_utc": "2026-11-13T12:00:00Z",
- "aktif_sampai_utc": "2026-11-13T14:00:00Z",
- "dibuat_wib": "13 Nov 2026 19:00",
- "dibuat_oslo": "13 Nov 2026 13:00",
- "aktif_sampai_wib": "13 Nov 2026 21:00",
- "aktif_sampai_oslo": "13 Nov 2026 15:00",
+ "harga": 3873.8,
+ "data_sampai_wib": "13 Nov 2026 23:00",
+ "data_sampai_oslo": "13 Nov 2026 17:00",
+ "dibuat_utc": "2026-11-13T16:00:00Z",
+ "aktif_sampai_utc": "2026-11-13T18:00:00Z",
+ "dibuat_wib": "13 Nov 2026 23:00",
+ "dibuat_oslo": "13 Nov 2026 17:00",
+ "aktif_sampai_wib": "14 Nov 2026 01:00",
+ "aktif_sampai_oslo": "13 Nov 2026 19:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3895.4, 32 poin dari Entry 2 (SELL). Stochastic M5 72, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Harga 3873.8, 50 poin dari Entry 2 (SELL). Stochastic M5 14, Heikin Ashi M5 merah. Tunggu sinyal di zona."
  ],
  "bias": "NETRAL",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +3.80 (mengecil dari +4.30)",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +1.10 (mengecil dari +2.30)",
  "kondisi": "Squeeze",
  "indikator_utama": "Stochastic",
  "bollinger": [
   3920.9,
-  3893.0,
-  3865.1
+  3893.9,
+  3867.0
  ],
  "fibonacci": [
-  3913.4,
-  3907.0
+  3882.4,
+  3889.9
  ],
  "entries": [
   {
    "n": 2,
    "side": "SELL",
    "zona": [
-    3923.9,
-    3929.9
+    3921.3,
+    3927.3
    ],
-   "entry": 3926.9,
-   "sl": 3939.9,
-   "tp1": 3920.2,
-   "tp2": 3913.4,
+   "entry": 3924.3,
+   "sl": 3937.3,
+   "tp1": 3907.1,
+   "tp2": 3889.9,
    "alasan": [
     "swing ekstrem 12 candle H1",
     "Bollinger H1 atas 3920.9",
@@ -55,6 +55,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-13T12:04:00Z",
+ "diperbarui_utc": "2026-11-13T16:04:00Z",
  "status_lama": "MENUNGGU"
 }
