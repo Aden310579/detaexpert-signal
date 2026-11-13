@@ -3,58 +3,34 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3873.8,
- "data_sampai_wib": "13 Nov 2026 23:00",
- "data_sampai_oslo": "13 Nov 2026 17:00",
- "dibuat_utc": "2026-11-13T16:00:00Z",
- "aktif_sampai_utc": "2026-11-13T18:00:00Z",
- "dibuat_wib": "13 Nov 2026 23:00",
- "dibuat_oslo": "13 Nov 2026 17:00",
- "aktif_sampai_wib": "14 Nov 2026 01:00",
- "aktif_sampai_oslo": "13 Nov 2026 19:00",
+ "harga": 3885.8,
+ "data_sampai_wib": "14 Nov 2026 01:00",
+ "data_sampai_oslo": "13 Nov 2026 19:00",
+ "dibuat_utc": "2026-11-13T18:00:00Z",
+ "aktif_sampai_utc": "2026-11-13T20:00:00Z",
+ "dibuat_wib": "14 Nov 2026 01:00",
+ "dibuat_oslo": "13 Nov 2026 19:00",
+ "aktif_sampai_wib": "14 Nov 2026 03:00",
+ "aktif_sampai_oslo": "13 Nov 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3873.8, 50 poin dari Entry 2 (SELL). Stochastic M5 14, Heikin Ashi M5 merah. Tunggu sinyal di zona."
+  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
- "bias": "NETRAL",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +1.10 (mengecil dari +2.30)",
+ "bias": "NAIK",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +1.10 (membesar dari +0.90)",
  "kondisi": "Squeeze",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  3920.9,
-  3893.9,
-  3867.0
+  3920.1,
+  3894.6,
+  3869.0
  ],
  "fibonacci": [
-  3882.4,
-  3889.9
+  3877.3,
+  3882.7
  ],
- "entries": [
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    3921.3,
-    3927.3
-   ],
-   "entry": 3924.3,
-   "sl": 3937.3,
-   "tp1": 3907.1,
-   "tp2": 3889.9,
-   "alasan": [
-    "swing ekstrem 12 candle H1",
-    "Bollinger H1 atas 3920.9",
-    "swing H1 sebelumnya 3923.9",
-    "angka bulat 3925"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Lawan arah"
-  }
- ],
+ "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-13T16:04:00Z",
+ "diperbarui_utc": "2026-11-13T18:04:00Z",
  "status_lama": "MENUNGGU"
 }
