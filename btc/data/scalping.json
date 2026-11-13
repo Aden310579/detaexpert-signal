@@ -3,49 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 68640,
- "data_sampai_wib": "14 Nov 2026 04:05",
- "data_sampai_oslo": "13 Nov 2026 22:05",
- "dibuat_utc": "2026-11-13T21:05:00Z",
- "aktif_sampai_utc": "2026-11-13T23:00:00Z",
- "dibuat_wib": "14 Nov 2026 04:05",
- "dibuat_oslo": "13 Nov 2026 22:05",
- "aktif_sampai_wib": "14 Nov 2026 06:00",
- "aktif_sampai_oslo": "14 Nov 2026 00:00",
+ "harga": 68080,
+ "data_sampai_wib": "14 Nov 2026 06:05",
+ "data_sampai_oslo": "14 Nov 2026 00:05",
+ "dibuat_utc": "2026-11-13T23:05:00Z",
+ "aktif_sampai_utc": "2026-11-14T01:00:00Z",
+ "dibuat_wib": "14 Nov 2026 06:05",
+ "dibuat_oslo": "14 Nov 2026 00:05",
+ "aktif_sampai_wib": "14 Nov 2026 08:00",
+ "aktif_sampai_oslo": "14 Nov 2026 02:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist 16 → −7 · H4 HA merah, hist −338 · Stoch M15 40 · ATR 162",
+ "bias_teks": "M15 HA merah, hist −51 → −56 · H4 HA merah, hist −374 · Stoch M15 24 · ATR 252",
  "bias_label": "M15",
- "kondisi": "Squeeze",
+ "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-13T21:06:22Z",
+ "diperbarui_utc": "2026-11-13T23:08:02Z",
  "teks": [
-  "Analisa 02:05 selesai · tanpa entry",
-  "Analisa 02:05 tanpa zona entry (tidak ada posisi).",
-  "Harga turun dari 69.118 (03:15) ke 68.627 (04:00)."
+  "Analisa 04:05 selesai · tanpa entry",
+  "SELL 68.740–68.820 tersentuh 04:05 (high 68.749), Stoch M5 15 → tanpa sinyal.",
+  "Harga lanjut turun ke 67.980 (05:15)."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    68740,
-    68820
+    67945,
+    68025
    ],
-   "entry": 68780,
-   "sl": 68920,
-   "tp1": 68650,
-   "tp2": 68500,
+   "entry": 67985,
+   "sl": 67845,
+   "tp1": 68120,
+   "tp2": 68249,
    "alasan": [
-    "Fib 0.236 68.744",
-    "bulat 68.750",
-    "Fib 0.382 68.817"
+    "BB bawah M15 67.973",
+    "swing 67.980",
+    "bulat 68.000"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": false,
+   "lawan_arah": true,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback searah"
+   "jenis_entry": "Pantulan bawah"
   }
  ]
 }
