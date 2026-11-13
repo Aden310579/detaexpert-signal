@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 68852,
- "data_sampai_wib": "13 Nov 2026 16:05",
- "data_sampai_oslo": "13 Nov 2026 10:05",
- "dibuat_utc": "2026-11-13T09:05:00Z",
- "aktif_sampai_utc": "2026-11-13T11:00:00Z",
- "dibuat_wib": "13 Nov 2026 16:05",
- "dibuat_oslo": "13 Nov 2026 10:05",
- "aktif_sampai_wib": "13 Nov 2026 18:00",
- "aktif_sampai_oslo": "13 Nov 2026 12:00",
+ "harga": 69308,
+ "data_sampai_wib": "13 Nov 2026 18:05",
+ "data_sampai_oslo": "13 Nov 2026 12:05",
+ "dibuat_utc": "2026-11-13T11:05:00Z",
+ "aktif_sampai_utc": "2026-11-13T13:00:00Z",
+ "dibuat_wib": "13 Nov 2026 18:05",
+ "dibuat_oslo": "13 Nov 2026 12:05",
+ "aktif_sampai_wib": "13 Nov 2026 20:00",
+ "aktif_sampai_oslo": "13 Nov 2026 14:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist 92 → 96 · H4 HA merah, hist −473 · Stoch M15 67 · ATR 353",
+ "bias_teks": "M15 HA biru, hist 132 → 121 (mengecil) · H4 HA merah, hist −444 · Stoch M15 82 · ATR 205",
  "bias_label": "M15",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-13T09:08:37Z",
+ "diperbarui_utc": "2026-11-13T11:06:32Z",
  "teks": [
-  "Analisa 14:05 selesai · tanpa entry",
-  "Analisa 14:05 tanpa zona entry. Harga sideways 68.516–69.229.",
-  "Belum ada posisi terbuka · 2 zona baru: SELL di atas, BUY di bawah."
+  "Analisa 16:05 selesai · tanpa entry",
+  "SELL 69.120–69.200: sinyal di luar zona; M15 close 69.416 > 69.300 → batal.",
+  "BUY 68.240–68.320 tidak tersentuh (low 68.667)."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    69120,
-    69200
+    69448,
+    69528
    ],
-   "entry": 69160,
-   "sl": 69300,
-   "tp1": 69020,
-   "tp2": 68280,
+   "entry": 69488,
+   "sl": 69628,
+   "tp1": 69350,
+   "tp2": 68508,
    "alasan": [
-    "Fib 0.236 69.122",
-    "swing 69.146",
-    "BB atas M15 69.196"
+    "BB atas M15 69.477",
+    "swing 69.496",
+    "bulat 69.500"
    ],
    "state": "tunggu",
    "info": "",
@@ -51,17 +51,17 @@
    "n": 2,
    "side": "BUY",
    "zona": [
-    68240,
-    68320
+    68468,
+    68548
    ],
-   "entry": 68280,
-   "sl": 68140,
-   "tp1": 68420,
-   "tp2": 69160,
+   "entry": 68508,
+   "sl": 68368,
+   "tp1": 68650,
+   "tp2": 69488,
    "alasan": [
-    "bulat 68.250",
-    "BB bawah M15 68.284",
-    "swing 68.307 / 68.316"
+    "bulat 68.500",
+    "BB bawah M15 68.514",
+    "swing 68.516 / 68.528"
    ],
    "state": "tunggu",
    "info": "",
