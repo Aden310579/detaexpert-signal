@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.10604,
- "data_sampai_wib": "13 Nov 2026 11:05",
- "data_sampai_oslo": "13 Nov 2026 05:05",
+ "harga": 1.10599,
+ "data_sampai_wib": "13 Nov 2026 12:10",
+ "data_sampai_oslo": "13 Nov 2026 06:10",
  "dibuat_utc": "2026-11-12T23:05:00Z",
  "aktif_sampai_utc": "2026-11-13T01:00:00Z",
  "dibuat_wib": "13 Nov 2026 06:05",
  "dibuat_oslo": "13 Nov 2026 00:05",
  "aktif_sampai_wib": "13 Nov 2026 08:00",
  "aktif_sampai_oslo": "13 Nov 2026 02:00",
- "diperbarui_utc": "2026-11-13T04:06:28Z",
+ "diperbarui_utc": "2026-11-13T05:07:31Z",
  "status": "ENTRY 2 HOLD",
  "bias": "NAIK",
- "bias_teks": "M15 & H1 HA biru · Stoch M15 70 · H1 bias naik · M5 sideways",
+ "bias_teks": "M15 & H1 HA biru · H1 Stoch 50 naik · M5 sideways · H4 turun",
  "bias_label": "M15",
  "kondisi": "Naik",
  "indikator_utama": "Stochastic",
  "teks": [
   "Buy 1.1048 HOLD · TP1 +8 pip sudah aman",
-  "High 1.1064, TP2 1.1068 kurang 4 pip. SL sisa di entry 1.1048 (impas).",
-  "Tahan sisa ke TP2 1.1068. Jangan buka entry baru dulu."
+  "Harga tertahan 1.1057–64 selama 2 jam. TP2 1.1068 belum kena.",
+  "SL sisa di entry 1.1048 (impas). Tahan ke TP2, jangan entry baru dulu."
  ],
  "entries": [
   {
