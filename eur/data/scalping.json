@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.10345,
- "data_sampai_wib": "14 Nov 2026 00:05",
- "data_sampai_oslo": "13 Nov 2026 18:05",
+ "harga": 1.10276,
+ "data_sampai_wib": "14 Nov 2026 02:05",
+ "data_sampai_oslo": "13 Nov 2026 20:05",
  "dibuat_utc": "2026-11-13T17:05:00Z",
  "aktif_sampai_utc": "2026-11-13T19:00:00Z",
  "dibuat_wib": "14 Nov 2026 00:05",
  "dibuat_oslo": "13 Nov 2026 18:05",
  "aktif_sampai_wib": "14 Nov 2026 02:00",
  "aktif_sampai_oslo": "13 Nov 2026 20:00",
- "diperbarui_utc": "2026-11-13T17:06:07Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-13T19:06:54Z",
+ "status": "ENTRY 2 BERJALAN",
  "bias": "TURUN",
- "bias_teks": "H1 turun · M15 Stoch 20 jenuh jual · M5 HA biru pantul · H4 turun kuat",
+ "bias_teks": "M15 & H1 turun · Stoch H1 5 & M5 9 sangat jenuh jual · M5 squeeze",
  "bias_label": "M15",
  "kondisi": "Turun · jenuh jual",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana 22:05 habis tanpa entry · rencana baru",
-  "Euro jatuh 1.1057 → 1.1026 tanpa sinyal entry. Sekarang tertahan 1.1026–37.",
-  "Sell pantulan 1.1040–44, buy di 1.1026–30 (low + PRZ D1)."
+  "Buy 1.1028 BERJALAN · impas (0 pip)",
+  "Entry 01:05 WIB. High 1.1035, TP1 1.1036 belum kena. Low 1.1027, SL 1.1020 aman.",
+  "Tahan: di TP1 tutup setengah, SL ke entry. Jangan entry baru dulu."
  ],
  "entries": [
   {
@@ -41,8 +41,8 @@
     "Fib 0.382 M15 1.1039",
     "bekas low 1.1043"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.1051",
    "jenis_entry": "Pullback"
   },
@@ -62,8 +62,8 @@
     "BB bawah M15 1.1025",
     "PRZ D1 1.1022–31"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.1019",
    "jenis_entry": "Support"
   },
@@ -83,8 +83,8 @@
     "Fib 0.382 H1 1.1044",
     "zona sell intraday 1.1044–50"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.1057",
    "jenis_entry": "Resistance"
   }
