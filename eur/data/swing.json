@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 1.10506,
- "data_sampai_wib": "13 Nov 2026 08:05",
- "data_sampai_oslo": "13 Nov 2026 02:05",
+ "harga": 1.10604,
+ "data_sampai_wib": "13 Nov 2026 10:05",
+ "data_sampai_oslo": "13 Nov 2026 04:05",
  "dibuat_utc": "2026-11-12T00:20:00Z",
  "aktif_sampai_utc": "2026-11-14T00:00:00Z",
  "dibuat_wib": "12 Nov 2026 07:20",
  "dibuat_oslo": "12 Nov 2026 01:20",
  "aktif_sampai_wib": "14 Nov 2026 07:00",
  "aktif_sampai_oslo": "14 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-13T01:06:16Z",
- "status": "SIAP ENTRY",
+ "diperbarui_utc": "2026-11-13T03:06:36Z",
+ "status": "ENTRY 2 BERJALAN",
  "bias": "TURUN",
  "bias_teks": "Close D1 di bawah BB bawah 1.1086 · RSI D1 34 · Stoch H4 4 jenuh jual · ATR D1 68 pip",
  "bias_label": "D1",
  "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · buy 1.1035–50 SIAP ENTRY",
-  "Close D1 12 Nov 1.1051 (−44 pip), low 1.1046 masuk zona buy, sinyal belum ada.",
-  "Buy hanya jika Stoch H4 <20 naik + HA biru. Sell tunggu pantulan 1.1128–43."
+  "Buy 1.10425 BERJALAN · +18 pip",
+  "Sinyal buy muncul 07:15 WIB di zona 1.1035–50. SL 1.0990, TP1 1.1092.",
+  "Tahan selama D1 belum close < 1.0990. Di TP1 tutup setengah, SL ke entry."
  ],
  "entries": [
   {
@@ -62,8 +62,8 @@
     "angka bulat 1.1050",
     "1 ATR D1 di bawah close 1.1095"
    ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.0990",
    "jenis_entry": "Ekstensi"
   },
