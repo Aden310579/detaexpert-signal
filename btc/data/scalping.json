@@ -3,71 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 69308,
- "data_sampai_wib": "13 Nov 2026 18:05",
- "data_sampai_oslo": "13 Nov 2026 12:05",
- "dibuat_utc": "2026-11-13T11:05:00Z",
- "aktif_sampai_utc": "2026-11-13T13:00:00Z",
- "dibuat_wib": "13 Nov 2026 18:05",
- "dibuat_oslo": "13 Nov 2026 12:05",
- "aktif_sampai_wib": "13 Nov 2026 20:00",
- "aktif_sampai_oslo": "13 Nov 2026 14:00",
+ "harga": 68810,
+ "data_sampai_wib": "13 Nov 2026 22:05",
+ "data_sampai_oslo": "13 Nov 2026 16:05",
+ "dibuat_utc": "2026-11-13T15:05:00Z",
+ "aktif_sampai_utc": "2026-11-13T17:00:00Z",
+ "dibuat_wib": "13 Nov 2026 22:05",
+ "dibuat_oslo": "13 Nov 2026 16:05",
+ "aktif_sampai_wib": "14 Nov 2026 00:00",
+ "aktif_sampai_oslo": "13 Nov 2026 18:00",
  "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist 132 → 121 (mengecil) · H4 HA merah, hist −444 · Stoch M15 82 · ATR 205",
+ "bias": "TURUN",
+ "bias_teks": "M15 HA merah, hist −23 → −48 · H4 HA merah, hist −434 · Stoch M15 12 · ATR 326",
  "bias_label": "M15",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-13T11:06:32Z",
+ "diperbarui_utc": "2026-11-13T15:06:31Z",
  "teks": [
-  "Analisa 16:05 selesai · tanpa entry",
-  "SELL 69.120–69.200: sinyal di luar zona; M15 close 69.416 > 69.300 → batal.",
-  "BUY 68.240–68.320 tidak tersentuh (low 68.667)."
+  "Analisa 18:05 selesai · tanpa entry",
+  "SELL 69.448–69.528 tersentuh (high 69.509), Stoch M5 maks 65 → tanpa sinyal.",
+  "BUY 68.468–68.548 tidak tersentuh. Lalu spike 70.214 (20:35) → turun 68.719."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    69448,
-    69528
+    68995,
+    69075
    ],
-   "entry": 69488,
-   "sl": 69628,
-   "tp1": 69350,
-   "tp2": 68508,
+   "entry": 69035,
+   "sl": 69175,
+   "tp1": 68900,
+   "tp2": 68720,
    "alasan": [
-    "BB atas M15 69.477",
-    "swing 69.496",
-    "bulat 69.500"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan atas"
-  },
-  {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    68468,
-    68548
-   ],
-   "entry": 68508,
-   "sl": 68368,
-   "tp1": 68650,
-   "tp2": 69488,
-   "alasan": [
-    "bulat 68.500",
-    "BB bawah M15 68.514",
-    "swing 68.516 / 68.528"
+    "bulat 69.000",
+    "swing 69.068",
+    "Fib 0.236 69.072"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
    "jenis_entry": "Pullback searah"
+  },
+  {
+   "n": 2,
+   "side": "SELL",
+   "zona": [
+    69228,
+    69308
+   ],
+   "entry": 69268,
+   "sl": 69408,
+   "tp1": 69130,
+   "tp2": 69035,
+   "alasan": [
+    "bulat 69.250",
+    "BB tengah M15 69.289",
+    "Fib 0.382 69.290"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pullback dalam"
   }
  ]
 }
