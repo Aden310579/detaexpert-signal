@@ -3,26 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 65228,
- "data_sampai_wib": "15 Nov 2026 00:05",
- "data_sampai_oslo": "14 Nov 2026 18:05",
- "dibuat_utc": "2026-11-14T17:05:00Z",
- "aktif_sampai_utc": "2026-11-14T19:00:00Z",
- "dibuat_wib": "15 Nov 2026 00:05",
- "dibuat_oslo": "14 Nov 2026 18:05",
- "aktif_sampai_wib": "15 Nov 2026 02:00",
- "aktif_sampai_oslo": "14 Nov 2026 20:00",
+ "harga": 65629,
+ "data_sampai_wib": "15 Nov 2026 02:05",
+ "data_sampai_oslo": "14 Nov 2026 20:05",
+ "dibuat_utc": "2026-11-14T19:05:00Z",
+ "aktif_sampai_utc": "2026-11-14T21:00:00Z",
+ "dibuat_wib": "15 Nov 2026 02:05",
+ "dibuat_oslo": "14 Nov 2026 20:05",
+ "aktif_sampai_wib": "15 Nov 2026 04:00",
+ "aktif_sampai_oslo": "14 Nov 2026 22:00",
  "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist −71 → −60 · H4 HA merah, hist −367 → −384 · Stoch M15 15 · ATR 480",
+ "bias": "NETRAL",
+ "bias_teks": "M15 HA merah, hist 75 → 67 · H4 HA merah, hist −367 → −358 (mengecil) · Stoch M15 56 · ATR 399",
  "bias_label": "M15",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-14T17:07:37Z",
+ "diperbarui_utc": "2026-11-14T19:07:42Z",
  "teks": [
-  "Analisa 22:05 selesai · tanpa entry",
-  "Analisa 22:05 tanpa zona entry (tidak ada posisi).",
-  "Range 22:00–00:00: 65.000–66.047, low 65.000 (23:45)."
+  "Analisa 00:05 selesai · tanpa entry",
+  "Analisa 00:05 tanpa zona entry (tidak ada posisi).",
+  "Range 00:00–02:00: 65.070–66.190, harga kembali ke 65.629."
  ],
- "entries": []
+ "entries": [
+  {
+   "n": 1,
+   "side": "SELL",
+   "zona": [
+    66187,
+    66267
+   ],
+   "entry": 66227,
+   "sl": 66367,
+   "tp1": 66100,
+   "tp2": 65910,
+   "alasan": [
+    "swing 66.190",
+    "bulat 66.250",
+    "BB atas M15 66.264"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan atas"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    64997,
+    65077
+   ],
+   "entry": 65037,
+   "sl": 64897,
+   "tp1": 65170,
+   "tp2": 65250,
+   "alasan": [
+    "swing 65.000 / 65.067",
+    "bulat 65.000",
+    "BB bawah M15 65.071"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan bawah"
+  }
+ ]
 }
