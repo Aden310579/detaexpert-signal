@@ -3,42 +3,64 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 67080,
- "data_sampai_wib": "14 Nov 2026 16:05",
- "data_sampai_oslo": "14 Nov 2026 10:05",
- "dibuat_utc": "2026-11-14T09:05:00Z",
- "aktif_sampai_utc": "2026-11-14T11:00:00Z",
- "dibuat_wib": "14 Nov 2026 16:05",
- "dibuat_oslo": "14 Nov 2026 10:05",
- "aktif_sampai_wib": "14 Nov 2026 18:00",
- "aktif_sampai_oslo": "14 Nov 2026 12:00",
+ "harga": 67239,
+ "data_sampai_wib": "14 Nov 2026 18:05",
+ "data_sampai_oslo": "14 Nov 2026 12:05",
+ "dibuat_utc": "2026-11-14T11:05:00Z",
+ "aktif_sampai_utc": "2026-11-14T13:00:00Z",
+ "dibuat_wib": "14 Nov 2026 18:05",
+ "dibuat_oslo": "14 Nov 2026 12:05",
+ "aktif_sampai_wib": "14 Nov 2026 20:00",
+ "aktif_sampai_oslo": "14 Nov 2026 14:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "M15 HA merah, hist 29 → 25 · H4 HA merah, hist −393 → −349 · Stoch M15 38 · ATR 217",
+ "bias": "NAIK",
+ "bias_teks": "M15 HA biru, hist 42 → 37 · H4 HA merah, hist −393 → −339 (mengecil) · Stoch M15 56 · ATR 192",
  "bias_label": "M15",
  "kondisi": "Squeeze",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-14T09:08:02Z",
+ "diperbarui_utc": "2026-11-14T11:07:59Z",
  "teks": [
-  "Analisa 14:05 selesai · tanpa entry",
-  "BUY 67.191–67.271 tersentuh 14:15, Stoch M5 55 dan HA merah.",
-  "Batal: close 67.072 < 67.091 (14:35) tanpa sinyal, low 66.967."
+  "Analisa 16:05 selesai · tanpa entry",
+  "SELL 67.440–67.520 tersentuh 16:45 (high 67.523), SL tidak kena.",
+  "Sinyal 17:05 (Stoch 80→71, HA merah) close 67.300 di luar zona: dilewati."
  ],
  "entries": [
   {
    "n": 1,
+   "side": "BUY",
+   "zona": [
+    66974,
+    67054
+   ],
+   "entry": 67014,
+   "sl": 66874,
+   "tp1": 67140,
+   "tp2": 67250,
+   "alasan": [
+    "swing 66.967 / 67.005",
+    "bulat 67.000",
+    "BB bawah M15 67.025"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan bawah"
+  },
+  {
+   "n": 2,
    "side": "SELL",
    "zona": [
-    67440,
-    67520
+    67439,
+    67519
    ],
-   "entry": 67480,
+   "entry": 67479,
    "sl": 67620,
    "tp1": 67350,
-   "tp2": 67180,
+   "tp2": 67250,
    "alasan": [
-    "swing 67.460",
-    "BB atas M15 67.470",
+    "BB atas M15 67.457",
+    "swing 67.460 / 67.523",
     "bulat 67.500"
    ],
    "state": "tunggu",
