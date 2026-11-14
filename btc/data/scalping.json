@@ -3,50 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 67443,
- "data_sampai_wib": "14 Nov 2026 14:05",
- "data_sampai_oslo": "14 Nov 2026 08:05",
- "dibuat_utc": "2026-11-14T07:05:00Z",
- "aktif_sampai_utc": "2026-11-14T09:00:00Z",
- "dibuat_wib": "14 Nov 2026 14:05",
- "dibuat_oslo": "14 Nov 2026 08:05",
- "aktif_sampai_wib": "14 Nov 2026 16:00",
- "aktif_sampai_oslo": "14 Nov 2026 10:00",
+ "harga": 67080,
+ "data_sampai_wib": "14 Nov 2026 16:05",
+ "data_sampai_oslo": "14 Nov 2026 10:05",
+ "dibuat_utc": "2026-11-14T09:05:00Z",
+ "aktif_sampai_utc": "2026-11-14T11:00:00Z",
+ "dibuat_wib": "14 Nov 2026 16:05",
+ "dibuat_oslo": "14 Nov 2026 10:05",
+ "aktif_sampai_wib": "14 Nov 2026 18:00",
+ "aktif_sampai_oslo": "14 Nov 2026 12:00",
  "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist 81 → 89 · H4 HA merah, hist −418 → −376 (mengecil) · Stoch M15 90 · ATR 286",
+ "bias": "NETRAL",
+ "bias_teks": "M15 HA merah, hist 29 → 25 · H4 HA merah, hist −393 → −349 · Stoch M15 38 · ATR 217",
  "bias_label": "M15",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-14T07:07:43Z",
+ "kondisi": "Squeeze",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-11-14T09:08:02Z",
  "teks": [
-  "Analisa 12:05 selesai · tanpa entry",
-  "Analisa 12:05 tanpa zona entry (tidak ada posisi).",
-  "Harga naik dari low 66.809 (12:40) ke 67.449 (14:05)."
+  "Analisa 14:05 selesai · tanpa entry",
+  "BUY 67.191–67.271 tersentuh 14:15, Stoch M5 55 dan HA merah.",
+  "Batal: close 67.072 < 67.091 (14:35) tanpa sinyal, low 66.967."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    67191,
-    67271
+    67440,
+    67520
    ],
-   "entry": 67231,
-   "sl": 67091,
-   "tp1": 67360,
-   "tp2": 67450,
+   "entry": 67480,
+   "sl": 67620,
+   "tp1": 67350,
+   "tp2": 67180,
    "alasan": [
-    "BB tengah M15 67.198",
-    "Fib 0.236 67.234",
-    "bulat 67.250",
-    "swing 67.266"
+    "swing 67.460",
+    "BB atas M15 67.470",
+    "bulat 67.500"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": true,
+   "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback"
+   "jenis_entry": "Pantulan atas"
   }
  ]
 }
