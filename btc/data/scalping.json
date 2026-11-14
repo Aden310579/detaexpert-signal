@@ -3,26 +3,50 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 66980,
- "data_sampai_wib": "14 Nov 2026 12:05",
- "data_sampai_oslo": "14 Nov 2026 06:05",
- "dibuat_utc": "2026-11-14T05:05:00Z",
- "aktif_sampai_utc": "2026-11-14T07:00:00Z",
- "dibuat_wib": "14 Nov 2026 12:05",
- "dibuat_oslo": "14 Nov 2026 06:05",
- "aktif_sampai_wib": "14 Nov 2026 14:00",
- "aktif_sampai_oslo": "14 Nov 2026 08:00",
+ "harga": 67443,
+ "data_sampai_wib": "14 Nov 2026 14:05",
+ "data_sampai_oslo": "14 Nov 2026 08:05",
+ "dibuat_utc": "2026-11-14T07:05:00Z",
+ "aktif_sampai_utc": "2026-11-14T09:00:00Z",
+ "dibuat_wib": "14 Nov 2026 14:05",
+ "dibuat_oslo": "14 Nov 2026 08:05",
+ "aktif_sampai_wib": "14 Nov 2026 16:00",
+ "aktif_sampai_oslo": "14 Nov 2026 10:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "M15 HA biru, hist −51 → −34 · H4 HA merah, hist −418 → −405 · Stoch M15 31 · ATR 438",
+ "bias": "NAIK",
+ "bias_teks": "M15 HA biru, hist 81 → 89 · H4 HA merah, hist −418 → −376 (mengecil) · Stoch M15 90 · ATR 286",
  "bias_label": "M15",
- "kondisi": "Trending",
- "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-14T05:07:56Z",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
+ "diperbarui_utc": "2026-11-14T07:07:43Z",
  "teks": [
-  "Analisa 10:05 selesai · tanpa entry",
-  "BUY 67.455–67.535 tersentuh 10:10, Stoch M5 51 dan HA merah.",
-  "Harga tembus SL 67.355 tanpa sinyal (10:15), low 66.456 (11:10)."
+  "Analisa 12:05 selesai · tanpa entry",
+  "Analisa 12:05 tanpa zona entry (tidak ada posisi).",
+  "Harga naik dari low 66.809 (12:40) ke 67.449 (14:05)."
  ],
- "entries": []
+ "entries": [
+  {
+   "n": 1,
+   "side": "BUY",
+   "zona": [
+    67191,
+    67271
+   ],
+   "entry": 67231,
+   "sl": 67091,
+   "tp1": 67360,
+   "tp2": 67450,
+   "alasan": [
+    "BB tengah M15 67.198",
+    "Fib 0.236 67.234",
+    "bulat 67.250",
+    "swing 67.266"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": true,
+   "masuk_lagi": false,
+   "jenis_entry": "Pullback"
+  }
+ ]
 }
