@@ -3,49 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 67692,
- "data_sampai_wib": "14 Nov 2026 10:05",
- "data_sampai_oslo": "14 Nov 2026 04:05",
- "dibuat_utc": "2026-11-14T03:05:00Z",
- "aktif_sampai_utc": "2026-11-14T05:00:00Z",
- "dibuat_wib": "14 Nov 2026 10:05",
- "dibuat_oslo": "14 Nov 2026 04:05",
- "aktif_sampai_wib": "14 Nov 2026 12:00",
- "aktif_sampai_oslo": "14 Nov 2026 06:00",
+ "harga": 66980,
+ "data_sampai_wib": "14 Nov 2026 12:05",
+ "data_sampai_oslo": "14 Nov 2026 06:05",
+ "dibuat_utc": "2026-11-14T05:05:00Z",
+ "aktif_sampai_utc": "2026-11-14T07:00:00Z",
+ "dibuat_wib": "14 Nov 2026 12:05",
+ "dibuat_oslo": "14 Nov 2026 06:05",
+ "aktif_sampai_wib": "14 Nov 2026 14:00",
+ "aktif_sampai_oslo": "14 Nov 2026 08:00",
  "status": "MENUNGGU",
  "bias": "NETRAL",
- "bias_teks": "M15 HA biru, hist −60 → −53 · H4 HA merah, hist −358 · Stoch M15 46 · ATR 291",
+ "bias_teks": "M15 HA biru, hist −51 → −34 · H4 HA merah, hist −418 → −405 · Stoch M15 31 · ATR 438",
  "bias_label": "M15",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-14T03:06:03Z",
+ "kondisi": "Trending",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-11-14T05:07:56Z",
  "teks": [
-  "Analisa 08:05 selesai · tanpa entry",
-  "BUY 67.955–68.035 tersentuh 09:20, Stoch M5 9 tapi HA merah.",
-  "Harga tembus SL 67.855 tanpa sinyal, low 66.915 (09:25)."
+  "Analisa 10:05 selesai · tanpa entry",
+  "BUY 67.455–67.535 tersentuh 10:10, Stoch M5 51 dan HA merah.",
+  "Harga tembus SL 67.355 tanpa sinyal (10:15), low 66.456 (11:10)."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "BUY",
-   "zona": [
-    67455,
-    67535
-   ],
-   "entry": 67495,
-   "sl": 67355,
-   "tp1": 67620,
-   "tp2": 67800,
-   "alasan": [
-    "BB bawah M15 67.488",
-    "Fib 0.382 67.493",
-    "bulat 67.500"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
-  }
- ]
+ "entries": []
 }
