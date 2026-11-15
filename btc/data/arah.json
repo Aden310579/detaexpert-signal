@@ -3,45 +3,45 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 68317,
- "data_sampai_wib": "14 Nov 2026 07:20",
- "data_sampai_oslo": "14 Nov 2026 01:20",
- "dibuat_utc": "2026-11-14T00:20:00Z",
+ "harga": 64307,
+ "data_sampai_wib": "15 Nov 2026 07:15",
+ "data_sampai_oslo": "15 Nov 2026 01:15",
+ "dibuat_utc": "2026-11-15T00:20:00Z",
  "aktif_sampai_utc": "2026-11-16T00:00:00Z",
- "dibuat_wib": "14 Nov 2026 07:20",
- "dibuat_oslo": "14 Nov 2026 01:20",
+ "dibuat_wib": "15 Nov 2026 07:20",
+ "dibuat_oslo": "15 Nov 2026 01:20",
  "aktif_sampai_wib": "16 Nov 2026 07:00",
  "aktif_sampai_oslo": "16 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "D1 13 Nov close 68.314 (−3.146) · histogram MACD D1 −484 → −720 · Stoch D1 8",
+ "bias_teks": "D1 14 Nov close 64.150 (−4.164) · histogram MACD D1 −720 → −1.079 · Stoch D1 5",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-14T00:22:05Z",
+ "diperbarui_utc": "2026-11-15T00:21:35Z",
  "teks": [
-  "Lanjut turun ke angka bulat 67.000",
-  "Pantul naik ke Fib 0.236 = 70.784"
+  "Lanjut turun ke PRZ 62.638",
+  "Pantul naik ke Fib 0.236 = 67.539"
  ],
  "skenario": {
   "utama": {
-   "judul": "Lanjut turun ke angka bulat 67.000",
-   "target": "67.000",
-   "konfirmasi": "D1 close di bawah 67.568 + HA merah",
+   "judul": "Lanjut turun ke PRZ 62.638",
+   "target": "62.638",
+   "konfirmasi": "D1 close di bawah 63.320 + HA merah",
    "poin": [
-    "Target 70.000 kemarin tercapai (low 67.568).",
-    "D1 close 68.314, di bawah BB bawah 70.321.",
-    "MACD D1 −720, makin negatif."
+    "Target 67.000 kemarin tercapai (low 63.320).",
+    "D1 close 64.150, di bawah BB bawah 67.697.",
+    "MACD D1 −1.079, makin negatif."
    ]
   },
   "alternatif": {
-   "judul": "Pantul naik ke Fib 0.236 = 70.784",
-   "target": "70.784",
-   "konfirmasi": "HA D1 biru + close di atas 69.000",
+   "judul": "Pantul naik ke Fib 0.236 = 67.539",
+   "target": "67.539",
+   "konfirmasi": "HA D1 biru + close di atas 65.500",
    "poin": [
-    "CD = 2,236 × AB di 68.307 (PRZ).",
-    "Stoch D1 8, jenuh jual.",
-    "Fib dari 81.196 → 67.568."
+    "CD = 3,0 × AB di 62.638 (PRZ).",
+    "Stoch D1 5, jenuh jual.",
+    "Fib dari 81.196 → 63.320."
    ]
   }
  },
