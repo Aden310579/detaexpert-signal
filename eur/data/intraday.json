@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.10074,
- "data_sampai_wib": "17 Nov 2026 02:10",
- "data_sampai_oslo": "16 Nov 2026 20:10",
+ "harga": 1.10044,
+ "data_sampai_wib": "17 Nov 2026 03:05",
+ "data_sampai_oslo": "16 Nov 2026 21:05",
  "dibuat_utc": "2026-11-16T16:05:00Z",
  "aktif_sampai_utc": "2026-11-17T00:00:00Z",
  "dibuat_wib": "16 Nov 2026 23:05",
  "dibuat_oslo": "16 Nov 2026 17:05",
  "aktif_sampai_wib": "17 Nov 2026 07:00",
  "aktif_sampai_oslo": "17 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-16T19:07:31Z",
- "status": "SIAP ENTRY",
+ "diperbarui_utc": "2026-11-16T20:06:35Z",
+ "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "MACD H4 −37 mengecil · HA H4 merah · Stoch H4 6 ekstrem · RSI 22",
+ "bias_teks": "MACD H4 −36 histogram mulai positif · Stoch H4 13 naik · RSI 22",
  "bias_label": "H4",
  "kondisi": "Turun · jenuh jual",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana lama habis tanpa entry · rencana baru",
-  "H4 23:00 tutup 1.1005 (range 1.0999–1.1018). Sempat tembus 1.1000 tipis.",
-  "Buy di bawah angka bulat 1.0987–93. Sell tunggu pantulan ke 1.1024–30."
+  "Belum ada posisi · buy 1.0987–93 terlewat",
+  "H4 03:00 tutup 1.1004 (range 1.0991–1.1013). Low 1.0991 lalu pantul tanpa sinyal.",
+  "Sisa rencana: sell 1.1024–30 atau 1.1038–44 jika pantulan berlanjut."
  ],
  "entries": [
   {
@@ -62,8 +62,8 @@
     "sapu stop di bawah 1.1000",
     "Stoch H4 6 jenuh jual"
    ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
+   "state": "batal",
+   "status": "TERLEWAT",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0975",
    "jenis_entry": "Support"
   },
