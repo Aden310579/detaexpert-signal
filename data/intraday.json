@@ -3,48 +3,48 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 3875.7,
- "data_sampai_wib": "14 Nov 2026 03:00",
- "data_sampai_oslo": "13 Nov 2026 21:00",
- "dibuat_utc": "2026-11-13T20:00:00Z",
- "aktif_sampai_utc": "2026-11-14T04:00:00Z",
- "dibuat_wib": "14 Nov 2026 03:00",
- "dibuat_oslo": "13 Nov 2026 21:00",
- "aktif_sampai_wib": "14 Nov 2026 11:00",
- "aktif_sampai_oslo": "14 Nov 2026 05:00",
+ "harga": 3900.5,
+ "data_sampai_wib": "16 Nov 2026 07:00",
+ "data_sampai_oslo": "16 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-16T00:00:00Z",
+ "aktif_sampai_utc": "2026-11-16T08:00:00Z",
+ "dibuat_wib": "16 Nov 2026 07:00",
+ "dibuat_oslo": "16 Nov 2026 01:00",
+ "aktif_sampai_wib": "16 Nov 2026 15:00",
+ "aktif_sampai_oslo": "16 Nov 2026 09:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3875.7, 25 poin dari Entry 2 (BUY). Stochastic M15 18, Heikin Ashi M15 merah. Tunggu sinyal di zona."
+  "Harga 3900.5 di zona Entry 2 (SELL). Stochastic M15 80, Heikin Ashi M15 biru. Tunggu sinyal di zona."
  ],
- "bias": "TURUN",
- "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 -8.00 (mengecil dari -9.40)",
- "kondisi": "Trending",
- "indikator_utama": "MACD",
+ "bias": "NAIK",
+ "bias_teks": "Heikin Ashi H4 biru · histogram MACD H4 +8.10 (membesar dari +6.40)",
+ "kondisi": "Squeeze",
+ "indikator_utama": "Stochastic",
  "bollinger": [
-  4096.8,
-  3961.6,
-  3826.4
+  3906.4,
+  3881.8,
+  3857.2
  ],
  "fibonacci": [
-  3888.1,
-  3909.7
+  3880.6,
+  3884.5
  ],
  "entries": [
   {
    "n": 2,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    3847.3,
-    3853.3
+    3900.9,
+    3906.9
    ],
-   "entry": 3850.3,
-   "sl": 3837.3,
-   "tp1": 3869.2,
-   "tp2": 3888.1,
+   "entry": 3903.9,
+   "sl": 3916.9,
+   "tp1": 3894.2,
+   "tp2": 3884.5,
    "alasan": [
     "swing ekstrem 12 candle H4",
-    "swing H4 sebelumnya 3853.3",
-    "angka bulat 3850"
+    "Bollinger H4 atas 3906.4",
+    "angka bulat 3900"
    ],
    "state": "tunggu",
    "info": "",
@@ -54,6 +54,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-13T20:03:00Z",
+ "diperbarui_utc": "2026-11-16T00:03:00Z",
  "status_lama": "MENUNGGU"
 }
