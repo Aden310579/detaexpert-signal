@@ -3,16 +3,16 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.10216,
- "data_sampai_wib": "16 Nov 2026 08:05",
- "data_sampai_oslo": "16 Nov 2026 02:05",
+ "harga": 1.10214,
+ "data_sampai_wib": "16 Nov 2026 10:05",
+ "data_sampai_oslo": "16 Nov 2026 04:05",
  "dibuat_utc": "2026-11-15T23:05:00Z",
  "aktif_sampai_utc": "2026-11-16T01:00:00Z",
  "dibuat_wib": "16 Nov 2026 06:05",
  "dibuat_oslo": "16 Nov 2026 00:05",
  "aktif_sampai_wib": "16 Nov 2026 08:00",
  "aktif_sampai_oslo": "16 Nov 2026 02:00",
- "diperbarui_utc": "2026-11-16T01:06:31Z",
+ "diperbarui_utc": "2026-11-16T03:05:57Z",
  "status": "ENTRY 1 HOLD",
  "bias": "TURUN",
  "bias_teks": "H1 & H4 turun · Stoch H1 5 jenuh jual · D1 di bawah BB bawah",
@@ -20,9 +20,9 @@
  "kondisi": "Turun · sideways",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell 1.1028 HOLD · TP1 1.1020 kena (+8 pip)",
-  "Setengah posisi sudah ditutup di TP1. Stop Loss sisa posisi pindah ke entry 1.1028.",
-  "Harga 1.1022. Sisa posisi jalan ke TP2 1.1008. Belum ada entry baru."
+  "Sell 1.1028 masih HOLD · TP1 sudah kena (+8 pip)",
+  "Pasar sepi, range pagi 1.1017–28. Low baru 1.1017, harga sekarang 1.1021.",
+  "Stop Loss sisa posisi di entry 1.1028. Biarkan jalan ke TP2 1.1008."
  ],
  "entries": [
   {
