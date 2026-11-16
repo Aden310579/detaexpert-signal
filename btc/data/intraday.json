@@ -3,71 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 64977,
- "data_sampai_wib": "16 Nov 2026 11:05",
- "data_sampai_oslo": "16 Nov 2026 05:05",
- "dibuat_utc": "2026-11-16T04:05:00Z",
- "aktif_sampai_utc": "2026-11-16T08:00:00Z",
- "dibuat_wib": "16 Nov 2026 11:05",
- "dibuat_oslo": "16 Nov 2026 05:05",
- "aktif_sampai_wib": "16 Nov 2026 15:00",
- "aktif_sampai_oslo": "16 Nov 2026 09:00",
+ "harga": 64770,
+ "data_sampai_wib": "16 Nov 2026 15:05",
+ "data_sampai_oslo": "16 Nov 2026 09:05",
+ "dibuat_utc": "2026-11-16T08:05:00Z",
+ "aktif_sampai_utc": "2026-11-16T16:00:00Z",
+ "dibuat_wib": "16 Nov 2026 15:05",
+ "dibuat_oslo": "16 Nov 2026 09:05",
+ "aktif_sampai_wib": "16 Nov 2026 23:00",
+ "aktif_sampai_oslo": "16 Nov 2026 17:00",
  "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "H4 close 11:00 = 65.114 HA biru, hist +46 → +113 · Stoch H4 42 · M15 62 · ATR 1.489",
+ "bias": "NETRAL",
+ "bias_teks": "H4 close 15:00 = 64.995 HA merah, hist +113 → +160 · Stoch H4 46 · M15 76 · ATR 1.423",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-16T04:06:10Z",
+ "diperbarui_utc": "2026-11-16T08:06:38Z",
  "teks": [
-  "E1 BUY selesai · TP1 kena, sisa tutup di entry",
-  "E1 entry 09:15 @64.962, TP1 65.300 kena 09:25 (+338), sisa tutup di entry 10:30.",
-  "E2 belum ada sinyal. Range 07:00–11:00: 64.530–65.392."
+  "Analisa 07:05 selesai · tidak ada posisi",
+  "E2 BUY sinyal 13:45 close 64.596 di luar zona → dilewati.",
+  "Range 11:00–15:00: 64.294–65.190, close H4 64.995."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "BUY",
-   "zona": [
-    64960,
-    65120
-   ],
-   "entry": 65040,
-   "sl": 64760,
-   "tp1": 65300,
-   "tp2": 65500,
-   "alasan": [
-    "angka bulat 65.000",
-    "swing low M15 65.000 (06:30)",
-    "BB tengah M15 65.088"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback ke bawah"
-  },
-  {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    64650,
-    64810
-   ],
-   "entry": 64730,
-   "sl": 64450,
-   "tp1": 64980,
-   "tp2": 65300,
-   "alasan": [
-    "Fib 0.382 64.723",
-    "low H4 64.700",
-    "BB bawah M15 64.765"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
-  }
- ]
+ "entries": []
 }
