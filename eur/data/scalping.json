@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.10072,
- "data_sampai_wib": "16 Nov 2026 19:05",
- "data_sampai_oslo": "16 Nov 2026 13:05",
+ "harga": 1.1013,
+ "data_sampai_wib": "16 Nov 2026 20:10",
+ "data_sampai_oslo": "16 Nov 2026 14:10",
  "dibuat_utc": "2026-11-16T11:05:00Z",
  "aktif_sampai_utc": "2026-11-16T13:00:00Z",
  "dibuat_wib": "16 Nov 2026 18:05",
  "dibuat_oslo": "16 Nov 2026 12:05",
  "aktif_sampai_wib": "16 Nov 2026 20:00",
  "aktif_sampai_oslo": "16 Nov 2026 14:00",
- "diperbarui_utc": "2026-11-16T12:06:22Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-16T13:07:56Z",
+ "status": "ENTRY 1 BERJALAN",
  "bias": "TURUN",
- "bias_teks": "M15 turun lagi · H4 turun · H1 squeeze · Stoch M5 & M15 jenuh jual",
+ "bias_teks": "H4 turun · H1 squeeze · M5 pantul ke BB atas 1.1016 · Stoch M15 48",
  "bias_label": "M15",
  "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana lama habis tanpa entry · rencana baru",
-  "Harga gagal tembus 1.1030 lalu jatuh ke 1.1004. Sekarang 1.1007, dekat 1.1000.",
-  "Sell di pantulan 1.1014–18. Buy di angka bulat 1.0996–1.1000. Satu posisi saja."
+  "Sell 1.1016 BERJALAN · +3 pip",
+  "Sinyal sell masuk 19:30 WIB di pantulan 1.1014–15. Harga sekarang 1.1013.",
+  "SL 1.1024, TP1 1.1008, TP2 1.0998. Di TP1 tutup setengah, SL pindah ke entry."
  ],
  "entries": [
   {
@@ -41,8 +41,8 @@
     "BB tengah M15 1.1015",
     "high M5 1.1016"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "BERJALAN",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.1025",
    "jenis_entry": "Pullback"
   },
@@ -62,8 +62,8 @@
     "zona buy intraday 1.0998–1.1004",
     "Stoch M15 10 jenuh jual"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0989",
    "jenis_entry": "Support"
   },
@@ -83,8 +83,8 @@
     "bekas support 1.1020–24",
     "Fib 0.618 M15 1.1020"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.1031",
    "jenis_entry": "Resistance"
   }
