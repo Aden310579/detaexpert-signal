@@ -3,45 +3,45 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 64307,
- "data_sampai_wib": "15 Nov 2026 07:15",
- "data_sampai_oslo": "15 Nov 2026 01:15",
- "dibuat_utc": "2026-11-15T00:20:00Z",
- "aktif_sampai_utc": "2026-11-16T00:00:00Z",
- "dibuat_wib": "15 Nov 2026 07:20",
- "dibuat_oslo": "15 Nov 2026 01:20",
- "aktif_sampai_wib": "16 Nov 2026 07:00",
- "aktif_sampai_oslo": "16 Nov 2026 01:00",
- "status": "ARAH",
+ "harga": 65006,
+ "data_sampai_wib": "16 Nov 2026 07:20",
+ "data_sampai_oslo": "16 Nov 2026 01:20",
+ "dibuat_utc": "2026-11-16T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-17T00:00:00Z",
+ "dibuat_wib": "16 Nov 2026 07:20",
+ "dibuat_oslo": "16 Nov 2026 01:20",
+ "aktif_sampai_wib": "17 Nov 2026 07:00",
+ "aktif_sampai_oslo": "17 Nov 2026 01:00",
+ "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "D1 14 Nov close 64.150 (−4.164) · histogram MACD D1 −720 → −1.079 · Stoch D1 5",
+ "bias_teks": "D1 15 Nov close 65.351 (+1.201) · histogram MACD D1 −1.079 → −1.151 · Stoch D1 9",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-15T00:21:35Z",
+ "diperbarui_utc": "2026-11-16T00:22:14Z",
  "teks": [
-  "Lanjut turun ke PRZ 62.638",
-  "Pantul naik ke Fib 0.236 = 67.539"
+  "Pantul naik ke Fib 0.236 = 66.535",
+  "Turun lagi ke low 62.006"
  ],
  "skenario": {
   "utama": {
-   "judul": "Lanjut turun ke PRZ 62.638",
-   "target": "62.638",
-   "konfirmasi": "D1 close di bawah 63.320 + HA merah",
+   "judul": "Pantul naik ke Fib 0.236 = 66.535",
+   "target": "66.535",
+   "konfirmasi": "HA D1 biru + close di atas 65.500",
    "poin": [
-    "Target 67.000 kemarin tercapai (low 63.320).",
-    "D1 close 64.150, di bawah BB bawah 67.697.",
-    "MACD D1 −1.079, makin negatif."
+    "PRZ 62.638 tersentuh, low 62.006.",
+    "D1 15 Nov close 65.351, di atas open.",
+    "Stoch D1 9, jenuh jual."
    ]
   },
   "alternatif": {
-   "judul": "Pantul naik ke Fib 0.236 = 67.539",
-   "target": "67.539",
-   "konfirmasi": "HA D1 biru + close di atas 65.500",
+   "judul": "Turun lagi ke low 62.006",
+   "target": "62.006",
+   "konfirmasi": "D1 close di bawah 64.000 + HA merah",
    "poin": [
-    "CD = 3,0 × AB di 62.638 (PRZ).",
-    "Stoch D1 5, jenuh jual.",
-    "Fib dari 81.196 → 63.320."
+    "CD = 3,1 × AB di 62.006.",
+    "MACD D1 −1.151, masih membesar.",
+    "Fib dari 81.196 → 62.006."
    ]
   }
  },

@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 64307,
- "data_sampai_wib": "15 Nov 2026 07:15",
- "data_sampai_oslo": "15 Nov 2026 01:15",
- "dibuat_utc": "2026-11-15T00:20:00Z",
- "aktif_sampai_utc": "2026-11-16T00:00:00Z",
- "dibuat_wib": "15 Nov 2026 07:20",
- "dibuat_oslo": "15 Nov 2026 01:20",
- "aktif_sampai_wib": "16 Nov 2026 07:00",
- "aktif_sampai_oslo": "16 Nov 2026 01:00",
+ "harga": 65006,
+ "data_sampai_wib": "16 Nov 2026 07:20",
+ "data_sampai_oslo": "16 Nov 2026 01:20",
+ "dibuat_utc": "2026-11-16T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-18T00:00:00Z",
+ "dibuat_wib": "16 Nov 2026 07:20",
+ "dibuat_oslo": "16 Nov 2026 01:20",
+ "aktif_sampai_wib": "18 Nov 2026 07:00",
+ "aktif_sampai_oslo": "18 Nov 2026 01:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "D1 14 Nov close 64.150 (−4.164) · histogram MACD D1 −720 → −1.079 · HA D1 merah · Stoch D1 5",
+ "bias_teks": "D1 15 Nov close 65.351 · HA D1 merah · histogram MACD D1 −1.079 → −1.151 · Stoch D1 9 · ATR 3.027",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-15T00:21:35Z",
+ "diperbarui_utc": "2026-11-16T00:22:13Z",
  "teks": [
-  "Status 15 Nov · analisa 14 Nov aktif",
-  "SELL 70.700–71.300 dan 72.500–73.100 tidak tersentuh (high 68.446).",
-  "D1 14 Nov turun ke low 63.320, close 64.150. Angka terkunci."
+  "Analisa 14 Nov selesai · tidak tersentuh",
+  "SELL 70.700–71.300 dan 72.500–73.100 tidak tersentuh (high 66.132).",
+  "D1 15 Nov: low 62.006, close 65.351 (+1.201)."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    70700,
-    71300
+    65970,
+    66570
    ],
-   "entry": 71000,
-   "sl": 72050,
-   "tp1": 70000,
-   "tp2": 68000,
+   "entry": 66270,
+   "sl": 67320,
+   "tp1": 65000,
+   "tp2": 63320,
    "alasan": [
-    "Fib 0.236 70.784",
-    "angka bulat 71.000",
-    "low D1 12 Nov 71.113"
+    "angka bulat 66.000",
+    "BB bawah D1 66.007",
+    "Fib 0.236 66.535"
    ],
    "state": "tunggu",
    "info": "",
@@ -51,17 +51,17 @@
    "n": 2,
    "side": "SELL",
    "zona": [
-    72500,
-    73100
+    67920,
+    68520
    ],
-   "entry": 72800,
-   "sl": 73850,
-   "tp1": 71000,
-   "tp2": 70000,
+   "entry": 68220,
+   "sl": 69270,
+   "tp1": 67000,
+   "tp2": 66000,
    "alasan": [
-    "Fib 0.382 72.774",
-    "angka bulat 73.000",
-    "low D1 10 Nov 72.727"
+    "angka bulat 68.000",
+    "open D1 14 Nov 68.314",
+    "high D1 14 Nov 68.446"
    ],
    "state": "tunggu",
    "info": "",
