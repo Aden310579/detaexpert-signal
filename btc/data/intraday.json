@@ -3,26 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 64824,
- "data_sampai_wib": "16 Nov 2026 03:05",
- "data_sampai_oslo": "15 Nov 2026 21:05",
- "dibuat_utc": "2026-11-15T16:05:00Z",
- "aktif_sampai_utc": "2026-11-16T00:00:00Z",
- "dibuat_wib": "15 Nov 2026 23:05",
- "dibuat_oslo": "15 Nov 2026 17:05",
- "aktif_sampai_wib": "16 Nov 2026 07:00",
- "aktif_sampai_oslo": "16 Nov 2026 01:00",
+ "harga": 65392,
+ "data_sampai_wib": "16 Nov 2026 07:05",
+ "data_sampai_oslo": "16 Nov 2026 01:05",
+ "dibuat_utc": "2026-11-16T00:05:00Z",
+ "aktif_sampai_utc": "2026-11-16T08:00:00Z",
+ "dibuat_wib": "16 Nov 2026 07:05",
+ "dibuat_oslo": "16 Nov 2026 01:05",
+ "aktif_sampai_wib": "16 Nov 2026 15:00",
+ "aktif_sampai_oslo": "16 Nov 2026 09:00",
  "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "H4 close 03:00 = 64.947 HA merah, hist −143 → −56 mengecil · Stoch H4 37 · M15 65 · ATR 1.508",
+ "bias": "NAIK",
+ "bias_teks": "H4 close 07:00 = 65.351 HA biru, hist −56 → +46 · Stoch H4 39 · M15 79 · ATR 1.513",
  "bias_label": "H4",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-15T20:06:06Z",
+ "diperbarui_utc": "2026-11-16T00:07:05Z",
  "teks": [
-  "Analisa 23:05 masih aktif · tanpa entry",
+  "Analisa 23:05 selesai · tanpa entry",
   "Analisa 23:05 tanpa zona entry (tidak ada posisi).",
-  "H4 close 03:00 = 64.947; range 23:00–03:00 64.258–65.230."
+  "Range 03:00–07:00: 64.700–65.509, close H4 65.351."
  ],
- "entries": []
+ "entries": [
+  {
+   "n": 1,
+   "side": "BUY",
+   "zona": [
+    64960,
+    65120
+   ],
+   "entry": 65040,
+   "sl": 64760,
+   "tp1": 65300,
+   "tp2": 65500,
+   "alasan": [
+    "angka bulat 65.000",
+    "swing low M15 65.000 (06:30)",
+    "BB tengah M15 65.088"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pullback ke bawah"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    64650,
+    64810
+   ],
+   "entry": 64730,
+   "sl": 64450,
+   "tp1": 64980,
+   "tp2": 65300,
+   "alasan": [
+    "Fib 0.382 64.723",
+    "low H4 64.700",
+    "BB bawah M15 64.765"
+   ],
+   "state": "tunggu",
+   "info": "",
+   "lawan_arah": false,
+   "masuk_lagi": false,
+   "jenis_entry": "Pantulan bawah"
+  }
+ ]
 }
