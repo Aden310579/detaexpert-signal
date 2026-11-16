@@ -3,27 +3,27 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3855.5,
- "data_sampai_wib": "16 Nov 2026 17:00",
- "data_sampai_oslo": "16 Nov 2026 11:00",
- "dibuat_utc": "2026-11-16T10:00:00Z",
- "aktif_sampai_utc": "2026-11-16T12:00:00Z",
- "dibuat_wib": "16 Nov 2026 17:00",
- "dibuat_oslo": "16 Nov 2026 11:00",
- "aktif_sampai_wib": "16 Nov 2026 19:00",
- "aktif_sampai_oslo": "16 Nov 2026 13:00",
- "status": "LAGI BERJALAN",
+ "harga": 3873.5,
+ "data_sampai_wib": "16 Nov 2026 19:00",
+ "data_sampai_oslo": "16 Nov 2026 13:00",
+ "dibuat_utc": "2026-11-16T12:00:00Z",
+ "aktif_sampai_utc": "2026-11-16T14:00:00Z",
+ "dibuat_wib": "16 Nov 2026 19:00",
+ "dibuat_oslo": "16 Nov 2026 13:00",
+ "aktif_sampai_wib": "16 Nov 2026 21:00",
+ "aktif_sampai_oslo": "16 Nov 2026 15:00",
+ "status": "MENUNGGU",
  "teks": [
-  "Posisi analisa sebelumnya: Entry 1 SELL @3860.1 (masuk 16 Nov 16:00 WIB / 10:00 Oslo) masih berjalan. Stop Loss 3869.4, Take Profit 1 3844.1, Take Profit 2 3833.6."
+  "Harga 3873.5, 31 poin dari Entry 2 (SELL). Stochastic M5 74, Heikin Ashi M5 biru. Tunggu sinyal di zona."
  ],
- "bias": "NETRAL",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 -2.30 (mengecil dari -2.50)",
+ "bias": "NAIK",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +0.20 (mengecil dari -0.80)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  3902.0,
-  3872.9,
-  3843.8
+  3901.0,
+  3872.2,
+  3843.5
  ],
  "fibonacci": [
   3849.6,
@@ -32,19 +32,20 @@
  "entries": [
   {
    "n": 2,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    3827.6,
-    3833.6
+    3901.2,
+    3907.2
    ],
-   "entry": 3830.6,
-   "sl": 3817.6,
-   "tp1": 3840.1,
-   "tp2": 3849.6,
+   "entry": 3904.2,
+   "sl": 3917.2,
+   "tp1": 3881.8,
+   "tp2": 3859.4,
    "alasan": [
     "swing ekstrem 12 candle H1",
-    "swing H1 sebelumnya 3833.6",
-    "angka bulat 3825"
+    "Bollinger H1 atas 3901.0",
+    "swing H1 sebelumnya 3901.2",
+    "angka bulat 3900"
    ],
    "state": "tunggu",
    "info": "",
@@ -53,21 +54,7 @@
    "jenis_entry": "Lawan arah"
   }
  ],
- "posisi": [
-  {
-   "n": 1,
-   "side": -1,
-   "px": 3860.1,
-   "sl": 3869.4,
-   "tp1": 3844.1,
-   "tp2": 3833.6,
-   "t": "2026-11-16 19:55:00",
-   "masuk": "2026-11-16 20:00:00",
-   "tp1_kena_awal": false,
-   "tp1_kena": false,
-   "hasil": null
-  }
- ],
- "diperbarui_utc": "2026-11-16T10:04:00Z",
+ "posisi": [],
+ "diperbarui_utc": "2026-11-16T12:04:00Z",
  "status_lama": "LAGI BERJALAN"
 }
