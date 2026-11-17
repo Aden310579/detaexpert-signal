@@ -3,27 +3,27 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3875.8,
- "data_sampai_wib": "17 Nov 2026 23:00",
- "data_sampai_oslo": "17 Nov 2026 17:00",
- "dibuat_utc": "2026-11-17T16:00:00Z",
- "aktif_sampai_utc": "2026-11-17T18:00:00Z",
- "dibuat_wib": "17 Nov 2026 23:00",
- "dibuat_oslo": "17 Nov 2026 17:00",
- "aktif_sampai_wib": "18 Nov 2026 01:00",
- "aktif_sampai_oslo": "17 Nov 2026 19:00",
+ "harga": 3863.4,
+ "data_sampai_wib": "18 Nov 2026 01:00",
+ "data_sampai_oslo": "17 Nov 2026 19:00",
+ "dibuat_utc": "2026-11-17T18:00:00Z",
+ "aktif_sampai_utc": "2026-11-17T20:00:00Z",
+ "dibuat_wib": "18 Nov 2026 01:00",
+ "dibuat_oslo": "17 Nov 2026 19:00",
+ "aktif_sampai_wib": "18 Nov 2026 03:00",
+ "aktif_sampai_oslo": "17 Nov 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3875.8 di zona Entry 1 (BUY). Stochastic M5 62, Heikin Ashi M5 merah. Tunggu sinyal di zona."
+  "Harga 3863.4, 12 poin dari Entry 1 (BUY). Stochastic M5 28, Heikin Ashi M5 merah. Tunggu sinyal di zona."
  ],
- "bias": "NAIK",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +0.20 (mengecil dari -0.90)",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +0.10 (mengecil dari +0.20)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  3881.4,
-  3864.5,
-  3847.6
+  3880.9,
+  3865.5,
+  3850.1
  ],
  "fibonacci": [
   3879.0,
@@ -43,7 +43,7 @@
    "tp2": 3892.0,
    "alasan": [
     "Fibonacci 0.236/0.382 (3879.0 / 3871.0)",
-    "Bollinger H1 atas 3881.4",
+    "Bollinger H1 atas 3880.9",
     "swing H1 sebelumnya 3878.5",
     "angka bulat 3875"
    ],
@@ -66,7 +66,7 @@
    "tp2": 3879.0,
    "alasan": [
     "swing ekstrem 12 candle H1",
-    "swing H1 sebelumnya 3901.2",
+    "swing H1 sebelumnya 3892.0",
     "angka bulat 3900"
    ],
    "state": "tunggu",
@@ -88,7 +88,7 @@
    "tp2": 3908.0,
    "alasan": [
     "Fibonacci 0.236/0.382 (3879.0 / 3871.0)",
-    "Bollinger H1 atas 3881.4",
+    "Bollinger H1 atas 3880.9",
     "swing H1 sebelumnya 3878.5",
     "angka bulat 3875"
    ],
@@ -100,6 +100,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-17T16:04:00Z",
+ "diperbarui_utc": "2026-11-17T18:03:00Z",
  "status_lama": "MENUNGGU"
 }
