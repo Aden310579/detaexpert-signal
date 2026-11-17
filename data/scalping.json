@@ -3,27 +3,27 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3862.8,
- "data_sampai_wib": "17 Nov 2026 07:00",
- "data_sampai_oslo": "17 Nov 2026 01:00",
- "dibuat_utc": "2026-11-17T00:00:00Z",
- "aktif_sampai_utc": "2026-11-17T02:00:00Z",
- "dibuat_wib": "17 Nov 2026 07:00",
- "dibuat_oslo": "17 Nov 2026 01:00",
- "aktif_sampai_wib": "17 Nov 2026 09:00",
- "aktif_sampai_oslo": "17 Nov 2026 03:00",
- "status": "LAGI BERJALAN",
+ "harga": 3865.4,
+ "data_sampai_wib": "17 Nov 2026 09:00",
+ "data_sampai_oslo": "17 Nov 2026 03:00",
+ "dibuat_utc": "2026-11-17T02:00:00Z",
+ "aktif_sampai_utc": "2026-11-17T04:00:00Z",
+ "dibuat_wib": "17 Nov 2026 09:00",
+ "dibuat_oslo": "17 Nov 2026 03:00",
+ "aktif_sampai_wib": "17 Nov 2026 11:00",
+ "aktif_sampai_oslo": "17 Nov 2026 05:00",
+ "status": "HOLD",
  "teks": [
-  "Posisi analisa sebelumnya: Entry 1 SELL @3856.2 (masuk 17 Nov 05:20 WIB / 23:20 Oslo) masih berjalan. Stop Loss 3868.9, Take Profit 1 3848.3, Take Profit 2 3841.1."
+  "Posisi analisa sebelumnya: Entry 1 BUY @3846.6 (masuk 17 Nov 08:35 WIB / 02:35 Oslo): setengah sudah Take Profit 1 3871.5, Stop Loss sisa di 3846.6 (impas). Tahan ke Take Profit 2 3887.6."
  ],
  "bias": "NAIK",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +0.10 (mengecil dari -0.50)",
- "kondisi": "Trending",
- "indikator_utama": "MACD",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +0.50 (membesar dari -0.10)",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
  "bollinger": [
-  3879.9,
-  3860.8,
-  3841.7
+  3877.4,
+  3861.6,
+  3845.9
  ],
  "fibonacci": [
   3852.1,
@@ -43,7 +43,7 @@
    "tp2": 3887.6,
    "alasan": [
     "Fibonacci 0.236/0.382 (3852.1 / 3858.9)",
-    "Bollinger H1 tengah 3860.8",
+    "Bollinger H1 tengah 3861.6",
     "swing H1 sebelumnya 3849.3",
     "angka bulat 3850"
    ],
@@ -66,7 +66,7 @@
    "tp2": 3903.6,
    "alasan": [
     "Fibonacci 0.236/0.382 (3852.1 / 3858.9)",
-    "Bollinger H1 tengah 3860.8",
+    "Bollinger H1 tengah 3861.6",
     "swing H1 sebelumnya 3849.3",
     "angka bulat 3850"
    ],
@@ -80,18 +80,19 @@
  "posisi": [
   {
    "n": 1,
-   "side": -1,
-   "px": 3856.2,
-   "sl": 3868.9,
-   "tp1": 3848.3,
-   "tp2": 3841.1,
-   "t": "2026-11-17 09:15:00",
-   "masuk": "2026-11-17 09:20:00",
+   "side": 1,
+   "px": 3846.6,
+   "sl": 3842.1,
+   "tp1": 3871.5,
+   "tp2": 3887.6,
+   "t": "2026-11-17 12:30:00",
+   "masuk": "2026-11-17 12:35:00",
+   "tp1_t": "2026-11-17 12:50:00",
    "tp1_kena_awal": false,
-   "tp1_kena": false,
+   "tp1_kena": true,
    "hasil": null
   }
  ],
- "diperbarui_utc": "2026-11-17T00:04:00Z",
- "status_lama": "MENUNGGU"
+ "diperbarui_utc": "2026-11-17T02:03:00Z",
+ "status_lama": "LAGI BERJALAN"
 }
