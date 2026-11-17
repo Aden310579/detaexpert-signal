@@ -3,18 +3,18 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 3862.8,
- "data_sampai_wib": "17 Nov 2026 07:00",
- "data_sampai_oslo": "17 Nov 2026 01:00",
+ "harga": 3870.4,
+ "data_sampai_wib": "17 Nov 2026 11:00",
+ "data_sampai_oslo": "17 Nov 2026 05:00",
  "dibuat_utc": "2026-11-17T00:00:00Z",
  "aktif_sampai_utc": "2026-11-17T08:00:00Z",
  "dibuat_wib": "17 Nov 2026 07:00",
  "dibuat_oslo": "17 Nov 2026 01:00",
  "aktif_sampai_wib": "17 Nov 2026 15:00",
  "aktif_sampai_oslo": "17 Nov 2026 09:00",
- "status": "LAGI BERJALAN",
+ "status": "HOLD",
  "teks": [
-  "Posisi analisa sebelumnya: Entry 1 BUY @3859.6 (masuk 16 Nov 23:45 WIB / 17:45 Oslo) masih berjalan. Stop Loss 3839.6, Take Profit 1 3877.8, Take Profit 2 3901.2."
+  "Posisi analisa sebelumnya: Entry 1 BUY @3859.6 (masuk 16 Nov 23:45 WIB / 17:45 Oslo): setengah sudah Take Profit 1 3877.8, Stop Loss sisa di 3859.6 (impas). Tahan ke Take Profit 2 3901.2."
  ],
  "bias": "NETRAL",
  "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 +4.20 (mengecil dari +4.50)",
@@ -110,10 +110,11 @@
    "t": "2026-11-17 03:30:00",
    "masuk": "2026-11-17 03:45:00",
    "tp1_kena_awal": false,
-   "tp1_kena": false,
+   "tp1_kena": true,
+   "tp1_t": "2026-11-17 14:30:00",
    "hasil": null
   }
  ],
- "diperbarui_utc": "2026-11-17T00:02:00Z",
+ "diperbarui_utc": "2026-11-17T04:03:00Z",
  "status_lama": "LAGI BERJALAN"
 }
