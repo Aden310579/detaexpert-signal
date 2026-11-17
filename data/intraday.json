@@ -3,27 +3,27 @@
  "kode": "/xauintraday",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 3864.4,
- "data_sampai_wib": "17 Nov 2026 03:00",
- "data_sampai_oslo": "16 Nov 2026 21:00",
- "dibuat_utc": "2026-11-16T16:00:00Z",
- "aktif_sampai_utc": "2026-11-17T00:00:00Z",
- "dibuat_wib": "16 Nov 2026 23:00",
- "dibuat_oslo": "16 Nov 2026 17:00",
- "aktif_sampai_wib": "17 Nov 2026 07:00",
- "aktif_sampai_oslo": "17 Nov 2026 01:00",
+ "harga": 3862.8,
+ "data_sampai_wib": "17 Nov 2026 07:00",
+ "data_sampai_oslo": "17 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-17T00:00:00Z",
+ "aktif_sampai_utc": "2026-11-17T08:00:00Z",
+ "dibuat_wib": "17 Nov 2026 07:00",
+ "dibuat_oslo": "17 Nov 2026 01:00",
+ "aktif_sampai_wib": "17 Nov 2026 15:00",
+ "aktif_sampai_oslo": "17 Nov 2026 09:00",
  "status": "LAGI BERJALAN",
  "teks": [
-  "Entry 1 BUY @3859.6 (masuk 16 Nov 23:45 WIB / 17:45 Oslo) masih berjalan. Stop Loss 3839.6, Take Profit 1 3877.8, Take Profit 2 3901.2."
+  "Posisi analisa sebelumnya: Entry 1 BUY @3859.6 (masuk 16 Nov 23:45 WIB / 17:45 Oslo) masih berjalan. Stop Loss 3839.6, Take Profit 1 3877.8, Take Profit 2 3901.2."
  ],
- "bias": "NAIK",
- "bias_teks": "Heikin Ashi H4 biru · histogram MACD H4 +4.70 (mengecil dari +5.60)",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi H4 merah · histogram MACD H4 +4.20 (mengecil dari +4.50)",
  "kondisi": "Squeeze",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  3894.0,
-  3875.7,
-  3857.4
+  3890.8,
+  3873.6,
+  3856.4
  ],
  "fibonacci": [
   3849.6,
@@ -43,11 +43,11 @@
    "tp2": 3901.2,
    "alasan": [
     "Fibonacci 0.236/0.382 (3849.6 / 3859.4)",
-    "Bollinger H4 bawah 3857.4",
+    "Bollinger H4 bawah 3856.4",
     "swing H4 sebelumnya 3853.3",
     "angka bulat 3850"
    ],
-   "state": "jalan",
+   "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
@@ -88,7 +88,7 @@
    "tp2": 3917.2,
    "alasan": [
     "Fibonacci 0.236/0.382 (3849.6 / 3859.4)",
-    "Bollinger H4 bawah 3857.4",
+    "Bollinger H4 bawah 3856.4",
     "swing H4 sebelumnya 3853.3",
     "angka bulat 3850"
    ],
@@ -109,10 +109,11 @@
    "tp2": 3901.2,
    "t": "2026-11-17 03:30:00",
    "masuk": "2026-11-17 03:45:00",
+   "tp1_kena_awal": false,
    "tp1_kena": false,
    "hasil": null
   }
  ],
- "diperbarui_utc": "2026-11-16T20:02:00Z",
- "status_lama": "MENUNGGU"
+ "diperbarui_utc": "2026-11-17T00:02:00Z",
+ "status_lama": "LAGI BERJALAN"
 }
