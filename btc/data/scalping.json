@@ -3,71 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 64708,
- "data_sampai_wib": "17 Nov 2026 22:05",
- "data_sampai_oslo": "17 Nov 2026 16:05",
- "dibuat_utc": "2026-11-17T15:05:00Z",
- "aktif_sampai_utc": "2026-11-17T17:00:00Z",
- "dibuat_wib": "17 Nov 2026 22:05",
- "dibuat_oslo": "17 Nov 2026 16:05",
- "aktif_sampai_wib": "18 Nov 2026 00:00",
- "aktif_sampai_oslo": "17 Nov 2026 18:00",
+ "harga": 63606,
+ "data_sampai_wib": "18 Nov 2026 00:00",
+ "data_sampai_oslo": "17 Nov 2026 18:00",
+ "dibuat_utc": "2026-11-17T17:05:00Z",
+ "aktif_sampai_utc": "2026-11-17T19:00:00Z",
+ "dibuat_wib": "18 Nov 2026 00:05",
+ "dibuat_oslo": "17 Nov 2026 18:05",
+ "aktif_sampai_wib": "18 Nov 2026 02:00",
+ "aktif_sampai_oslo": "17 Nov 2026 20:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist +23 → -5 · H4 berjalan HA biru, hist +306 · Stoch M15 45 · ATR 254",
+ "bias_teks": "M15 HA merah, hist -141 → -146 membesar · H4 berjalan HA merah, hist +206 · Stoch M15 19 · ATR 455",
  "bias_label": "M15",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-17T15:07:44Z",
+ "diperbarui_utc": "2026-11-17T17:06:46Z",
  "teks": [
-  "Analisa 20:05 selesai · tidak tersentuh",
-  "E1/E2 BUY tidak tersentuh (low 64.800 pukul 21:30).",
-  "High 65.447 (21:35). Harga turun ke 64.674 (22:05)."
+  "Analisa 22:05 selesai · tanpa entry",
+  "E1 SELL tersentuh 22:05 tanpa sinyal, M15 close 65.018 > SL 22:30 → batal.",
+  "E2 SELL tidak tersentuh (high 65.168). Low 63.336 (22:50)."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "SELL",
-   "zona": [
-    64741,
-    64821
-   ],
-   "entry": 64781,
-   "sl": 64921,
-   "tp1": 64650,
-   "tp2": 64500,
-   "alasan": [
-    "angka bulat 64.750",
-    "swing M5 64.756 / 64.801",
-    "BB tengah M15 64.810"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback ke atas"
-  },
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    65433,
-    65513
-   ],
-   "entry": 65473,
-   "sl": 65613,
-   "tp1": 65350,
-   "tp2": 64821,
-   "alasan": [
-    "swing M5 65.447",
-    "BB atas M15 65.451",
-    "angka bulat 65.500"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback atas"
-  }
- ]
+ "entries": []
 }
