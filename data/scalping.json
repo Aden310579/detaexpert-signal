@@ -3,26 +3,26 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3865.7,
- "data_sampai_wib": "17 Nov 2026 17:00",
- "data_sampai_oslo": "17 Nov 2026 11:00",
- "dibuat_utc": "2026-11-17T10:00:00Z",
- "aktif_sampai_utc": "2026-11-17T12:00:00Z",
- "dibuat_wib": "17 Nov 2026 17:00",
- "dibuat_oslo": "17 Nov 2026 11:00",
- "aktif_sampai_wib": "17 Nov 2026 19:00",
- "aktif_sampai_oslo": "17 Nov 2026 13:00",
+ "harga": 3867.7,
+ "data_sampai_wib": "17 Nov 2026 19:00",
+ "data_sampai_oslo": "17 Nov 2026 13:00",
+ "dibuat_utc": "2026-11-17T12:00:00Z",
+ "aktif_sampai_utc": "2026-11-17T14:00:00Z",
+ "dibuat_wib": "17 Nov 2026 19:00",
+ "dibuat_oslo": "17 Nov 2026 13:00",
+ "aktif_sampai_wib": "17 Nov 2026 21:00",
+ "aktif_sampai_oslo": "17 Nov 2026 15:00",
  "status": "HOLD",
  "teks": [
   "Posisi analisa sebelumnya: Entry 1 BUY @3846.6 (masuk 17 Nov 08:35 WIB / 02:35 Oslo): setengah sudah Take Profit 1 3871.5, Stop Loss sisa di 3846.6 (impas). Tahan ke Take Profit 2 3887.6."
  ],
  "bias": "NETRAL",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +1.10 (mengecil dari +1.70)",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +0.10 (membesar dari -0.10)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  3881.6,
-  3865.0,
+  3879.9,
+  3864.1,
   3848.4
  ],
  "fibonacci": [
@@ -43,6 +43,7 @@
    "tp2": 3886.4,
    "alasan": [
     "Fibonacci 0.236/0.382 (3876.3 / 3870.1)",
+    "Bollinger H1 atas 3879.9",
     "swing H1 sebelumnya 3878.5",
     "angka bulat 3875"
    ],
@@ -65,6 +66,7 @@
    "tp2": 3902.4,
    "alasan": [
     "Fibonacci 0.236/0.382 (3876.3 / 3870.1)",
+    "Bollinger H1 atas 3879.9",
     "swing H1 sebelumnya 3878.5",
     "angka bulat 3875"
    ],
@@ -91,6 +93,6 @@
    "hasil": null
   }
  ],
- "diperbarui_utc": "2026-11-17T10:04:00Z",
+ "diperbarui_utc": "2026-11-17T12:04:00Z",
  "status_lama": "HOLD"
 }
