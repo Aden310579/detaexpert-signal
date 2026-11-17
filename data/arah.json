@@ -3,21 +3,21 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 3846.8,
+ "harga": 3844.9,
  "dibuat_utc": "2026-11-16T20:20:00Z",
  "aktif_sampai_utc": "2026-11-18T20:00:00Z",
  "dibuat_wib": "17 Nov 2026 03:20",
  "dibuat_oslo": "16 Nov 2026 21:20",
  "aktif_sampai_wib": "19 Nov 2026 03:00",
  "aktif_sampai_oslo": "18 Nov 2026 21:00",
- "data_sampai_wib": "17 Nov 2026 03:00",
- "data_sampai_oslo": "16 Nov 2026 21:00",
+ "data_sampai_wib": "18 Nov 2026 03:00",
+ "data_sampai_oslo": "17 Nov 2026 21:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
  "bias_teks": "Heikin Ashi D1 merah 2 candle, histogram MACD D1 negatif (−11.60 → −11.26), Stochastic D1 9, kondisi trending. Bullish AB=CD D1: kaki CD dari C 4149.0 masih berjalan (D? 3833.6), PRZ (zona berbalik) 3701.9–3797.5.",
  "teks": [
   "Analisa sebelumnya (habis 15 Nov 03:00 WIB, Oslo 14 Nov 21:00) berakhir dengan status MENUNGGU: konfirmasi utama (D1 close di bawah 3863.5) dan alternatif (D1 close di atas 4010.7) tidak terpenuhi.",
-  "D1 close 17 Nov 03:00 WIB (Oslo 16 Nov 21:00) di 3864.4: turun dari 3880.5, high 3901.2, low 3833.6. Di bawah Fibonacci 0.236 (3924.2) dan Bollinger tengah (3973.7).",
+  "D1 close 18 Nov 03:00 WIB (Oslo 17 Nov 21:00) di 3846.8: turun dari 3864.4, high 3892.0, low 3837.1. Di bawah Fibonacci 0.236 (3924.2) dan Bollinger tengah (3973.7).",
   "Konfirmasi skenario utama (D1 close di bawah 3833.6) belum terpenuhi. Konfirmasi alternatif (D1 close di atas 3924.2) belum terpenuhi."
  ],
  "skenario": {
@@ -52,5 +52,5 @@
  },
  "status_lama": "MENUNGGU",
  "status_teks": "D1 belum close di bawah 3833.6 (konfirmasi skenario utama).",
- "diperbarui_utc": "2026-11-17T20:03Z"
+ "diperbarui_utc": "2026-11-17T20:21Z"
 }
