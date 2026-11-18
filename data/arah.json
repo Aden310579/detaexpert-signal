@@ -3,54 +3,54 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 3723.7,
- "dibuat_utc": "2026-11-16T20:20:00Z",
- "aktif_sampai_utc": "2026-11-18T20:00:00Z",
- "dibuat_wib": "17 Nov 2026 03:20",
- "dibuat_oslo": "16 Nov 2026 21:20",
- "aktif_sampai_wib": "19 Nov 2026 03:00",
- "aktif_sampai_oslo": "18 Nov 2026 21:00",
- "data_sampai_wib": "18 Nov 2026 03:00",
- "data_sampai_oslo": "17 Nov 2026 21:00",
- "status": "SELESAI",
+ "harga": 3726.1,
+ "dibuat_utc": "2026-11-18T20:25:00Z",
+ "aktif_sampai_utc": "2026-11-20T20:00:00Z",
+ "dibuat_wib": "19 Nov 2026 03:25",
+ "dibuat_oslo": "18 Nov 2026 21:25",
+ "aktif_sampai_wib": "21 Nov 2026 03:00",
+ "aktif_sampai_oslo": "20 Nov 2026 21:00",
+ "data_sampai_wib": "19 Nov 2026 03:00",
+ "data_sampai_oslo": "18 Nov 2026 21:00",
+ "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi D1 merah 2 candle, histogram MACD D1 negatif (−11.60 → −11.26), Stochastic D1 9, kondisi trending. Bullish AB=CD D1: kaki CD dari C 4149.0 masih berjalan (D? 3833.6), PRZ (zona berbalik) 3701.9–3797.5.",
+ "bias_teks": "Heikin Ashi D1 merah 2 candle, histogram MACD D1 makin turun (−19.29 → −22.10), Stochastic D1 2, kondisi trending. Bullish AB=CD D1: kaki CD dari C 4149.0 sudah masuk PRZ (zona berbalik) 3701.9–3797.5, low D 3719.2.",
  "teks": [
-  "Analisa sebelumnya (habis 15 Nov 03:00 WIB, Oslo 14 Nov 21:00) berakhir dengan status MENUNGGU: konfirmasi utama (D1 close di bawah 3863.5) dan alternatif (D1 close di atas 4010.7) tidak terpenuhi.",
-  "D1 close 18 Nov 03:00 WIB (Oslo 17 Nov 21:00) di 3846.8: turun dari 3864.4, high 3892.0, low 3837.1. Di bawah Fibonacci 0.236 (3924.2) dan Bollinger tengah (3973.7).",
-  "Konfirmasi skenario utama (D1 close di bawah 3833.6) belum terpenuhi. Konfirmasi alternatif (D1 close di atas 3924.2) belum terpenuhi."
+  "Analisa sebelumnya (habis 19 Nov 03:00 WIB, Oslo 18 Nov 21:00) berakhir dengan status SELESAI: target skenario utama 3797.5 tercapai pada D1 18 Nov.",
+  "D1 close 19 Nov 03:00 WIB (Oslo 18 Nov 21:00) di 3723.7: turun dari 3846.8, high 3858.4, low 3719.2. Di bawah Fibonacci 0.236 (3836.8), dekat Bollinger bawah (3708.8).",
+  "Konfirmasi skenario utama (D1 close di bawah 3719.2) belum terpenuhi. Konfirmasi alternatif (D1 close di atas 3797.5) belum terpenuhi."
  ],
  "skenario": {
   "utama": {
-   "judul": "Turun ke tepi atas PRZ",
-   "target": "±3797.5",
-   "konfirmasi": "D1 close di bawah 3833.6",
+   "target": "±3701.9",
+   "judul": "Turun ke tepi bawah PRZ",
    "poin": [
-    "Heikin Ashi D1 merah, histogram MACD D1 negatif (−11.26)",
-    "Close 3864.4 di bawah Fibonacci 0.236 (3924.2)",
-    "Kaki CD Bullish AB=CD menuju PRZ (zona berbalik) 3701.9–3797.5"
-   ]
+    "Heikin Ashi D1 merah, MACD D1 makin turun (−22.10)",
+    "Close 3723.7 di bawah Fibonacci 0.236 (3836.8)",
+    "Harga di dalam PRZ (zona berbalik) 3701.9–3797.5"
+   ],
+   "konfirmasi": "D1 close di bawah 3719.2"
   },
   "alternatif": {
-   "judul": "Naik ke Fibonacci 0.382",
-   "target": "±3980.2",
-   "konfirmasi": "D1 close di atas 3924.2",
+   "target": "±3836.8",
+   "judul": "Naik ke Fibonacci 0.236",
    "poin": [
-    "Stochastic D1 9 (jenuh jual)",
-    "Histogram MACD D1 mulai mengecil (−11.60 → −11.26)",
-    "Low 3833.6 di bawah swing low B 3866.0"
-   ]
+    "Stochastic D1 2 (jenuh jual)",
+    "Harga sudah masuk PRZ (zona berbalik) AB=CD",
+    "Low 3719.2 dekat Bollinger bawah (3708.8)"
+   ],
+   "konfirmasi": "D1 close di atas 3797.5"
   }
  },
  "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. PRZ = Potential Reversal Zone, zona tempat harga berpotensi berbalik arah (titik D pola harmonic).",
  "level": {
   "arah_utama": -1,
-  "konfirmasi_utama": 3833.6,
-  "target_utama": 3797.5,
-  "konfirmasi_alt": 3924.2,
-  "target_alt": 3980.2
+  "konfirmasi_utama": 3719.2,
+  "target_utama": 3701.9,
+  "konfirmasi_alt": 3797.5,
+  "target_alt": 3836.8
  },
- "status_lama": "SELESAI",
- "status_teks": "Target skenario utama 3797.5 tercapai (D1 18 Nov).",
- "diperbarui_utc": "2026-11-18T20:03Z"
+ "status_lama": "MENUNGGU",
+ "status_teks": "D1 belum close di bawah 3719.2 (konfirmasi skenario utama).",
+ "diperbarui_utc": "2026-11-18T20:22Z"
 }
