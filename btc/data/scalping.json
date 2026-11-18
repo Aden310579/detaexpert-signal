@@ -3,49 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 64613,
- "data_sampai_wib": "18 Nov 2026 08:05",
- "data_sampai_oslo": "18 Nov 2026 02:05",
- "dibuat_utc": "2026-11-18T01:05:00Z",
- "aktif_sampai_utc": "2026-11-18T03:00:00Z",
- "dibuat_wib": "18 Nov 2026 08:05",
- "dibuat_oslo": "18 Nov 2026 02:05",
- "aktif_sampai_wib": "18 Nov 2026 10:00",
- "aktif_sampai_oslo": "18 Nov 2026 04:00",
+ "harga": 64464,
+ "data_sampai_wib": "18 Nov 2026 10:05",
+ "data_sampai_oslo": "18 Nov 2026 04:05",
+ "dibuat_utc": "2026-11-18T03:05:00Z",
+ "aktif_sampai_utc": "2026-11-18T05:00:00Z",
+ "dibuat_wib": "18 Nov 2026 10:05",
+ "dibuat_oslo": "18 Nov 2026 04:05",
+ "aktif_sampai_wib": "18 Nov 2026 12:00",
+ "aktif_sampai_oslo": "18 Nov 2026 06:00",
  "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist +15 → −6 berbalik negatif · H4 berjalan HA biru, hist +269 · Stoch M15 51 · ATR 226",
+ "bias": "NETRAL",
+ "bias_teks": "M15 HA biru, hist −67 → −56 mengecil · H4 berjalan HA biru, hist +259 · Stoch M15 25 · ATR 212",
  "bias_label": "M15",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-18T01:06:42Z",
+ "diperbarui_utc": "2026-11-18T03:07:35Z",
  "teks": [
-  "Analisa 06:05 selesai · tidak ada posisi",
-  "06:05 tanpa zona valid, tidak ada entry.",
-  "Range 06–08 WIB: 64.699 – 65.268 (high 06:10)."
+  "Analisa 08:05 selesai · tidak ada posisi",
+  "E1 SELL 65.228–65.308 tidak tersentuh (high 64.696).",
+  "Range 08–10 WIB: 64.136 – 64.696 (low 09:00)."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    65228,
-    65308
+    64174,
+    64254
    ],
-   "entry": 65268,
-   "sl": 65408,
-   "tp1": 65120,
-   "tp2": 65000,
+   "entry": 64214,
+   "sl": 64074,
+   "tp1": 64320,
+   "tp2": 64435,
    "alasan": [
-    "bulat 65.250",
-    "swing 65.268",
-    "BB atas M15 65.285"
+    "swing 64.174",
+    "BB bawah M15 64.193",
+    "bulat 64.250"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Searah bias M15"
+   "jenis_entry": "Searah bias H4"
   }
  ]
 }
