@@ -3,71 +3,71 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 63797,
- "data_sampai_wib": "18 Nov 2026 03:00",
- "data_sampai_oslo": "17 Nov 2026 21:00",
- "dibuat_utc": "2026-11-17T20:05:00Z",
- "aktif_sampai_utc": "2026-11-18T00:00:00Z",
- "dibuat_wib": "18 Nov 2026 03:05",
- "dibuat_oslo": "17 Nov 2026 21:05",
- "aktif_sampai_wib": "18 Nov 2026 07:00",
- "aktif_sampai_oslo": "18 Nov 2026 01:00",
+ "harga": 64877,
+ "data_sampai_wib": "18 Nov 2026 07:00",
+ "data_sampai_oslo": "18 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-18T00:05:00Z",
+ "aktif_sampai_utc": "2026-11-18T08:00:00Z",
+ "dibuat_wib": "18 Nov 2026 07:05",
+ "dibuat_oslo": "18 Nov 2026 01:05",
+ "aktif_sampai_wib": "18 Nov 2026 15:00",
+ "aktif_sampai_oslo": "18 Nov 2026 09:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "H4 close 03:00 = 63.754 HA merah, hist +268 → +216 · range 23–03 WIB 63.456 – 64.483",
+ "bias": "NAIK",
+ "bias_teks": "H4 close 07:00 = 64.947 HA biru, hist +216 → +262 · range 03–07 WIB 63.686 – 65.268",
  "bias_label": "H4",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-17T20:07:17Z",
+ "kondisi": "Squeeze",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-11-18T00:06:51Z",
  "teks": [
-  "Status 03:05 · tidak ada posisi",
-  "E1 BUY tersentuh 23:00 tanpa sinyal, H4 close 63.754 < SL → batal.",
-  "E2 SELL belum tersentuh (high 64.483), tetap menunggu."
+  "Analisa 23:05 selesai · tidak ada posisi",
+  "E1 BUY batal (H4 close 03:00 di bawah SL).",
+  "E2 SELL sinyal 06:45, close 64.947 di luar zona → dilewati."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    64140,
-    64300
+    64660,
+    64820
    ],
-   "entry": 64220,
-   "sl": 63940,
-   "tp1": 64500,
-   "tp2": 64770,
+   "entry": 64740,
+   "sl": 64460,
+   "tp1": 65000,
+   "tp2": 65270,
    "alasan": [
-    "swing M15 64.188",
-    "BB bawah M15 64.229",
-    "Fib 0.382 64.238"
+    "Fib 0.382 M15 64.664",
+    "swing M15 64.724",
+    "BB tengah H4 64.742"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback ke bawah"
+   "jenis_entry": "Pullback searah"
   },
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    64770,
-    64930
+    64390,
+    64550
    ],
-   "entry": 64850,
-   "sl": 65130,
-   "tp1": 64550,
-   "tp2": 64300,
+   "entry": 64470,
+   "sl": 64190,
+   "tp1": 64700,
+   "tp2": 65000,
    "alasan": [
-    "BB tengah M15 64.841",
-    "BB tengah H4 64.856",
-    "swing M15 64.862"
+    "BB tengah M15 64.399",
+    "Fib 0.5 M15 64.477",
+    "bulat 64.500"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback ke atas"
+   "jenis_entry": "Pullback dalam"
   }
  ]
 }
