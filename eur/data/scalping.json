@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.09751,
- "data_sampai_wib": "18 Nov 2026 22:10",
- "data_sampai_oslo": "18 Nov 2026 16:10",
+ "harga": 1.09654,
+ "data_sampai_wib": "18 Nov 2026 23:10",
+ "data_sampai_oslo": "18 Nov 2026 17:10",
  "dibuat_utc": "2026-11-18T13:05:00Z",
  "aktif_sampai_utc": "2026-11-18T15:00:00Z",
  "dibuat_wib": "18 Nov 2026 20:05",
  "dibuat_oslo": "18 Nov 2026 14:05",
  "aktif_sampai_wib": "18 Nov 2026 22:00",
  "aktif_sampai_oslo": "18 Nov 2026 16:00",
- "diperbarui_utc": "2026-11-18T15:07:58Z",
- "status": "BERJALAN",
+ "diperbarui_utc": "2026-11-18T16:08:02Z",
+ "status": "HOLD",
  "bias": "NETRAL",
  "bias_teks": "M15 memantul (Stoch 86 jenuh beli) · H1 netral · H4 masih turun · BB tengah H1 1.0982",
  "bias_label": "M15",
  "kondisi": "Memantul",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell 1.0976 BERJALAN · +1 pip",
-  "Harga naik ke 1.0982 lalu sinyal sell muncul 21:55 WIB di Entry 3.",
-  "Tahan: SL 1.0984, TP1 1.0968, TP2 1.0960. Entry 1 & 2 kedaluwarsa."
+  "Sell 1.0976 HOLD · TP1 sudah +8, sisa ke TP2",
+  "TP1 1.0968 kena 22:15 WIB. Low 1.0962 belum sampai TP2.",
+  "Tahan sisa: SL di entry 1.0976, TP2 1.0960."
  ],
  "entries": [
   {
@@ -84,7 +84,7 @@
     "TP1 intraday buy 1.0974"
    ],
    "state": "dipakai",
-   "status": "BERJALAN",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0985",
    "jenis_entry": "Resistance"
   }
