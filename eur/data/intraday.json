@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.09654,
- "data_sampai_wib": "19 Nov 2026 02:10",
- "data_sampai_oslo": "18 Nov 2026 20:10",
+ "harga": 1.09662,
+ "data_sampai_wib": "19 Nov 2026 03:10",
+ "data_sampai_oslo": "18 Nov 2026 21:10",
  "dibuat_utc": "2026-11-18T16:05:00Z",
  "aktif_sampai_utc": "2026-11-19T00:00:00Z",
  "dibuat_wib": "18 Nov 2026 23:05",
  "dibuat_oslo": "18 Nov 2026 17:05",
  "aktif_sampai_wib": "19 Nov 2026 07:00",
  "aktif_sampai_oslo": "19 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-18T19:07:23Z",
- "status": "ENTRY 1 BERJALAN",
+ "diperbarui_utc": "2026-11-18T20:07:22Z",
+ "status": "HOLD",
  "bias": "TURUN",
- "bias_teks": "D1 & H1 turun · H4 squeeze di BB bawah 1.0966 · RSI H4 28 · Stoch H4 11 · MACD −30",
+ "bias_teks": "D1 turun · H4 squeeze di BB bawah 1.0957 · RSI H4 28 · M15 turun · Stoch M15 22",
  "bias_label": "H4",
  "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana lama kedaluwarsa · tanpa posisi",
-  "H4 23:00 tutup 1.0969 (range 1.0954–1.0982). Buy 1.0957–63 tanpa sinyal.",
-  "Rencana baru: sell 1.0978–84 atau buy 1.0950–56. Aktif s/d 19 Nov 07:00 WIB."
+  "Sell 1.0981 HOLD · TP1 sudah +14, sisa ke TP2",
+  "Sinyal sell 02:00 WIB. TP1 1.0967 kena 02:45 WIB (low 1.0963).",
+  "Tahan sisa: SL pindah ke entry 1.0981, TP2 1.0953. Aktif s/d 07:00 WIB."
  ],
  "entries": [
   {
@@ -42,7 +42,7 @@
     "BB tengah H1 1.0980"
    ],
    "state": "dipakai",
-   "status": "BERJALAN",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0995",
    "jenis_entry": "Pullback"
   },
