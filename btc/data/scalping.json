@@ -3,50 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 64285,
- "data_sampai_wib": "18 Nov 2026 18:05",
- "data_sampai_oslo": "18 Nov 2026 12:05",
- "dibuat_utc": "2026-11-18T11:05:00Z",
- "aktif_sampai_utc": "2026-11-18T13:00:00Z",
- "dibuat_wib": "18 Nov 2026 18:05",
- "dibuat_oslo": "18 Nov 2026 12:05",
- "aktif_sampai_wib": "18 Nov 2026 20:00",
- "aktif_sampai_oslo": "18 Nov 2026 14:00",
+ "harga": 64073,
+ "data_sampai_wib": "18 Nov 2026 20:05",
+ "data_sampai_oslo": "18 Nov 2026 14:05",
+ "dibuat_utc": "2026-11-18T13:05:00Z",
+ "aktif_sampai_utc": "2026-11-18T15:00:00Z",
+ "dibuat_wib": "18 Nov 2026 20:05",
+ "dibuat_oslo": "18 Nov 2026 14:05",
+ "aktif_sampai_wib": "18 Nov 2026 22:00",
+ "aktif_sampai_oslo": "18 Nov 2026 16:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist −49 → −54 membesar · H4 berjalan HA merah, hist +258 · Stoch M15 20 · ATR 173",
+ "bias_teks": "M15 HA merah, hist −38,5 → −35,3 mengecil · H4 berjalan HA merah, hist +224 · Stoch M15 14",
  "bias_label": "M15",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-18T11:07:43Z",
+ "kondisi": "Trending",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-11-18T13:07:38Z",
  "teks": [
-  "Analisa 16:05 selesai · tidak ada posisi",
-  "E1 batal 17:15 (M15 close 64.599 < 64.614); E2 tersentuh 17:20 tanpa sinyal,",
-  "batal 17:45 (M15 close 64.317 < 64.327). Range 16–18 WIB: 64.173 – 64.785."
+  "Analisa 18:05 selesai · tidak ada posisi",
+  "E1 SELL: sinyal 19:25 close 64.237 di luar zona → dilewati.",
+  "Range 18–20 WIB: 63.969 – 64.392 (low 19:40)."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "SELL",
-   "zona": [
-    64247,
-    64327
-   ],
-   "entry": 64287,
-   "sl": 64427,
-   "tp1": 64180,
-   "tp2": 64000,
-   "alasan": [
-    "bulat 64.250",
-    "BB bawah M15 64.300",
-    "swing 64.313",
-    "Fib 0.236 64.323"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Retest searah"
-  }
- ]
+ "entries": []
 }
