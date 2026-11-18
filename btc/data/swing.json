@@ -3,43 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 64603,
- "data_sampai_wib": "17 Nov 2026 07:20",
- "data_sampai_oslo": "17 Nov 2026 01:20",
- "dibuat_utc": "2026-11-17T00:20:00Z",
- "aktif_sampai_utc": "2026-11-18T00:00:00Z",
- "dibuat_wib": "17 Nov 2026 07:20",
- "dibuat_oslo": "17 Nov 2026 01:20",
- "aktif_sampai_wib": "18 Nov 2026 07:00",
- "aktif_sampai_oslo": "18 Nov 2026 01:00",
+ "harga": 64877,
+ "data_sampai_wib": "18 Nov 2026 07:00",
+ "data_sampai_oslo": "18 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-18T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-20T00:00:00Z",
+ "dibuat_wib": "18 Nov 2026 07:20",
+ "dibuat_oslo": "18 Nov 2026 01:20",
+ "aktif_sampai_wib": "20 Nov 2026 07:00",
+ "aktif_sampai_oslo": "20 Nov 2026 01:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "D1 16 Nov close 64.883 · HA D1 merah · histogram MACD D1 −1.151 → −1.145 · Stoch D1 12 · ATR 3.000",
+ "bias_teks": "D1 17 Nov close 64.947 · HA D1 merah · histogram MACD D1 −1.145 → −1.053 · Stoch D1 16 · ATR 3.031",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-17T00:21:49Z",
+ "diperbarui_utc": "2026-11-18T00:21:50Z",
  "teks": [
-  "Analisa 16 Nov aktif · belum tersentuh",
-  "E1 SELL 65.970–66.570 belum tersentuh (high 16 Nov 65.696).",
-  "D1 16 Nov: low 63.905, close 64.883 (−468)."
+  "Analisa 16 Nov selesai · tidak tersentuh",
+  "E1 SELL 65.970–66.570 & E2 SELL tidak tersentuh (high 65.696).",
+  "D1 17 Nov: high 65.447, low 63.336, close 64.947 (+64)."
  ],
  "entries": [
   {
    "n": 1,
    "side": "SELL",
    "zona": [
-    65970,
-    66570
+    65400,
+    66000
    ],
-   "entry": 66270,
-   "sl": 67320,
-   "tp1": 65000,
-   "tp2": 63320,
+   "entry": 65700,
+   "sl": 66750,
+   "tp1": 64500,
+   "tp2": 63400,
    "alasan": [
-    "angka bulat 66.000",
-    "BB bawah D1 66.007",
-    "Fib 0.236 66.535"
+    "Fib 0.236 65.407",
+    "high D1 17 Nov 65.447",
+    "angka bulat 66.000"
    ],
    "state": "tunggu",
    "info": "",
@@ -49,25 +49,25 @@
   },
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    67920,
-    68520
+    63000,
+    63600
    ],
-   "entry": 68220,
-   "sl": 69270,
-   "tp1": 67000,
-   "tp2": 66000,
+   "entry": 63300,
+   "sl": 62250,
+   "tp1": 64500,
+   "tp2": 65400,
    "alasan": [
-    "angka bulat 68.000",
-    "open D1 14 Nov 68.314",
-    "high D1 14 Nov 68.446"
+    "angka bulat 63.000",
+    "low D1 17 Nov 63.336",
+    "BB bawah D1 63.483"
    ],
    "state": "tunggu",
    "info": "",
-   "lawan_arah": false,
+   "lawan_arah": true,
    "masuk_lagi": false,
-   "jenis_entry": "Pullback dalam"
+   "jenis_entry": "Lawan arah"
   }
  ]
 }
