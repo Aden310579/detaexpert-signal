@@ -3,22 +3,22 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 64877,
- "data_sampai_wib": "18 Nov 2026 07:00",
- "data_sampai_oslo": "18 Nov 2026 01:00",
- "dibuat_utc": "2026-11-18T00:20:00Z",
- "aktif_sampai_utc": "2026-11-19T00:00:00Z",
- "dibuat_wib": "18 Nov 2026 07:20",
- "dibuat_oslo": "18 Nov 2026 01:20",
- "aktif_sampai_wib": "19 Nov 2026 07:00",
- "aktif_sampai_oslo": "19 Nov 2026 01:00",
- "status": "ARAH",
+ "harga": 62673,
+ "data_sampai_wib": "19 Nov 2026 07:20",
+ "data_sampai_oslo": "19 Nov 2026 01:20",
+ "dibuat_utc": "2026-11-19T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-20T00:00:00Z",
+ "dibuat_wib": "19 Nov 2026 07:20",
+ "dibuat_oslo": "19 Nov 2026 01:20",
+ "aktif_sampai_wib": "20 Nov 2026 07:00",
+ "aktif_sampai_oslo": "20 Nov 2026 01:00",
+ "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "D1 17 Nov close 64.947 (+64) · histogram MACD D1 −1.145 → −1.053 · Stoch D1 16",
+ "bias_teks": "D1 18 Nov close 63.068 (−1.879) · histogram MACD D1 −1.053 → −1.033 · Stoch D1 12",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-18T00:21:50Z",
+ "diperbarui_utc": "2026-11-19T00:22:25Z",
  "teks": [
   "Pantul naik ke Fib 0.236 = 66.535",
   "Turun lagi ke low 62.006"
@@ -29,19 +29,19 @@
    "target": "66.535",
    "konfirmasi": "HA D1 biru + close di atas 65.500",
    "poin": [
-    "PRZ 62.638 tersentuh, low 62.006.",
-    "High 17 Nov 65.447, belum ke 66.535.",
-    "Stoch D1 16, hist mengecil 2 hari."
+    "PRZ diuji lagi, low 18 Nov 62.063.",
+    "Hist D1 mengecil 3 hari.",
+    "Stoch D1 12, jenuh jual."
    ]
   },
   "alternatif": {
    "judul": "Turun lagi ke low 62.006",
    "target": "62.006",
-   "konfirmasi": "D1 close di bawah 64.000 + HA merah",
+   "konfirmasi": "D1 close di bawah 62.000 + HA merah",
    "poin": [
     "CD = 3,1 × AB di 62.006.",
-    "D1 17 Nov close 64.947, HA merah.",
-    "Low 17 Nov 63.336 masih di atas 62.006."
+    "D1 18 Nov close 63.068, HA merah.",
+    "Low 18 Nov 62.063, dekat 62.006."
    ]
   }
  },
