@@ -3,71 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 62732,
- "data_sampai_wib": "19 Nov 2026 03:05",
- "data_sampai_oslo": "18 Nov 2026 21:05",
- "dibuat_utc": "2026-11-18T16:05:00Z",
- "aktif_sampai_utc": "2026-11-19T00:00:00Z",
- "dibuat_wib": "18 Nov 2026 23:05",
- "dibuat_oslo": "18 Nov 2026 17:05",
- "aktif_sampai_wib": "19 Nov 2026 07:00",
- "aktif_sampai_oslo": "19 Nov 2026 01:00",
+ "harga": 62882,
+ "data_sampai_wib": "19 Nov 2026 07:05",
+ "data_sampai_oslo": "19 Nov 2026 01:05",
+ "dibuat_utc": "2026-11-19T00:05:00Z",
+ "aktif_sampai_utc": "2026-11-19T08:00:00Z",
+ "dibuat_wib": "19 Nov 2026 07:05",
+ "dibuat_oslo": "19 Nov 2026 01:05",
+ "aktif_sampai_wib": "19 Nov 2026 15:00",
+ "aktif_sampai_oslo": "19 Nov 2026 09:00",
  "status": "MENUNGGU",
  "bias": "NETRAL",
- "bias_teks": "H4 close 03:00 = 62.747 HA merah, hist +164 → +85 mengecil · range 23–03 WIB 62.279 – 63.538",
+ "bias_teks": "H4 close 07:00 = 63.068 HA merah, hist +85 → +63 mengecil · Stoch H4 22 · ATR 1025",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-18T20:05:56Z",
+ "diperbarui_utc": "2026-11-19T00:08:46Z",
  "teks": [
-  "Status 03:05 · tidak ada posisi, E2 masih aktif",
-  "E1 sinyal 00:00 close di luar zona → dilewati; batal (H4 close 62.747).",
-  "E2 SELL 63.872–64.032 belum tersentuh (high 63.538)."
+  "Analisa 23:05 selesai · tidak ada posisi",
+  "E1 batal 03:00; E2 SELL 63.872–64.032 tidak tersentuh (high 63.300).",
+  "Range 03–07 WIB: 62.063 – 63.300 (low 05:55, high 06:50)."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    62960,
-    63120
+    62733,
+    62893
    ],
-   "entry": 63040,
-   "sl": 62760,
-   "tp1": 63324,
-   "tp2": 63580,
+   "entry": 62813,
+   "sl": 62533,
+   "tp1": 63000,
+   "tp2": 63300,
    "alasan": [
-    "swing 62.977",
-    "bulat 63.000",
-    "BB bawah M15 63.089"
+    "swing M15 62.760",
+    "BB bawah H4 62.764",
+    "Fib 0.236 H4 62.862"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
    "jenis_entry": "Pantulan support"
-  },
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    63872,
-    64032
-   ],
-   "entry": 63952,
-   "sl": 64232,
-   "tp1": 63600,
-   "tp2": 63336,
-   "alasan": [
-    "swing 63.905",
-    "Fib 0.382 H4 63.954",
-    "bulat 64.000"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback resisten"
   }
  ]
 }
