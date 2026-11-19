@@ -3,49 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 62403,
- "data_sampai_wib": "19 Nov 2026 06:05",
- "data_sampai_oslo": "19 Nov 2026 00:05",
- "dibuat_utc": "2026-11-18T23:05:00Z",
- "aktif_sampai_utc": "2026-11-19T01:00:00Z",
- "dibuat_wib": "19 Nov 2026 06:05",
- "dibuat_oslo": "19 Nov 2026 00:05",
- "aktif_sampai_wib": "19 Nov 2026 08:00",
- "aktif_sampai_oslo": "19 Nov 2026 02:00",
+ "harga": 63289,
+ "data_sampai_wib": "19 Nov 2026 08:05",
+ "data_sampai_oslo": "19 Nov 2026 02:05",
+ "dibuat_utc": "2026-11-19T01:05:00Z",
+ "aktif_sampai_utc": "2026-11-19T03:00:00Z",
+ "dibuat_wib": "19 Nov 2026 08:05",
+ "dibuat_oslo": "19 Nov 2026 02:05",
+ "aktif_sampai_wib": "19 Nov 2026 10:00",
+ "aktif_sampai_oslo": "19 Nov 2026 04:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "M15 HA merah, hist +11 → +17 · H4 berjalan HA merah, hist +21 · Stoch M15 33 · ATR 206",
+ "bias": "NAIK",
+ "bias_teks": "M15 HA biru, hist +108 → +113 · H4 berjalan HA merah, hist +71 · Stoch M15 93 · ATR 272",
  "bias_label": "M15",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-18T23:06:44Z",
+ "diperbarui_utc": "2026-11-19T01:07:08Z",
  "teks": [
-  "Analisa 04:05 selesai · tidak ada posisi",
-  "E1 sinyal 05:00 close 62.435 di luar zona → dilewati; 05:45–05:55 tanpa sinyal.",
-  "Range 04–06 WIB: 62.063 – 62.659 (low 05:55)."
+  "Analisa 06:05 selesai · tidak ada posisi",
+  "E1 BUY tersentuh 06:00 (low 62.249) tanpa sinyal (Stoch M5 44), harga naik.",
+  "Range 06–08 WIB: 62.249 – 63.300 (high 06:45)."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    62218,
-    62298
+    63244,
+    63324
    ],
-   "entry": 62258,
-   "sl": 62118,
-   "tp1": 62380,
-   "tp2": 62500,
+   "entry": 63284,
+   "sl": 63144,
+   "tp1": 63400,
+   "tp2": 63500,
    "alasan": [
-    "Fib 0.236 62.237",
-    "bulat 62.250",
-    "swing 62.279"
+    "bulat 63.250",
+    "swing 63.286 / 63.300",
+    "BB atas M15 63.314"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pantulan support"
+   "jenis_entry": "Retest breakout"
   }
  ]
 }
