@@ -3,49 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 62565,
- "data_sampai_wib": "19 Nov 2026 10:10",
- "data_sampai_oslo": "19 Nov 2026 04:10",
- "dibuat_utc": "2026-11-19T03:05:00Z",
- "aktif_sampai_utc": "2026-11-19T05:00:00Z",
- "dibuat_wib": "19 Nov 2026 10:05",
- "dibuat_oslo": "19 Nov 2026 04:05",
- "aktif_sampai_wib": "19 Nov 2026 12:00",
- "aktif_sampai_oslo": "19 Nov 2026 06:00",
+ "harga": 63774,
+ "data_sampai_wib": "19 Nov 2026 18:05",
+ "data_sampai_oslo": "19 Nov 2026 12:05",
+ "dibuat_utc": "2026-11-19T11:06:00Z",
+ "aktif_sampai_utc": "2026-11-19T13:00:00Z",
+ "dibuat_wib": "19 Nov 2026 18:06",
+ "dibuat_oslo": "19 Nov 2026 12:06",
+ "aktif_sampai_wib": "19 Nov 2026 20:00",
+ "aktif_sampai_oslo": "19 Nov 2026 14:00",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist -12 → -21 · H4 berjalan HA merah, hist +24 (mengecil) · Stoch M15 20 · ATR 267",
+ "bias_teks": "M15 HA merah, hist -13 → -19 · H4 berjalan HA biru, hist +108 → +142 · Stoch M15 65 · ATR 157",
  "bias_label": "M15",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-19T03:07:35Z",
+ "kondisi": "Squeeze",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-11-19T11:07:01Z",
  "teks": [
-  "Analisa 08:05 selesai · tidak ada posisi",
-  "E1 BUY tanpa sinyal (Stoch M5 >75), batal M15 close 08:15 62.944 < 63.144.",
-  "Range 08–10 WIB: 62.418 – 63.295 (low 08:30)."
+  "Analisa 10:05 selesai · tidak ada posisi",
+  "E1 SELL tanpa sinyal, batal M15 close 10:30 62.946 > 62.910.",
+  "Analisa 12:05–16:05 tidak terbit. Range 16–18 WIB: 63.682 – 63.980."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "SELL",
-   "zona": [
-    62730,
-    62810
-   ],
-   "entry": 62770,
-   "sl": 62910,
-   "tp1": 62650,
-   "tp2": 62500,
-   "alasan": [
-    "bulat 62.750",
-    "Fib 0.382 62.755",
-    "BB tengah M15 62.788"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback"
-  }
- ]
+ "entries": []
 }
