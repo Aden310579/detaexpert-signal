@@ -3,57 +3,34 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3754.1,
- "data_sampai_wib": "19 Nov 2026 09:00",
- "data_sampai_oslo": "19 Nov 2026 03:00",
- "dibuat_utc": "2026-11-19T02:00:00Z",
- "aktif_sampai_utc": "2026-11-19T04:00:00Z",
- "dibuat_wib": "19 Nov 2026 09:00",
- "dibuat_oslo": "19 Nov 2026 03:00",
- "aktif_sampai_wib": "19 Nov 2026 11:00",
- "aktif_sampai_oslo": "19 Nov 2026 05:00",
+ "harga": 3722.6,
+ "data_sampai_wib": "19 Nov 2026 11:00",
+ "data_sampai_oslo": "19 Nov 2026 05:00",
+ "dibuat_utc": "2026-11-19T04:00:00Z",
+ "aktif_sampai_utc": "2026-11-19T06:00:00Z",
+ "dibuat_wib": "19 Nov 2026 11:00",
+ "dibuat_oslo": "19 Nov 2026 05:00",
+ "aktif_sampai_wib": "19 Nov 2026 13:00",
+ "aktif_sampai_oslo": "19 Nov 2026 07:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3754.1, 35 poin dari Entry 2 (SELL). Stochastic M5 76, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
- "bias": "NAIK",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +3.90 (membesar dari +2.40)",
- "kondisi": "Trending",
- "indikator_utama": "MACD",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +1.60 (mengecil dari +1.70)",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
  "bollinger": [
-  3791.4,
-  3752.5,
-  3713.5
+  3788.5,
+  3746.3,
+  3704.1
  ],
  "fibonacci": [
-  3735.0,
-  3744.7
+  3710.0,
+  3719.2
  ],
- "entries": [
-  {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    3786.0,
-    3792.0
-   ],
-   "entry": 3789.0,
-   "sl": 3802.0,
-   "tp1": 3766.9,
-   "tp2": 3744.7,
-   "alasan": [
-    "swing ekstrem 12 candle H1",
-    "Bollinger H1 atas 3791.4",
-    "swing H1 sebelumnya 3786.6"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Lawan arah"
-  }
- ],
+ "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-19T02:03:00Z",
+ "diperbarui_utc": "2026-11-19T04:04:00Z",
  "status_lama": "MENUNGGU"
 }
