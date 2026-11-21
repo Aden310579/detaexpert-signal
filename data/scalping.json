@@ -3,9 +3,9 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3532.9,
- "data_sampai_wib": "21 Nov 2026 15:00",
- "data_sampai_oslo": "21 Nov 2026 09:00",
+ "harga": 3532.8,
+ "data_sampai_wib": "21 Nov 2026 15:05",
+ "data_sampai_oslo": "21 Nov 2026 09:05",
  "dibuat_utc": "2026-11-21T08:00:00Z",
  "aktif_sampai_utc": "2026-11-21T10:00:00Z",
  "dibuat_wib": "21 Nov 2026 15:00",
@@ -14,7 +14,7 @@
  "aktif_sampai_oslo": "21 Nov 2026 11:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3532.9, 5 poin dari Entry 2 (SELL). Stochastic M5 50, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Harga 3532.8, 5 poin dari Entry 2 (SELL). Stochastic M5 41, Heikin Ashi M5 merah. Tunggu sinyal di zona."
  ],
  "bias": "NAIK",
  "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +4.70 (membesar dari +4.60)",
@@ -54,6 +54,6 @@
   }
  ],
  "posisi": [],
- "diperbarui_utc": "2026-11-21T08:04:00Z",
+ "diperbarui_utc": "2026-11-21T08:05:00Z",
  "status_lama": "MENUNGGU"
 }
