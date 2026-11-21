@@ -18,10 +18,10 @@
  "bias_label": "M15",
  "kondisi": "Squeeze",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-21T23:06:11Z",
+ "diperbarui_utc": "2026-11-21T23:06:22Z",
  "teks": [
   "Analisa 04:05 selesai · tidak ada posisi",
-  "E1/E2 BUY tersentuh tanpa sinyal valid (sinyal 05:20 close di luar zona). E1 batal 05:45.",
+  "E1/E2 BUY tersentuh, sinyal 05:20 di luar zona. E1 batal 05:45.",
   "Range 04–06 WIB: 59.988 – 60.568."
  ],
  "entries": []
