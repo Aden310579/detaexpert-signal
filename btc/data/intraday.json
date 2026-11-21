@@ -3,49 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 63512,
- "data_sampai_wib": "19 Nov 2026 11:05",
- "data_sampai_oslo": "19 Nov 2026 05:05",
- "dibuat_utc": "2026-11-19T04:05:00Z",
- "aktif_sampai_utc": "2026-11-19T08:00:00Z",
- "dibuat_wib": "19 Nov 2026 11:05",
- "dibuat_oslo": "19 Nov 2026 05:05",
- "aktif_sampai_wib": "19 Nov 2026 15:00",
- "aktif_sampai_oslo": "19 Nov 2026 09:00",
+ "harga": 57796,
+ "data_sampai_wib": "21 Nov 2026 15:00",
+ "data_sampai_oslo": "21 Nov 2026 09:00",
+ "dibuat_utc": "2026-11-21T08:05:00Z",
+ "aktif_sampai_utc": "2026-11-21T16:00:00Z",
+ "dibuat_wib": "21 Nov 2026 15:05",
+ "dibuat_oslo": "21 Nov 2026 09:05",
+ "aktif_sampai_wib": "21 Nov 2026 23:00",
+ "aktif_sampai_oslo": "21 Nov 2026 17:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "H4 close 11:00 = 63.206 HA merah, hist +63 → +65 · Stoch H4 25 · ATR 1045",
+ "bias": "TURUN",
+ "bias_teks": "H4 close 15:00 = 57.997 HA merah, hist −453 → −419 · Stoch H4 18 · ATR 1.512",
  "bias_label": "H4",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-19T04:06:17Z",
+ "kondisi": "Trending",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-11-21T08:06:34Z",
  "teks": [
-  "Analisa 07:05 masih aktif · tidak ada posisi",
-  "E1 tersentuh tanpa sinyal; sinyal 10:15 close 62.946 di luar zona → dilewati.",
-  "Range 07–11 WIB: 62.389 – 63.300. H4 close 11:00 = 63.206, E1 tetap aktif."
+  "Analisa 19 Nov 07:05 selesai · tidak ada posisi",
+  "Jadwal 19 Nov 19:05 – 21 Nov 11:05 tidak terbit (gangguan).",
+  "Range 19 Nov 15:00 – 21 Nov 15:00 WIB: 55.130 – 64.081."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "BUY",
-   "zona": [
-    62733,
-    62893
-   ],
-   "entry": 62813,
-   "sl": 62533,
-   "tp1": 63000,
-   "tp2": 63300,
-   "alasan": [
-    "swing M15 62.760",
-    "BB bawah H4 62.764",
-    "Fib 0.236 H4 62.862"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan support"
-  }
- ]
+ "entries": []
 }
