@@ -3,71 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 60458,
- "data_sampai_wib": "22 Nov 2026 04:05",
- "data_sampai_oslo": "21 Nov 2026 22:05",
- "dibuat_utc": "2026-11-21T21:05:00Z",
- "aktif_sampai_utc": "2026-11-21T23:00:00Z",
- "dibuat_wib": "22 Nov 2026 04:05",
- "dibuat_oslo": "21 Nov 2026 22:05",
- "aktif_sampai_wib": "22 Nov 2026 06:00",
- "aktif_sampai_oslo": "22 Nov 2026 00:00",
+ "harga": 60100,
+ "data_sampai_wib": "22 Nov 2026 06:05",
+ "data_sampai_oslo": "22 Nov 2026 00:05",
+ "dibuat_utc": "2026-11-21T23:05:00Z",
+ "aktif_sampai_utc": "2026-11-22T01:00:00Z",
+ "dibuat_wib": "22 Nov 2026 06:05",
+ "dibuat_oslo": "22 Nov 2026 00:05",
+ "aktif_sampai_wib": "22 Nov 2026 08:00",
+ "aktif_sampai_oslo": "22 Nov 2026 02:00",
  "status": "MENUNGGU",
- "bias": "NETRAL",
- "bias_teks": "M15 HA biru, hist −37 → −35 · H4 HA biru, hist −161 → +6 (NAIK) · Stoch M15 93 · ATR 159",
+ "bias": "TURUN",
+ "bias_teks": "M15 HA merah, hist −64 → −73 · H4 HA biru, hist +6 (NAIK) · Stoch M15 23 · ATR 144",
  "bias_label": "M15",
  "kondisi": "Squeeze",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-21T21:06:30Z",
+ "diperbarui_utc": "2026-11-21T23:06:11Z",
  "teks": [
-  "Analisa 02:05 selesai · tidak ada posisi",
-  "E1 BUY tersentuh 02:55 (low 60.202) tanpa sinyal (Stoch M5 73).",
-  "Range 02–04 WIB: 60.202 – 60.521."
+  "Analisa 04:05 selesai · tidak ada posisi",
+  "E1/E2 BUY tersentuh tanpa sinyal valid (sinyal 05:20 close di luar zona). E1 batal 05:45.",
+  "Range 04–06 WIB: 59.988 – 60.568."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "BUY",
-   "zona": [
-    60328,
-    60408
-   ],
-   "entry": 60368,
-   "sl": 60228,
-   "tp1": 60480,
-   "tp2": 60550,
-   "alasan": [
-    "Fib 0.382 60.336",
-    "swing 60.342",
-    "Fib 0.236 60.399"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback searah H4"
-  },
-  {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    60186,
-    60266
-   ],
-   "entry": 60226,
-   "sl": 60086,
-   "tp1": 60336,
-   "tp2": 60480,
-   "alasan": [
-    "swing 60.202",
-    "BB tengah M15 60.228",
-    "bulat 60.250"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pullback searah H4"
-  }
- ]
+ "entries": []
 }
