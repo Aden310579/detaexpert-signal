@@ -3,34 +3,34 @@
  "kode": "/xausw",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 3604.8,
- "data_sampai_wib": "20 Nov 2026 07:00",
- "data_sampai_oslo": "20 Nov 2026 01:00",
- "dibuat_utc": "2026-11-18T20:00:00Z",
- "aktif_sampai_utc": "2026-11-20T20:00:00Z",
- "dibuat_wib": "19 Nov 2026 03:00",
- "dibuat_oslo": "18 Nov 2026 21:00",
- "aktif_sampai_wib": "21 Nov 2026 03:00",
- "aktif_sampai_oslo": "20 Nov 2026 21:00",
+ "harga": 3532.9,
+ "data_sampai_wib": "21 Nov 2026 15:00",
+ "data_sampai_oslo": "21 Nov 2026 09:00",
+ "dibuat_utc": "2026-11-20T20:00:00Z",
+ "aktif_sampai_utc": "2026-11-22T20:00:00Z",
+ "dibuat_wib": "21 Nov 2026 03:00",
+ "dibuat_oslo": "20 Nov 2026 21:00",
+ "aktif_sampai_wib": "23 Nov 2026 03:00",
+ "aktif_sampai_oslo": "22 Nov 2026 21:00",
  "status": "MENUNGGU",
  "teks": [
   "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 -19.30 (membesar dari -12.20)",
+ "bias_teks": "Heikin Ashi D1 merah · histogram MACD D1 -37.40 (membesar dari -25.90)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  4167.9,
-  3955.7,
-  3743.4
+  4223.9,
+  3919.8,
+  3615.6
  ],
  "fibonacci": [
-  3820.6,
-  3883.4
+  3656.2,
+  3750.4
  ],
  "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-20T00:03:00Z",
+ "diperbarui_utc": "2026-11-21T08:04:00Z",
  "status_lama": "MENUNGGU"
 }
