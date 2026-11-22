@@ -3,50 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 59791,
- "data_sampai_wib": "22 Nov 2026 16:05",
- "data_sampai_oslo": "22 Nov 2026 10:05",
- "dibuat_utc": "2026-11-22T09:05:00Z",
- "aktif_sampai_utc": "2026-11-22T11:00:00Z",
- "dibuat_wib": "22 Nov 2026 16:05",
- "dibuat_oslo": "22 Nov 2026 10:05",
- "aktif_sampai_wib": "22 Nov 2026 18:00",
- "aktif_sampai_oslo": "22 Nov 2026 12:00",
+ "harga": 60907,
+ "data_sampai_wib": "22 Nov 2026 18:05",
+ "data_sampai_oslo": "22 Nov 2026 12:05",
+ "dibuat_utc": "2026-11-22T11:05:00Z",
+ "aktif_sampai_utc": "2026-11-22T13:00:00Z",
+ "dibuat_wib": "22 Nov 2026 18:05",
+ "dibuat_oslo": "22 Nov 2026 12:05",
+ "aktif_sampai_wib": "22 Nov 2026 20:00",
+ "aktif_sampai_oslo": "22 Nov 2026 14:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist +112 → +121 · H4 HA merah, hist +146 (NETRAL) · Stoch M15 70 · ATR 298",
+ "bias_teks": "M15 HA biru, hist +187 → +168 (mengecil) · H4 HA merah, hist +146 (NETRAL) · Stoch M15 78 · ATR 418",
  "bias_label": "M15",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-22T09:05:58Z",
+ "diperbarui_utc": "2026-11-22T11:06:21Z",
  "teks": [
-  "Analisa 14:05: E1 BUY tidak tersentuh · tidak ada posisi",
-  "Range 14–16 WIB: 59.026 – 60.410 (high 15:35).",
-  "E1 BUY 58.694–58.774 selesai, low 59.026."
+  "Analisa 16:05: E1 BUY tidak tersentuh · tidak ada posisi",
+  "Range 16–18 WIB: 59.659 – 61.365 (high 16:55).",
+  "E1 BUY 59.204–59.284 selesai, low 59.659."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "BUY",
-   "zona": [
-    59204,
-    59284
-   ],
-   "entry": 59244,
-   "sl": 59104,
-   "tp1": 59380,
-   "tp2": 59500,
-   "alasan": [
-    "swing 59.236",
-    "BB tengah M15 59.239",
-    "angka bulat 59.250",
-    "swing 59.291"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
-  }
- ]
+ "entries": []
 }
