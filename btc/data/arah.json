@@ -3,45 +3,45 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 57796,
- "data_sampai_wib": "21 Nov 2026 15:00",
- "data_sampai_oslo": "21 Nov 2026 09:00",
- "dibuat_utc": "2026-11-21T08:05:00Z",
- "aktif_sampai_utc": "2026-11-22T00:00:00Z",
- "dibuat_wib": "21 Nov 2026 15:05",
- "dibuat_oslo": "21 Nov 2026 09:05",
- "aktif_sampai_wib": "22 Nov 2026 07:00",
- "aktif_sampai_oslo": "22 Nov 2026 01:00",
+ "harga": 60336,
+ "data_sampai_wib": "22 Nov 2026 07:00",
+ "data_sampai_oslo": "22 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-22T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-23T00:00:00Z",
+ "dibuat_wib": "22 Nov 2026 07:20",
+ "dibuat_oslo": "22 Nov 2026 01:20",
+ "aktif_sampai_wib": "23 Nov 2026 07:00",
+ "aktif_sampai_oslo": "23 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "D1 20 Nov close 58.952 (−3.035) · histogram MACD D1 −1.007 → −1.100 · Stoch D1 5",
+ "bias_teks": "D1 21 Nov close 60.216 (+1.264) · histogram MACD D1 −1.100 → −986 · Stoch D1 11",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-21T08:06:34Z",
+ "diperbarui_utc": "2026-11-22T00:21:16Z",
  "teks": [
-  "Turun ke PRZ 52.891–54.351",
-  "Pantul naik ke Fib 0.382 = 59.166"
+  "Turun lagi ke Fib 0.236 = 57.624",
+  "Naik lanjut ke B = 62.006"
  ],
  "skenario": {
   "utama": {
-   "judul": "Turun ke PRZ 52.891–54.351",
-   "target": "54.351",
-   "konfirmasi": "D1 close di bawah 55.000 + HA merah",
+   "judul": "Turun lagi ke Fib 0.236 = 57.624",
+   "target": "57.624",
+   "konfirmasi": "D1 close di bawah 59.000 + HA merah",
    "poin": [
-    "Hist D1 membesar −1.007 → −1.100.",
-    "D1 20 Nov close 58.952, HA merah.",
-    "Low 21 Nov 55.130 (13:15 WIB)."
+    "HA D1 21 Nov masih merah.",
+    "Bias D1 TURUN, BB bawah 57.214.",
+    "Close 21 Nov di atas 0.382 59.166."
    ]
   },
   "alternatif": {
-   "judul": "Pantul naik ke Fib 0.382 = 59.166",
-   "target": "59.166",
-   "konfirmasi": "HA D1 biru + close di atas 59.000",
+   "judul": "Naik lanjut ke B = 62.006",
+   "target": "62.006",
+   "konfirmasi": "HA D1 biru + close di atas 61.000",
    "poin": [
-    "Stoch D1 5, jenuh jual.",
-    "Pantul 55.130 → 58.672 hari ini.",
-    "Fib dari C 65.696 ke 55.130."
+    "D di 55.130 (CD 0,83 × AB).",
+    "Hist D1 mengecil −1.100 → −986.",
+    "Pantul 55.130 → 60.996 (21 Nov)."
    ]
   }
  },
