@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.09788,
- "data_sampai_wib": "23 Nov 2026 08:05",
- "data_sampai_oslo": "23 Nov 2026 02:05",
+ "harga": 1.09823,
+ "data_sampai_wib": "23 Nov 2026 10:10",
+ "data_sampai_oslo": "23 Nov 2026 04:10",
  "dibuat_utc": "2026-11-23T01:05:00Z",
  "aktif_sampai_utc": "2026-11-23T03:00:00Z",
  "dibuat_wib": "23 Nov 2026 08:05",
  "dibuat_oslo": "23 Nov 2026 02:05",
  "aktif_sampai_wib": "23 Nov 2026 10:00",
  "aktif_sampai_oslo": "23 Nov 2026 04:00",
- "diperbarui_utc": "2026-11-23T01:06:18Z",
- "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "M15 naik · H1 naik · H4 squeeze · Stoch M5 & M15 jenuh beli, tunggu pullback",
+ "diperbarui_utc": "2026-11-23T03:07:35Z",
+ "status": "ENTRY 2 HOLD",
+ "bias": "NETRAL",
+ "bias_teks": "M15 netral · M5 turun HA merah · Stoch M15 turun dari 82 · H1 masih naik",
  "bias_label": "M15",
- "kondisi": "Naik",
+ "kondisi": "Netral",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana 06:05 habis tanpa entry · belum ada posisi",
-  "Harga tidak turun ke 1.0963–67, naik pelan ke 1.0981. Rencana baru disusun.",
-  "Stoch M5 85 jenuh beli. Buy tunggu turun ke 1.0971–75, sell di 1.0988–92."
+  "Sell 1.0990 HOLD · TP1 1.0982 kena (+8 pip)",
+  "Sinyal sell 09:35 WIB di high 1.0989, TP1 kena 10:00 WIB. Low 1.0981.",
+  "Tahan sisa: SL geser ke entry 1.0990, TP2 1.0968. Jangan buka posisi baru."
  ],
  "entries": [
   {
@@ -41,8 +41,8 @@
     "Fib 0.382 M15 1.0972",
     "low M5 06:35 WIB 1.0971"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0966",
    "jenis_entry": "Pullback"
   },
@@ -62,8 +62,8 @@
     "BB atas H1 1.0992",
     "Fib 0.382 H4 1.0990"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "dipakai",
+   "status": "HOLD",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0999",
    "jenis_entry": "Resistance"
   },
@@ -83,8 +83,8 @@
     "low Senin 1.0965",
     "low Jumat 1.0963"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0959",
    "jenis_entry": "Support"
   }
