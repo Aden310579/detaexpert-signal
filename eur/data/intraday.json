@@ -3,90 +3,90 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.09618,
- "data_sampai_wib": "23 Nov 2026 22:05",
- "data_sampai_oslo": "23 Nov 2026 16:05",
- "dibuat_utc": "2026-11-23T12:05:00Z",
- "aktif_sampai_utc": "2026-11-23T20:00:00Z",
- "dibuat_wib": "23 Nov 2026 19:05",
- "dibuat_oslo": "23 Nov 2026 13:05",
- "aktif_sampai_wib": "24 Nov 2026 03:00",
- "aktif_sampai_oslo": "23 Nov 2026 21:00",
- "diperbarui_utc": "2026-11-23T15:07:01Z",
- "status": "SIAP ENTRY",
- "bias": "NETRAL",
- "bias_teks": "H4 netral squeeze HA merah · Stoch M15 & H1 5 jenuh jual · D1 tetap turun",
+ "harga": 1.09004,
+ "data_sampai_wib": "23 Nov 2026 23:05",
+ "data_sampai_oslo": "23 Nov 2026 17:05",
+ "dibuat_utc": "2026-11-23T16:05:00Z",
+ "aktif_sampai_utc": "2026-11-24T00:00:00Z",
+ "dibuat_wib": "23 Nov 2026 23:05",
+ "dibuat_oslo": "23 Nov 2026 17:05",
+ "aktif_sampai_wib": "24 Nov 2026 07:00",
+ "aktif_sampai_oslo": "24 Nov 2026 01:00",
+ "diperbarui_utc": "2026-11-23T16:06:48Z",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "H4 turun HA merah · RSI H4 30 · H1 RSI 24 · D1 dekat BB bawah 1.0878",
  "bias_label": "H4",
- "kondisi": "Squeeze netral",
+ "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell 1.0996 TP2 SELESAI · rata-rata +24 pip",
-  "TP1 1.0982 kena 16:15 WIB (+14), TP2 1.0961 kena 18:30 WIB (+35). Rencana baru.",
-  "Harga 1.0962 masuk PRZ AB=CD H4. Buy tunggu 1.0950–56, sell di 1.0975–81."
+  "Buy 1.0953 & 1.0941 BATAL · rencana baru",
+  "H4 19:00 WIB tutup 1.0895, tembus PRZ & SL tanpa sinyal buy. Tidak ada posisi rugi.",
+  "Harga 1.0900, H4 turun. Sell tunggu pantulan 1.0915–21, buy dekat 1.0874–80."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
-   "zona": [
-    1.095,
-    1.0956
-   ],
-   "entry": 1.0953,
-   "sl": 1.0939,
-   "tp1": 1.0967,
-   "tp2": 1.0975,
-   "alasan": [
-    "PRZ AB=CD H4 1.0948–58",
-    "BB bawah H4 1.0952",
-    "low D1 Rabu 1.0954"
-   ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0940",
-   "jenis_entry": "Harmonic"
-  },
-  {
-   "n": 2,
    "side": "SELL",
    "zona": [
-    1.0975,
-    1.0981
+    1.0915,
+    1.0921
    ],
-   "entry": 1.0978,
-   "sl": 1.0992,
-   "tp1": 1.0964,
-   "tp2": 1.0944,
+   "entry": 1.0918,
+   "sl": 1.0932,
+   "tp1": 1.0904,
+   "tp2": 1.088,
    "alasan": [
-    "BB tengah H4 1.0974",
-    "Fib 0.382 H1 1.0976",
-    "BB tengah H1 1.0978"
+    "Fib 0.236 H4 1.0920",
+    "Fib 0.382 M15 1.0915",
+    "retest low 1.0909"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0992",
-   "jenis_entry": "Resistance"
+   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0932",
+   "jenis_entry": "Pullback"
+  },
+  {
+   "n": 2,
+   "side": "BUY",
+   "zona": [
+    1.0874,
+    1.088
+   ],
+   "entry": 1.0877,
+   "sl": 1.0863,
+   "tp1": 1.0891,
+   "tp2": 1.0927,
+   "alasan": [
+    "BB bawah D1 1.0878",
+    "PRZ AB=CD 1.0870–02",
+    "RSI D1 24 jenuh jual"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0863",
+   "jenis_entry": "Harmonic"
   },
   {
    "n": 3,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.0938,
-    1.0944
+    1.0927,
+    1.0933
    ],
-   "entry": 1.0941,
-   "sl": 1.0927,
-   "tp1": 1.0955,
-   "tp2": 1.0975,
+   "entry": 1.093,
+   "sl": 1.0944,
+   "tp1": 1.0916,
+   "tp2": 1.088,
    "alasan": [
-    "ekstensi 1.272 AB=CD 1.0933",
-    "PRZ D1 1.0935–69",
-    "angka bulat 1.0940"
+    "BB bawah H4 1.0930",
+    "low 19:45 WIB 1.0931 jadi resisten",
+    "Fib 0.382 H1 1.0936"
    ],
    "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0927",
-   "jenis_entry": "Support"
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0944",
+   "jenis_entry": "Resistance"
   }
  ]
 }
