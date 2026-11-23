@@ -3,79 +3,34 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3608.1,
- "data_sampai_wib": "23 Nov 2026 11:00",
- "data_sampai_oslo": "23 Nov 2026 05:00",
- "dibuat_utc": "2026-11-23T04:00:00Z",
- "aktif_sampai_utc": "2026-11-23T06:00:00Z",
- "dibuat_wib": "23 Nov 2026 11:00",
- "dibuat_oslo": "23 Nov 2026 05:00",
- "aktif_sampai_wib": "23 Nov 2026 13:00",
- "aktif_sampai_oslo": "23 Nov 2026 07:00",
+ "harga": 3616.3,
+ "data_sampai_wib": "23 Nov 2026 13:00",
+ "data_sampai_oslo": "23 Nov 2026 07:00",
+ "dibuat_utc": "2026-11-23T06:00:00Z",
+ "aktif_sampai_utc": "2026-11-23T08:00:00Z",
+ "dibuat_wib": "23 Nov 2026 13:00",
+ "dibuat_oslo": "23 Nov 2026 07:00",
+ "aktif_sampai_wib": "23 Nov 2026 15:00",
+ "aktif_sampai_oslo": "23 Nov 2026 09:00",
  "status": "MENUNGGU",
  "teks": [
-  "Harga 3608.1 di zona Entry 1 (BUY). Stochastic M5 87, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Tidak ada zona dengan minimal 3 alasan. Tidak ada entry di analisa ini."
  ],
  "bias": "NAIK",
- "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +9.60 (membesar dari +8.80)",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +9.60",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  3599.7,
-  3549.0,
-  3498.3
+  3618.9,
+  3557.0,
+  3495.1
  ],
  "fibonacci": [
   3605.5,
   3589.5
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "BUY",
-   "zona": [
-    3602.5,
-    3608.5
-   ],
-   "entry": 3605.5,
-   "sl": 3592.5,
-   "tp1": 3618.4,
-   "tp2": 3631.3,
-   "alasan": [
-    "Fibonacci 0.236/0.382 (3605.5 / 3589.5)",
-    "Bollinger H1 atas 3599.7",
-    "angka bulat 3600"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Utama"
-  },
-  {
-   "n": 3,
-   "side": "BUY",
-   "zona": [
-    3602.5,
-    3608.5
-   ],
-   "entry": 3605.5,
-   "sl": 3592.5,
-   "tp1": 3626.4,
-   "tp2": 3647.3,
-   "alasan": [
-    "Fibonacci 0.236/0.382 (3605.5 / 3589.5)",
-    "Bollinger H1 atas 3599.7",
-    "angka bulat 3600"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": true,
-   "jenis_entry": "Masuk lagi"
-  }
- ],
+ "entries": [],
  "posisi": [],
- "diperbarui_utc": "2026-11-23T04:04:00Z",
+ "diperbarui_utc": "2026-11-23T06:04:00Z",
  "status_lama": "MENUNGGU"
 }
