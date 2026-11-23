@@ -3,45 +3,45 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 60336,
- "data_sampai_wib": "22 Nov 2026 07:00",
- "data_sampai_oslo": "22 Nov 2026 01:00",
- "dibuat_utc": "2026-11-22T00:20:00Z",
- "aktif_sampai_utc": "2026-11-23T00:00:00Z",
- "dibuat_wib": "22 Nov 2026 07:20",
- "dibuat_oslo": "22 Nov 2026 01:20",
- "aktif_sampai_wib": "23 Nov 2026 07:00",
- "aktif_sampai_oslo": "23 Nov 2026 01:00",
+ "harga": 61222,
+ "data_sampai_wib": "23 Nov 2026 07:20",
+ "data_sampai_oslo": "23 Nov 2026 01:20",
+ "dibuat_utc": "2026-11-23T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-24T00:00:00Z",
+ "dibuat_wib": "23 Nov 2026 07:20",
+ "dibuat_oslo": "23 Nov 2026 01:20",
+ "aktif_sampai_wib": "24 Nov 2026 07:00",
+ "aktif_sampai_oslo": "24 Nov 2026 01:00",
  "status": "ARAH",
- "bias": "TURUN",
- "bias_teks": "D1 21 Nov close 60.216 (+1.264) · histogram MACD D1 −1.100 → −986 · Stoch D1 11",
+ "bias": "NETRAL",
+ "bias_teks": "D1 22 Nov close 61.271 · HA D1 biru · hist MACD D1 −986 → −760 · Stoch D1 20",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-22T00:21:16Z",
+ "diperbarui_utc": "2026-11-23T00:22:06Z",
  "teks": [
-  "Turun lagi ke Fib 0.236 = 57.624",
-  "Naik lanjut ke B = 62.006"
+  "Naik lanjut ke Fib 0.382 = 62.648",
+  "Turun lagi ke Fib 0.236 = 59.775"
  ],
  "skenario": {
   "utama": {
-   "judul": "Turun lagi ke Fib 0.236 = 57.624",
-   "target": "57.624",
-   "konfirmasi": "D1 close di bawah 59.000 + HA merah",
+   "judul": "Naik lanjut ke Fib 0.382 = 62.648",
+   "target": "62.648",
+   "konfirmasi": "D1 close di atas 62.006 (B) + HA biru",
    "poin": [
-    "HA D1 21 Nov masih merah.",
-    "Bias D1 TURUN, BB bawah 57.214.",
-    "Close 21 Nov di atas 0.382 59.166."
+    "HA D1 22 Nov biru, close 61.271.",
+    "Konfirmasi alternatif kemarin tercapai.",
+    "Hist D1 mengecil −986 → −760."
    ]
   },
   "alternatif": {
-   "judul": "Naik lanjut ke B = 62.006",
-   "target": "62.006",
-   "konfirmasi": "HA D1 biru + close di atas 61.000",
+   "judul": "Turun lagi ke Fib 0.236 = 59.775",
+   "target": "59.775",
+   "konfirmasi": "D1 close di bawah 60.000 + HA merah",
    "poin": [
-    "D di 55.130 (CD 0,83 × AB).",
-    "Hist D1 mengecil −1.100 → −986.",
-    "Pantul 55.130 → 60.996 (21 Nov)."
+    "Fib 74.811 → 55.130.",
+    "Low 22 Nov 58.769.",
+    "Bias D1 masih di bawah BB tengah."
    ]
   }
  },
