@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 61350,
- "data_sampai_wib": "23 Nov 2026 19:05",
- "data_sampai_oslo": "23 Nov 2026 13:05",
+ "harga": 62545,
+ "data_sampai_wib": "23 Nov 2026 23:05",
+ "data_sampai_oslo": "23 Nov 2026 17:05",
  "dibuat_utc": "2026-11-23T12:05:00Z",
  "aktif_sampai_utc": "2026-11-23T20:00:00Z",
  "dibuat_wib": "23 Nov 2026 19:05",
@@ -14,15 +14,15 @@
  "aktif_sampai_oslo": "23 Nov 2026 21:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "H4 HA biru, hist +445 → +432 · Stoch H4 92 · ATR 1.141",
+ "bias_teks": "H4 HA biru, hist +432 → +503 · Stoch H4 87 · ATR 1.328",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-23T12:06:12Z",
+ "diperbarui_utc": "2026-11-23T16:06:12Z",
  "teks": [
-  "Analisa 11:05: E1 BUY tidak tersentuh · selesai",
-  "Low 11–19 WIB = 61.060 (di atas zona 61.015).",
-  "H4 close 19:00 = 61.426 (HA biru). Range 15–19: 61.139 – 61.941."
+  "Analisa 19:05 aktif · tanpa zona, tidak ada posisi",
+  "Lonjakan 20:55: 61.126 → 63.899. Range 19–23 WIB: 61.070 – 64.603.",
+  "H4 close 23:00 = 62.898 (HA biru)."
  ],
  "entries": []
 }
