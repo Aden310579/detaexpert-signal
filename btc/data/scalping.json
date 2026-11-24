@@ -3,49 +3,26 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 61395,
- "data_sampai_wib": "24 Nov 2026 08:05",
- "data_sampai_oslo": "24 Nov 2026 02:05",
- "dibuat_utc": "2026-11-24T01:05:00Z",
- "aktif_sampai_utc": "2026-11-24T03:00:00Z",
- "dibuat_wib": "24 Nov 2026 08:05",
- "dibuat_oslo": "24 Nov 2026 02:05",
- "aktif_sampai_wib": "24 Nov 2026 10:00",
- "aktif_sampai_oslo": "24 Nov 2026 04:00",
+ "harga": 60079,
+ "data_sampai_wib": "24 Nov 2026 10:05",
+ "data_sampai_oslo": "24 Nov 2026 04:05",
+ "dibuat_utc": "2026-11-24T03:05:00Z",
+ "aktif_sampai_utc": "2026-11-24T05:00:00Z",
+ "dibuat_wib": "24 Nov 2026 10:05",
+ "dibuat_oslo": "24 Nov 2026 04:05",
+ "aktif_sampai_wib": "24 Nov 2026 12:00",
+ "aktif_sampai_oslo": "24 Nov 2026 06:00",
  "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist +31,9 → +37,1 · H4 HA merah, hist +309 (NETRAL) · Stoch M15 55 · ATR 211",
+ "bias": "TURUN",
+ "bias_teks": "M15 HA merah, hist −111 → −127 · H4 HA merah, hist +225 (NETRAL) · Stoch M15 2 · ATR 299",
  "bias_label": "M15",
- "kondisi": "Squeeze",
- "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-24T01:07:07Z",
+ "kondisi": "Sideways",
+ "indikator_utama": "Stochastic",
+ "diperbarui_utc": "2026-11-24T03:07:59Z",
  "teks": [
-  "Analisa 06:05: E1 BUY kena Stop Loss · selesai",
-  "E1 sinyal M5 07:15, entry 61.253, Stop Loss 61.143 kena 07:30 (−110).",
-  "E2 tersentuh 07:35 (low 61.042), sinyal 07:40 di luar zona: dilewati."
+  "Analisa 08:05: E1 tersentuh tanpa sinyal · batal",
+  "E1 61.233–61.313 tersentuh 08:45, belum ada sinyal M5.",
+  "Batal: M15 close 61.091 (09:00) < 61.133. Range 08:05–10: 60.060–61.682."
  ],
- "entries": [
-  {
-   "n": 1,
-   "side": "BUY",
-   "zona": [
-    61233,
-    61313
-   ],
-   "entry": 61273,
-   "sl": 61133,
-   "tp1": 61400,
-   "tp2": 61500,
-   "alasan": [
-    "angka bulat 61.250",
-    "Fib 0.382 61.258 · swing 61.257/61.316",
-    "BB tengah M15 61.300"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
-  }
- ]
+ "entries": []
 }
