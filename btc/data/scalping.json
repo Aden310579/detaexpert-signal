@@ -3,65 +3,43 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 61423,
- "data_sampai_wib": "24 Nov 2026 06:05",
- "data_sampai_oslo": "24 Nov 2026 00:05",
- "dibuat_utc": "2026-11-23T23:05:00Z",
- "aktif_sampai_utc": "2026-11-24T01:00:00Z",
- "dibuat_wib": "24 Nov 2026 06:05",
- "dibuat_oslo": "24 Nov 2026 00:05",
- "aktif_sampai_wib": "24 Nov 2026 08:00",
- "aktif_sampai_oslo": "24 Nov 2026 02:00",
+ "harga": 61395,
+ "data_sampai_wib": "24 Nov 2026 08:05",
+ "data_sampai_oslo": "24 Nov 2026 02:05",
+ "dibuat_utc": "2026-11-24T01:05:00Z",
+ "aktif_sampai_utc": "2026-11-24T03:00:00Z",
+ "dibuat_wib": "24 Nov 2026 08:05",
+ "dibuat_oslo": "24 Nov 2026 02:05",
+ "aktif_sampai_wib": "24 Nov 2026 10:00",
+ "aktif_sampai_oslo": "24 Nov 2026 04:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist +14,5 → +30,2 · H4 HA merah, hist +366 (NETRAL) · Stoch M15 67 · ATR 230",
+ "bias_teks": "M15 HA biru, hist +31,9 → +37,1 · H4 HA merah, hist +309 (NETRAL) · Stoch M15 55 · ATR 211",
  "bias_label": "M15",
  "kondisi": "Squeeze",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-23T23:06:15Z",
+ "diperbarui_utc": "2026-11-24T01:07:07Z",
  "teks": [
-  "Analisa 04:05: E1 tersentuh tanpa sinyal · selesai",
-  "E1 60.993–61.073 tersentuh 04:45 (low 61.065), Stoch M5 min 27.",
-  "E2 tidak tersentuh. Range 04:05–06 WIB: 61.065–61.454."
+  "Analisa 06:05: E1 BUY kena Stop Loss · selesai",
+  "E1 sinyal M5 07:15, entry 61.253, Stop Loss 61.143 kena 07:30 (−110).",
+  "E2 tersentuh 07:35 (low 61.042), sinyal 07:40 di luar zona: dilewati."
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    61243,
-    61323
+    61233,
+    61313
    ],
-   "entry": 61283,
-   "sl": 61143,
+   "entry": 61273,
+   "sl": 61133,
    "tp1": 61400,
    "tp2": 61500,
    "alasan": [
     "angka bulat 61.250",
-    "swing 61.257/61.316",
-    "BB tengah M15 61.316"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": false,
-   "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
-  },
-  {
-   "n": 2,
-   "side": "BUY",
-   "zona": [
-    60990,
-    61070
-   ],
-   "entry": 61030,
-   "sl": 60890,
-   "tp1": 61150,
-   "tp2": 61243,
-   "alasan": [
-    "angka bulat 61.000",
-    "swing 61.061/61.065",
-    "BB bawah M15 61.062"
+    "Fib 0.382 61.258 · swing 61.257/61.316",
+    "BB tengah M15 61.300"
    ],
    "state": "tunggu",
    "info": "",
