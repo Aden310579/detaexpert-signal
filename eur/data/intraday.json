@@ -3,90 +3,90 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.09092,
- "data_sampai_wib": "24 Nov 2026 18:05",
- "data_sampai_oslo": "24 Nov 2026 12:05",
- "dibuat_utc": "2026-11-24T08:05:00Z",
- "aktif_sampai_utc": "2026-11-24T16:00:00Z",
- "dibuat_wib": "24 Nov 2026 15:05",
- "dibuat_oslo": "24 Nov 2026 09:05",
- "aktif_sampai_wib": "24 Nov 2026 23:00",
- "aktif_sampai_oslo": "24 Nov 2026 17:00",
- "diperbarui_utc": "2026-11-24T11:06:54Z",
- "status": "SIAP ENTRY",
- "bias": "TURUN",
- "bias_teks": "H4 turun · MACD H4 −25 · Stoch H4 22 · sesi Eropa pantul pelan",
+ "harga": 1.09538,
+ "data_sampai_wib": "24 Nov 2026 19:05",
+ "data_sampai_oslo": "24 Nov 2026 13:05",
+ "dibuat_utc": "2026-11-24T12:05:00Z",
+ "aktif_sampai_utc": "2026-11-24T20:00:00Z",
+ "dibuat_wib": "24 Nov 2026 19:05",
+ "dibuat_oslo": "24 Nov 2026 13:05",
+ "aktif_sampai_wib": "25 Nov 2026 03:00",
+ "aktif_sampai_oslo": "24 Nov 2026 21:00",
+ "diperbarui_utc": "2026-11-24T12:07:08Z",
+ "status": "MENUNGGU",
+ "bias": "NAIK",
+ "bias_teks": "H4 berbalik naik · histogram MACD H4 positif · pantulan dari PRZ AB=CD · D1 masih turun",
  "bias_label": "H4",
- "kondisi": "Turun",
+ "kondisi": "Naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Belum ada posisi · rencana baru",
-  "Rencana 07:05 habis tanpa entry. H4 11:00 WIB tutup 1.0906 (low 1.0897).",
-  "Harga 1.0909. Sell tunggu 1.0923–29 dengan Stoch M15 turun, buy di 1.0882–88."
+  "Sell lama BATAL (H4 close 1.0958) · rencana baru",
+  "H4 15:00 WIB naik 52 pip, tutup 1.0958. Sell 1.0923–29 & 1.0940–46 batal.",
+  "Harga 1.0954. Buy tunggu koreksi 1.0940–46, sell di 1.0966–72."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
-   "zona": [
-    1.0923,
-    1.0929
-   ],
-   "entry": 1.0926,
-   "sl": 1.094,
-   "tp1": 1.0912,
-   "tp2": 1.0888,
-   "alasan": [
-    "Fib 0.382 H4 1.0929",
-    "BB atas H1 1.0929",
-    "high hari ini 1.0921 (08:30 WIB)"
-   ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0940",
-   "jenis_entry": "Pullback"
-  },
-  {
-   "n": 2,
    "side": "BUY",
-   "zona": [
-    1.0882,
-    1.0888
-   ],
-   "entry": 1.0885,
-   "sl": 1.0871,
-   "tp1": 1.0899,
-   "tp2": 1.094,
-   "alasan": [
-    "double low 1.0882 (23:15 & 00:45 WIB)",
-    "BB bawah H4 1.0887",
-    "PRZ AB=CD 1.0870–02"
-   ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0871",
-   "jenis_entry": "Harmonic"
-  },
-  {
-   "n": 3,
-   "side": "SELL",
    "zona": [
     1.094,
     1.0946
    ],
    "entry": 1.0943,
-   "sl": 1.0957,
-   "tp1": 1.0929,
-   "tp2": 1.0888,
+   "sl": 1.0929,
+   "tp1": 1.0957,
+   "tp2": 1.0966,
    "alasan": [
     "Fib 0.5 H4 1.0944",
-    "high M15 21:15 WIB 1.0946 (23 Nov)",
-    "BB tengah H4 1.0955"
+    "Fib 0.236 H1 1.0943",
+    "Fib 0.382 M15 1.0942"
    ],
    "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0957",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0929",
+   "jenis_entry": "Pullback"
+  },
+  {
+   "n": 2,
+   "side": "SELL",
+   "zona": [
+    1.0966,
+    1.0972
+   ],
+   "entry": 1.0969,
+   "sl": 1.0983,
+   "tp1": 1.0955,
+   "tp2": 1.0935,
+   "alasan": [
+    "Fib 0.236 D1 1.0969",
+    "high M15 18:15 WIB (23 Nov) 1.0966",
+    "RSI M15 77 jenuh beli"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0983",
    "jenis_entry": "Resistance"
+  },
+  {
+   "n": 3,
+   "side": "BUY",
+   "zona": [
+    1.0929,
+    1.0935
+   ],
+   "entry": 1.0932,
+   "sl": 1.0918,
+   "tp1": 1.0946,
+   "tp2": 1.0966,
+   "alasan": [
+    "Fib 0.382 H4 1.0929",
+    "Fib 0.382 H1 1.0934",
+    "BB tengah M15 1.0928"
+   ],
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0918",
+   "jenis_entry": "Support"
   }
  ]
 }
