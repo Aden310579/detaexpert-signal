@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.09117,
- "data_sampai_wib": "24 Nov 2026 14:05",
- "data_sampai_oslo": "24 Nov 2026 08:05",
- "dibuat_utc": "2026-11-24T00:05:00Z",
- "aktif_sampai_utc": "2026-11-24T08:00:00Z",
- "dibuat_wib": "24 Nov 2026 07:05",
- "dibuat_oslo": "24 Nov 2026 01:05",
- "aktif_sampai_wib": "24 Nov 2026 15:00",
- "aktif_sampai_oslo": "24 Nov 2026 09:00",
- "diperbarui_utc": "2026-11-24T07:06:47Z",
+ "harga": 1.09092,
+ "data_sampai_wib": "24 Nov 2026 15:10",
+ "data_sampai_oslo": "24 Nov 2026 09:10",
+ "dibuat_utc": "2026-11-24T08:05:00Z",
+ "aktif_sampai_utc": "2026-11-24T16:00:00Z",
+ "dibuat_wib": "24 Nov 2026 15:05",
+ "dibuat_oslo": "24 Nov 2026 09:05",
+ "aktif_sampai_wib": "24 Nov 2026 23:00",
+ "aktif_sampai_oslo": "24 Nov 2026 17:00",
+ "diperbarui_utc": "2026-11-24T08:08:04Z",
  "status": "MENUNGGU",
  "bias": "TURUN",
- "bias_teks": "H4 turun · MACD H4 −24 · Stoch H4 23 mulai naik · sideways sebelum sesi Eropa",
+ "bias_teks": "H4 turun · MACD H4 −25 · Stoch H4 22 · sesi Eropa pantul pelan",
  "bias_label": "H4",
  "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana masih aktif · semua entry MENUNGGU",
-  "H4 07:00 WIB tutup 1.0911 (range 1.0904–1.0921). Belum ada zona tersentuh.",
-  "Sell tunggu 1.0923–29 dengan Stoch M15 turun, buy di 1.0882–88."
+  "Belum ada posisi · rencana baru",
+  "Rencana 07:05 habis tanpa entry. H4 11:00 WIB tutup 1.0906 (low 1.0897).",
+  "Harga 1.0909. Sell tunggu 1.0923–29 dengan Stoch M15 turun, buy di 1.0882–88."
  ],
  "entries": [
   {
@@ -38,8 +38,8 @@
    "tp2": 1.0888,
    "alasan": [
     "Fib 0.382 H4 1.0929",
-    "low M15 21:45 WIB 1.0927 jadi resisten",
-    "MACD H4 −23 masih turun"
+    "BB atas H1 1.0929",
+    "high hari ini 1.0921 (08:30 WIB)"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
@@ -56,10 +56,10 @@
    "entry": 1.0885,
    "sl": 1.0871,
    "tp1": 1.0899,
-   "tp2": 1.0935,
+   "tp2": 1.094,
    "alasan": [
     "double low 1.0882 (23:15 & 00:45 WIB)",
-    "BB bawah D1 1.0881",
+    "BB bawah H4 1.0887",
     "PRZ AB=CD 1.0870–02"
    ],
    "state": "tunggu",
@@ -71,21 +71,21 @@
    "n": 3,
    "side": "SELL",
    "zona": [
-    1.0935,
-    1.0941
+    1.094,
+    1.0946
    ],
-   "entry": 1.0938,
-   "sl": 1.0952,
-   "tp1": 1.0924,
+   "entry": 1.0943,
+   "sl": 1.0957,
+   "tp1": 1.0929,
    "tp2": 1.0888,
    "alasan": [
-    "BB tengah H1 1.0934",
-    "high M15 21:15 WIB 1.0946",
-    "RSI H1 35 masih lemah"
+    "Fib 0.5 H4 1.0944",
+    "high M15 21:15 WIB 1.0946 (23 Nov)",
+    "BB tengah H4 1.0955"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0952",
+   "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.0957",
    "jenis_entry": "Resistance"
   }
  ]

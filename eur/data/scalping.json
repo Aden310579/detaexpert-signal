@@ -4,16 +4,16 @@
  "judul": "Scalping M5",
  "tf": "M15 / M5",
  "harga": 1.08972,
- "data_sampai_wib": "24 Nov 2026 14:05",
- "data_sampai_oslo": "24 Nov 2026 08:05",
+ "data_sampai_wib": "24 Nov 2026 15:10",
+ "data_sampai_oslo": "24 Nov 2026 09:10",
  "dibuat_utc": "2026-11-24T07:05:00Z",
  "aktif_sampai_utc": "2026-11-24T09:00:00Z",
  "dibuat_wib": "24 Nov 2026 14:05",
  "dibuat_oslo": "24 Nov 2026 08:05",
  "aktif_sampai_wib": "24 Nov 2026 16:00",
  "aktif_sampai_oslo": "24 Nov 2026 10:00",
- "diperbarui_utc": "2026-11-24T07:06:47Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-24T08:08:04Z",
+ "status": "SIAP ENTRY",
  "bias": "TURUN",
  "bias_teks": "M15 turun HA merah · RSI M15 31 · Stoch M15 12 jenuh jual · H4 turun",
  "bias_label": "M15",
@@ -42,7 +42,7 @@
     "M15 & H4 turun searah"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0914",
    "jenis_entry": "Pullback"
   },
@@ -84,7 +84,7 @@
     "high M15 12:30 WIB 1.0913"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0921",
    "jenis_entry": "Resistance"
   }
