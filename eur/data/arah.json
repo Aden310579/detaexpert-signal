@@ -3,49 +3,49 @@
  "pasar": "EURUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 1.09718,
+ "harga": 1.09076,
  "data_sampai_wib": "24 Nov 2026 07:10",
  "data_sampai_oslo": "24 Nov 2026 01:10",
- "dibuat_utc": "2026-11-18T00:20:00Z",
- "aktif_sampai_utc": "2026-11-20T00:00:00Z",
- "dibuat_wib": "18 Nov 2026 07:20",
- "dibuat_oslo": "18 Nov 2026 01:20",
- "aktif_sampai_wib": "20 Nov 2026 07:00",
- "aktif_sampai_oslo": "20 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-24T00:08:10Z",
+ "dibuat_utc": "2026-11-24T00:20:00Z",
+ "aktif_sampai_utc": "2026-11-26T00:00:00Z",
+ "dibuat_wib": "24 Nov 2026 07:20",
+ "dibuat_oslo": "24 Nov 2026 01:20",
+ "aktif_sampai_wib": "26 Nov 2026 07:00",
+ "aktif_sampai_oslo": "26 Nov 2026 01:00",
+ "diperbarui_utc": "2026-11-24T00:21:24Z",
  "status": "ARAH",
  "bias": "TURUN",
- "bias_teks": "Close di BB bawah 1.0971 · histogram MACD D1 −16 membesar · RSI 29 · Stoch D1 6",
+ "bias_teks": "Close dekat BB bawah 1.0881 · histogram MACD D1 −13 membesar · RSI 25 · Stoch D1 6",
  "bias_label": "D1",
  "kondisi": "Turun · jenuh jual",
  "indikator_utama": "Harmonic + Fibo",
  "teks": [
-  "Close D1 1.0972 · low baru 1.0954",
-  "Rabu range 1.0954–1.0996. Close berikut 20 Nov 07:00 WIB."
+  "Close D1 1.0908 · low baru 1.0882",
+  "Senin range 1.0882–1.1006 (−65 pip). Close berikut 25 Nov 07:00 WIB."
  ],
  "skenario": {
   "utama": {
-   "judul": "Turun lanjut · Aktif selama close D1 < 1.1029",
-   "target": "1.0900",
-   "konfirmasi": "Aktif selama close D1 < 1.1029",
+   "judul": "Turun lanjut · Aktif selama close D1 < 1.0969",
+   "target": "1.0820",
+   "konfirmasi": "Aktif selama close D1 < 1.0969",
    "poin": [
-    "D di PRZ 1.0935–69, low baru 1.0954",
-    "Target 1: 1.0935 (batas bawah PRZ)",
-    "Target 2: 1.0900 (angka bulat)",
-    "Gagal bila close D1 > 1.1029"
+    "D tepat di AB=CD 2.618 (1.0881)",
+    "Target 1: 1.0850 (angka bulat)",
+    "Target 2: 1.0820 (1 ATR di bawah low)",
+    "Gagal bila close D1 > 1.0969"
    ]
   },
   "alternatif": {
-   "judul": "Pantul · Konfirmasi: close D1 > 1.1029",
-   "target": "1.1138",
-   "konfirmasi": "close D1 > 1.1029",
+   "judul": "Pantul · Konfirmasi: close D1 > 1.0969",
+   "target": "1.1092",
+   "konfirmasi": "close D1 > 1.0969",
    "poin": [
-    "Stoch D1 6 & RSI 29 jenuh jual di PRZ",
-    "Target 1: 1.1076 (Fib 0.382)",
-    "Target 2: 1.1138 (BB tengah D1)",
-    "Gagal bila close D1 < 1.0935"
+    "Stoch D1 6 & RSI 25 jenuh jual di PRZ",
+    "Target 1: 1.1023 (Fib 0.382)",
+    "Target 2: 1.1092 (BB tengah D1)",
+    "Gagal bila close D1 < 1.0870"
    ]
   }
  },
- "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Close D1 di bawah 1.1029: turun lanjut ke 1.0935–1.0900. Close di atas 1.1029: pantul ke 1.1076–1.1138."
+ "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. Close D1 di bawah 1.0969: turun lanjut ke 1.0850–1.0820. Close di atas 1.0969: pantul ke 1.1023–1.1092."
 }
