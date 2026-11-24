@@ -3,9 +3,9 @@
  "pasar": "BTCUSD",
  "judul": "Swing H4",
  "tf": "D1 / H4",
- "harga": 61222,
- "data_sampai_wib": "23 Nov 2026 07:20",
- "data_sampai_oslo": "23 Nov 2026 01:20",
+ "harga": 61239,
+ "data_sampai_wib": "24 Nov 2026 07:20",
+ "data_sampai_oslo": "24 Nov 2026 01:20",
  "dibuat_utc": "2026-11-23T00:20:00Z",
  "aktif_sampai_utc": "2026-11-25T00:00:00Z",
  "dibuat_wib": "23 Nov 2026 07:20",
@@ -14,15 +14,15 @@
  "aktif_sampai_oslo": "25 Nov 2026 01:00",
  "status": "MENUNGGU",
  "bias": "NETRAL",
- "bias_teks": "HA D1 biru · hist MACD D1 −986 → −760 (mengecil) · Stoch D1 20 · ATR 3.257",
+ "bias_teks": "HA D1 biru · hist MACD D1 −760 → −540 (mengecil) · Stoch D1 28 · ATR 3.426",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
- "diperbarui_utc": "2026-11-23T00:22:06Z",
+ "diperbarui_utc": "2026-11-24T00:21:05Z",
  "teks": [
-  "Analisa 21 Nov selesai · tidak ada posisi",
-  "E1 SELL 61.700–62.300 tidak tersentuh (high 22 Nov 61.670).",
-  "D1 22 Nov: O 60.216 H 61.670 L 58.769 C 61.271."
+  "Analisa 23 Nov aktif · tanpa zona, tidak ada posisi",
+  "D1 23 Nov: O 61.271 H 64.603 L 60.386 C 61.271 (ekor atas panjang).",
+  "Lonjakan 20:55 WIB ke 64.603 lalu kembali ke 61.271."
  ],
  "entries": []
 }
