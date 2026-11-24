@@ -3,27 +3,27 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3621.7,
- "data_sampai_wib": "24 Nov 2026 17:00",
- "data_sampai_oslo": "24 Nov 2026 11:00",
- "dibuat_utc": "2026-11-24T10:00:00Z",
- "aktif_sampai_utc": "2026-11-24T12:00:00Z",
- "dibuat_wib": "24 Nov 2026 17:00",
- "dibuat_oslo": "24 Nov 2026 11:00",
- "aktif_sampai_wib": "24 Nov 2026 19:00",
- "aktif_sampai_oslo": "24 Nov 2026 13:00",
- "status": "MENUNGGU",
+ "harga": 3634.7,
+ "data_sampai_wib": "24 Nov 2026 19:00",
+ "data_sampai_oslo": "24 Nov 2026 13:00",
+ "dibuat_utc": "2026-11-24T12:00:00Z",
+ "aktif_sampai_utc": "2026-11-24T14:00:00Z",
+ "dibuat_wib": "24 Nov 2026 19:00",
+ "dibuat_oslo": "24 Nov 2026 13:00",
+ "aktif_sampai_wib": "24 Nov 2026 21:00",
+ "aktif_sampai_oslo": "24 Nov 2026 15:00",
+ "status": "LAGI BERJALAN",
  "teks": [
-  "Harga 3621.7, 9 poin dari Entry 1 (SELL). Stochastic M5 45, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Posisi analisa sebelumnya: Entry 1 SELL @3623.5 (masuk 24 Nov 17:50 WIB / 11:50 Oslo) masih berjalan. Stop Loss 3645.7, Take Profit 1 3619, Take Profit 2 3607.6."
  ],
- "bias": "TURUN",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -5.80 (mengecil dari -6.00)",
+ "bias": "NETRAL",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 -4.00 (mengecil dari -5.10)",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
  "bollinger": [
-  3674.2,
-  3642.0,
-  3609.9
+  3666.3,
+  3638.4,
+  3610.4
  ],
  "fibonacci": [
   3625.0,
@@ -43,6 +43,7 @@
    "tp2": 3607.6,
    "alasan": [
     "Fibonacci 0.236/0.382 (3625.0 / 3635.7)",
+    "Bollinger H1 tengah 3638.4",
     "swing H1 sebelumnya 3631.3",
     "angka bulat 3625"
    ],
@@ -65,7 +66,7 @@
    "tp2": 3625.0,
    "alasan": [
     "swing ekstrem 12 candle H1",
-    "Bollinger H1 bawah 3609.9",
+    "Bollinger H1 bawah 3610.4",
     "swing H1 sebelumnya 3601.0",
     "angka bulat 3600"
    ],
@@ -88,6 +89,7 @@
    "tp2": 3591.6,
    "alasan": [
     "Fibonacci 0.236/0.382 (3625.0 / 3635.7)",
+    "Bollinger H1 tengah 3638.4",
     "swing H1 sebelumnya 3631.3",
     "angka bulat 3625"
    ],
@@ -98,7 +100,21 @@
    "jenis_entry": "Masuk lagi"
   }
  ],
- "posisi": [],
- "diperbarui_utc": "2026-11-24T10:04:00Z",
+ "posisi": [
+  {
+   "n": 1,
+   "side": -1,
+   "px": 3623.5,
+   "sl": 3645.7,
+   "tp1": 3619.0,
+   "tp2": 3607.6,
+   "t": "2026-11-24 21:45:00",
+   "masuk": "2026-11-24 21:50:00",
+   "tp1_kena_awal": false,
+   "tp1_kena": false,
+   "hasil": null
+  }
+ ],
+ "diperbarui_utc": "2026-11-24T12:04:00Z",
  "status_lama": "MENUNGGU"
 }
