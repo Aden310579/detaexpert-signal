@@ -3,54 +3,54 @@
  "kode": "/xaus",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 3547.5,
- "dibuat_utc": "2026-11-23T20:21:00Z",
- "aktif_sampai_utc": "2026-11-25T20:00:00Z",
- "dibuat_wib": "24 Nov 2026 03:21",
- "dibuat_oslo": "23 Nov 2026 21:21",
- "aktif_sampai_wib": "26 Nov 2026 03:00",
- "aktif_sampai_oslo": "25 Nov 2026 21:00",
- "data_sampai_wib": "25 Nov 2026 03:00",
- "data_sampai_oslo": "24 Nov 2026 21:00",
- "status": "GAGAL",
- "bias": "NAIK (pantulan)",
- "bias_teks": "Heikin Ashi D1 biru 2 candle, histogram MACD D1 masih negatif tapi mengecil (−30.42 → −21.85), Stochastic D1 16.6, kondisi trending. Bearish AB=CD D1 (A 3866.0, B 4149.0, C 3504.0, D? 3689.1): PRZ (zona berbalik) 3787.0–3864.0 belum tersentuh.",
+ "harga": 3570.2,
+ "dibuat_utc": "2026-11-25T20:21:00Z",
+ "aktif_sampai_utc": "2026-11-27T20:00:00Z",
+ "dibuat_wib": "26 Nov 2026 03:21",
+ "dibuat_oslo": "25 Nov 2026 21:21",
+ "aktif_sampai_wib": "28 Nov 2026 03:00",
+ "aktif_sampai_oslo": "27 Nov 2026 21:00",
+ "data_sampai_wib": "26 Nov 2026 03:00",
+ "data_sampai_oslo": "25 Nov 2026 21:00",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "Heikin Ashi D1 merah 2 candle, histogram MACD D1 negatif tapi mengecil (−23.14 → −17.01), Stochastic D1 19.8, kondisi trending. Bullish AB=CD D1 (A 4149.0, B 3504.0, C 3689.1, D? 3426.5): PRZ (zona berbalik) 2868.7–3044.1 belum tersentuh.",
  "teks": [
-  "Analisa sebelumnya (habis 23 Nov 03:00 WIB, Oslo 22 Nov 21:00) berakhir dengan status MENUNGGU: konfirmasi utama (D1 close di bawah 3504.0) dan alternatif (D1 close di atas 3554.9) tidak terpenuhi selama masa aktif.",
-  "D1 close 25 Nov 03:00 WIB (Oslo 24 Nov 21:00) di 3556.3, turun dari 3643.4, high 3681.2, low 3554.0. Harga sekarang 3556.7, di bawah Fibonacci 0.382 (3618.4).",
-  "Konfirmasi skenario utama (D1 close di atas 3645.4) tidak terpenuhi. Konfirmasi alternatif (D1 close di bawah 3618.4) terpenuhi: skenario alternatif berjalan, target ±3450.2."
+  "Analisa sebelumnya (habis 26 Nov 03:00 WIB, Oslo 25 Nov 21:00) berakhir dengan status GAGAL: D1 close 3556.3 di bawah konfirmasi alternatif 3618.4; target alternatif ±3450.2 tersentuh (low 25 Nov 3426.5).",
+  "D1 close 26 Nov 03:00 WIB (Oslo 25 Nov 21:00) di 3547.5, high 3575.6, low 3426.5. Harga sekarang 3570.2, di bawah Fibonacci 0.236 (3597.0) dan di atas B 3504.0.",
+  "Konfirmasi skenario utama (D1 close di bawah 3504.0) dan alternatif (D1 close di atas 3597.0) belum terpenuhi."
  ],
  "skenario": {
   "utama": {
-   "target": "±3787.0",
-   "judul": "Naik ke tepi bawah PRZ",
-   "poin": [
-    "Heikin Ashi D1 biru 2 candle",
-    "Histogram MACD D1 mengecil (−21.85)",
-    "Pantulan dari low C 3504.0"
-   ],
-   "konfirmasi": "D1 close di atas 3645.4"
-  },
-  "alternatif": {
-   "target": "±3450.2",
+   "target": "±3387.0",
    "judul": "Turun ke Bollinger bawah D1",
    "poin": [
-    "Histogram MACD D1 masih negatif",
-    "Harga di bawah Bollinger tengah D1 (3847.4)",
-    "Close di bawah Fibonacci 0.382 = koreksi lanjut"
+    "Heikin Ashi D1 merah 2 candle",
+    "Histogram MACD D1 masih negatif (−17.01)",
+    "Harga di bawah Bollinger tengah D1 (3790.3)"
    ],
-   "konfirmasi": "D1 close di bawah 3618.4"
+   "konfirmasi": "D1 close di bawah 3504.0"
+  },
+  "alternatif": {
+   "target": "±3702.5",
+   "judul": "Naik ke Fibonacci 0.382",
+   "poin": [
+    "Histogram MACD D1 mengecil",
+    "Stochastic D1 19.8 (jenuh jual)",
+    "Pantulan dari low 3426.5"
+   ],
+   "konfirmasi": "D1 close di atas 3597.0"
   }
  },
  "catatan": "Ini analisa arah, bukan signal entry. Tidak ada Entry, Stop Loss atau Take Profit. PRZ = Potential Reversal Zone, zona tempat harga berpotensi berbalik arah (titik D pola harmonic).",
  "level": {
-  "arah_utama": 1,
-  "konfirmasi_utama": 3645.4,
-  "target_utama": 3787.0,
-  "konfirmasi_alt": 3618.4,
-  "target_alt": 3450.2
+  "arah_utama": -1,
+  "konfirmasi_utama": 3504.0,
+  "target_utama": 3387.0,
+  "konfirmasi_alt": 3597.0,
+  "target_alt": 3702.5
  },
- "status_lama": "GAGAL",
- "status_teks": "D1 close 3556.3 pukul 25 Nov 03:00 WIB di bawah 3618.4: skenario utama gagal, skenario alternatif berjalan.",
- "diperbarui_utc": "2026-11-25T20:03Z"
+ "diperbarui_utc": "2026-11-25T20:22Z",
+ "status_lama": "MENUNGGU",
+ "status_teks": "D1 belum close di bawah 3504 (konfirmasi skenario utama)."
 }
