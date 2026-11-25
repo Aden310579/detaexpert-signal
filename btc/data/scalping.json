@@ -3,49 +3,50 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 59266,
- "data_sampai_wib": "25 Nov 2026 16:05",
- "data_sampai_oslo": "25 Nov 2026 10:05",
- "dibuat_utc": "2026-11-25T09:05:00Z",
- "aktif_sampai_utc": "2026-11-25T11:00:00Z",
- "dibuat_wib": "25 Nov 2026 16:05",
- "dibuat_oslo": "25 Nov 2026 10:05",
- "aktif_sampai_wib": "25 Nov 2026 18:00",
- "aktif_sampai_oslo": "25 Nov 2026 12:00",
+ "harga": 58813,
+ "data_sampai_wib": "25 Nov 2026 18:05",
+ "data_sampai_oslo": "25 Nov 2026 12:05",
+ "dibuat_utc": "2026-11-25T11:05:00Z",
+ "aktif_sampai_utc": "2026-11-25T13:00:00Z",
+ "dibuat_wib": "25 Nov 2026 18:05",
+ "dibuat_oslo": "25 Nov 2026 12:05",
+ "aktif_sampai_wib": "25 Nov 2026 20:00",
+ "aktif_sampai_oslo": "25 Nov 2026 14:00",
  "status": "MENUNGGU",
- "bias": "NAIK",
- "bias_teks": "M15 HA biru, hist +44,1 → +47,7 · H4 HA merah, hist −118 (TURUN) · Stoch M15 81 · ATR 276",
+ "bias": "TURUN",
+ "bias_teks": "M15 HA merah, hist +0,3 → −5,5 · H4 HA merah, hist −146 (TURUN) · Stoch M15 30 · ATR 248",
  "bias_label": "M15",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-25T09:07:59Z",
+ "diperbarui_utc": "2026-11-25T11:07:40Z",
  "teks": [
-  "Analisa 14:05: E1 & E2 batal tanpa sinyal · selesai",
-  "E1 batal M15 close 59.062 (14:15). E2 batal M15 close 58.800 (14:30).",
-  "Tidak ada posisi. Range 14:05–16 WIB: 58.633 – 59.490."
+  "Analisa 16:05: E1 batal tanpa sinyal · selesai",
+  "E1 BUY 59.240–59.320 batal M15 close 59.078 (16:00) < 59.140.",
+  "Tidak ada posisi. Range 16:05–18 WIB: 58.783 – 59.332."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    59240,
-    59320
+    58987,
+    59067
    ],
-   "entry": 59280,
-   "sl": 59140,
-   "tp1": 59400,
-   "tp2": 59490,
+   "entry": 59027,
+   "sl": 59167,
+   "tp1": 58900,
+   "tp2": 58783,
    "alasan": [
-    "angka bulat 59.250",
-    "Fib 0.236 59.287",
-    "swing 59.308"
+    "swing 58.994 / 59.032",
+    "angka bulat 59.000",
+    "BB tengah M15 59.028",
+    "Fib 0.382 59.053"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Pantulan bawah"
+   "jenis_entry": "Tolakan atas"
   }
  ]
 }
