@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.09641,
- "data_sampai_wib": "25 Nov 2026 10:05",
- "data_sampai_oslo": "25 Nov 2026 04:05",
+ "harga": 1.09463,
+ "data_sampai_wib": "25 Nov 2026 11:05",
+ "data_sampai_oslo": "25 Nov 2026 05:05",
  "dibuat_utc": "2026-11-24T20:05:00Z",
  "aktif_sampai_utc": "2026-11-25T04:00:00Z",
  "dibuat_wib": "25 Nov 2026 03:05",
  "dibuat_oslo": "24 Nov 2026 21:05",
  "aktif_sampai_wib": "25 Nov 2026 11:00",
  "aktif_sampai_oslo": "25 Nov 2026 05:00",
- "diperbarui_utc": "2026-11-25T03:06:47Z",
+ "diperbarui_utc": "2026-11-25T04:06:27Z",
  "status": "ENTRY 1 BERJALAN",
- "bias": "NAIK",
- "bias_teks": "H4 naik · histogram MACD H4 +6 · Stoch H4 67 · pasar sepi jelang sesi Asia",
+ "bias": "NETRAL",
+ "bias_teks": "H4 tutup di bawah BB tengah 1.0952 · histogram MACD H4 +4 mengecil · Stoch M15 4 jenuh jual",
  "bias_label": "H4",
- "kondisi": "Naik",
+ "kondisi": "Netral",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana masih aktif · semua entry MENUNGGU",
-  "H4 03:00 WIB tutup 1.0962 (range 1.0960–69). D1 Selasa tutup 1.0962 (+54 pip).",
-  "Harga 1.0964. Buy tunggu 1.0952–58 dengan Stoch M15 naik. Aktif s/d 11:00 WIB."
+  "Buy 1.0955 BERJALAN · minus 9 pip, SL 1.0940",
+  "Sinyal buy 09:00 WIB di 1.0955. H4 07:00 WIB tutup 1.0946 (di bawah BB tengah).",
+  "Harga 1.0946. Tahan buy sampai TP1 1.0970 atau SL 1.0940. Jangan tambah posisi."
  ],
  "entries": [
   {
@@ -62,8 +62,8 @@
     "high 23 Nov 1.1006",
     "angka bulat 1.1000"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M15 >80 turun + HA merah · Batal jika H4 close > 1.1012",
    "jenis_entry": "Resistance"
   },
@@ -83,8 +83,8 @@
     "Fib 0.618 H1 1.0940",
     "high M5 17:00 WIB 1.0939 jadi support"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0930",
    "jenis_entry": "Support"
   }
