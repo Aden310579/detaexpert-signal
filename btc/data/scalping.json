@@ -3,50 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 58813,
- "data_sampai_wib": "25 Nov 2026 18:05",
- "data_sampai_oslo": "25 Nov 2026 12:05",
- "dibuat_utc": "2026-11-25T11:05:00Z",
- "aktif_sampai_utc": "2026-11-25T13:00:00Z",
- "dibuat_wib": "25 Nov 2026 18:05",
- "dibuat_oslo": "25 Nov 2026 12:05",
- "aktif_sampai_wib": "25 Nov 2026 20:00",
- "aktif_sampai_oslo": "25 Nov 2026 14:00",
+ "harga": 58683,
+ "data_sampai_wib": "25 Nov 2026 20:05",
+ "data_sampai_oslo": "25 Nov 2026 14:05",
+ "dibuat_utc": "2026-11-25T13:05:00Z",
+ "aktif_sampai_utc": "2026-11-25T15:00:00Z",
+ "dibuat_wib": "25 Nov 2026 20:05",
+ "dibuat_oslo": "25 Nov 2026 14:05",
+ "aktif_sampai_wib": "25 Nov 2026 22:00",
+ "aktif_sampai_oslo": "25 Nov 2026 16:00",
  "status": "MENUNGGU",
- "bias": "TURUN",
- "bias_teks": "M15 HA merah, hist +0,3 → −5,5 · H4 HA merah, hist −146 (TURUN) · Stoch M15 30 · ATR 248",
+ "bias": "NAIK",
+ "bias_teks": "M15 HA biru, hist −3,7 → +3,1 · H4 HA merah, hist −160 (TURUN) · Stoch M15 36 · ATR 209",
  "bias_label": "M15",
- "kondisi": "Sideways",
- "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-25T11:07:40Z",
+ "kondisi": "Trending",
+ "indikator_utama": "MACD",
+ "diperbarui_utc": "2026-11-25T13:07:39Z",
  "teks": [
-  "Analisa 16:05: E1 batal tanpa sinyal · selesai",
-  "E1 BUY 59.240–59.320 batal M15 close 59.078 (16:00) < 59.140.",
-  "Tidak ada posisi. Range 16:05–18 WIB: 58.783 – 59.332."
+  "Analisa 18:05: E1 tidak tersentuh · selesai",
+  "E1 SELL 58.987–59.067 tidak tersentuh (high 58.896).",
+  "Tidak ada posisi. Range 18:05–20 WIB: 58.456 – 58.896."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    58987,
-    59067
+    58426,
+    58506
    ],
-   "entry": 59027,
-   "sl": 59167,
-   "tp1": 58900,
-   "tp2": 58783,
+   "entry": 58466,
+   "sl": 58326,
+   "tp1": 58603,
+   "tp2": 58750,
    "alasan": [
-    "swing 58.994 / 59.032",
-    "angka bulat 59.000",
-    "BB tengah M15 59.028",
-    "Fib 0.382 59.053"
+    "BB bawah M15 58.433",
+    "swing 58.456 / 58.474",
+    "angka bulat 58.500"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Tolakan atas"
+   "jenis_entry": "Pantulan bawah"
   }
  ]
 }
