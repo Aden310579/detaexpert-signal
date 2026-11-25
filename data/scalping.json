@@ -3,27 +3,27 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3556.3,
- "data_sampai_wib": "25 Nov 2026 05:00",
- "data_sampai_oslo": "24 Nov 2026 23:00",
- "dibuat_utc": "2026-11-24T22:00:00Z",
- "aktif_sampai_utc": "2026-11-25T00:00:00Z",
- "dibuat_wib": "25 Nov 2026 05:00",
- "dibuat_oslo": "24 Nov 2026 23:00",
- "aktif_sampai_wib": "25 Nov 2026 07:00",
- "aktif_sampai_oslo": "25 Nov 2026 01:00",
- "status": "LAGI BERJALAN",
+ "harga": 3550.4,
+ "data_sampai_wib": "25 Nov 2026 07:00",
+ "data_sampai_oslo": "25 Nov 2026 01:00",
+ "dibuat_utc": "2026-11-25T00:00:00Z",
+ "aktif_sampai_utc": "2026-11-25T02:00:00Z",
+ "dibuat_wib": "25 Nov 2026 07:00",
+ "dibuat_oslo": "25 Nov 2026 01:00",
+ "aktif_sampai_wib": "25 Nov 2026 09:00",
+ "aktif_sampai_oslo": "25 Nov 2026 03:00",
+ "status": "MENUNGGU",
  "teks": [
-  "Posisi analisa sebelumnya: Entry 2 BUY @3557.3 (masuk 25 Nov 03:15 WIB / 21:15 Oslo) masih berjalan. Stop Loss 3538, Take Profit 1 3563.4, Take Profit 2 3575.8."
+  "Harga 3550.4, 6 poin dari Entry 2 (BUY). Stochastic M5 8, Heikin Ashi M5 merah. Tunggu sinyal di zona."
  ],
  "bias": "TURUN",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -8.20 (mengecil dari -9.30)",
+ "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 -6.10 (mengecil dari -6.90)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  3672.2,
-  3604.9,
-  3537.5
+  3666.1,
+  3596.5,
+  3526.9
  ],
  "fibonacci": [
   3570.5,
@@ -43,7 +43,7 @@
    "tp2": 3570.5,
    "alasan": [
     "swing ekstrem 12 candle H1",
-    "Bollinger H1 bawah 3537.5",
+    "swing H1 sebelumnya 3547.2",
     "angka bulat 3550"
    ],
    "state": "tunggu",
@@ -53,21 +53,7 @@
    "jenis_entry": "Lawan arah"
   }
  ],
- "posisi": [
-  {
-   "n": 2,
-   "side": 1,
-   "px": 3557.3,
-   "sl": 3538.0,
-   "tp1": 3563.4,
-   "tp2": 3575.8,
-   "t": "2026-11-25 07:10:00",
-   "masuk": "2026-11-25 07:15:00",
-   "tp1_kena_awal": false,
-   "tp1_kena": false,
-   "hasil": null
-  }
- ],
- "diperbarui_utc": "2026-11-24T22:04:00Z",
- "status_lama": "MENUNGGU"
+ "posisi": [],
+ "diperbarui_utc": "2026-11-25T00:04:00Z",
+ "status_lama": "LAGI BERJALAN"
 }
