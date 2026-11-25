@@ -3,90 +3,90 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.09627,
- "data_sampai_wib": "25 Nov 2026 07:20",
- "data_sampai_oslo": "25 Nov 2026 01:20",
- "dibuat_utc": "2026-11-24T23:05:00Z",
- "aktif_sampai_utc": "2026-11-25T01:00:00Z",
- "dibuat_wib": "25 Nov 2026 06:05",
- "dibuat_oslo": "25 Nov 2026 00:05",
- "aktif_sampai_wib": "25 Nov 2026 08:00",
- "aktif_sampai_oslo": "25 Nov 2026 02:00",
- "diperbarui_utc": "2026-11-25T00:21:44Z",
- "status": "SIAP ENTRY",
- "bias": "NETRAL",
- "bias_teks": "M15 squeeze 1.0962–67 · ATR M5 2 pip · H1 netral · H4 naik · jelang sesi Asia",
+ "harga": 1.09613,
+ "data_sampai_wib": "25 Nov 2026 08:05",
+ "data_sampai_oslo": "25 Nov 2026 02:05",
+ "dibuat_utc": "2026-11-25T01:05:00Z",
+ "aktif_sampai_utc": "2026-11-25T03:00:00Z",
+ "dibuat_wib": "25 Nov 2026 08:05",
+ "dibuat_oslo": "25 Nov 2026 02:05",
+ "aktif_sampai_wib": "25 Nov 2026 10:00",
+ "aktif_sampai_oslo": "25 Nov 2026 04:00",
+ "diperbarui_utc": "2026-11-25T01:06:44Z",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "M15 turun · HA M15 merah · H1 Stoch 52 turun · H4 masih naik · sesi Asia sepi",
  "bias_label": "M15",
- "kondisi": "Netral",
+ "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Rencana 04:05 habis tanpa entry · rencana baru",
-  "Masih sangat sepi: range 2 jam cuma 1.0962–67. Sinyal Stoch M5 tidak muncul.",
-  "Harga 1.0963. Buy tunggu 1.0956–60, sell di 1.0970–74. Close D1 jam 07:00 WIB."
+  "Rencana 06:05 habis tanpa entry · rencana baru",
+  "Buy 1.0956–60 tersentuh (low 1.0959) tapi Stoch M5 tidak memberi sinyal.",
+  "Harga 1.0961. Sell tunggu 1.0965–69, buy di 1.0951–55. Aktif s/d 10:00 WIB."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.0956,
-    1.096
+    1.0965,
+    1.0969
    ],
-   "entry": 1.0958,
-   "sl": 1.095,
-   "tp1": 1.0966,
-   "tp2": 1.097,
+   "entry": 1.0967,
+   "sl": 1.0975,
+   "tp1": 1.0959,
+   "tp2": 1.0955,
    "alasan": [
-    "low M15 22:30 WIB 1.0959",
-    "high H4 15:00 WIB 1.0958 jadi support",
-    "BB tengah H4 1.0955"
+    "BB tengah M15 1.0964 & BB atas 1.0968",
+    "high M5 05:05/06:00 WIB 1.0967",
+    "Fib 0.382 H1 1.0967"
    ],
    "state": "tunggu",
-   "status": "SIAP ENTRY",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0949",
-   "jenis_entry": "Support"
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0976",
+   "jenis_entry": "Pullback"
   },
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    1.097,
-    1.0974
+    1.0951,
+    1.0955
    ],
-   "entry": 1.0972,
-   "sl": 1.098,
-   "tp1": 1.0964,
-   "tp2": 1.0953,
+   "entry": 1.0953,
+   "sl": 1.0945,
+   "tp1": 1.0961,
+   "tp2": 1.0972,
    "alasan": [
-    "high M15 01:15 WIB 1.0972",
-    "Fib 0.236 H1 1.0974",
-    "BB atas M15 1.0969"
+    "BB tengah H1 1.0954",
+    "BB tengah H4 1.0955",
+    "low H1 20:00 WIB 1.0955"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0981",
-   "jenis_entry": "Resistance"
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0944",
+   "jenis_entry": "Support"
   },
   {
    "n": 3,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.0949,
-    1.0953
+    1.0972,
+    1.0976
    ],
-   "entry": 1.0951,
-   "sl": 1.0943,
-   "tp1": 1.0959,
-   "tp2": 1.097,
+   "entry": 1.0974,
+   "sl": 1.0982,
+   "tp1": 1.0966,
+   "tp2": 1.0955,
    "alasan": [
-    "BB tengah H1 1.0949",
-    "low H1 19:00 WIB 1.0950",
-    "angka bulat 1.0950"
+    "high H1 00:00–01:00 WIB 1.0975",
+    "Fib 0.618 H1 1.0972",
+    "di bawah high 21:00 WIB 1.0981"
    ],
    "state": "tunggu",
    "status": "MENUNGGU",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0942",
-   "jenis_entry": "Support"
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0983",
+   "jenis_entry": "Resistance"
   }
  ]
 }
