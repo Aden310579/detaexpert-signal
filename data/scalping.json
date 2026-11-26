@@ -3,49 +3,48 @@
  "kode": "/xauscalping",
  "judul": "Scalping M5",
  "tf": "H1 / M5",
- "harga": 3565.0,
- "data_sampai_wib": "26 Nov 2026 09:00",
- "data_sampai_oslo": "26 Nov 2026 03:00",
- "dibuat_utc": "2026-11-26T02:00:00Z",
- "aktif_sampai_utc": "2026-11-26T04:00:00Z",
- "dibuat_wib": "26 Nov 2026 09:00",
- "dibuat_oslo": "26 Nov 2026 03:00",
- "aktif_sampai_wib": "26 Nov 2026 11:00",
- "aktif_sampai_oslo": "26 Nov 2026 05:00",
- "status": "MENUNGGU",
+ "harga": 3576.5,
+ "data_sampai_wib": "26 Nov 2026 11:00",
+ "data_sampai_oslo": "26 Nov 2026 05:00",
+ "dibuat_utc": "2026-11-26T04:00:00Z",
+ "aktif_sampai_utc": "2026-11-26T06:00:00Z",
+ "dibuat_wib": "26 Nov 2026 11:00",
+ "dibuat_oslo": "26 Nov 2026 05:00",
+ "aktif_sampai_wib": "26 Nov 2026 13:00",
+ "aktif_sampai_oslo": "26 Nov 2026 07:00",
+ "status": "LAGI BERJALAN",
  "teks": [
-  "Harga 3565.0, 26 poin dari Entry 1 (BUY). Stochastic M5 45, Heikin Ashi M5 biru. Tunggu sinyal di zona."
+  "Posisi analisa sebelumnya: Entry 2 SELL @3586.7 (masuk 26 Nov 09:55 WIB / 03:55 Oslo) masih berjalan. Stop Loss 3606.1, Take Profit 1 3572.3, Take Profit 2 3551.5."
  ],
- "bias": "NETRAL",
- "bias_teks": "Heikin Ashi H1 merah · histogram MACD H1 +10.20 (mengecil dari +11.70)",
+ "bias": "NAIK",
+ "bias_teks": "Heikin Ashi H1 biru · histogram MACD H1 +9.00 (mengecil dari +10.40)",
  "kondisi": "Trending",
  "indikator_utama": "MACD",
  "bollinger": [
-  3610.2,
-  3528.2,
-  3446.3
+  3622.7,
+  3534.7,
+  3446.6
  ],
  "fibonacci": [
-  3551.5,
-  3527.6
+  3568.2,
+  3544.5
  ],
  "entries": [
   {
    "n": 1,
    "side": "BUY",
    "zona": [
-    3527.6,
-    3551.5
+    3544.5,
+    3568.2
    ],
-   "entry": 3539.5,
-   "sl": 3517.6,
-   "tp1": 3564.8,
-   "tp2": 3590.1,
+   "entry": 3556.4,
+   "sl": 3534.5,
+   "tp1": 3581.4,
+   "tp2": 3606.5,
    "alasan": [
-    "Fibonacci 0.236/0.382 (3551.5 / 3527.6)",
-    "Bollinger H1 tengah 3528.2",
-    "swing H1 sebelumnya 3539.6",
-    "angka bulat 3525"
+    "Fibonacci 0.236/0.382 (3568.2 / 3544.5)",
+    "swing H1 sebelumnya 3568.6",
+    "angka bulat 3550"
    ],
    "state": "tunggu",
    "info": "",
@@ -54,43 +53,20 @@
    "jenis_entry": "Utama"
   },
   {
-   "n": 2,
-   "side": "SELL",
-   "zona": [
-    3590.1,
-    3596.1
-   ],
-   "entry": 3593.1,
-   "sl": 3606.1,
-   "tp1": 3572.3,
-   "tp2": 3551.5,
-   "alasan": [
-    "swing ekstrem 12 candle H1",
-    "swing H1 sebelumnya 3590.1",
-    "angka bulat 3600"
-   ],
-   "state": "tunggu",
-   "info": "",
-   "lawan_arah": true,
-   "masuk_lagi": false,
-   "jenis_entry": "Lawan arah"
-  },
-  {
    "n": 3,
    "side": "BUY",
    "zona": [
-    3527.6,
-    3551.5
+    3544.5,
+    3568.2
    ],
-   "entry": 3539.5,
-   "sl": 3517.6,
-   "tp1": 3572.8,
-   "tp2": 3606.1,
+   "entry": 3556.4,
+   "sl": 3534.5,
+   "tp1": 3589.4,
+   "tp2": 3622.5,
    "alasan": [
-    "Fibonacci 0.236/0.382 (3551.5 / 3527.6)",
-    "Bollinger H1 tengah 3528.2",
-    "swing H1 sebelumnya 3539.6",
-    "angka bulat 3525"
+    "Fibonacci 0.236/0.382 (3568.2 / 3544.5)",
+    "swing H1 sebelumnya 3568.6",
+    "angka bulat 3550"
    ],
    "state": "tunggu",
    "info": "",
@@ -99,7 +75,21 @@
    "jenis_entry": "Masuk lagi"
   }
  ],
- "posisi": [],
- "diperbarui_utc": "2026-11-26T02:04:00Z",
+ "posisi": [
+  {
+   "n": 2,
+   "side": -1,
+   "px": 3586.7,
+   "sl": 3606.1,
+   "tp1": 3572.3,
+   "tp2": 3551.5,
+   "t": "2026-11-26 13:50:00",
+   "masuk": "2026-11-26 13:55:00",
+   "tp1_kena_awal": false,
+   "tp1_kena": false,
+   "hasil": null
+  }
+ ],
+ "diperbarui_utc": "2026-11-26T04:03:00Z",
  "status_lama": "MENUNGGU"
 }
