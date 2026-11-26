@@ -3,26 +3,26 @@
  "pasar": "EURUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 1.09787,
- "data_sampai_wib": "26 Nov 2026 06:05",
- "data_sampai_oslo": "26 Nov 2026 00:05",
+ "harga": 1.09725,
+ "data_sampai_wib": "26 Nov 2026 07:05",
+ "data_sampai_oslo": "26 Nov 2026 01:05",
  "dibuat_utc": "2026-11-25T20:05:00Z",
  "aktif_sampai_utc": "2026-11-26T04:00:00Z",
  "dibuat_wib": "26 Nov 2026 03:05",
  "dibuat_oslo": "25 Nov 2026 21:05",
  "aktif_sampai_wib": "26 Nov 2026 11:00",
  "aktif_sampai_oslo": "26 Nov 2026 05:00",
- "diperbarui_utc": "2026-11-25T23:06:22Z",
- "status": "MENUNGGU",
+ "diperbarui_utc": "2026-11-26T00:06:40Z",
+ "status": "SIAP ENTRY",
  "bias": "NAIK",
- "bias_teks": "H4 HA biru · histogram MACD H4 +6 membesar · Stoch H4 77 · tutup di atas Fib 0.236 D1 1.0969",
+ "bias_teks": "H4 HA biru · histogram MACD H4 +6 · Stoch H4 83 · D1 tutup 1.0970 (+8 pip)",
  "bias_label": "H4",
  "kondisi": "Naik",
  "indikator_utama": "Stochastic",
  "teks": [
-  "H4 close 1.0980 · sell 1.0962–68 BATAL · rencana diganti",
-  "H4 23:00 WIB naik 31 pip, tutup 1.0980 (high 1.0993). Buy lama terlalu jauh.",
-  "Harga 1.0979. Buy tunggu 1.0966–72, sell di 1.0998–1.1004. Aktif s/d 11:00 WIB."
+  "Buy 1.0966–72 SIAP ENTRY · tunggu sinyal Stoch M15",
+  "H4 03:00 WIB tutup 1.0970 (range 1.0970–81). Zona buy disentuh 1.0970.",
+  "Harga 1.0973, Stoch M15 13. Buy kalau Stoch naik + HA biru. Aktif s/d 11:00 WIB."
  ],
  "entries": [
   {
@@ -42,7 +42,7 @@
     "high 25 Nov 09:15 WIB 1.0967 jadi support"
    ],
    "state": "tunggu",
-   "status": "MENUNGGU",
+   "status": "SIAP ENTRY",
    "info": "Sinyal: Stoch M15 <20 naik + HA biru · Batal jika H4 close < 1.0955",
    "jenis_entry": "Pullback"
   },

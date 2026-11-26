@@ -4,16 +4,16 @@
  "judul": "Swing H4",
  "tf": "D1 / H4",
  "harga": 1.09635,
- "data_sampai_wib": "26 Nov 2026 06:05",
- "data_sampai_oslo": "26 Nov 2026 00:05",
+ "data_sampai_wib": "26 Nov 2026 07:05",
+ "data_sampai_oslo": "26 Nov 2026 01:05",
  "dibuat_utc": "2026-11-24T00:20:00Z",
  "aktif_sampai_utc": "2026-11-26T00:00:00Z",
  "dibuat_wib": "24 Nov 2026 07:20",
  "dibuat_oslo": "24 Nov 2026 01:20",
  "aktif_sampai_wib": "26 Nov 2026 07:00",
  "aktif_sampai_oslo": "26 Nov 2026 01:00",
- "diperbarui_utc": "2026-11-25T23:06:22Z",
- "status": "SIAP ENTRY",
+ "diperbarui_utc": "2026-11-26T00:06:40Z",
+ "status": "KEDALUWARSA",
  "bias": "TURUN",
  "bias_teks": "D1 close 1.0962 < Fib 0.236 1.0969 · MACD D1 −9 mengecil · RSI 34 · Stoch D1 12",
  "bias_label": "D1",
@@ -41,8 +41,8 @@
     "BB tengah H4 1.0961",
     "bekas support 1.0954–58 (18–20 Nov)"
    ],
-   "state": "tunggu",
-   "status": "SIAP ENTRY",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1020",
    "jenis_entry": "Pullback"
   },
@@ -62,8 +62,8 @@
     "BB bawah D1 1.0881",
     "Stoch D1 6 & RSI 25 jenuh jual"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch H4 <25 naik + HA H4 biru · Batal jika D1 close < 1.0825",
    "jenis_entry": "Harmonic"
   },
@@ -83,8 +83,8 @@
     "swing high H4 1.1024 (18 Nov)",
     "high 19 & 23 Nov 1.1010/1.1006"
    ],
-   "state": "tunggu",
-   "status": "MENUNGGU",
+   "state": "batal",
+   "status": "KEDALUWARSA",
    "info": "Sinyal: Stoch H4 >75 turun + HA H4 merah · Batal jika D1 close > 1.1075",
    "jenis_entry": "Resistance"
   }
