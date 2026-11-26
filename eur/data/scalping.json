@@ -3,90 +3,90 @@
  "pasar": "EURUSD",
  "judul": "Scalping M5",
  "tf": "M15 / M5",
- "harga": 1.09737,
- "data_sampai_wib": "26 Nov 2026 08:05",
- "data_sampai_oslo": "26 Nov 2026 02:05",
- "dibuat_utc": "2026-11-25T17:05:00Z",
- "aktif_sampai_utc": "2026-11-25T19:00:00Z",
- "dibuat_wib": "26 Nov 2026 00:05",
- "dibuat_oslo": "25 Nov 2026 18:05",
- "aktif_sampai_wib": "26 Nov 2026 02:00",
- "aktif_sampai_oslo": "25 Nov 2026 20:00",
- "diperbarui_utc": "2026-11-26T01:07:31Z",
- "status": "ENTRY 2 HOLD",
- "bias": "NETRAL",
- "bias_teks": "M15 squeeze 1.0969–78 · ATR M5 2 pip · H1 netral · sesi Asia sepi",
+ "harga": 1.09648,
+ "data_sampai_wib": "26 Nov 2026 10:05",
+ "data_sampai_oslo": "26 Nov 2026 04:05",
+ "dibuat_utc": "2026-11-26T03:05:00Z",
+ "aktif_sampai_utc": "2026-11-26T05:00:00Z",
+ "dibuat_wib": "26 Nov 2026 10:05",
+ "dibuat_oslo": "26 Nov 2026 04:05",
+ "aktif_sampai_wib": "26 Nov 2026 12:00",
+ "aktif_sampai_oslo": "26 Nov 2026 06:00",
+ "diperbarui_utc": "2026-11-26T03:06:41Z",
+ "status": "MENUNGGU",
+ "bias": "TURUN",
+ "bias_teks": "M15 turun (lower high 1.0975→1.0971) · Stoch M15 jenuh jual · H4 masih naik",
  "bias_label": "M15",
- "kondisi": "Netral",
+ "kondisi": "Turun",
  "indikator_utama": "Stochastic",
  "teks": [
-  "Sell 1.0989 HOLD · sisa +15 pip, SL di entry",
-  "Low 1.0969 pukul 06:45 & 07:45 WIB, TP2 1.0968 belum kena (kurang 1 pip).",
-  "Harga 1.0974. Sisa sell tahan ke TP2 1.0968, SL di entry 1.0989 (tanpa rugi)."
+  "Sell 1.0989 TP2 SELESAI (+8/+21) · rencana baru",
+  "TP2 1.0968 kena 08:25 WIB. Harga 1.0965 di BB bawah M15, Stoch M15 18.",
+  "Tunggu pantul ke 1.0969–73 untuk sell, atau buy di 1.0954–58 (Fib H4)."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.0972,
-    1.0976
+    1.0969,
+    1.0973
    ],
-   "entry": 1.0974,
-   "sl": 1.0966,
-   "tp1": 1.0982,
-   "tp2": 1.0987,
+   "entry": 1.0971,
+   "sl": 1.0979,
+   "tp1": 1.0963,
+   "tp2": 1.0958,
    "alasan": [
-    "Fib 0.236 M15 1.0971",
-    "BB atas M15 1.0971 jadi support",
-    "high H4 25 Nov 03:00 WIB 1.0975"
+    "Fib 0.382 M15 1.0969",
+    "BB tengah M15 1.0971",
+    "high M5 09:20 WIB 1.0971"
    ],
-   "state": "batal",
-   "status": "KEDALUWARSA",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0965",
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0980",
    "jenis_entry": "Pullback"
   },
   {
    "n": 2,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    1.0987,
-    1.0991
+    1.0954,
+    1.0958
    ],
-   "entry": 1.0989,
-   "sl": 1.0997,
-   "tp1": 1.0981,
-   "tp2": 1.0968,
+   "entry": 1.0956,
+   "sl": 1.0948,
+   "tp1": 1.0964,
+   "tp2": 1.0975,
    "alasan": [
-    "high H1 23 Nov 09:00 WIB 1.0989",
-    "high H4 20 Nov 1.0990",
-    "di bawah angka bulat 1.1000"
+    "Fib 0.382 H4 1.0956",
+    "low H4 20 Nov 15:00 WIB 1.0958",
+    "arah H4 masih naik"
    ],
-   "state": "dipakai",
-   "status": "HOLD",
-   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0998",
-   "jenis_entry": "Resistance"
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0947",
+   "jenis_entry": "Support"
   },
   {
    "n": 3,
-   "side": "BUY",
+   "side": "SELL",
    "zona": [
-    1.0964,
-    1.0968
+    1.0975,
+    1.0979
    ],
-   "entry": 1.0966,
-   "sl": 1.0958,
-   "tp1": 1.0974,
-   "tp2": 1.0987,
+   "entry": 1.0977,
+   "sl": 1.0985,
+   "tp1": 1.0969,
+   "tp2": 1.0958,
    "alasan": [
-    "Fib 0.382 M15 1.0964",
-    "Fib 0.382 H1 1.0963",
-    "high M15 25 Nov 09:15 WIB 1.0967"
+    "high M5 07:10 & 08:00 WIB 1.0975",
+    "BB atas M15 1.0979",
+    "high H4 24 Nov 19:00 WIB 1.0981"
    ],
-   "state": "batal",
-   "status": "KEDALUWARSA",
-   "info": "Sinyal: Stoch M5 <25 naik + HA biru · Batal jika M15 close < 1.0957",
-   "jenis_entry": "Support"
+   "state": "tunggu",
+   "status": "MENUNGGU",
+   "info": "Sinyal: Stoch M5 >75 turun + HA merah · Batal jika M15 close > 1.0986",
+   "jenis_entry": "Resistance"
   }
  ]
 }
