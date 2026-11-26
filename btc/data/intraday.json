@@ -3,49 +3,49 @@
  "pasar": "BTCUSD",
  "judul": "Intraday M15",
  "tf": "H4 / M15",
- "harga": 60412,
- "data_sampai_wib": "26 Nov 2026 07:00",
- "data_sampai_oslo": "26 Nov 2026 01:00",
- "dibuat_utc": "2026-11-26T00:05:00Z",
- "aktif_sampai_utc": "2026-11-26T04:00:00Z",
- "dibuat_wib": "26 Nov 2026 07:05",
- "dibuat_oslo": "26 Nov 2026 01:05",
- "aktif_sampai_wib": "26 Nov 2026 11:00",
- "aktif_sampai_oslo": "26 Nov 2026 05:00",
+ "harga": 60780,
+ "data_sampai_wib": "26 Nov 2026 11:00",
+ "data_sampai_oslo": "26 Nov 2026 05:00",
+ "dibuat_utc": "2026-11-26T04:05:00Z",
+ "aktif_sampai_utc": "2026-11-26T12:00:00Z",
+ "dibuat_wib": "26 Nov 2026 11:05",
+ "dibuat_oslo": "26 Nov 2026 05:05",
+ "aktif_sampai_wib": "26 Nov 2026 19:00",
+ "aktif_sampai_oslo": "26 Nov 2026 13:00",
  "status": "MENUNGGU",
  "bias": "NAIK",
- "bias_teks": "H4 close 07:00 = 60.458, HA biru, hist −88 → +18 · Stoch H4 35 · ATR 1.197",
+ "bias_teks": "H4 close 11:00 = 60.780, HA biru, hist +18 → +109 · Stoch H4 57 · ATR 1.130",
  "bias_label": "H4",
  "kondisi": "Sideways",
  "indikator_utama": "Stochastic",
- "diperbarui_utc": "2026-11-26T00:07:37Z",
+ "diperbarui_utc": "2026-11-26T04:06:10Z",
  "teks": [
-  "Analisa 03:05: E1 tersentuh · belum ada sinyal",
-  "E1 tersentuh 04:00, 04:25 dan 06:35–07:00 WIB (high 60.568).",
-  "Sinyal M15 belum valid. Range 03–07 WIB: 59.795 – 60.568."
+  "Analisa 03:05: E1 SELL batal · selesai",
+  "E1 batal M15 close 60.963 (07:00 WIB) > SL 60.724, tanpa posisi.",
+  "Range 07–11 WIB: 60.377 – 61.622."
  ],
  "entries": [
   {
    "n": 1,
-   "side": "SELL",
+   "side": "BUY",
    "zona": [
-    60364,
-    60524
+    60360,
+    60520
    ],
-   "entry": 60444,
-   "sl": 60724,
-   "tp1": 60200,
-   "tp2": 60000,
+   "entry": 60440,
+   "sl": 60160,
+   "tp1": 60700,
+   "tp2": 61000,
    "alasan": [
+    "BB tengah H4 60.378",
     "swing 60.386",
-    "BB tengah H4 60.398",
     "angka bulat 60.500"
    ],
    "state": "tunggu",
    "info": "",
    "lawan_arah": false,
    "masuk_lagi": false,
-   "jenis_entry": "Tolakan atas"
+   "jenis_entry": "Pantulan bawah"
   }
  ]
 }
