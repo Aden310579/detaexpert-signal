@@ -3,45 +3,45 @@
  "pasar": "BTCUSD",
  "judul": "Arah D1",
  "tf": "D1",
- "harga": 60458,
- "data_sampai_wib": "26 Nov 2026 07:00",
- "data_sampai_oslo": "26 Nov 2026 01:00",
- "dibuat_utc": "2026-11-26T00:20:00Z",
- "aktif_sampai_utc": "2026-11-27T00:00:00Z",
- "dibuat_wib": "26 Nov 2026 07:20",
- "dibuat_oslo": "26 Nov 2026 01:20",
- "aktif_sampai_wib": "27 Nov 2026 07:00",
- "aktif_sampai_oslo": "27 Nov 2026 01:00",
+ "harga": 59832,
+ "data_sampai_wib": "28 Nov 2026 15:00",
+ "data_sampai_oslo": "28 Nov 2026 09:00",
+ "dibuat_utc": "2026-11-28T08:05:00Z",
+ "aktif_sampai_utc": "2026-11-29T00:00:00Z",
+ "dibuat_wib": "28 Nov 2026 15:05",
+ "dibuat_oslo": "28 Nov 2026 09:05",
+ "aktif_sampai_wib": "29 Nov 2026 07:00",
+ "aktif_sampai_oslo": "29 Nov 2026 01:00",
  "status": "ARAH",
  "bias": "NETRAL",
- "bias_teks": "D1 25 Nov close 60.458 · HA D1 merah · hist MACD D1 −427 → −254 · Stoch D1 27",
+ "bias_teks": "D1 27 Nov close 59.923 · HA D1 merah · hist MACD D1 −85 → +25 · Stoch D1 32",
  "bias_label": "D1",
  "kondisi": "Trending",
  "indikator_utama": "Harmonic + Fibo",
- "diperbarui_utc": "2026-11-26T00:21:47Z",
+ "diperbarui_utc": "2026-11-28T08:06:30Z",
  "teks": [
-  "Naik balik ke B = 62.006",
-  "Turun lagi ke 59.000"
+  "Turun ke low 25 Nov = 57.300",
+  "Naik lagi ke B = 62.006"
  ],
  "skenario": {
   "utama": {
-   "judul": "Naik balik ke B = 62.006",
-   "target": "62.006",
-   "konfirmasi": "D1 close di atas 60.568 + HA biru",
+   "judul": "Turun ke low 25 Nov = 57.300",
+   "target": "57.300",
+   "konfirmasi": "D1 close di bawah 59.775 + HA merah",
    "poin": [
-    "Low 57.300 ditolak, close 60.458.",
-    "Close di atas Fib 0.236 59.775.",
-    "Hist D1 mengecil −427 → −254."
+    "27 Nov tembus B 62.006 lalu ditolak (high 62.249).",
+    "HA D1 27 Nov kembali merah.",
+    "Close 59.923 tipis di atas Fib 0.236 59.775."
    ]
   },
   "alternatif": {
-   "judul": "Turun lagi ke 59.000",
-   "target": "59.000",
-   "konfirmasi": "D1 close di bawah 59.775 + HA merah",
+   "judul": "Naik lagi ke B = 62.006",
+   "target": "62.006",
+   "konfirmasi": "D1 close di atas 60.577 + HA biru",
    "poin": [
-    "HA D1 25 Nov masih merah.",
-    "Fib 0.236 kaki 71.514→55.130 = 58.997.",
-    "Bulat 59.000 sempat ditembus 25 Nov."
+    "Hist MACD D1 berbalik positif (+25).",
+    "Fib 0.236 59.775 masih bertahan.",
+    "Low 58.792 (27 Nov) ditolak."
    ]
   }
  },
